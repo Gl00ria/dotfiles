@@ -1,0 +1,200 @@
+[$Version]
+update_info=filepicker.upd:filepicker-remove-old-previews-entry,fonts_global.upd:Fonts_Global,fonts_global_toolbar.upd:Fonts_Global_Toolbar,icons_remove_effects.upd:IconsRemoveEffects,kwin.upd:animation-speed,style_widgetstyle_default_breeze.upd:StyleWidgetStyleDefaultBreeze
+
+[ColorEffects:Disabled]
+ChangeSelectionColor=
+Color=56,56,56
+ColorAmount=0
+ColorEffect=0
+ContrastAmount=0.65
+ContrastEffect=1
+Enable=
+IntensityAmount=0.1
+IntensityEffect=2
+
+[ColorEffects:Inactive]
+ChangeSelectionColor=false
+Color=112,111,110
+ColorAmount=0.025
+ColorEffect=2
+ContrastAmount=0.1
+ContrastEffect=2
+Enable=false
+IntensityAmount=0
+IntensityEffect=0
+
+[Colors:Button]
+BackgroundAlternate=157,79,81
+BackgroundNormal=54,58,79
+DecorationFocus=202,88,83
+DecorationHover=202,88,83
+ForegroundActive=202,88,83
+ForegroundInactive=184,192,224
+ForegroundLink=202,88,83
+ForegroundNegative=237,135,150
+ForegroundNeutral=245,169,127
+ForegroundNormal=202,211,245
+ForegroundPositive=166,218,149
+ForegroundVisited=198,160,246
+
+[Colors:Complementary]
+BackgroundAlternate=36,39,58
+BackgroundNormal=36,39,58
+DecorationFocus=202,88,83
+DecorationHover=202,88,83
+ForegroundActive=202,88,83
+ForegroundInactive=161,169,177
+ForegroundLink=202,88,83
+ForegroundNegative=218,68,83
+ForegroundNeutral=246,116,0
+ForegroundNormal=252,252,252
+ForegroundPositive=39,174,96
+ForegroundVisited=155,89,182
+
+[Colors:Header]
+BackgroundAlternate=24,25,38
+BackgroundNormal=24,25,38
+DecorationFocus=202,88,83
+DecorationHover=202,88,83
+ForegroundActive=202,88,83
+ForegroundInactive=161,169,177
+ForegroundLink=202,88,83
+ForegroundNegative=218,68,83
+ForegroundNeutral=246,116,0
+ForegroundNormal=252,252,252
+ForegroundPositive=39,174,96
+ForegroundVisited=155,89,182
+
+[Colors:Header][Inactive]
+BackgroundAlternate=24,25,38
+BackgroundNormal=24,25,38
+DecorationFocus=61,174,233
+DecorationHover=61,174,233
+ForegroundActive=61,174,233
+ForegroundInactive=161,169,177
+ForegroundLink=29,153,243
+ForegroundNegative=218,68,83
+ForegroundNeutral=246,116,0
+ForegroundNormal=252,252,252
+ForegroundPositive=39,174,96
+ForegroundVisited=155,89,182
+
+[Colors:Selection]
+BackgroundAlternate=152,73,75
+BackgroundNormal=152,73,75
+DecorationFocus=202,88,83
+DecorationHover=202,88,83
+ForegroundActive=202,88,83
+ForegroundInactive=255,255,255
+ForegroundLink=202,88,83
+ForegroundNegative=237,135,150
+ForegroundNeutral=245,169,127
+ForegroundNormal=255,255,255
+ForegroundPositive=166,218,149
+ForegroundVisited=198,160,246
+
+[Colors:Tooltip]
+BackgroundAlternate=30,32,48
+BackgroundNormal=30,32,48
+DecorationFocus=202,88,83
+DecorationHover=202,88,83
+ForegroundActive=202,88,83
+ForegroundInactive=184,192,224
+ForegroundLink=202,88,83
+ForegroundNegative=237,135,150
+ForegroundNeutral=245,169,127
+ForegroundNormal=184,192,224
+ForegroundPositive=166,218,149
+ForegroundVisited=198,160,246
+
+[Colors:View]
+BackgroundAlternate=36,39,58
+BackgroundNormal=36,39,58
+DecorationFocus=202,88,83
+DecorationHover=202,88,83
+ForegroundActive=202,88,83
+ForegroundInactive=184,192,224
+ForegroundLink=202,88,83
+ForegroundNegative=237,135,150
+ForegroundNeutral=245,169,127
+ForegroundNormal=202,211,245
+ForegroundPositive=166,218,149
+ForegroundVisited=198,160,246
+
+[Colors:Window]
+BackgroundAlternate=36,39,58
+BackgroundNormal=36,39,58
+DecorationFocus=202,88,83
+DecorationHover=202,88,83
+ForegroundActive=202,88,83
+ForegroundInactive=184,192,224
+ForegroundLink=202,88,83
+ForegroundNegative=237,135,150
+ForegroundNeutral=245,169,127
+ForegroundNormal=144,144,171
+ForegroundPositive=166,218,149
+ForegroundVisited=198,160,246
+
+[DirSelect Dialog]
+DirSelectDialog Size=852,596
+History Items[$e]=file:$HOME/Pictures/SlideShow,file:$HOME/Pictures/SlideShow,file:$HOME/Pictures/SlideShow,file:$HOME/Pictures/SlideShow,file:$HOME/Pictures/SlideShow,file:$HOME/Pictures/SlideShow,file:$HOME/Pictures/SlideShow,file:$HOME/Pictures/SlideShow,file:$HOME/Pictures/SlideShow,file:$HOME/Desktop/testMusic,file:$HOME/Pictures/SlideShow,file:$HOME/VMs,file:$HOME/VMs,file:$HOME/VMs,file:$HOME/Pictures/SlideShow,file:$HOME/VMs,file:$HOME/Pictures/SlideShow,file:$HOME/Pictures/SlideShow
+
+[General]
+AccentColor=202,88,83
+BrowserApplication=brave-browser.desktop
+ColorSchemeHash=34bd8bad1192a8d612892100d65539ea91e87b50
+XftHintStyle=hintslight
+XftSubPixel=rgb
+accentColorFromWallpaper=true
+fixed=FantasqueSansMono Nerd Font,10,-1,5,50,0,0,0,0,0
+font=FantasqueSansMono Nerd Font,10,-1,5,50,0,0,0,0,0
+menuFont=FantasqueSansMono Nerd Font,10,-1,5,50,0,0,0,0,0
+smallestReadableFont=FantasqueSansMono Nerd Font,8,-1,5,50,0,0,0,0,0
+toolBarFont=FantasqueSansMono Nerd Font,10,-1,5,50,0,0,0,0,0
+
+[Icons]
+Theme=Dexie-red
+
+[KDE]
+LookAndFeelPackage=Scratchy
+ShowDeleteCommand=true
+widgetStyle=Oxygen
+
+[KFileDialog Settings]
+Allow Expansion=false
+Automatically select filename extension=true
+Breadcrumb Navigation=true
+Decoration position=2
+LocationCombo Completionmode=5
+PathCombo Completionmode=5
+Show Bookmarks=false
+Show Full Path=false
+Show Inline Previews=true
+Show Preview=false
+Show Speedbar=true
+Show hidden files=true
+Sort by=Name
+Sort directories first=true
+Sort hidden files last=false
+Sort reversed=false
+Speedbar Width=163
+View Style=Simple
+
+[PreviewSettings]
+MaximumRemoteSize=0
+
+[Shortcuts]
+ActualSize=
+Help=
+RenameFile=
+ZoomIn=
+ZoomOut=
+
+[WM]
+activeBackground=24,25,38
+activeBlend=24,25,38
+activeFont=FantasqueSansMono Nerd Font,10,-1,5,50,0,0,0,0,0
+activeForeground=202,211,245
+inactiveBackground=24,25,38
+inactiveBlend=161,169,177
+inactiveForeground=184,192,224

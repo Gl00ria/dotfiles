@@ -1,0 +1,220 @@
+/*# ______________________________________________________________________________________#*/
+/*#                                                                                       #*/
+/*#              ██████╗ ██╗      ██████╗  ██████╗ ██████╗ ██╗ █████╗                     #*/
+/*#             ██╔════╝ ██║     ██╔═████╗██╔═████╗██╔══██╗██║██╔══██╗                    #*/
+/*#             ██║  ███╗██║     ██║██╔██║██║██╔██║██████╔╝██║███████║                    #*/
+/*#             ██║   ██║██║     ████╔╝██║████╔╝██║██╔══██╗██║██╔══██║                    #*/
+/*#             ╚██████╔╝███████╗╚██████╔╝╚██████╔╝██║  ██║██║██║  ██║                    #*/
+/*#              ╚═════╝ ╚══════╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═╝╚═╝╚═╝  ╚═╝                    #*/
+/*# ______________________________________________________________________________________#*/
+/*#                                                                                       #*/
+/*#                                                                                       #*/
+/*#             :     Autor        :  Gl00ria @gl00ria                                    #*/
+/*#             :     GitHub       :  https://github.com/gl00ria                          #*/
+/*#                                                                                       #*/
+/*#             :     @file        :  config                                              #*/
+/*#             :     @folder      :  ~/.config/waybar/                                   #*/
+/*#             :     @brief       :  configuration for waybar                            #*/
+/*#             :     @requires    :  swaync, brightnessctl, hyprctl, pacman, cava,       #*/
+/*#                                               python3, pamixer                        #*/
+/*#             :    @required_by  :  waybar                                              #*/
+/*#             :     @optional    :  none                                                #*/
+/*#             :     @Note        :  none                                                #*/
+/*# ______________________________________________________________________________________#*/
+/*#                                                                                       #*/
+/*#             :    Created on   :   23, Mar, 2023                                       #*/
+/*#             :   Last Updated  :   23, Mar, 2023                                       #*/
+/*# Update History :                                                                      #*/
+/*# ______________________________________________________________________________________#*/
+/*#                                                                                       #*/
+
+{
+    "layer": "top",
+    "position": "top",
+    "mode": "dock",
+    "exclusive": true,
+    "passtrough": false,
+    "gtk-layer-shell": true,
+    /* "height": 10, */
+
+    "modules-left": ["custom/updates", "cpu", "custom/cpu_temp", "memory", "disk", "network"],
+
+    "modules-center": ["wlr/workspaces"],
+
+    /* "backlight",  */
+    "modules-right": ["custom/weather", "pulseaudio", "pulseaudio#microphone", "clock", "battery", "custom/notification"],
+
+    "custom/notification": {
+        "tooltip": false,
+        "format": "{icon}",
+        "format-icons": {
+            "notification": "🔔  <span foreground='red'><sup></sup></span>",
+            "none": "🔔 ",
+            "dnd-notification": "🔕 <span foreground='red'><sup></sup></span>",
+            "dnd-none": "🔕 ",
+            "inhibited-notification": "🔔 <span foreground='red'><sup></sup></span>",
+            "inhibited-none": "🔔 ",
+            "dnd-inhibited-notification": "🔕 <span foreground='red'><sup></sup></span>",
+            "dnd-inhibited-none": "🔕 "
+        },
+        "return-type": "json",
+        "exec-if": "which swaync-client",
+        "exec": "swaync-client -swb",
+        "on-click": "swaync-client -t -sw",
+        "on-click-right": "swaync-client -d -sw",
+        "escape": true
+    },
+    "clock": {
+        "format": "{:🕰️ %R  📅 %d/%m}",
+        "format-alt": "{:%A, %B %d, %Y (%R)} 🗓️ ",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "calendar": {
+                    "mode"          : "year",
+                    "mode-mon-col"  : 3,
+                    "weeks-pos"     : "right",
+                    "on-scroll"     : 1,
+                    "on-click-right": "mode",
+                    "format": {
+                              "months":     "<span color='#ffead3'><b>{}</b></span>",
+                              "days":       "<span color='#ecc6d9'><b>{}</b></span>",
+                              "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
+                              "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
+                              "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
+                              }
+                    },
+        "actions":  {
+                    "on-click-right": "mode",
+                    "on-click-forward": "tz_up",
+                    "on-click-backward": "tz_down",
+                    "on-scroll-up": "shift_up",
+                    "on-scroll-down": "shift_down"
+                    }
+    },
+    "network": {
+        "format-wifi": "{essid} ({signalStrength}%) 🛜",
+        "interval": 60,
+        "format-ethernet": "{ipaddr}/{cidr} 🌐",
+        "format-linked": "{ifname} (No IP) ‼️",
+        "format-disconnected": "No Internet⚡",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}",
+    },
+
+    "custom/vpn": {
+        "format": "VPN 🔏",
+        "exec": "echo '{\"class\": \"connected\"}'",
+        "exec-if": "test -d /proc/sys/net/ipv4/conf/tun0",
+        "return-type": "json",
+        "interval": 5
+    },
+    "disk": {
+        "interval": 30,
+        "format": "{free} 💿",
+        "path": "/"
+    },
+    "cpu": {
+        "tooltip": false,
+        "format": "{avg_frequency}% 📊 ",
+    },
+    "memory": {
+        "interval": 30,
+        "format": "{used:0.1f}G/{total:0.1f}G 🧬 "
+    },
+    "backlight": {
+        "format": "{icon}",
+        "format-alt": "{percent}% {icon}",
+        "format-alt-click": "click-right",
+        "format-icons": ["🔅", "🔆"],
+        "on-scroll-down": "brightnessctl -q set 5%-",
+        "on-scroll-up": "brightnessctl -q set 5%+"
+    },
+    "hyprland/window": {
+        "format": "{}",
+    },
+    "battery": {
+        "format": "{capacity}% {icon}",
+        "format-icons": ["🪫", "🔋"],
+        "format-charging": "{capacity}% 🔌",
+        "interval": 30,
+        "states": {
+            "warning": 25,
+            "critical": 10
+        },
+        "tooltip": false
+    },
+    "wlr/workspaces": {
+        "on-scroll-up": "hyprctl dispatch workspace e+1",
+        "on-scroll-down": "hyprctl dispatch workspace e-1",
+        "all-outputs": true,
+        "on-click": "activate",
+        "format": "{icon}",
+        "format-icons": {
+            "1": " 😈 ",
+            "2": " 💻 ",
+            "3": " 🌐 ",
+            "4": " ✍️  ",
+            "5": " 🕮  ",
+            "6": " 🖵  ",
+            "7": " 🎜  ",
+            "8": " 💬 ",
+            "urgent": "🆙",
+            "default": "❔"
+          }
+    },
+    "custom/updates": {
+        "exec": "$HOME/.config/waybar/scripts/arch_updates.sh",
+        "interval": 3600, /* every 1 hour */
+        "format": "📦 {}",
+        "on-click" : "kitty --class wm-floating sudo pacman -Syu &",
+    },
+    // "custom/language": {
+    //     "exec": "cat /tmp/kb_layout",
+    //     "interval": 3,
+    //     "format": "⌨️  {}",
+    //     "tooltip": false
+    // },
+    "custom/cava":{
+        "tooltip" : true,
+        "fomrat": "{}",
+        "exec" : "$HOME/.config/waybar/scripts/info_cava.sh",
+    },
+    "custom/weather" : {
+        "tooltip" : true,
+        "format" : "{}",
+        "restart-interval" : 300,
+        "exec" : "$HOME/.config/waybar/scripts/waybar-wttr.py",
+        "return-type" : "json"
+    },
+    "tray": {
+        "icon-size": 13,
+        "tooltip": false,
+        "spacing": 10
+    },
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "tooltip": false,
+        "format-muted": "🔇 Muted",
+        "on-click": "pamixer -t",
+        "on-scroll-up": "pamixer -i 5",
+        "on-scroll-down": "pamixer -d 5",
+        "scroll-step": 5,
+        "format-icons": {
+            "headphone": "🎧",
+            "hands-free": "🎧",
+            "headset": "🎧",
+            "phone": "📞",
+            "portable": "📞",
+            "car": "🏎️",
+            "default": ["🔈", "🔉", "🔊"]
+        }
+    },
+    "pulseaudio#microphone": {
+        "format": "{format_source}",
+        "tooltip": false,
+        "format-source": "🎙️ {volume}%",
+        "format-source-muted": "🔇 Muted",
+        "on-click": "pamixer --default-source -t",
+        "on-scroll-up": "pamixer --default-source -i 5",
+        "on-scroll-down": "pamixer --default-source -d 5",
+        "scroll-step": 5
+    }
+}

@@ -1,0 +1,681 @@
+#_______________________________________________________________________________________#
+#                                                                                       #
+#              ██████╗ ██╗      ██████╗  ██████╗ ██████╗ ██╗ █████╗                     #
+#             ██╔════╝ ██║     ██╔═████╗██╔═████╗██╔══██╗██║██╔══██╗                    #
+#             ██║  ███╗██║     ██║██╔██║██║██╔██║██████╔╝██║███████║                    #
+#             ██║   ██║██║     ████╔╝██║████╔╝██║██╔══██╗██║██╔══██║                    #
+#             ╚██████╔╝███████╗╚██████╔╝╚██████╔╝██║  ██║██║██║  ██║                    #
+#              ╚═════╝ ╚══════╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═╝╚═╝╚═╝  ╚═╝                    #
+#_______________________________________________________________________________________#
+#                                                                                       #
+#                                                                                       #
+#                                                                                       #
+# :   Configured by  :  Gl00ria @gl00ria                                                #
+# :     GitHub       :  https://github.com/gl00ria                                      #
+#                                                                                       #
+#                                                                                       #
+#                                                                                       #
+# @file   ,  starship.toml                                                              #
+# @folder ,  starship                                                                   #
+# @brief  ,  Starship configuration. for more go to https://starship.rs/                #
+#                                                                                       #
+#                                                                                       #
+#_______________________________________________________________________________________#
+#                                                                                       #
+
+# 
+format = """
+[($localip)                                                            ──────────────── ($username) @ ($shell)($sudo)────────────────](bold #ce7e00)
+[](bold #ce7e00)$jobs$directory
+[❯](bold #ce7e00) """
+
+# format = """
+# [╭─user───❯](bold blue) $username
+# [┣─system─❯](bold yellow) $hostname
+# [┣─project❯](bold red) $directory$rust$git_branch$git_state$git_status$package$golang$terraform$docker_context$python$docker_context$nodejs
+# [╰─cmd────❯](bold green)
+# """
+
+right_format ="""$shlvl$cmd_duration$aws$azure$buf$bun$c$cmake$conda$container$crystal$daml$dart$deno$docker_context$dotnet
+$elixir$elm$erlang$gcloud$golang$git_branch$git_commit$git_state$git_matrics$git_status$haskell$helm$java$julia$kotlin$kubernetes
+$lua$nvim$nix_shell$nodejs$ocaml$openstack$package$perl$php$pulumi$purescript$python$rlang$raku$red$ruby$rust$scala$singularity
+$spack$swift$terraform$vagrant$vlang$vcsh$zig$character"""
+
+[username]
+disabled = false
+show_always = true
+style_user = "bold #FF0000"
+format = "[$user]($style)"
+
+[hostname]
+disabled = true
+ssh_only = false
+style = "bold white"
+format =  "[$hostname]($style)"
+
+[sudo]
+disabled = false
+symbol = " "
+style = "bold #434343"
+format = "[as $symbol]($style)"
+allow_windows = false
+
+[shell]
+disabled = false
+style = "bold #FF0000"
+bash_indicator = ""
+zsh_indicator = "zsh"
+fish_indicator = ""
+powershell_indicator = "_"
+cmd_indicator = ""
+ion_indicator = "ino _"
+elvish_indicator = "elvish _"
+tcsh_indicator = "tcsh _"
+xonsh_indicator = "xonsh _"
+nu_indicator = "nu _"
+unknown_indicator = ""
+
+[shlvl]
+disabled = true
+symbol = " "
+style = "bold #40544f"
+threshold = 3
+format = "[$symbol$shlvl]($style) "
+
+[localip]
+ssh_only = true
+style = "bold #150ba2"
+format = "[( )$localipv4]($style) "
+
+[directory]
+disabled = false
+truncation_length = 8
+home_symbol = " "
+read_only = " "
+format = "[$path](bold cyan)[/](bold green)[$read_only](bold #FF0000) "
+use_os_path_sep = true
+truncate_to_repo = true
+
+[character]
+disabled = false
+success_symbol = "[](bold green)"
+error_symbol = "[](bold #FF0000)"
+format = "$symbol"
+
+[cmd_duration]
+disabled = false
+style = "bold yellow"
+format = "took [$duration]($style) "
+
+[jobs]
+disabled = false
+symbol = ".ﲊ."
+symbol_threshold = 1
+number_threshold = 2
+style = "bold #FF0000"
+format = "[$symbol$number]($style) "
+
+[git_branch]
+disabled = false
+symbol = " "
+style = "bold blue"
+format = "on [$symbol$branch(:$remote_branch)]($style) "
+truncation_symbol = "..."
+only_attached = false
+ignore_branches = []
+always_show_remote = true
+
+[git_commit]
+disabled = false
+style = "bold green"
+tag_symbol = "笠"
+format = "[\\($hash$tag\\)]($style) "
+only_detached = true
+tag_disabled = false
+commit_hash_length = 7
+
+[git_state]
+disabled = false
+style = "bold red"
+format = '[\($state( $progress_current of $progress_total)\)]($style) '
+rebase = " REBASING"
+merge = " MERGING"
+revert = " REVERTING"
+cherry_pick = " CHERRY-PICKING"
+bisect = " BISECTING"
+am = " AM"
+am_or_rebase = " AM/REBASE"
+
+[git_metrics]
+disabled = false
+added_style = "bold green"
+deleted_style = "bold red"
+format = '[+$added]($added_style)/[-$deleted]($deleted_style) '
+only_nonzero_diffs = true # Render status only for changed items.
+
+[git_status]
+disabled = false
+style = "bold cyan"
+conflicted = "= "
+ahead = "⇡ ${count} "
+behind = "⇣ ${count} "
+diverged = "⇕ "
+up_to_date = "  "
+untracked = "? "
+stashed = "$ "
+modified = "! "
+staged = '[++\($count\)](green)'
+renamed = "凜 "
+deleted = " "
+format = '([\[$all_status$ahead_behind\]]($style) )'
+ignore_submodules = false
+
+[aws]
+disabled = false
+symbol = " "
+style = "bold #735302"
+format = 'on [$symbol($profile )(\($region\) )(\[$duration\] )]($style)'
+# region_aliases =
+# profile_aliases =
+expiration_symbol = " "
+
+[azure]
+disabled = false
+symbol = "ﴃ "
+style = "bold #1c95ff"
+format = "on [$symbol($subscription)]($style) "
+
+[buf]
+disabled = false
+symbol = "﬘ "
+style = "bold #0a149f"
+format = 'with [$symbol($version \(Buf $buf_version\) )]($style)'
+version_format = "v${raw}"
+detect_extensions = []
+detect_files = ["buf.yaml", "buf.gen.yaml", "buf.work.yaml"]
+detect_folders = []
+
+[bun]
+disabled = false
+symbol = " "
+style = "bold #d0d1ca"
+format = "via [$symbol($version )]($style)"
+version_format = "v${raw}" # Available >> raw, major, minor & patch
+detect_extensions = []
+detect_files = ["bun.lockb", "bunfig.toml"]
+detect_folders = []
+
+[c]
+disabled = false
+symbol = "ﭰ "
+style = "bold #c2fff8"
+format = "via [$symbol($version(-$name) )]($style)"
+version_format = "v${raw}"
+detect_extensions = ["c", "h"]
+# detect_files =
+# detect_folders =
+commands = [ [ "cc", "--version" ], [ "gcc", "--version" ], [ "clang", "--version" ] ]
+
+[cmake]
+disabled = false
+symbol = "喝"
+style = "bold #000064"
+format = "via [$symbol($version )]($style)"
+version_format = "v${raw}"  # Available >> raw, major, minor & patch
+detect_extensions = []
+detect_files = ["CMakeLists.txt", "CMakeCache.txt"]
+detect_folders = []
+
+[conda]
+disabled = false
+symbol = "🅒 "
+style = "bold #03931b"
+format = "via [$symbol$environment]($style) "
+truncation_length = 1
+ignore_base = true
+
+[container]
+disabled = false
+symbol = "⬢ "
+style = "bold #0055ff"
+format = "[$symbol \\[$name\\]]($style) "
+
+[crystal]
+disabled = false
+symbol = " "
+style = "bold #4e4f4c"
+format = "via [$symbol($version )]($style)"
+version_format = "v${raw}"  # Available >> raw, major, minor & patch
+detect_extensions = []
+detect_files = ["shard.yml"]
+detect_folders = []
+
+[daml]
+disabled = false
+symbol = "Λ "
+style = "bodl #1e3e44"
+format = "via [$symbol($version )]($style)"
+version_format = "v${raw}"  # Available >> raw, major, minor & patch
+detect_extensions = []
+detect_files = ["daml.yaml"]
+detect_folders = []
+
+[dart]
+disabled = false
+symbol = " "
+style = "bold #166587"
+format = "via [$symbol($version )]($style)"
+version_format = "v${raw}"  # Available >> raw, major, minor & patch
+detect_extensions = []
+detect_files = ["pubspec.yaml", "pubspec.yml", "pubspec.lock"]
+detect_folders = []
+
+[deno]
+disabled = false
+symbol = " "
+style = "bold #535353"
+format = "via [$symbol($version )]($style)"
+version_format = "v${raw}" # Available >> raw, major, minor & patch
+detect_extensions = []
+detect_files = ["deno.json", "deno.jsonc", "mod.ts", "mod.js", "deps.ts", "deps.js"]
+detect_folders = []
+
+[docker_context]
+disabled = false
+symbol = " "
+style = "bold #0039ab"
+format = "via [$symbol$context]($style) "
+only_with_files = true
+detect_extensions = []
+detect_files = ["docker-compose.yml", "docker-compose.yaml", "Dockerfile"]
+detect_folders = []
+
+[dotnet]
+disabled = false
+symbol = ".NET "
+style = "bold #87098b"
+version_format = "v${raw}" # Available >> raw, major, minor & patch
+heuristic = false   # True if speed's more important than accuracy
+detect_extensions = ["csproj", "fsproj", "xproj"]
+detect_files = ["global.json", "project.json", "Directory.Build.props", "Directory.Build.targets", "Packages.props"]
+detect_folders = []
+
+[elixir]
+disabled = false
+symbol = " "
+style = "bold #481943"
+format = 'via [$symbol($version \(OTP $otp_version\) )]($style)'
+version_format = "v${raw}" # Available >> raw, major, minor & patch
+detect_extensions = []
+detect_files = ["mix.exs"]
+detect_folders = []
+
+[elm]
+disabled = false
+symbol = " "
+style = "bold #1954ac"
+format = "via [$symbol($version )]($style)"
+version_format = "v${raw}" # Available >> raw, major, minor & patch
+detect_extensions = ["elm"]
+detect_files = ["elm.json", "elm-package.json", ".elm-version"]
+detect_folders = ["elm-stuff"]
+
+[erlang]
+disabled = false
+symbol = " "
+style = "bold #c13455"
+format = "via [$symbol($version )]($style)"
+version_format = "v${raw}" # Available >> raw, major, minor & patch
+detect_extensions = []
+detect_files = ["rebar.config", "elang.mk"]
+detect_folders = []
+
+[gcloud]
+disabled = false
+symbol = " "
+style = "bold #341d1e"
+format = 'on [$symbol$account(@$domain)(\($region\))]($style) '
+# region_aliases =
+# project_aliases =
+
+[golang]
+disabled = false
+symbol = " "
+style = "bold #22b7bf"
+format = "via [$symbol($version )]($style)"
+version_format = "v${raw}"  # Available >> raw, major, minor & patch
+detect_extensions = ["go"]
+detect_files = ["go.mod", "go.sum", "go.work", "glide.yaml", "Gopkg.yml", "Gopkg.lock", ".go-version"]
+# detect_folders =
+
+[haskell]
+disabled = false
+symbol = " "
+style = "bold #7c3076"
+format = "via [$symbol($version )]($style)"
+detect_extensions = ["hs", "cabal", "hs-boot"]
+detect_files = ["stack.yaml", "cabal.project"]
+detect_folders = []
+
+[helm]
+disabled = false
+symbol = " "
+style = "bold #060d70"
+format = "via [$symbol($version )]($style)"
+version_format = "v${raw}"  # Available >> raw, major, minor & patch
+detect_extensions = []
+detect_files = ["helmfile.yaml", "Chart.yaml"]
+detect_folders = []
+
+[java]
+disabled = false
+symbol = " "
+style = "bold #6a262f"
+format = "via [${symbol}(${version} )]($style)"
+version_format = "v${raw}"  # Available >> raw, major, minor & patch
+detect_extensions = ["java", "class", "gradle", "jar", "cljs", "cljc"]
+detect_files = ["pom.xml", "build.gradle.kts", "build.sbt", ".java-version", ".deps.edn", "project.clj", "build.boot"]
+detect_folders = []
+
+[julia]
+disabled = false
+symbol = " "
+style = "bold #1d1d46"
+format = "via [$symbol($version )]($style)"
+version_format = "v${raw}"  # Available >> raw, major, minor & patch
+detect_extensions = ["jl"]
+detect_files = ["Project.toml", "Manifest.toml"]
+detect_folders = []
+
+[kotlin]
+disabled = false
+symbol = "🅺 "
+style = "bold #75227d"
+format = "via [$symbol($version )]($style)"
+version_format = "v${raw}"  # Available >> raw, major, minor & patch
+detect_extensions = ["kt", "kts"]
+detect_files = []
+detect_folders = []
+kotlin_binary = "kotlin" # Configures the kotlin binary that Starship executes when getting the version
+
+[kubernetes]
+disabled = true
+symbol = "Kubernetes"
+style = "bold #1b1bbd"
+format = '[$symbol$context( \($namespace\))]($style) in '
+# context_aliases =
+# user_aliases =
+detect_extensions = []
+detect_files = []
+detect_folders = []
+
+[lua]
+disabled = false
+symbol = " "
+style = "bold #000261"
+format = "via [$symbol($version )]($style)"
+version_format = "v${raw}"  # Available >> raw, major, minor & patch
+detect_extensions = ["lua"]
+detect_files = [".lua-version"]
+detect_folders = ["lua"]
+lua_binary = "lua"
+
+[nim]
+disabled = false
+symbol = " "
+style = "bold #615d25"
+format = "via [$symbol($version)$($style)]"
+version_format = "v${raw}"  # Available >> raw, major, minor & patch
+detect_extensions = ["nvim", "nims", "nimble"]
+detect_files = ["nim.cfg"]
+detect_folders = []
+
+[nix_shell]
+disabled = false
+symbol = " "
+style = "bold #2b5790"
+format = 'via [$symbol$state( \($name\))]($style) '
+impure_msg = "impure"
+pure_msg = "pure"
+
+[nodejs]
+disabled = false
+symbol = " "
+style = "bold #356a00"
+not_capable_style = "bold FF0000"
+format = "via [$symbol($version )]($style)"
+version_format = "v${raw}"  # Available >> raw, major, minor & patch
+detect_extensions = ["js", "mjs", "cjs", "ts", "mts", "cts"]
+detect_files = ["package.json", ".node-version"]
+detect_folders = ["node_modules"]
+
+[ocaml]
+disabled = false
+symbol = "OCaml"
+style = "bold #a63e01"
+# format = "via [$symbol($version )(\($switch_indicator$switch_name\) )]($style)"
+version_format = "v${raw}"  # Available >> raw, major, minor & patch
+global_switch_indicator = "" # The format string used to represent global OPAM switch
+local_switch_indicator = "*" # The format string used to represent local OPAM switch
+detect_extensions = ["opam", "ml", "mli", "re", "rei"]
+detect_files = ["dune", "dune-project", "jbuild", "jbuild-ignore", ".merlin"]
+detect_folders = ["_opam", "esy.lock"]
+
+[openstack]
+disabled = false
+symbol = " "
+style = "bold #d3374e"
+format = "on [$symbol$cloud(\\($project\\))]($style) "
+
+[package]
+disabled = false
+symbol = " "
+style = "bold #6f5726"
+format = "is [$symbol$version]($style) "
+version_format = "v${raw}"  # Available >> raw, major, minor & patch
+display_private = true # Display version for pkgs marked as private
+
+[perl]
+disabled = false
+symbol = "Perl"
+style = "bold #2a5071"
+format = "via [$symbol($version )]($style)"
+version_format = "v${raw}" # Available >> raw, major, minor & patch
+detect_extensions = ["pl", "pm", "pod"]
+detect_files = ["Makefile.PL", "Build.PL", "cpanfile", "cpanfile.snapshot", "META.json", "META.yml", ".perl-version"]
+detect_folders = []
+
+[php]
+disabled = false
+symbol = " "
+style = "bold #39457c"
+version_format = "v${raw}"  # Available >> raw, major, minor & patch
+format = "via [$symbol($version )]($style)"
+detect_extensions = ["php"]
+detect_files = ["composer.json", ".php-version"]
+detect_folders = []
+
+[pulumi]
+disabled = false
+symbol = " "
+style = "bold #f26e7e"
+format = "via [$symbol($username@)$stack]($style) "
+version_format = "v${raw}"  # Available >> raw, major, minor & patch
+search_upwards = true # Dnable discovery of pulumi config files in parent directory
+
+[purescript]
+disabled = false
+symbol = "<=>"
+style = "bold #171b24"
+format = "via [$symbol($version )]($style)"
+version_format = "v${raw}"  # Available >> raw, major, minor & patch
+detect_extensions = ["purs"]
+detect_files = ["spago.dhall"]
+detect_folders = []
+
+[python]
+disabled = false
+symbol = " "
+style = "bold #0FFF50" # Available >> raw, major, minor & patch
+format = 'via [${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
+version_format = "v${raw}"
+pyenv_version_name = false # Use pyenv to get Python version
+pyenv_prefix = "pyenv"
+python_binary = ["python", "python3", "python2"]
+detect_extensions = ["py"]
+detect_files = [".python-version", "Pipfile", "__init__.py", "pyproject.toml", "requirements.txt", "setup.py", "tox.ini"]
+detect_folders = []
+
+[rlang]
+disabled = false
+symbol = "Rlang"
+style = "bold #2569be"
+format = "via [$symbol($version )]($style)"
+version_format = "v${raw}"  # Available >> raw, major, minor & patch
+detect_extensions = ["R", "Rd", "Rmd", "Rproj", "Rsx"]
+detect_files = [".Rprofile"]
+detect_folders = [".Rproj.user"]
+
+[raku]
+disabled = false
+symbol = "Raku  "
+style = "bold #fe3265"
+format = "via [$symbol($version-$vm_version )]($style)"
+version_format = "v${raw}"  # Available >> raw, major, minor & patch
+detect_extensions = ["p6", "pm6", "pod6", "raku", "rakumod"]
+detect_files = ["META6.json"]
+detect_folders = []
+
+[red]
+disabled = false
+symbol = "Red lang"
+style = "bold #a60000"
+format = "via [$symbol($version )]($style)"
+version_format = "v${raw}"  # Available >> raw, major, minor & patch
+detect_extensions = ["red"]
+detect_files = []
+detect_folders = []
+
+[ruby]
+disabled = false
+symbol = " "
+style = "bold #920c00"
+format = "via [$symbol($version )]($style)"
+version_format = "v${raw}"  # Available >> raw, major, minor & patch
+detect_extensions = ["rb"]
+detect_files = ["Gemfile", ".ruby-version"]
+detect_folders = []
+detect_variables = ["RUBY_VERSION", "RBENV_VERSION"]
+
+[rust]
+disabled = false
+symbol = " "
+style = "bold #835f00"
+format = "via [$symbol($version )]($style)"
+version_format = "v${raw}"  # Available >> raw, major, minor & patch
+detect_extensions = ["rs"]
+detect_files = ["Cargo.toml"]
+detect_folders = []
+
+[scala]
+disabled = false
+symbol = " "
+style = "bold #db3330"
+format = "via [$symbol($version )]($style)"
+version_format = "v${raw}"  # Available >> raw, major, minor & patch
+detect_extensions = ["sbt", "scala"]
+detect_files = [".scalaenv", ".sbtenv", "build.sbt"]
+detect_folders = [".metals"]
+
+[singularity]
+disabled = false
+symbol = " Singularity"
+style = "bold #174283"
+format = '[$symbol\[$env\]]($style) '
+
+[spack]
+disabled = false
+symbol = "🅢 "
+style = "bold #ffa600"
+format = "via [$symbol$environment]($style) "
+truncation_length = 2
+
+[swift]
+disabled = false
+symbol = "ﯣ "
+style = "bold #f05138"
+format = "via [$symbol($version )]($style)"
+version_format = "v${raw}" # Available >> raw, major, minor & patch
+detect_extensions = ["swift"]
+detect_files = ["Package.swift"]
+detect_folders = []
+
+[terraform]
+disabled = false
+symbol = "Terraform"
+style = "bold #8956c4"
+format = "via [$symbol$workspace]($style) "
+version_format = "v${raw}"  # Available >> raw, major, minor & patch
+detect_extensions = ["tf", "tfplan", "tfstate"]
+detect_files = []
+detect_folders = [".terraform"]
+
+[vagrant]
+disabled = false
+symbol = "⍱ "
+style = "bold #104eb2"
+format = "via [$symbol($version )]($style)"
+version_format = "v${raw}"  # Available >> raw, major, minor & patch
+detect_extensions = []
+detect_files = ["Vagrantfile"]
+detect_folders = []
+
+[vlang]
+disabled = false
+symbol = "Vlang"
+style = "bold #526a89"
+format = "via [$symbol($version )]($style)"
+version_format = "v${raw}"  # Available >> raw, major, minor & patch
+detect_extensions = ["v"]
+detect_files = ["v.mod", "vpkg.json", ".vpkg-lock.json" ]
+detect_folders = []
+
+[vcsh]
+disabled = false
+symbol = "🆅  "
+style = "bold #38fff2"
+format = "vcsh [$symbol$repo]($style) "
+
+[zig]
+disabled = false
+symbol = "zig"
+style = "bold #f7a41d"
+format = "via [$symbol($version )]($style)"
+version_format = "v${raw}"  # Available >> raw, major, minor & patch
+detect_extensions = ["zig"]
+detect_files = []
+detect_folders = []
+
+# [env_var.USER]
+# disabled = false
+# symbol = " "
+# style = "bold #146c23"
+# format = "Vars [$env_value]($style) "
+# default = " "
+# variable =
+
+## Dosn't seem to work properly
+# [status]
+# disabled = false
+# symbol = "  (bold #FF0000)"
+# success_symbol = "  (bold green)"
+# not_executable_symbol = " (bold #FF0000)"
+# not_found_symbol = " (bold #2b967a)"
+# signal_symbol = "⚡(bold yellow)"
+# sigint_symbol = " (bold green)"
+# recognize_signal_code = true
+# map_symbol = false
+# pipestatus = true
+# pipestatus_separator = "|"
+# pipestatus_format = "\\[$pipestatus\\] => [$symbol$common_meaning$signal_name$maybe_int]($style)"
+# pipestatus_segment_format =

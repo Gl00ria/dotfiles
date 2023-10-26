@@ -1,0 +1,182 @@
+[FileDialogSize]
+eDP-1-1 HDMI-1-1 Height 1920x1080 HDMI-1-1=718
+eDP-1-1 HDMI-1-1 Width 1920x1080 HDMI-1-1=980
+eDP1 HDMI1 Height 1920x1080 HDMI1=600
+eDP1 HDMI1 Width 1920x1080 HDMI1=980
+
+[KFileDialog Settings]
+Recent Files[$e]=Anime_Girl_WhiteHair_BlackMask.jpg,file:$HOME/Pictures/SlideShow/2022-04-13 08_40_48-Ubuntu 20.4 LTS - VMware Workstation.png,file:$HOME/Pictures/SlideShow/2020-12-19 23_42_56-Window.png,file:$HOME/Pictures/SlideShow/backiee-228069-landscape.jpg,file:$HOME/Pictures/SlideShow/anime_red&grey.png,file:$HOME/Pictures/SlideShow/bg_6.jpg,file:$HOME/Pictures/SlideShow/Anime_Girl_WhiteHair_BlackMask.jpg
+Recent URLs[$e]=file:$HOME/Pictures/SlideShow/,file:$HOME/Pictures/,file:$HOME/
+detailViewIconSize=16
+iconViewIconSize=64
+listViewIconSize=64
+
+[KPropertiesDialog]
+eDP-1-1 HDMI-1-1 Height 1920x1080=455
+eDP-1-1 HDMI-1-1 Width 1920x1080=417
+eDP-1-1 Height 1920x1080 eDP-1-1=445
+eDP-1-1 Width 1920x1080 eDP-1-1=466
+
+[Open-with settings]
+CompletionMode=1
+History=office
+
+[PlasmaViews][Panel 110]
+alignment=132
+floating=1
+panelVisibility=2
+
+[PlasmaViews][Panel 110][Defaults]
+maxLength=964
+minLength=964
+offset=0
+thickness=36
+
+[PlasmaViews][Panel 110][Horizontal1920]
+minLength=1742
+
+[PlasmaViews][Panel 110][Vertical1080]
+maxLength=964
+minLength=964
+
+[PlasmaViews][Panel 152][Defaults]
+maxLength=292
+minLength=226
+offset=805
+thickness=54
+
+[PlasmaViews][Panel 152][Horizontal1920]
+maxLength=292
+minLength=226
+offset=805
+
+[PlasmaViews][Panel 157]
+alignment=1
+floating=1
+panelVisibility=0
+
+[PlasmaViews][Panel 157][Defaults]
+maxLength=515
+minLength=515
+offset=0
+thickness=39
+
+[PlasmaViews][Panel 157][Horizontal1920]
+maxLength=515
+minLength=515
+offset=0
+
+[PlasmaViews][Panel 162][Defaults]
+thickness=44
+
+[PlasmaViews][Panel 186][Defaults]
+minLength=1431
+thickness=27
+
+[PlasmaViews][Panel 186][Horizontal1920]
+minLength=1431
+
+[PlasmaViews][Panel 188]
+alignment=2
+floating=1
+panelVisibility=0
+
+[PlasmaViews][Panel 188][Defaults]
+maxLength=385
+minLength=385
+offset=0
+thickness=40
+
+[PlasmaViews][Panel 188][Horizontal1920]
+maxLength=385
+minLength=385
+offset=0
+
+[PlasmaViews][Panel 188][Vertical1080]
+offset=0
+
+[PlasmaViews][Panel 2]
+floating=1
+panelVisibility=1
+
+[PlasmaViews][Panel 2][Defaults]
+maxLength=925
+minLength=851
+offset=97
+thickness=44
+
+[PlasmaViews][Panel 2][Vertical1080]
+maxLength=925
+minLength=851
+offset=97
+
+[PlasmaViews][Panel 201]
+alignment=132
+floating=1
+
+[PlasmaViews][Panel 201][Defaults]
+maxLength=235
+minLength=231
+offset=0
+thickness=40
+
+[PlasmaViews][Panel 201][Horizontal1920]
+maxLength=235
+minLength=231
+offset=0
+
+[PlasmaViews][Panel 203][Defaults]
+thickness=27
+
+[PlasmaViews][Panel 224][Defaults]
+thickness=27
+
+[PlasmaViews][Panel 226]
+alignment=2
+floating=1
+panelOpacity=2
+panelVisibility=2
+
+[PlasmaViews][Panel 226][Defaults]
+maxLength=1019
+minLength=1006
+offset=0
+thickness=44
+
+[PlasmaViews][Panel 226][Vertical1080]
+maxLength=1019
+minLength=1006
+offset=0
+
+[PlasmaViews][Panel 3]
+floating=1
+
+[PlasmaViews][Panel 3][Defaults]
+maxLength=933
+minLength=933
+offset=61
+thickness=44
+
+[PlasmaViews][Panel 3][Vertical1080]
+maxLength=933
+minLength=933
+offset=61
+
+[PlasmaViews][Panel 30][Defaults]
+thickness=44
+
+[PlasmaViews][Panel 56][Defaults]
+thickness=44
+
+[PlasmaViews][Panel 82][Defaults]
+thickness=44
+
+[ScreenConnectors]
+0=eDP1
+1=HDMI-1
+2=HDMI-1-1
+3=HDMI-A-1
+4=HDMI1
+
+[Updates]
+performed=/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/containmentactions_middlebutton.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/digitalclock_rename_timezonedisplay_key.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/klipper_clear_config.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/maintain_existing_desktop_icon_sizes.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/move_desktop_layout_config.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/no_middle_click_paste_on_panels.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/systemloadviewer_systemmonitor.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/unlock_widgets.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/digitalclock_migrate_font_settings.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/keyboardlayout_migrateiconsetting.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/keyboardlayout_remove_shortcut.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/mediaframe_migrate_useBackground_setting.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/folderview_fix_recursive_screenmapping.js

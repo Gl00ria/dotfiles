@@ -1,0 +1,204 @@
+/* #_______________________________________________________________________________________# */
+/* #                                                                                       # */
+/* #              ██████╗ ██╗      ██████╗  ██████╗ ██████╗ ██╗ █████╗                     # */
+/* #             ██╔════╝ ██║     ██╔═████╗██╔═████╗██╔══██╗██║██╔══██╗                    # */
+/* #             ██║  ███╗██║     ██║██╔██║██║██╔██║██████╔╝██║███████║                    # */
+/* #             ██║   ██║██║     ████╔╝██║████╔╝██║██╔══██╗██║██╔══██║                    # */
+/* #             ╚██████╔╝███████╗╚██████╔╝╚██████╔╝██║  ██║██║██║  ██║                    # */
+/* #              ╚═════╝ ╚══════╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═╝╚═╝╚═╝  ╚═╝                    # */
+/* #_______________________________________________________________________________________# */
+/* #                                                                                       # */
+/* #                                                                                       # */
+/* #             :     Autor        :  Gl00ria @gl00ria                                    # */
+/* #             :     GitHub       :  https://github.com/gl00ria                          # */
+/* #                                                                                       # */
+/* #             :     @file        :  style.css                                           # */
+/* #             :     @folder      :  ~/.config/waybar/                                   # */
+/* #             :     @brief       :  style for waybar                                    # */
+/* #             :    @required_by  :  waybar                                              # */
+/* #             :     @optional    :  none                                                # */
+/* #             :     @Note        :  none                                                # */
+/* #_______________________________________________________________________________________# */
+/* #                                                                                       # */
+/* #             :    Created on   :   23, Mar, 2023                                       # */
+/* #             :   Last Updated  :   23, Mar, 2023                                       # */
+/* # Update History :                                                                      # */
+/* #_______________________________________________________________________________________# */
+/* #                                                                                       # */
+* {
+    border: none;
+    border-radius: 0;
+    font-family: FantasqueSansMono Nerd Font Mono, bold;
+    font-weight: bold;
+    font-size: 17px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: rgba(21, 18, 27, 0);
+    color: #cdd6f4;
+}
+
+tooltip {
+    background: #1e1e2e;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #11111b;
+}
+
+#workspaces button {
+    /* padding: 5px; */
+    color: #313244;
+    border-radius: 10px 10px 10px 10px;
+    /* margin-right: 5px; */
+}
+
+#workspaces button.active {
+    color: #38761d;
+    border-radius: 10px 10px 10px 10px;
+}
+
+/* #workspaces button.focused { */
+/*     color: #a6adc8; */
+/*     background: #eba0ac; */
+/*     border-radius: 10px; */
+/* } */
+
+#workspaces button.urgent {
+    color: #11111b;
+    background: #a6e3a1;
+    /* border-radius: 0px; */
+    border-radius: 10px 10px 10px 10px;
+}
+
+#workspaces button:hover {
+    background: #11111b;
+    color: #cdd6f4;
+    /* border-radius: 0px; */
+    border-radius: 10px 10px 10px 10px;
+}
+
+#custom-language,
+#custom-updates,
+#cpu,
+#memory,
+#custom-caffeine,
+#custom-weather,
+#custom-notification,
+#window,
+#cava,
+#clock,
+#battery,
+#pulseaudio,
+#network,
+#workspaces,
+#tray,
+#disk,
+
+#backlight {
+    background: #1e1e2e;
+    padding: 0px 10px;
+    margin: 3px 0px;
+    margin-top: 10px;
+    border: 1px solid #181825;
+}
+
+/* #tray { */
+/*     border-radius: 10px; */
+/*     margin-right: 10px; */
+/* } */
+
+#workspaces {
+    background: #1e1e2e;
+    border-radius: 10px 10px 10px 10px;
+    /* margin-left: 10px; */
+    /* padding-right: 0px; */
+    /* padding-left: 5px; */
+}
+
+#custom-cava{
+    color : #8a2be2;
+}
+
+#custom-caffeine {
+    color: #89dceb;
+    border-radius: 10px 0px 0px 10px;
+    border-right: 0px;
+    margin-left: 10px;
+}
+
+#custom-language {
+    color: #f38ba8;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+#custom-updates {
+    /* color: #f5c2e7; */
+    color: #ff0000;
+    border-left: 0px;
+    border-right: 0px;
+    border-radius: 10px 0px 0px 10px;;
+    margin-left: 10px;
+}
+
+#window {
+    border-radius: 10px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+#clock {
+    color: #f9e2af;
+    /* color: #fab387; */
+    /* border-radius: 0px 10px 10px 0px; */
+    /* margin-left: 5px; */
+    /* border-right: 0px; */
+}
+
+#network {
+    color: #f9e2af;
+    border-radius: 0px 10px 10px 0px;
+}
+
+#disk{
+    color: #f9e2af;
+}
+
+#pulseaudio {
+    color: #f9e2af;
+    /* color: #89b4fa; */
+}
+
+#pulseaudio.microphone {
+    color: #f9e2af;
+    /* color: #cba6f7; */
+}
+
+#battery {
+    color: #f9e2af;
+    /* color: #a6e3a1; */
+    margin-left: 0px;
+}
+
+#custom-weather {
+    color: #f9e2af;
+    border-radius: 10px 0px 0px 10px;
+}
+
+#custom-notification {
+    border-radius: 0px 10px 10px 0px;
+    border-right: 0px;
+    padding-right: 0px;
+    margin-right: 10px;
+}
+
+#cpu {
+    color: #f9e2af;
+    padding-right: 0px;
+}
+#memory {
+    color: #f9e2af;
+    padding-right: 0px;
+}

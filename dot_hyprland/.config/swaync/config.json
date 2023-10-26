@@ -1,0 +1,173 @@
+{
+  "$schema": "/etc/xdg/swaync/configSchema.json",
+  "positionX": "right",
+  "positionY": "top",
+  "control-center-margin-top": 2,
+  "control-center-margin-bottom": 2,
+  "control-center-margin-right": 1,
+  "control-center-margin-left": 0,
+  "notification-icon-size": 48,
+  "notification-body-image-height": 160,
+  "notification-body-image-width": 90,
+  "timeout": 6,
+  "timeout-low": 4,
+  "timeout-critical": 0,
+  "fit-to-screen": true,
+  "control-center-width": 380,
+  "notification-window-width": 366,
+  "keyboard-shortcuts": true,
+  "image-visibility": "when-available",
+  "transition-time": 100,
+  "hide-on-clear": false,
+  "hide-on-action": true,
+  "script-fail-notify": true,
+  "scripts": {
+    "example-script": {
+      "exec": "echo 'Do something...'",
+      "urgency": "Normal"
+    }
+  },
+  "notification-visibility": {
+    "example-name": {
+      "state": "muted",
+      "urgency": "Low",
+      "app-name": "Spotify"
+    }
+  },
+  "widgets": [
+    "label",
+    "menubar",
+    "buttons-grid",
+    "volume",
+    "backlight",
+    "mpris",
+    "title",
+    "dnd",
+    "notifications"
+  ],
+  "widget-config": {
+    "title": {
+      "text": "Notifications",
+      "clear-all-button": true,
+      "button-text": "Clear All"
+    },
+    "dnd": {
+      "text": "Do Not Disturb"
+    },
+    "label": {
+      "max-lines": 1,
+      "text": "Controll Center"
+    },
+    "mpris": {
+      "image-size": 96,
+      "image-radius": 6
+    },
+    "backlight": {
+      "label": "🔅",
+      "device": "intel_backlight",
+      "min": 10
+    },
+    "backlight#KB": {
+      "label": "⌨️ ",
+      "device": "asus::kbd_backlight",
+      "subsystem": "leds"
+    },
+    "volume": {
+      "label": "🔊"
+    },
+    "menubar": {
+      "menu#power-buttons": {
+        "label": "🛑",
+        "position": "right",
+        "actions": [
+          {
+            "label": "🔐   Lock",
+            "command": "wlogout"
+          },
+          {
+            "label": "🕸   Logout",
+            "command": "loginctl terminate-session ${XDG_SESSION_ID-}"
+          },
+          {
+            "label": "🔄   Reboot",
+            "command": "systemctl reboot"
+          },
+          {
+            "label": "💣   Shut down",
+            "command": "systemctl poweroff"
+          }
+        ]
+      },
+      "menu#wifi-buttons": {
+        "label": "🛜",
+        "position": "right",
+        "actions": [
+          {
+            "label": "📡 Connect wifi",
+            "command": "bash ~/Projects/Scripts/wlan0_up.sh"
+          },
+          {
+            "label": "📵 Dissconnect",
+            "command": "iwgtk && notify-send \"Wifi is Disconnected!\""
+          }
+        ]
+      },
+      "menu#screenshot-buttons": {
+        "label": "📷",
+        "position": "left",
+        "actions": [
+          {
+            "label": "📸   All Screens",
+            "command": "grimblast save screen"
+          },
+          {
+            "label": "📸   Current Active Screen",
+            "command": "grimblast save output"
+          },
+          {
+            "label": "📸   Current Active Window",
+            "command": "grimblast save active"
+          },
+          {
+            "label": "📸   Select a region",
+            "command": "grimblast save area"
+          }
+        ]
+      },
+      "menu#screencast-buttons": {
+        "label": "🎥",
+        "position": "left",
+        "actions": [
+        ]
+      }
+    },
+    "buttons-grid": {
+      "actions": [
+        {
+          "label": "🔉",
+          "command": "pamixer --default-source -t"
+        },
+        {
+          "label": "🎙️",
+          "command": "pamixer --default-source -t"
+        },
+        {
+          "label": "🎵",
+          "command": "rhythmbox"
+        },
+        {
+            "label": "📧",
+            "command": "thunderbird"
+        },
+        {
+          "label": "🗒️",
+          "command": "notion-app"
+        },
+        {
+          "label": "🌐",
+          "command": "firefox"
+        }
+      ]
+    }
+  }
+}

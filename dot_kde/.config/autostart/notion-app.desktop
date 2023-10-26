@@ -1,0 +1,11 @@
+[Desktop Entry]
+Categories=Office;Utility;
+Comment=The all-in-one workspace for your notes and tasks
+Exec=/opt/Notion/notion-app %U
+Icon=notion-app
+MimeType=x-scheme-handler/notion;x-scheme-handler/notion;x-scheme-handler/notion;x-scheme-handler/notion;x-scheme-handler/notion;x-scheme-handler/notion;x-scheme-handler/notion;
+Name=Notion
+StartupNotify=true
+StartupWMClass=notion-app
+Terminal=false
+Type=Application
