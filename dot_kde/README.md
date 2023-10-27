@@ -54,62 +54,36 @@
   - Icons: [Dexie icons](https://github.com/adhec/Dexie-icons)
   - Cursors: Oxygen Yellow.
 - #### Starship with different icons for different shells & extra icon shows-up when the root password's still cached
-
   - Bash, ZSH, FISH
-    ![ prompt_icons ](https://github.com/Gl00ria/Gl00riFiles/blob/main/Gl00riFiles/Gl00riFiles_Pics/prompot_icons.png)
+    ![prompot_icons](https://github.com/Gl00ria/dotfiles/assets/74514103/894dcc0f-f887-4caf-8a23-1093f4695b15)
+
   - I'm groot
-    ![ prompt_root ](https://github.com/Gl00ria/Gl00riFiles/blob/main/Gl00riFiles/Gl00riFiles_Pics/prompt_root.png)
+   ![prompt_root](https://github.com/Gl00ria/dotfiles/assets/74514103/03b27e37-e259-45ef-b7ec-f6cde0236f3e)
 
 - #### Alacritty & Kitty
-  ![ terminals ](https://github.com/Gl00ria/Gl00riFiles/blob/main/Gl00riFiles/Gl00riFiles_Pics/terminals.png)
+  ![terminals](https://github.com/Gl00ria/dotfiles/assets/74514103/e6aa77ba-86b5-4fe2-afae-f7c34e609b89)
+
 - #### Polybar & KDE's Default Status-bar
-  ![ status-bars ](https://github.com/Gl00ria/Gl00riFiles/blob/main/Gl00riFiles/Gl00riFiles_Pics/status-bars.png)
+  ![status-bars](https://github.com/Gl00ria/dotfiles/assets/74514103/67e68fa2-8d28-462d-a03a-9267d11fa17c)
+
 - #### Cava within polybar
-  ![ cava ](https://github.com/Gl00ria/Gl00riFiles/blob/main/Gl00riFiles/Gl00riFiles_Pics/cava.png)
+  ![cava](https://github.com/Gl00ria/dotfiles/assets/74514103/4fdeef0d-bb6f-4693-aff8-7e42cb7bfd25)
+
 - #### Dunst
-  ![ dunst ](https://github.com/Gl00ria/Gl00riFiles/blob/main/Gl00riFiles/Gl00riFiles_Pics/dunst.png)
+  ![dunst](https://github.com/Gl00ria/dotfiles/assets/74514103/d84c5f00-ad11-4a46-9326-9e7f10067ca4)
+
 - #### Ranger & Dolphin
-  ![ ranger_pic ](https://github.com/Gl00ria/Gl00riFiles/blob/main/Gl00riFiles/Gl00riFiles_Pics/ranger_pic.png)
-  ![ ranger_txt ](https://github.com/Gl00ria/Gl00riFiles/blob/main/Gl00riFiles/Gl00riFiles_Pics/ranger_txt.png)
-  ![ dolphine ](https://github.com/Gl00ria/Gl00riFiles/blob/main/Gl00riFiles/Gl00riFiles_Pics/dolphine.png)
+  ![ranger_pic](https://github.com/Gl00ria/dotfiles/assets/74514103/5563fd31-b4f8-4ded-8a79-767319445764)
+  ![ranger_txt](https://github.com/Gl00ria/dotfiles/assets/74514103/22afe974-b7ee-4563-aae9-a85c9be06ee7)
+  ![dolphine](https://github.com/Gl00ria/dotfiles/assets/74514103/fb29becb-9822-43fc-b737-3d4a90754a09)
+
 - #### Neofetch
-  ![ nf ](https://github.com/Gl00ria/Gl00riFiles/blob/main/Gl00riFiles/Gl00riFiles_Pics/nf.png)
+  ![nf](https://github.com/Gl00ria/dotfiles/assets/74514103/58134cd8-a702-4583-9077-dfffbb232639)
+
 - #### Nvim
-  ![ nv_normal ](https://github.com/Gl00ria/Gl00riFiles/blob/main/Gl00riFiles/Gl00riFiles_Pics/nv_normal.png)
-  ![ nv_transparent ](https://github.com/Gl00ria/Gl00riFiles/blob/main/Gl00riFiles/Gl00riFiles_Pics/nv_transparent.png)
+  ![nv_normal](https://github.com/Gl00ria/dotfiles/assets/74514103/504bb5be-1a0e-456f-b885-59a757beb0e5)
+  ![nv_transparent](https://github.com/Gl00ria/dotfiles/assets/74514103/179bdf5d-29f7-4b45-9cbb-5ac50e213f49)
+
 - #### NavDexie
-  ![ navDexi ](https://github.com/Gl00ria/Gl00riFiles/blob/main/Gl00riFiles/Gl00riFiles_Pics/navDexi.png)
+  ![navDexi](https://github.com/Gl00ria/dotfiles/assets/74514103/533de729-0e89-46bf-8e29-11ff5e4c0a2d)
 
-# How to?
-
-- create a folder in your $HOME directory
-
-```
-$ mkdir Gl00riFiles
-```
-
-- clone this repo as bare
-
-```
-$ git clone --bare https://github.com/Gl00ria/Gl00riFiles.git $HOME/Gl00riFiles
-```
-
-- define the alias in the current shell
-
-```
-$ alias gloorifiles='/usr/bin/git --git-dir=$HOME/Gl00riFiles/ --work-tree=$HOME'
-```
-
-- run this command if the alias is correctly placed in your shell
-
-```
-$ gloorifiles config --local status.showUntrackedFiles no
-```
-
-- checkout the content form the git repository to you $HOME
-
-```
-$ gloorifiles checkout
-```
-
-Have Fun!
