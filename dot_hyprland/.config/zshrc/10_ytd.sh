@@ -26,6 +26,7 @@
 #_______________________________________________________________________________________#
 #                                                                                       #
 
+alias ytd_playist= 'echo "[ Downloading a playlist using yt-dlp ]; yt-dlp --playlist-random -v --extract-audio --audio-quality 0'
 ## Download video & convert to mp3 | ytd -a filename.txt
 alias ytd_list_from_file='echo "[ Download and convert to mp3 ]"; youtube-dl -i --extract-audio --audio-format mp3 -o "%(title)s.%(ext)s" -a'
 alias ytd_single_play_list='echo "[ Download and convert to mp3 ]"; youtube-dl -i --extract-audio --audio-format mp3 -o "%(title)s.%(ext)s"'

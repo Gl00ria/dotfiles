@@ -40,7 +40,7 @@
 # (2)
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.config/oh-my-zsh"
-source $ZSH/oh-my-zsh.sh
+source "$ZSH"/oh-my-zsh.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 # [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -57,12 +57,12 @@ export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
 eval "$(starship init zsh)"
 
 ## PATH
-if [ -d "$HOME/.bin" ] ;
-  then PATH="$HOME/.bin:$PATH"
+if [ -d "$HOME/.bin" ]; then
+	PATH="$HOME/.bin:$PATH"
 fi
 
-if [ -d "$HOME/.local/bin" ] ;
-  then PATH="$HOME/.local/bin:$PATH"
+if [ -d "$HOME/.local/bin" ]; then
+	PATH="$HOME/.local/bin:$PATH"
 fi
 
 ## Rofi
@@ -70,9 +70,9 @@ export PATH=$HOME/.config/rofi/bin:$PATH
 
 ## Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR="$( echo $(which nvim) || echo $(which vim) || echo $(which vi) )"
+	export EDITOR="$(echo "$(which nvim)" || echo "$(which vim)" || echo "$(which vi)")"
 else
-  export EDITOR="$( echo $(which nvim) || echo $(which vim) || echo $(which vi) )"
+	export EDITOR="$(echo "$(which nvim)" || echo "$(which vim)" || echo "$(which vi)")"
 fi
 
 ## The man database

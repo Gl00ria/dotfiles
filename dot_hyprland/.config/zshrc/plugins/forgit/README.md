@@ -41,7 +41,7 @@ zgen load 'wfxr/forgit'
 # for antigen
 antigen bundle 'wfxr/forgit'
 
-# for fisher
+# for fisher (requires fisher v4.4.3 or higher)
 fisher install wfxr/forgit
 
 # for omf
@@ -50,17 +50,14 @@ omf install https://github.com/wfxr/forgit
 # for zinit
 zinit load wfxr/forgit
 
+# for oh-my-zsh
+git clone https://github.com/wfxr/forgit.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/forgit
+
+# for brew
+brew install forgit
+
 # manually
-# Clone the repository and source it in your shell's rc file.
-```
-
-You can run the following command to try `forgit` without installing:
-
-``` bash
-# for bash / zsh
-source <(curl -sSL git.io/forgit)
-# for fish
-source (curl -sSL git.io/forgit-fish | psub)
+# Clone the repository and source it in your shell's rc file or put bin/git-forgit into your $PATH
 ```
 
 ### Fig
@@ -69,7 +66,11 @@ source (curl -sSL git.io/forgit-fish | psub)
 
 Install `forgit` in just one click.
 
-<a href="https://fig.io/plugins/other/forgit" target="_blank"><img src="https://fig.io/badges/install-with-fig.svg" /></a>
+[![Install with Fig](https://fig.io/badges/install-with-fig.svg)](https://fig.io/plugins/other/forgit)
+
+### Arch User Repository
+
+[AUR](https://wiki.archlinux.org/title/Arch_User_Repository) packages, maintained by the developers of forgit, are available. Install the [forgit](https://aur.archlinux.org/packages/forgit) package for the latest release or [forgit-git](https://aur.archlinux.org/packages/forgit-git) to stay up to date with the latest commits from the master branch of this repository.
 
 ### 📝 Features
 
@@ -105,6 +106,8 @@ Install `forgit` in just one click.
 
 - **Interactive `git stash` viewer** (`gss`)
 
+- **Interactive `git stash push` selector** (`gsp`)
+
 - **Interactive `git clean` selector** (`gclean`)
 
 - **Interactive `git cherry-pick` selector** (`gcp`)
@@ -117,29 +120,37 @@ Install `forgit` in just one click.
 
 ### ⌨  Keybinds
 
-| Key                                           | Action                    |
-| :-------------------------------------------: | ------------------------- |
-| <kbd>Enter</kbd>                              | Confirm                   |
-| <kbd>Tab</kbd>                                | Toggle mark and move up   |
-| <kbd>Shift</kbd> - <kbd>Tab</kbd>             | Toggle mark and move down |
-| <kbd>?</kbd>                                  | Toggle preview window     |
-| <kbd>Alt</kbd> - <kbd>W</kbd>                 | Toggle preview wrap       |
-| <kbd>Ctrl</kbd> - <kbd>S</kbd>                | Toggle sort               |
-| <kbd>Ctrl</kbd> - <kbd>R</kbd>                | Toggle selection          |
-| <kbd>Ctrl</kbd> - <kbd>Y</kbd>                | Copy commit hash*         |
-| <kbd>Ctrl</kbd> - <kbd>K</kbd> / <kbd>P</kbd> | Selection move up         |
-| <kbd>Ctrl</kbd> - <kbd>J</kbd> / <kbd>N</kbd> | Selection move down       |
-| <kbd>Alt</kbd> - <kbd>K</kbd> / <kbd>P</kbd>  | Preview move up           |
-| <kbd>Alt</kbd> - <kbd>J</kbd> / <kbd>N</kbd>  | Preview move down         |
+| Key                                           | Action                                      |
+| :-------------------------------------------: | ------------------------------------------- |
+| <kbd>Enter</kbd>                              | Confirm                                     |
+| <kbd>Tab</kbd>                                | Toggle mark and move down                   |
+| <kbd>Shift</kbd> - <kbd>Tab</kbd>             | Toggle mark and move up                     |
+| <kbd>?</kbd>                                  | Toggle preview window                       |
+| <kbd>Alt</kbd> - <kbd>W</kbd>                 | Toggle preview wrap                         |
+| <kbd>Ctrl</kbd> - <kbd>S</kbd>                | Toggle sort                                 |
+| <kbd>Ctrl</kbd> - <kbd>R</kbd>                | Toggle selection                            |
+| <kbd>Ctrl</kbd> - <kbd>Y</kbd>                | Copy commit hash/stash ID*                  |
+| <kbd>Ctrl</kbd> - <kbd>K</kbd> / <kbd>P</kbd> | Selection move up                           |
+| <kbd>Ctrl</kbd> - <kbd>J</kbd> / <kbd>N</kbd> | Selection move down                         |
+| <kbd>Alt</kbd> - <kbd>K</kbd> / <kbd>P</kbd>  | Preview move up                             |
+| <kbd>Alt</kbd> - <kbd>J</kbd> / <kbd>N</kbd>  | Preview move down                           |
+| <kbd>Alt</kbd> - <kbd>E</kbd>                 | Open file in default editor (when possible) |
 
-\* Available when the selection contains a commit hash.
+\* Available when the selection contains a commit hash or a stash ID.
 For linux users `FORGIT_COPY_CMD` should be set to make copy work. Example: `FORGIT_COPY_CMD='xclip -selection clipboard'`.
 
 ### ⚙  Options
 
-#### aliases
+Options can be set via environment variables. They have to be **exported** in
+order to be recognized by `forgit`.
 
-##### shell
+For instance, if you want to order branches in `gcb` by the last committed date you could:
+
+```shell
+export FORGIT_CHECKOUT_BRANCH_BRANCH_GIT_OPTS='--sort=-committerdate'
+```
+
+#### shell aliases
 
 You can change the default aliases by defining these variables below.
 (To disable all aliases, Set the `FORGIT_NO_ALIASES` flag.)
@@ -158,15 +169,16 @@ forgit_checkout_commit=gco
 forgit_revert_commit=grc
 forgit_clean=gclean
 forgit_stash_show=gss
+forgit_stash_push=gsp
 forgit_cherry_pick=gcp
 forgit_rebase=grb
 forgit_blame=gbl
 forgit_fixup=gfu
 ```
 
-#### git
+#### git integration
 
-You can use git aliases by making `git-forgit` available in `$PATH`:
+You can use forgit as a subcommand of git by making `git-forgit` available in `$PATH`:
 
 ```sh
 # after `forgit` was loaded
@@ -177,10 +189,10 @@ export PATH="$PATH:$FORGIT_INSTALL_DIR/bin"
 
 Then any forgit command will be a subcommand of git:
 
-```
-$ git forgit log
-$ git forgit add
-$ git forgit diff
+```cmd
+git forgit log
+git forgit add
+git forgit diff
 ```
 
 Optionally you can add [aliases in git](https://git-scm.com/book/en/v2/Git-Basics-Git-Aliases):
@@ -189,11 +201,36 @@ Optionally you can add [aliases in git](https://git-scm.com/book/en/v2/Git-Basic
 git config --global alias.cf 'forgit checkout_file'
 ```
 
-And use the alias in git:
+And use forgit functions via a git alias:
 
 ```sh
 git cf
 ```
+
+#### git options
+
+If you want to customize `git`'s behavior within forgit there is a dedicated variable for each forgit command.
+These are passed to the according `git` calls.
+
+| Command  | Option                                                                      |
+| -------- | --------------------------------------------------------------------------- |
+| `ga`     | `FORGIT_ADD_GIT_OPTS`                                                       |
+| `glo`    | `FORGIT_LOG_GIT_OPTS`                                                       |
+| `gd`     | `FORGIT_DIFF_GIT_OPTS`                                                      |
+| `grh`    | `FORGIT_RESET_HEAD_GIT_OPTS`                                                |
+| `gcf`    | `FORGIT_CHECKOUT_FILE_GIT_OPTS`                                             |
+| `gcb`    | `FORGIT_CHECKOUT_BRANCH_GIT_OPTS`, `FORGIT_CHECKOUT_BRANCH_BRANCH_GIT_OPTS` |
+| `gbd`    | `FORGIT_BRANCH_DELETE_GIT_OPTS`                                             |
+| `gct`    | `FORGIT_CHECKOUT_TAG_GIT_OPTS`                                              |
+| `gco`    | `FORGIT_CHECKOUT_COMMIT_GIT_OPTS`                                           |
+| `grc`    | `FORGIT_REVERT_COMMIT_GIT_OPTS`                                             |
+| `gss`    | `FORGIT_STASH_SHOW_GIT_OPTS`                                                |
+| `gsp`    | `FORGIT_STASH_PUSH_GIT_OPTS`                                                |
+| `gclean` | `FORGIT_CLEAN_GIT_OPTS`                                                     |
+| `grb`    | `FORGIT_REBASE_GIT_OPTS`                                                    |
+| `gbl`    | `FORGIT_BLAME_GIT_OPTS`                                                     |
+| `gfu`    | `FORGIT_FIXUP_GIT_OPTS`                                                     |
+| `gcp`    | `FORGIT_CHERRY_PICK_GIT_OPTS`                                               |
 
 #### pagers
 
@@ -216,7 +253,7 @@ You can add default fzf options for `forgit`, including keybinds, layout, etc.
 (No need to repeat the options already defined in `FZF_DEFAULT_OPTS`)
 
 ``` bash
-FORGIT_FZF_DEFAULT_OPTS="
+export FORGIT_FZF_DEFAULT_OPTS="
 --exact
 --border
 --cycle
@@ -239,8 +276,9 @@ Customizing fzf options for each command individually is also supported:
 | `gbd`    | `FORGIT_BRANCH_DELETE_FZF_OPTS`   |
 | `gct`    | `FORGIT_CHECKOUT_TAG_FZF_OPTS`    |
 | `gco`    | `FORGIT_CHECKOUT_COMMIT_FZF_OPTS` |
-| `grc`    | `FORGIT_REVERT_COMMIT_OPTS`       |
+| `grc`    | `FORGIT_REVERT_COMMIT_FZF_OPTS`   |
 | `gss`    | `FORGIT_STASH_FZF_OPTS`           |
+| `gsp`    | `FORGIT_STASH_PUSH_FZF_OPTS`      |
 | `gclean` | `FORGIT_CLEAN_FZF_OPTS`           |
 | `grb`    | `FORGIT_REBASE_FZF_OPTS`          |
 | `gbl`    | `FORGIT_BLAME_FZF_OPTS`           |
@@ -256,18 +294,21 @@ Complete loading order of fzf options is:
 Examples:
 
 - `ctrl-d` to drop the selected stash but do not quit fzf (`gss` specific).
-```
-FORGIT_STASH_FZF_OPTS='
+
+```sh
+export FORGIT_STASH_FZF_OPTS='
 --bind="ctrl-d:reload(git stash drop $(cut -d: -f1 <<<{}) 1>/dev/null && git stash list)"
 '
 ```
 
 - `ctrl-e` to view the logs in a vim buffer (`glo` specific).
-```
-FORGIT_LOG_FZF_OPTS='
+
+```sh
+export FORGIT_LOG_FZF_OPTS='
 --bind="ctrl-e:execute(echo {} |grep -Eo [a-f0-9]+ |head -1 |xargs git show |vim -)"
 '
 ```
+
 #### other options
 
 | Option                      | Description                              | Default                                       |
@@ -284,12 +325,25 @@ FORGIT_LOG_FZF_OPTS='
 
 - [`emoji-cli`](https://github.com/wfxr/emoji-cli): Emoji support for `git log`.
 
+### Completions
+
+#### Bash
+
+- Put [`completions/git-forgit.bash`](https://github.com/wfxr/forgit/blob/master/completions/git-forgit.bash) in
+  `~/.local/share/bash-completion/completions` to have bash tab completion for `git forgit` and configured git aliases.
+- Source [`completions/git-forgit.bash`](https://github.com/wfxr/forgit/blob/master/completions/git-forgit.bash) explicitly to have
+  bash tab completion for forgit shell functions and aliases (e.g. `gcb <tab>` completes branches).
+
+#### Zsh
+
+- Put [`completions/_git-forgit`](completions/_git-forgit) in a directory in your `$fpath` (e.g. `/usr/share/zsh/site-functions`) to have zsh tab completion for `git forgit` and configured git aliases.
+- Source [`completions/git-forgit.zsh`](completions/git-forgit.zsh) to have zsh tab completion for forgit shell functions and aliases (e.g. `gcb <tab>` completes branches).
+
 ### 💡 Tips
 
 - Most of the commands accept optional arguments (eg, `glo develop`, `glo f738479..188a849b -- main.go`, `gco master`).
 - `gd` supports specifying revision(eg, `gd HEAD~`, `gd v1.0 README.md`).
 - Call `gi` with arguments to get the wanted `.gitignore` contents directly(eg, `gi cmake c++`).
-- You can use the commands as sub-commands of `git`, see [#147](https://github.com/wfxr/forgit/issues/147) for details.
 
 ### 📃 License
 
