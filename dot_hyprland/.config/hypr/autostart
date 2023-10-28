@@ -1,11 +1,12 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
 
 # Policy Authentication Agent (Gnome | KDE)
-/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
-# /usr/lib/polkit-kde-authentication-agent-1 &
+# /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+/usr/lib/polkit-kde-authentication-agent-1 &
 
-eval "$(/usr/bin/gnome-keyring-daemon --start --components=gpg,pkcs11,secrets,ssh)"
-export "$(gnome-keyring-daemon --start --components=gpg,pkcs11,secrets,ssh)"
+# # stores password & encryption keys
+# eval "$(/usr/bin/gnome-keyring-daemon --start --components=gpg,pkcs11,secrets,ssh)"
+# export "$(gnome-keyring-daemon --start --components=gpg,pkcs11,secrets,ssh)"
 
 # https://wiki.hyprland.org/FAQ/#some-of-my-apps-take-a-really-long-time-to-open
 # https://gist.github.com/PowerBall253/2dea6ddf6974ba4e5d26c3139ffb7580
@@ -19,6 +20,10 @@ gsettings set org.gnome.desktop.interface gtk-theme 'Tokyonight-Dark-BL-LB'
 gsettings set org.gnome.desktop.interface font-name 'CaskaydiaCove Nerd Font 9'
 gsettings set org.gnome.desktop.interface icon-theme 'Tokyonight-Moon'
 gsettings set org.gnome.desktop.interface cursor-theme 'Sweet-cursors'
+
+# OSD window for common actions like volume and capslock
+# (https://github.com/ErikReider/SwayOSD)
+exec swayosd-server &
 
 # notification daemon
 swaync &

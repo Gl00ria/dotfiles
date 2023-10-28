@@ -2,7 +2,6 @@
 
 ![hyprland](https://github.com/Gl00ria/dotfiles/assets/74514103/8f3ae6d1-ac6a-4317-8bef-b95d2326f6ca)
 
-
 # Requirements
 
 ### Main:
@@ -18,6 +17,7 @@
 - [swaync](https://github.com/ErikReider/SwayNotificationCenter): Notification Center.
 - [swaylock-effects-git](https://github.com/mortie/swaylock-effects): Screen Lock Utility.
 - [swaylockd](https://github.com/jirutka/swaylockd): Launcher for swaylock.
+- [swayOSD](https://github.com/ErikReider/SwayOSD): window for common actions like volume and capslock.
 - [pavucontrol](https://aur.archlinux.org/packages/pavucontrol-git): GTK Volume Control.
 - [btop](https://github.com/aristocratos/btop): Resources Monitor.
 - [nvtop](https://github.com/Syllo/nvtop): GPUs process monitor (AMD, INTEL & NVIDIA).
