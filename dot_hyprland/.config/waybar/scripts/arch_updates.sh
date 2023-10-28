@@ -19,14 +19,15 @@
 #             :     @brief       :  get the count of the upgradeable pkgs in            #
 #                                                                 Arch-based distros.   #
 #             :     @requires    :  bash, pacman & yay pkg managers                     #
-#             :    @required_by  :  polybar                                             #
+#             :    @required_by  :  waybar                                              #
 #             :     @optional    :  none                                                #
 #             :     @Note        :  none                                                #
 #_______________________________________________________________________________________#
 #                                                                                       #
 #             :    Created on   :   26, Sep, 2022                                       #
-#             :   Last Updated  :   26, Sep, 2022                                       #
+#             :   Last Updated  :   20, Oct, 2023                                       #
 # Update History :                                                                      #
+# 1st: Moved to waybar & changed polybar deps                                           #
 #_______________________________________________________________________________________#
 #                                                                                       #
 

@@ -1,0 +1,6 @@
+# (https://github.com/Duckonaut/hyprload)
+plugins = [
+    { git = "Duckonaut/split-monitor-workspaces" },
+    # { git = "levnikmyskin/hyprland-virtual-desktops" },
+    { git = "VortexCoyote/hyprfocus" }
+]
