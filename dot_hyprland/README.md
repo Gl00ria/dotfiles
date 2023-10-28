@@ -1,6 +1,7 @@
 ### Dotfiles for [HyprlandWM](https://wiki.hyprland.org/Getting-Started/Installation/).
 
-![2023-10-21T17:35:36,086484457+03:00](https://github.com/Gl00ria/dots_hyprland/assets/74514103/97d07ce9-4982-406c-82b1-cffae40ab656)
+![hyprland](https://github.com/Gl00ria/dotfiles/assets/74514103/8f3ae6d1-ac6a-4317-8bef-b95d2326f6ca)
+
 
 # Requirements
 
