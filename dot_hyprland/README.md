@@ -22,6 +22,9 @@
 - [btop](https://github.com/aristocratos/btop): Resources Monitor.
 - [nvtop](https://github.com/Syllo/nvtop): GPUs process monitor (AMD, INTEL & NVIDIA).
 - [blueman](https://github.com/blueman-project/blueman): GTK Bluetooth Manager.
+- [cpupower-gui](https://github.com/vagnum08/cpupower-gui): Allow you to change the frequency limits of your cpu and its governor.
+- [missioncenter](https://gitlab.com/mission-center-devs/mission-center): Monitor your CPU, Memory, Disk, Network and GPU usage with.
+- [hyprshade](https://github.com/loqusion/hyprshade): Frontend to Hyprland's screen shader feature.
 - [network-manager-applet](https://aur.archlinux.org/packages/network-manager-applet-git): Applet for managing network connections.
 - [iwgtk](https://github.com/J-Lentz/iwgtk): Wireless networking GUI.
 - [brightnessctl](https://github.com/Hummer12007/brightnessctl): Control Brightness.
