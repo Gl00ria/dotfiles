@@ -1,32 +1,3 @@
-#_______________________________________________________________________________________#
-#                                                                                       #
-#              ██████╗ ██╗      ██████╗  ██████╗ ██████╗ ██╗ █████╗                     #
-#             ██╔════╝ ██║     ██╔═████╗██╔═████╗██╔══██╗██║██╔══██╗                    #
-#             ██║  ███╗██║     ██║██╔██║██║██╔██║██████╔╝██║███████║                    #
-#             ██║   ██║██║     ████╔╝██║████╔╝██║██╔══██╗██║██╔══██║                    #
-#             ╚██████╔╝███████╗╚██████╔╝╚██████╔╝██║  ██║██║██║  ██║                    #
-#              ╚═════╝ ╚══════╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═╝╚═╝╚═╝  ╚═╝                    #
-#_______________________________________________________________________________________#
-#                                                                                       #
-#                                                                                       #
-#             :   Configured by  :  Gl00ria @gl00ria                                    #
-#             :     GitHub       :  https://github.com/gl00ria                          #
-#                                                                                       #
-#             :     @file        :  06_fileHandling.sh                                  #
-#             :     @folder      :  ~/.config/zshrc/                                    #
-#             :     @brief       :  aliases for handling files                          #
-#             :     @requires    :  zshShell, fzf, bat, file archiver/s which supports  #
-#                                       the file types/s in the function "extract"      #
-#             :     @optional    :  none                                                #
-#             :     @Note        :  none                                                #
-#_______________________________________________________________________________________#
-#                                                                                       #
-#             :    Created on   :   26, Sep, 2022                                       #
-#             :   Last Updated  :   26, Sep, 2022                                       #
-# Update History :                                                                      #
-#_______________________________________________________________________________________#
-#                                                                                       #
-
 alias whatsize="du -d 1 -h"            ## Display the size of files in current location
 alias t="tail -f"                      ## Outputs the last part of a file
 alias find_file="find . -type f -name" ## Find a file with the given name

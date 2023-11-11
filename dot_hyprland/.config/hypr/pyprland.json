@@ -1,0 +1,50 @@
+{
+  "pyprland": {
+    "plugins": ["scratchpads", "expose", "magnify"]
+  },
+  "scratchpads": {
+    "term": {
+      "command": "kitty --class kitty-dropterm",
+      "animation": "fromTop",
+      "unfocus": "hide",
+      "lazy": true
+    },
+    "files": {
+      "command": "nemo",
+      "animation": "fromLeft",
+      "unfocus": "hide",
+      "lazy": true
+    },
+    "cava": {
+      "command": "kitty --class kitty-cava cava",
+      "animation": "fromBottom",
+      "lazy": true
+    },
+    "music": {
+      "command": "rhythmbox",
+      "animation": "fromTop",
+      "unfocus": "hide",
+      "lazy": true
+    },
+    "volume": {
+      "command": "pavucontrol",
+      "animation": "fromRight",
+      "unfocus": "hide",
+      "lazy": true
+    },
+    "network": {
+      "command": "XDG_CURRENT_DESKTOP='gnome' gnome-control-center",
+      "animation": "fromRight",
+      "lazy": true
+    },
+    "bluetooth": {
+      "command": "blueman-manager",
+      "animation": "fromLeft",
+      "lazy": true
+    },
+    "placeholder": {
+      "command": "",
+      "lazy": true
+    }
+  }
+}

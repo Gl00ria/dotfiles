@@ -1,53 +1,139 @@
-/* Credits:  */
-/*     - (https://github.com/Murzchnvok/rofi-collection) */
-/*     - (https://github.com/newmanls/rofi-themes-collection) */
-
-
-
-/* @theme "~/.config/rofi/themes/launchpad/launchpad.rasi" */
-
-/* @theme "~/.config/rofi/themes/nord/nord.rasi" */
-/* @theme "~/.config/rofi/themes/nord/nord-oneline.rasi" */
-/* @theme "~/.config/rofi/themes/nord/nord-twoLines.rasi" */
-
-/* @theme "~/.config/rofi/themes/dracula/dracula.rasi" */
-
-/* @theme "~/.config/rofi/themes/gruvbox/gruvbox.rasi" */
-
-/* @theme "~/.config/rofi/themes/tokyonight/tokyonight.rasi" */
-/* @theme "~/.config/rofi/themes/tokyonight/simple-tokyonight.rasi" */
-
-/* @theme "~/.config/rofi/themes/material/material.rasi" */
-
-/* @theme "~/.config/rofi/themes/minimal/minimal.rasi" */
-
-/* @theme "~/.config/rofi/themes/murz/murz.rasi" */
-
-/* @theme "~/.config/rofi/themes/onedark/onedark.rasi" */
-
-/* @theme "~/.config/rofi/themes/rounded/rounded-blue-dark.rasi" */
-/* @theme "~/.config/rofi/themes/rounded/rounded-gray-dark.rasi" */
-/* @theme "~/.config/rofi/themes/rounded/rounded-green-dark.rasi" */
-/* @theme "~/.config/rofi/themes/rounded/rounded-nord-dark.rasi" */
-/* @theme "~/.config/rofi/themes/rounded/rounded-orange-dark.rasi" */
-/* @theme "~/.config/rofi/themes/rounded/rounded-pink-dark.rasi" */
-/* @theme "~/.config/rofi/themes/rounded/rounded-purple-dark.rasi" */
-/* @theme "~/.config/rofi/themes/rounded/rounded-red-dark.rasi" */
-/* @theme "~/.config/rofi/themes/rounded/rounded-yellow-dark.rasi" */
-
-/* @theme "~/.config/rofi/themes/spotlight/spotlight-dark.rasi" */
-/* @theme "~/.config/rofi/themes/spotlight/spotlight.rasi" */
-
-/* @theme "~/.config/rofi/themes/squared/squared-everforest.rasi" */
-/* @theme "~/.config/rofi/themes/squared/squared-material-red.rasi" */
-/* @theme "~/.config/rofi/themes/squared/squared-nord.rasi" */
-
-@theme "~/.config/rofi/themes/windows11/windows11-grid-dark.rasi"
-/* @theme "~/.config/rofi/themes/windows11/windows11-grid-light.rasi" */
-/* @theme "~/.config/rofi/themes/windows11/windows11-list-dark.rasi" */
-/* @theme "~/.config/rofi/themes/windows11/windows11-list-light.rasi" */
-
+// Config //
 configuration {
-  show-icons:         true;
-  icon-theme:         "Papirus";
+    modi:                        "drun,filebrowser,window,run";
+    show-icons:                  true;
+    display-drun:                "";
+    display-run:                 "";
+    display-filebrowser:         "";
+    display-window:              "";
+    drun-display-format:         "{name}";
+    window-format:               "{w}{t}";
+    font:                        "JetBrainsMono Nerd Font 10";
+    icon-theme:                  "Tela-circle-dracula";
 }
+
+@theme "~/.config/rofi/themes/theme.rasi"
+
+
+// Main //
+window {
+    height:                      600px;
+    width:                       900px;
+    transparency:                "real";
+    fullscreen:                  false;
+    enabled:                     true;
+    cursor:                      "default";
+    spacing:                     0px;
+    padding:                     0px;
+    border:                      2px;
+    border-radius:               40px;
+    border-color:                @main-br;
+    background-color:            transparent;
+}
+mainbox {
+    enabled:                     true;
+    spacing:                     0px;
+    padding:                     0px;
+    orientation:                 vertical;
+    children:                    [ "inputbar" , "listbox" ];
+    background-color:            transparent;
+    background-image:            url("~/.config/swww/wall.blur", height);
+}
+
+
+// Inputs //
+inputbar {
+    enabled:                     true;
+    spacing:                     0px;
+    padding:                     80px;
+    children:                    [ "entry" ];
+    background-color:            @main-bg;
+    background-image:            url("~/.config/swww/wall.rofi", width);
+}
+entry {
+    border-radius:               30px;
+    enabled:                     true;
+    spacing:                     0px;
+    padding:                     20px;
+    text-color:                  @main-fg;
+    background-color:            @main-bg;
+}
+
+
+// Lists //
+listbox {
+    padding:                     30px;
+    spacing:                     0px;
+    orientation:                 horizontal;
+    children:                    [ "listview" , "mode-switcher" ];
+    background-color:            @main-bg;
+}
+listview {
+    padding:                     10px;
+    spacing:                     10px;
+    enabled:                     true;
+    columns:                     2;
+    cycle:                       true;
+    dynamic:                     true;
+    scrollbar:                   false;
+    layout:                      vertical;
+    reverse:                     false;
+    fixed-height:                true;
+    fixed-columns:               true;
+    cursor:                      "default";
+    background-color:            transparent;
+    text-color:                  @main-fg;
+}
+mode-switcher {
+    orientation:                 vertical;
+    width:                       95px;
+    enabled:                     true;
+    padding:                     15px;
+    spacing:                     10px;
+    background-color:            transparent;
+}
+button {
+    cursor:                      pointer;
+    border-radius:               50px;
+    background-color:            @main-bg;
+    text-color:                  @main-fg;
+}
+button selected {
+    background-color:            @main-fg;
+    text-color:                  @main-bg;
+}
+
+
+// Elements //
+element {
+    enabled:                     true;
+    spacing:                     20px;
+    padding:                     9px;
+    border-radius:               25px;
+    cursor:                      pointer;
+    background-color:            transparent;
+    text-color:                  @main-fg;
+}
+@media(max-aspect-ratio: 1.8) {
+    element {
+        orientation:             vertical;
+    }
+}
+element selected.normal {
+    background-color:            @select-bg;
+    text-color:                  @select-fg;
+}
+element-icon {
+    size:                        47px;
+    cursor:                      inherit;
+    background-color:            transparent;
+    text-color:                  inherit;
+}
+element-text {
+    vertical-align:              0.5;
+    horizontal-align:            0.0;
+    cursor:                      inherit;
+    background-color:            transparent;
+    text-color:                  inherit;
+}
+

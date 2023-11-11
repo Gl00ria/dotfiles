@@ -2,102 +2,181 @@
 
 ![hyprland](https://github.com/Gl00ria/dotfiles/assets/74514103/8f3ae6d1-ac6a-4317-8bef-b95d2326f6ca)
 
-# Requirements
+# Requirements:
 
-### Main:
+| Package Name                                                                    | Description    | Package Manager |
+| ------------------------------------------------------------------------------- | -------------- | --------------- |
+| [ hyprland-nvidia-git ](https://aur.archlinux.org/packages/hyprland-nvidia-git) | window manager | AUR             |
 
-- [base-devel](https://archlinux.org/packages/core/any/base-devel/): Basic tools to build Arch Linux packages.
-- [YaY](https://github.com/Jguer/yay): AUR helper.
-- [hyprland-git](https://aur.archlinux.org/packages/hyprland-git): Tiling Wayland compositor.
-- [waybar-hyprland](https://aur.archlinux.org/packages/waybar-hyprland): Wayland bar.
-- [kitty Terminal](https://github.com/kovidgoyal/kitty): Terminal.
-- [wofi](https://github.com/uncomfyhalomacro/wofi): Launcher/Menu program. NOTE: Consider and alternative.
-- [wl-clipboard](https://github.com/bugaevc/wl-clipboard): Clipboard.
-- [cliphist-bin-](https://github.com/sentriz/cliphist): Clipboard manager.
-- [swaync](https://github.com/ErikReider/SwayNotificationCenter): Notification Center.
-- [swaylock-effects-git](https://github.com/mortie/swaylock-effects): Screen Lock Utility.
-- [swaylockd](https://github.com/jirutka/swaylockd): Launcher for swaylock.
-- [swayOSD](https://github.com/ErikReider/SwayOSD): window for common actions like volume and capslock.
-- [pavucontrol](https://aur.archlinux.org/packages/pavucontrol-git): GTK Volume Control.
-- [btop](https://github.com/aristocratos/btop): Resources Monitor.
-- [nvtop](https://github.com/Syllo/nvtop): GPUs process monitor (AMD, INTEL & NVIDIA).
-- [blueman](https://github.com/blueman-project/blueman): GTK Bluetooth Manager.
-- [cpupower-gui](https://github.com/vagnum08/cpupower-gui): Allow you to change the frequency limits of your cpu and its governor.
-- [missioncenter](https://gitlab.com/mission-center-devs/mission-center): Monitor your CPU, Memory, Disk, Network and GPU usage with.
-- [hyprshade](https://github.com/loqusion/hyprshade): Frontend to Hyprland's screen shader feature.
-- [network-manager-applet](https://aur.archlinux.org/packages/network-manager-applet-git): Applet for managing network connections.
-- [iwgtk](https://github.com/J-Lentz/iwgtk): Wireless networking GUI.
-- [brightnessctl](https://github.com/Hummer12007/brightnessctl): Control Brightness.
-- UI framewoks: [qt5-base](https://aur.archlinux.org/packages/qt5-base-git), [qt5-wayland](https://aur.archlinux.org/packages/qt5-wayland-git), [qt6-base](https://aur.archlinux.org/packages/qt6-base-git), [qt6-wayland](https://archlinux.org/packages/extra/x86_64/qt6-wayland/).
-- [ polkit-gnome ](https://aur.archlinux.org/packages/polkit-gnome-git): GNOME's Authentication agent.
-- [wlogout](https://github.com/ArtsyMacaw/wlogout): Logout Menu.
-- [sddm](https://github.com/sddm/sddm): Desktop Display Manager.
-- [boo-sddm](https://github.com/PROxZIMA/boo-sddm): SDDM theme.
-- [wpaperd](https://github.com/danyspin97/wpaperd): Wallpaper daemon for wayland.
-- Shells:
-  - [Bash](https://www.gnu.org/software/bash/).
-  - [ZSH](https://sourceforge.net/p/zsh/code/ci/master/tree/).
-  - [Fish](https://fishshell.com/) with [Fisher](https://github.com/jorgebucaran/fisher) as the plugins manager.
-  - [Starship](https://starship.rs/) as the default shell prompt.
-    NOTE:
-    - [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh) &
-      [powerlevel10k-theme](https://github.com/romkatv/powerlevel10k)
-      are available and configured for ZSH as well.
-- [lsd](https://github.com/Peltoche/lsd): Alternative to the "ls" command.
-- [bat](https://github.com/sharkdp/bat): Alternative to the "cat" command.
-- [ripgrep](https://github.com/BurntSushi/ripgrep): Alternative to the "grep" command.
-- [fd](https://github.com/sharkdp/fd): Alternative to the "find" command.
-- [FZF](https://github.com/junegunn/fzf): Fuzzy Finder.
-- [grimblast](https://github.com/hyprwm/contrib): Screenshot, wayland's version.
-- [neofetch](https://github.com/dylanaraps/neofetch): System Info.
-- [nvim](https://github.com/neovim/neovim): Editor/PDE. "My config is [here](https://github.com/Gl00ria/nvim)".
-- [ranger](https://github.com/ranger/ranger) & [dolphin](https://wiki.archlinux.org/title/Dolphin): File managers.
-- [nerd fonts](https://github.com/ryanoasis/nerd-fonts): NOTE: I keep changing my font over & over.
-  - "See my font installation [script](https://github.com/Gl00ria/FontsL00ria)" to make things easier.
+### F\*\*\* Nvidia:
+
+| Package Name                                                                | Description    | Package Manager |
+| --------------------------------------------------------------------------- | -------------- | --------------- |
+| [ nvidia-dkms ](https://archlinux.org/packages/extra/x86_64/nvidia-dkms/)   | drivers        | Pacman          |
+| [ nvidia-utils ](https://archlinux.org/packages/extra/x86_64/nvidia-utils/) | drivers Utils  | Pacman          |
+| [ nvidia-prime ](https://archlinux.org/packages/extra/any/nvidia-prime/)    | nvidia offload | Pacman          |
+
+### Audio & Video:
+
+| Package Name                                                                        | Description                | Package Manager |
+| ----------------------------------------------------------------------------------- | -------------------------- | --------------- |
+| [ pipewire ](https://archlinux.org/packages/extra/x86_64/pipewire/)                 | audio & video server       | Pacman          |
+| [ pipewire-audio ](https://archlinux.org/packages/extra/x86_64/pipewire-audio/)     | audio plugin               | Pacman          |
+| [ pipewire-alsa ](https://archlinux.org/packages/extra/x86_64/pipewire-alsa/)       | audio plugin               | Pacman          |
+| [ pipewire-jack ](https://archlinux.org/packages/extra/x86_64/pipewire-jack/)       | audio plugin               | Pacman          |
+| [ pipewire-pulse ](https://archlinux.org/packages/extra/x86_64/pipewire-pulse/)     | audio plugin               | Pacman          |
+| [ wireplumber ](https://archlinux.org/packages/extra/x86_64/wireplumber/)           | audio & video server       | Pacman          |
+| [ pavucontrol ](https://archlinux.org/packages/extra/x86_64/pavucontrol/)           | GUI audio settings         | Pacman          |
+| [ pamixer ](https://archlinux.org/packages/extra/x86_64/pamixer/)                   | for waybar audio           | Pacman          |
+| [ gst-plugin-pipewire ](https://aur.archlinux.org/packages/gst-plugin-pipewire-git) | Multimedia Graph Framework | AUR             |
+
+### Network:
+
+| Package Name                                                                                    | Description          | Package Manager |
+| ----------------------------------------------------------------------------------------------- | -------------------- | --------------- |
+| [ networkmanager ](https://archlinux.org/packages/extra/x86_64/networkmanager/)                 | network manager      | Pacman          |
+| [ network-manager-applet ](https://archlinux.org/packages/extra/x86_64/network-manager-applet/) | network manager tray | Pacman          |
+
+### Bluetooth:
+
+| Package Name                                                              | Description                    | Package Manager |
+| ------------------------------------------------------------------------- | ------------------------------ | --------------- |
+| [ bluez ](https://archlinux.org/packages/extra/x86_64/bluez/)             | Daemons for bluetooth protocol | Pacman          |
+| [ bluez-utils ](https://archlinux.org/packages/extra/x86_64/bluez-utils/) | utils for bluetooth            | Pacman          |
+| [ blueman ](https://archlinux.org/packages/extra/x86_64/blueman/)         | bluetooth tray                 | Pacman          |
+
+### Login:
+
+| Package Name                                                                                | Description               | Package Manager |
+| ------------------------------------------------------------------------------------------- | ------------------------- | --------------- |
+| [ sddm ](https://archlinux.org/packages/extra/x86_64/sddm/)                                 | display manager for login | Pacman          |
+| [ qt5-wayland ](https://archlinux.org/packages/extra/x86_64/qt5-wayland/)                   | for QT wayland XDP        | Pacman          |
+| [ qt6-wayland ](https://archlinux.org/packages/extra/x86_64/qt6-wayland/)                   | for QT wayland XDP        | Pacman          |
+| [ qt5-quickcontrols ](https://archlinux.org/packages/extra/x86_64/qt5-quickcontrols/)       | for sddm theme            | Pacman          |
+| [ qt5-quickcontrols2 ](https://archlinux.org/packages/extra/x86_64/qt5-quickcontrols2/)     | for sddm theme            | Pacman          |
+| [ qt5-graphicaleffects ](https://archlinux.org/packages/extra/x86_64/qt5-graphicaleffects/) | for sddm theme            | Pacman          |
+
+### Notification:(Pick one & edit ~/.config/hypr/autostart)
+
+| Package Name                                                  | Description         | Package Manager |
+| ------------------------------------------------------------- | ------------------- | --------------- |
+| [ dunst ](https://archlinux.org/packages/extra/x86_64/dunst/) | notification daemon | Pacman          |
+| [ swaync ](https://aur.archlinux.org/packages/swaync)         | notification center | AUR             |
+
+### Screenshot:
+
+| Package Name                                                        | Description                   | Package Manager |
+| ------------------------------------------------------------------- | ----------------------------- | --------------- |
+| [ slurp ](https://archlinux.org/packages/extra/x86_64/slurp/)       | selects region for screenshot | Pacman          |
+| [ swappy ](https://archlinux.org/packages/extra/x86_64/swappy/)     | screenshot editor             | Pacman          |
+| [ grimblast-git ](https://aur.archlinux.org/packages/grimblast-git) | screenshot tool               | AUR             |
+
+### Screensharing:
+
+| Package Name                                                                                              | Description                    | Package Manager |
+| --------------------------------------------------------------------------------------------------------- | ------------------------------ | --------------- |
+| [ slurp ](https://archlinux.org/packages/extra/x86_64/slurp/)                                             | selects region for screenshare | Pacman          |
+| [ xdg-desktop-portal-hyprland ](https://archlinux.org/packages/extra/x86_64/xdg-desktop-portal-hyprland/) | XDG Desktop Portal             | Pacman          |
+
+### Clipboard:
+
+| Package Name                                                                    | Description       | Package Manager |
+| ------------------------------------------------------------------------------- | ----------------- | --------------- |
+| [ cliphist ](https://archlinux.org/packages/extra/x86_64/cliphist/)             | clipboard manager | Pacman          |
+| ~~[ wl-clipboard ](https://archlinux.org/packages/extra/x86_64/wl-clipboard/)~~ | clipboard manager | Pacman          |
+
+### Utils:
+
+| Package Name                                                                        | Description                                                       | Package Manager                                                     |
+| ----------------------------------------------------------------------------------- | ----------------------------------------------------------------- | ------------------------------------------------------------------- |
+| [ grub ](https://archlinux.org/packages/core/x86_64/grub/)                          | Bootloader                                                        | Pacman                                                              |
+| [ grub-btrfs ](https://archlinux.org/packages/extra/any/grub-btrfs/)                | include btrfs snapshots in grub options                           | Pacman                                                              |
+| [ timeshift ](https://archlinux.org/packages/extra/x86_64/timeshift/)               | system snapshots                                                  | Pacman                                                              |
+| [ polkit-kde-agent ](https://archlinux.org/packages/extra/x86_64/polkit-kde-agent/) | KDE's authentication agent                                        | Pacman                                                              |
+| ~~[ polkit-gnome ](https://archlinux.org/packages/extra/x86_64/polkit-gnome/)~~     | Gnome's authentication agent                                      | Pacman                                                              |
+| [ parallel ](https://archlinux.org/packages/extra/any/parallel/)                    | for parallel processing                                           | Pacman                                                              |
+| [ jq ](https://archlinux.org/packages/extra/x86_64/jq/)                             | to read json files                                                | Pacman                                                              |
+| ~~[ gojq ](https://aur.archlinux.org/packages/gojq)~~                               | same as above written in GO                                       | AUR                                                                 |
+| [ swayosd-git ](https://aur.archlinux.org/packages/swayosd-git)                     | common actions like volume & capslock                             | AUR                                                                 |
+| [ btop ](https://archlinux.org/packages/extra/x86_64/btop/)                         | resources monitor                                                 | Pacman                                                              |
+| [ncdu](https://archlinux.org/packages/extra/x86_64/ncdu/)                           | disk usage analyzer                                               | Pacman                                                              |
+| [ nvtop ](https://archlinux.org/packages/extra/x86_64/nvtop/)                       | GPUs process monitor (AMD, INTEL & F\*\*\* NVIDIA)                | Pacman                                                              |
+| [ cpupower-gui ](https://aur.archlinux.org/packages/cpupower-gui)                   | change the frequency limits of the cpu & its governor             | AUR                                                                 |
+| [ mission-center ](https://aur.archlinux.org/packages/mission-center)               | monitor the (CPU, Memory, Disk, Network, & GPU usage)             | AUR                                                                 |
+| [ hyprshade ](https://aur.archlinux.org/packages/hyprshade)                         | frontend to Hyprland's screen shader feature                      | AUR                                                                 |
+| ~~[ swayidle ](https://archlinux.org/packages/extra/x86_64/swayidle/)~~             | idle management daemon                                            | Pacman                                                              |
+| ~~[ iwgtk ](https://aur.archlinux.org/packages/iwgtk)~~                             | GUI app for wireless networking                                   | AUR                                                                 |
+| nerd fonts                                                                          | included in "~/.local/share/fonts/"                               | [see my script as a bounus](https://github.com/Gl00ria/FontsL00ria) |
+| [ lsd ](https://archlinux.org/packages/extra/x86_64/lsd/)                           | alternative to the "ls" command                                   | Pacman                                                              |
+| [ bat ](https://archlinux.org/packages/extra/x86_64/bat/)                           | alternative to the "cat" command                                  | Pacman                                                              |
+| [ ripgrep ](https://archlinux.org/packages/extra/x86_64/ripgrep/)                   | alternative to the "grep" command                                 | Pacman                                                              |
+| [ fd ](https://archlinux.org/packages/extra/x86_64/fd/)                             | alternative to the "find" command                                 | Pacman                                                              |
+| [ fzf ](https://archlinux.org/packages/extra/x86_64/fzf/)                           | fuzzy finder                                                      | Pacman                                                              |
+| ~~[ gamemode ](https://archlinux.org/packages/extra/x86_64/gamemode/)~~             | not a gamer, but worth the reference                              | Pacman                                                              |
+| [ geticons ](https://aur.archlinux.org/packages/geticons)                           | Get icons for apps on your system or other generic icons by name  | AUR                                                                 |
+| [ libinput-gestures ](https://aur.archlinux.org/packages/libinput-gestures)         | Actions Gestures for the touchpad                                 | AUR                                                                 |
+| [ neofetch ](https://archlinux.org/packages/extra/any/neofetch/)                    | system info                                                       | Pacman                                                              |
+| [pyprland](https://github.com/hyprland-community/pyprland)                          | Scratchpads,smart monitor placement and other tweaks for hyprland | AUR                                                                 |
+
+### Brightness:
+
+| Package Name                                                                  | Description        | Package Manager |
+| ----------------------------------------------------------------------------- | ------------------ | --------------- |
+| [ brightnessctl ](https://archlinux.org/packages/extra/x86_64/brightnessctl/) | brightness control | Pacman          |
+| [ light ](https://archlinux.org/packages/extra/x86_64/light/)                 | brightness control | Pacman          |
+
+### Theming:
+
+| Package Name                                                      | Description      | Package Manager |
+| ----------------------------------------------------------------- | ---------------- | --------------- |
+| [ kvantum ](https://archlinux.org/packages/extra/x86_64/kvantum/) | theming QT apps  | Pacman          |
+| [ qt5ct ](https://archlinux.org/packages/extra/x86_64/qt5ct/)     | theming QT5 apps | Pacman          |
+| [ nwg-look ](https://aur.archlinux.org/packages/nwg-look)         | theming GTK apps | AUR             |
+
+### Apps:
+
+| Package Name                                                                                                          | Description                    | Package Manager |
+| --------------------------------------------------------------------------------------------------------------------- | ------------------------------ | --------------- |
+| [ firefox ](https://archlinux.org/packages/extra/x86_64/firefox/)                                                     | browser                        | Pacman          |
+| [ kitty ](https://archlinux.org/packages/extra/x86_64/kitty/)                                                         | terminal                       | Pacman          |
+| [ nemo ](https://archlinux.org/packages/extra/x86_64/nemo/)                                                           | file manager                   | Pacman          |
+| [ ranger ](https://archlinux.org/packages/extra/any/ranger/)                                                          | terminal file manager          | Pacman          |
+| [ ueberzug ](https://archlinux.org/packages/extra/x86_64/ueberzug/)                                                   | for ranger to display images   | Pacman          |
+| [ neovim ](https://archlinux.org/packages/extra/x86_64/neovim/), My config is [here](https://github.com/Gl00ria/nvim) | text editor/PDE                | Pacman          |
+| [ neovide ](https://archlinux.org/packages/extra/x86_64/neovide/)                                                     | GUI for neovim                 | Pacman          |
+| [ lazygit ](https://archlinux.org/packages/extra/x86_64/lazygit/)                                                     | terminal UI for git commands   | Pacman          |
+| [ OBS-Studio ](https://archlinux.org/packages/extra/x86_64/obs-studio/)                                               | Video recording & steaming app | Pacman          |
+| ~~[ wofi ](https://archlinux.org/packages/extra/x86_64/wofi/)~~                                                       | app launcher                   | Pacman          |
+| [ rofi-lbonn-wayland-git ](https://aur.archlinux.org/packages/rofi-lbonn-wayland-git)                                 | app launcher                   | AUR             |
+| [ waybar-hyprland ](https://aur.archlinux.org/packages/waybar-hyprland)                                               | status bar                     | AUR             |
+| [ wpaperd ](https://aur.archlinux.org/packages/wpaperd)                                                               | wallpaper app                  | AUR             |
+| [ swaylock-effects-git ](https://aur.archlinux.org/packages/swaylock-effects-git)                                     | lockscreen                     | AUR             |
+| ~~[swaylockd](https://github.com/jirutka/swaylockd)~~                                                                 | Launcher for swaylock          | see the link    |
+| [ wlogout ](https://aur.archlinux.org/packages/wlogout)                                                               | logout screen                  | AUR             |
+| [ hyprpicker-git ](https://aur.archlinux.org/packages/hyprpicker-git)                                                 | Color Picker                   | AUR             |
+| [ cava ](https://aur.archlinux.org/packages/cava)                                                                     | Audio Visualizer               | AUR             |
+| [ tty-clock ](https://aur.archlinux.org/packages/tty-clock)                                                           | Terminal Clock                 | AUR             |
+| [ eww-wayland ](https://aur.archlinux.org/packages/eww-wayland)                                                       | Elkowars Wacky Widgets         | AUR             |
+| [rhythmbox](https://archlinux.org/packages/extra/x86_64/rhythmbox/)                                                   | music player                   | Pacman          |
+
+### Shells:
+
+| Package Name                                                                                                      | Description            | Package Manager |
+| ----------------------------------------------------------------------------------------------------------------- | ---------------------- | --------------- |
+| [ zsh ](https://archlinux.org/packages/extra/x86_64/zsh/)                                                         | main shell             | Pacman          |
+| bash                                                                                                              |                        | oh C'mon :)     |
+| [ fish ](https://archlinux.org/packages/extra/x86_64/fish/) with [Fisher](https://github.com/jorgebucaran/fisher) | Fisher: Plugin manager | Pacman          |
+| [ starship ](https://archlinux.org/packages/extra/x86_64/starship/)                                               | default shell prompt   | Pacman          |
+
+NOTE:
+
+- [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh) &
+  [powerlevel10k-theme](https://github.com/romkatv/powerlevel10k)
+  are available and configured for ZSH as well.
 
 ### Optional:
 
-- [hyprpicker-git](https://github.com/hyprwm/hyprpicker): Color Picker.
-- [cava](https://github.com/karlstav/cava): Audio Visualizer.
-- [tty-clock](https://github.com/xorg62/tty-clock): Terminal Clock.
-- [gamemode](https://aur.archlinux.org/packages/gamemode-git).
-- [boo-grub](https://github.com/PROxZIMA/boo-grub): GRUB bootloader theme.
-- [libinput-gestures](https://aur.archlinux.org/packages/libinput-gestures): Actions Gestures for the touchpad.
-- [OBS-Studio](https://wiki.archlinux.org/title/Open_Broadcaster_Software): Video recording & steaming app.
-- Screensharing:
-  - [slurp](https://github.com/emersion/slurp).
-  - [xdg-desktop-portal-hyprland](https://github.com/hyprwm/xdg-desktop-portal-hyprland).
-
-### Themes & Icons:(Choose one)
-
-- Tokyonight-night:
-
-```
-cd ~/Downloads
-git clone https://github.com/Fausto-Korpsvart/Tokyo-Night-GTK-Theme.git
-cd Tokyo-Night-GTK-Theme/
-sudo cp -r themes/Tokyonight-Dark-BL-LB /usr/share/themes/
-```
-
-- Tokyonight-Moon:
-
-```
-cd ~/Downloads
-git clone https://github.com/Fausto-Korpsvart/Tokyo-Night-GTK-Theme.git
-cd Tokyo-Night-GTK-Theme/
-sudo cp -r icons/Tokyonight-Moon /usr/share/icons/
-```
-
-### Cursor:
-
-```
-cd ~/Downloads
-git clone https://github.com/EliverLara/Sweet.git -b nova
-cd Sweet/
-sudo cp -r kde/cursors/Sweet-cursors /usr/share/icons/
-```
-
-### SDDM: [boo-sddm](https://github.com/PROxZIMA/boo-sddm)
+### SDDM theme: [boo-sddm](https://github.com/PROxZIMA/boo-sddm)
 
 ```
 git clone https://github.com/PROxZIMA/boo-sddm.git
@@ -107,3 +186,179 @@ sudo vim /etc/sddm.conf
 ### Add 'boo' to 'Theme.Current' in '/etc/sddm.conf'
 sudo vim /etc/sddm.conf
 ```
+
+### GRUB theme, Choose one:
+
+- [Top-5-Bootloader-Themes](https://github.com/ChrisTitusTech/Top-5-Bootloader-Themes)
+- [Boo](https://github.com/PROxZIMA/boo-grub)
+
+# Requirements:
+
+### windows/workspaces:
+
+| Key                          | Description                                |
+| ---------------------------- | ------------------------------------------ |
+| super + space                | toggle floating                            |
+| alt + return                 | toogle fullscreen (without hiding the bar) |
+| super + ctrl + f             | toggle fullscreen (with hiding the bar)    |
+| super + ctrl + c             | centerwindow                               |
+| super + ctrl + p             | dwindle (pseudo)                           |
+| super + ctrl + s             | dwindle (togglesplit)                      |
+| super + CTRL + G             | toggle group                               |
+| alt + tab                    | cyclenext                                  |
+|                              |                                            |
+| **windows movements**        |                                            |
+| ctrl + alt + n               | move window left                           |
+| ctrl + alt + r               | move winodw right                          |
+| ctrl + alt + u               | move window up                             |
+| ctrl + alt d                 | move window down                           |
+| **windows focus**            |                                            |
+| ctrl + alt + h               | move focus left                            |
+| ctrl + alt + l               | move focus right                           |
+| ctrl + alt + k               | move focus up                              |
+| ctrl + alt + j               | move focus down                            |
+|                              |                                            |
+| **workspaces same as KDE**   |                                            |
+| alt + 1                      | 1st workspace                              |
+| alt + 2                      | 2nd workspace                              |
+| alt + 3                      | 3rd workspace                              |
+| alt + 4                      | 4th workspace                              |
+| alt + 5                      | 5th workspace                              |
+| super + scroll mouse up      | next workspace                             |
+| super + scroll mouse down    | previous workspace                         |
+|                              |                                            |
+| **move window to workspace** |                                            |
+| ctrl + alt + 1               | move to workspace 1                        |
+| ctrl + alt + 2               | move to workspace 2                        |
+| ctrl + alt + 3               | move to workspace 3                        |
+| ctrl + alt + 4               | move to workspace 4                        |
+| ctrl + alt + 5               | move to workspace 5                        |
+| ctrl + alt + 6               | move to workspace 6                        |
+| ctrl + alt + 7               | move to workspace 7                        |
+| ctrl + alt + 8               | move to workspace 8                        |
+| ctrl + alt + 9               | move to workspace 9                        |
+|                              |                                            |
+
+### Apps:
+
+| Key                 | Description                |
+| ------------------- | -------------------------- |
+| alt + q             | kill active window         |
+| super + escape      | kill hyprland session      |
+| super + return      | terminal (kitty)           |
+| super + l           | wlogout                    |
+| super + w           | toggle waybar              |
+| ctrl + alt + delete | open btop                  |
+| alt + space         | launch app                 |
+| super + tab         | switch between opened apps |
+| super + shift + t   | select theme menu          |
+| super + shift + m   | select rofi style          |
+| super + shift + w   | select wallpaper menu      |
+| super + shift + v   | open clipboard             |
+| super + shift + f   | browse file files          |
+
+### Screenshot:
+
+| Key                | Description                |
+| ------------------ | -------------------------- |
+| ctrl + alt + print | screenshot all monitors    |
+| print              | screenshot current monitor |
+| shift + print      | select region              |
+
+### Eww speific:
+
+| Key              | Description        |
+| ---------------- | ------------------ |
+| super + ctrl + e | start eww's daemon |
+| super + ctrl + o | open settings      |
+| super + ctrl + d | open dashboard     |
+
+### Media control:
+
+| Key_1             | Special key          | Description    |
+| ----------------- | -------------------- | -------------- |
+| super + shift + n | XF86AudioNext        | next music     |
+| super + shift + b | XF86AudioPrev        | previous music |
+| super + shift + p | XF86AudioPause       | pause          |
+| ------            | XF86AudioPlay        | play           |
+| ------            | XF86AudioRaiseVolume | volume up      |
+| ------            | XF86AudioLowerVolume | volume down    |
+| ------            | XF86AudioMute        | mute speaker   |
+| ------            | XF86AudioMicMute     | mute mic       |
+
+### Media control:
+
+| Key_1  | Special key           | Description     |
+| ------ | --------------------- | --------------- |
+| ------ | XF86MonBrightnessUp   | brightness up   |
+| ------ | XF86MonBrightnessDown | brightness down |
+
+### waybar speific:
+
+| Icon (from left to right)  | Action                | Description                          |
+| -------------------------- | --------------------- | ------------------------------------ |
+| drop                       | left click            | app launcher                         |
+| drop                       | right click           | switch between opend apps            |
+| ------                     | --------------------- | ---------------                      |
+| package                    | left click            | update packages (arch based destors) |
+| ------                     | --------------------- | ---------------                      |
+| computer (cpu)             | left click            | open mission-center                  |
+| computer (cpu)             | right click           | btop                                 |
+| ------                     | --------------------- | ---------------                      |
+| gpu                        | left click            | open mission-center                  |
+| gpu                        | right click           | nvidia-smi                           |
+| ------                     | --------------------- | ---------------                      |
+| memory                     | left click            | open mission-center                  |
+| memory                     | right click           | btop                                 |
+| ------                     | --------------------- | ---------------                      |
+| temperature                | N/A                   | N/A                                  |
+| ------                     | --------------------- | ---------------                      |
+| disk                       | left click            | change display format                |
+| disk                       | right click           | ncdu                                 |
+| ------                     | --------------------- | ---------------                      |
+| IP                         | left click            | change display format                |
+| IP                         | right click           | open nm-connection-editor            |
+| ------                     | --------------------- | ---------------                      |
+| workspaces                 | scroll up             | next workspace                       |
+| workspace                  | scroll down           | previous workspace                   |
+| ------                     | --------------------- | ---------------                      |
+| speaker                    | scroll up             | volume up                            |
+| speaker                    | scroll down           | volume down                          |
+| speaker                    | left click            | pavucontrol                          |
+| ------                     | --------------------- | ---------------                      |
+| brightness (sun/moon) icon | scroll up             | brightness up                        |
+| brightness (sun/moon) icon | scroll down           | brightness down                      |
+| brightness (sun/moon) icon | left click            | hyprshade toggle extradark           |
+| brightness (sun/moon) icon | right click           | hyprshade toggle blufilter           |
+| ------                     | --------------------- | ---------------                      |
+| battary                    | left click            | cpupower-gui                         |
+| ------                     | --------------------- | ---------------                      |
+| notification               | left click            | open notification center             |
+| notification               | right click           | DON NOT DUSTURB                      |
+| ------                     | --------------------- | ---------------                      |
+| tray                       | depends               | depends                              |
+| ------                     | --------------------- | ---------------                      |
+| time/calendar              | left click            | change display format                |
+| ------                     | --------------------- | ---------------                      |
+| weather                    | left click            | next wallpaper                       |
+| ------                     | --------------------- | ---------------                      |
+| power                      | left click            | wlogout                              |
+
+### pyprland speific:
+
+| Key       | Description                          |
+| --------- | ------------------------------------ |
+| super + t | toggle terminal                      |
+| super + f | toggle file manager (nemo)           |
+| super + c | toggle cava                          |
+| super + m | toggle music player (rhythmbox)      |
+| super + v | tooggle volume control (pavucontrol) |
+| super + n | newtork manager                      |
+| super + b | toggle bluetooth manager (blueman)   |
+
+### Credits:
+
+- [Hyprland](https://hyprland.org/): for this great WM, but Ahhh NVIDIA...... :(
+- [prasanthrangan](https://github.com/prasanthrangan/hyprdots/tree/main): for rofi's implementation
+- [end-4](https://github.com/end-4/dots-hyprland/tree/hybrid): for eww's implementation
+- [ChrisTitusTech](https://github.com/ChrisTitusTech/) & [PROxZIMA](https://github.com/PROxZIMA/): for GRUB themes implementation

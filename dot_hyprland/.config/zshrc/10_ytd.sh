@@ -1,31 +1,3 @@
-#_______________________________________________________________________________________#
-#                                                                                       #
-#              ██████╗ ██╗      ██████╗  ██████╗ ██████╗ ██╗ █████╗                     #
-#             ██╔════╝ ██║     ██╔═████╗██╔═████╗██╔══██╗██║██╔══██╗                    #
-#             ██║  ███╗██║     ██║██╔██║██║██╔██║██████╔╝██║███████║                    #
-#             ██║   ██║██║     ████╔╝██║████╔╝██║██╔══██╗██║██╔══██║                    #
-#             ╚██████╔╝███████╗╚██████╔╝╚██████╔╝██║  ██║██║██║  ██║                    #
-#              ╚═════╝ ╚══════╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═╝╚═╝╚═╝  ╚═╝                    #
-#_______________________________________________________________________________________#
-#                                                                                       #
-#                                                                                       #
-#             :   Configured by  :  Gl00ria @gl00ria                                    #
-#             :     GitHub       :  https://github.com/gl00ria                          #
-#                                                                                       #
-#             :     @file        :  10_ytd.sh                                           #
-#             :     @folder      :  ~/.config/zshrc/                                    #
-#             :     @brief       :  aliases for YouTube-dl                              #
-#             :     @requires    :  zshShell, youtube-dl                                #
-#             :     @optional    :  none                                                #
-#             :     @Note        :  none                                                #
-#_______________________________________________________________________________________#
-#                                                                                       #
-#             :    Created on   :   26, Sep, 2022                                       #
-#             :   Last Updated  :   26, Sep, 2022                                       #
-# Update History :                                                                      #
-#_______________________________________________________________________________________#
-#                                                                                       #
-
 alias ytd_playist= 'echo "[ Downloading a playlist using yt-dlp ]; yt-dlp --playlist-random -v --extract-audio --audio-quality 0'
 ## Download video & convert to mp3 | ytd -a filename.txt
 alias ytd_list_from_file='echo "[ Download and convert to mp3 ]"; youtube-dl -i --extract-audio --audio-format mp3 -o "%(title)s.%(ext)s" -a'

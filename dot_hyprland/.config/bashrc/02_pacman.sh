@@ -1,31 +1,3 @@
-#_______________________________________________________________________________________#
-#                                                                                       #
-#              ██████╗ ██╗      ██████╗  ██████╗ ██████╗ ██╗ █████╗                     #
-#             ██╔════╝ ██║     ██╔═████╗██╔═████╗██╔══██╗██║██╔══██╗                    #
-#             ██║  ███╗██║     ██║██╔██║██║██╔██║██████╔╝██║███████║                    #
-#             ██║   ██║██║     ████╔╝██║████╔╝██║██╔══██╗██║██╔══██║                    #
-#             ╚██████╔╝███████╗╚██████╔╝╚██████╔╝██║  ██║██║██║  ██║                    #
-#              ╚═════╝ ╚══════╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═╝╚═╝╚═╝  ╚═╝                    #
-#_______________________________________________________________________________________#
-#                                                                                       #
-#                                                                                       #
-#             :   Configured by  :  Gl00ria @gl00ria                                    #
-#             :     GitHub       :  https://github.com/gl00ria                          #
-#                                                                                       #
-#             :     @file        :  02_pacman.sh                                        #
-#             :     @folder      :  ~/.config/bash/                                    	#
-#             :     @brief       :  aliases for the pkg manager "PACMAN"                #
-#             :     @requires    :  zshShell, pacman, fzf, expac                        #
-#             :     @optional    :  none                                                #
-#             :     @Note        :  none                                                #
-#_______________________________________________________________________________________#
-#                                                                                       #
-#             :    Created on   :   26, Sep, 2022                                       #
-#             :   Last Updated  :   26, Sep, 2022                                       #
-# Update History :                                                                      #
-#_______________________________________________________________________________________#
-#
-
 alias sync="sudo pacman -Syy"       # Refresh all pkgs lists after updating the mirrorlist
 alias pacupgrade="sudo pacman -Syu" # Upgrade
 
@@ -50,12 +22,12 @@ alias recent_installed_packages_long="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' 
 
 # list packages you've explicity installed except for "base & base-devel"
 pacpkg_list_exept_base_base_devel() {
-    pacman -Qei | awk '/^Name/ { name=$3 } /^Groups/ { if ( $3 != "base" && $3 != "base-devel" ) { print name } }'
+	pacman -Qei | awk '/^Name/ { name=$3 } /^Groups/ { if ( $3 != "base" && $3 != "base-devel" ) { print name } }'
 }
 
 ## Search & install pkgs in pacman's repo & mark the installed pkgs with *
 pacsearch() {
-    pacman -Sl | awk '{print $2($4=="" ? "" : " *")}' | fzf --multi --ansi --preview 'pacman -Si {1}' --reverse | xargs -ro sudo pacman -S
+	pacman -Sl | awk '{print $2($4=="" ? "" : " *")}' | fzf --multi --ansi --preview 'pacman -Si {1}' --reverse | xargs -ro sudo pacman -S
 }
 
 alias pkgtree="pactree" # Find out the dependencies for a pkg
@@ -67,7 +39,7 @@ alias pacremove="pacman -Qq | fzf --multi --preview 'pacman -Qi {1}' | xargs -ro
 alias pacremove_with_settings="pacman -Qq | fzf --multi --preview 'pacman -Qi {1}' | xargs -ro sudo pacman -Rns" # Remove a pkg, including its settings & dependencies
 # remove unneeded pkgs
 pacuseless() {
-    sudo pacman -Rsn $(pacman -Qdtq)
+	sudo pacman -Rsn "$(pacman -Qdtq)"
 }
 
 alias unlock="sudo rm /var/lib/pacman/db.lck" # Remove pacman lock

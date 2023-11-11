@@ -1,0 +1,94 @@
+/* applies only to floating block, not the notifications in control center */
+.floating-notifications .notification-row {
+    padding: 0;
+}
+
+.notification-row {
+    outline: none;
+    margin: 0;
+    padding: 10px;
+    /* BellotaText 13, Comfortaa 13, Jura 14, montserrat alternates 13 */
+    font: 1em shantell sans;
+}
+
+.notification-row:focus,
+.notification-row:hover {
+    background: alpha(@color6, 0.2);
+}
+
+.notification {
+    margin: 6px;
+    box-shadow: 3px 3px 0 0 @color6;
+    border-radius: 8px 15px 15px 8px;
+    background: alpha(@background, 0.8);
+}
+
+.low {
+    border: 1px solid @color3;
+}
+.normal {
+    border: 1px solid @color13;
+} /* or color5 */
+.critical {
+    background: alpha(black, 0.89);
+    border: 1px solid white;
+    color: #eeeeee;
+}
+
+.notification-content {
+    padding: 5px 0;
+    color: @foreground;
+    background: transparent;
+}
+
+/* no mouse, ty */
+.close-button,
+.close-button:hover {
+    background: transparent;
+    color: transparent;
+}
+
+/* yet another useless wrapper */
+.notification-default-action,
+.notification-action,
+.notification-default-action:hover,
+.notification-action:hover {
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    background: transparent;
+    border: none;
+}
+
+.image {
+    margin-right: -15px;
+}
+
+.body-image {
+    margin-top: 6px;
+    background-color: white;
+    border-radius: 12px;
+}
+
+.summary {
+    font-size: 1.2em;
+    font-weight: bold;
+    background: transparent;
+    color: @color3;
+    text-shadow: none;
+}
+
+.time {
+    font-size: 1.2em;
+    font-weight: normal;
+    color: @color8;
+    margin-bottom: 5px;
+    font-style: italic;
+}
+
+.body {
+    font-size: 12pt;
+    font-weight: normal;
+    background: transparent;
+    color: @foreground;
+}

@@ -1,40 +1,14 @@
-#_______________________________________________________________________________________#
-#                                                                                       #
-#              ██████╗ ██╗      ██████╗  ██████╗ ██████╗ ██╗ █████╗                     #
-#             ██╔════╝ ██║     ██╔═████╗██╔═████╗██╔══██╗██║██╔══██╗                    #
-#             ██║  ███╗██║     ██║██╔██║██║██╔██║██████╔╝██║███████║                    #
-#             ██║   ██║██║     ████╔╝██║████╔╝██║██╔══██╗██║██╔══██║                    #
-#             ╚██████╔╝███████╗╚██████╔╝╚██████╔╝██║  ██║██║██║  ██║                    #
-#              ╚═════╝ ╚══════╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═╝╚═╝╚═╝  ╚═╝                    #
-#_______________________________________________________________________________________#
-#                                                                                       #
-#                                                                                       #
-#                                                                                       #
-# :   Configured by  :  Gl00ria @gl00ria                                                #
-# :     GitHub       :  https://github.com/gl00ria                                      #
-#                                                                                       #
-#                                                                                       #
-#                                                                                       #
-# @file   ,  starship.toml                                                              #
-# @folder ,  starship                                                                   #
-# @brief  ,  Starship configuration. for more go to https://starship.rs/                #
-#                                                                                       #
-#                                                                                       #
-#_______________________________________________________________________________________#
-#                                                                                       #
-
 # 
-format = """
-[($localip)                                                            ──────────────── ($username) @ ($shell)($sudo)────────────────](bold #ce7e00)
-[](bold #ce7e00)$jobs$directory
-[❯](bold #ce7e00) """
-
 # format = """
-# [╭─user───❯](bold blue) $username
-# [┣─system─❯](bold yellow) $hostname
-# [┣─project❯](bold red) $directory$rust$git_branch$git_state$git_status$package$golang$terraform$docker_context$python$docker_context$nodejs
-# [╰─cmd────❯](bold green)
-# """
+# [($localip)                                                            ──────────────── ($username) @ ($shell)($sudo)────────────────](bold #ce7e00)
+# [](bold #ce7e00)$jobs$directory
+# [❯](bold #ce7e00) """
+
+format = """
+$os $username @ $shell $sudo
+[┣❯](bold red) $directory
+[╰──❯ ](bold green)
+"""
 
 right_format ="""$shlvl$cmd_duration$aws$azure$buf$bun$c$cmake$conda$container$crystal$daml$dart$deno$docker_context$dotnet
 $elixir$elm$erlang$gcloud$golang$git_branch$git_commit$git_state$git_matrics$git_status$haskell$helm$java$julia$kotlin$kubernetes
@@ -44,7 +18,7 @@ $spack$swift$terraform$vagrant$vlang$vcsh$zig$character"""
 [username]
 disabled = false
 show_always = true
-style_user = "bold #FF0000"
+# style_user = "bold #FF0000"
 format = "[$user]($style)"
 
 [hostname]
@@ -56,13 +30,15 @@ format =  "[$hostname]($style)"
 [sudo]
 disabled = false
 symbol = " "
-style = "bold #434343"
+# style = "bold #434343"
+style = "bold #FF0000"
 format = "[as $symbol]($style)"
 allow_windows = false
 
 [shell]
 disabled = false
-style = "bold #FF0000"
+# style = "bold #FF0000"
+style = "bold green"
 bash_indicator = ""
 zsh_indicator = "zsh"
 fish_indicator = ""
@@ -90,6 +66,7 @@ format = "[( )$localipv4]($style) "
 [directory]
 disabled = false
 truncation_length = 8
+truncation_symbol = "…/"
 home_symbol = " "
 read_only = " "
 format = "[$path](bold cyan)[/](bold green)[$read_only](bold #FF0000) "
@@ -99,11 +76,12 @@ truncate_to_repo = true
 [character]
 disabled = false
 success_symbol = "[](bold green)"
-error_symbol = "[](bold #FF0000)"
+error_symbol = "[✗](bold #FF0000)"
 format = "$symbol"
 
 [cmd_duration]
 disabled = false
+min_time = 10_000  # Show command duration over 10,000 milliseconds (=10 sec)
 style = "bold yellow"
 format = "took [$duration]($style) "
 
@@ -132,7 +110,7 @@ tag_symbol = "笠"
 format = "[\\($hash$tag\\)]($style) "
 only_detached = true
 tag_disabled = false
-commit_hash_length = 7
+commit_hash_length = 8
 
 [git_state]
 disabled = false
@@ -146,6 +124,33 @@ bisect = " BISECTING"
 am = " AM"
 am_or_rebase = " AM/REBASE"
 
+
+[git_status]
+disabled = false
+style = "bold cyan"
+conflicted = "= "
+# ahead = "⇡ ${count} "
+# behind = "⇣ ${count} "
+diverged = "󰧈 "
+# up_to_date = "  "
+# untracked = "? "
+# stashed = "$ "
+# modified = "! "
+# staged = '[++\($count\)](green)'
+renamed = "凜 "
+# deleted = " "
+untracked = '[ $count](bold yellow) '
+up_to_date = " 󰥔 "
+staged = '[ $count](bold green) '
+stashed = "[ ](cyan) "
+deleted = '[ $count](bold red) '
+modified= '[ $count](bold blue) '
+behind = '[ $count](bold purple) '
+ahead = '[ $count](bold purple) '
+format = '([$all_status$ahead_behind]($style))'
+# format = '([\[$all_status$ahead_behind\]]($style) )'
+ignore_submodules = false
+
 [git_metrics]
 disabled = false
 added_style = "bold green"
@@ -153,22 +158,51 @@ deleted_style = "bold red"
 format = '[+$added]($added_style)/[-$deleted]($deleted_style) '
 only_nonzero_diffs = true # Render status only for changed items.
 
-[git_status]
+[os]
+format = '[$symbol](bold blue)'
 disabled = false
-style = "bold cyan"
-conflicted = "= "
-ahead = "⇡ ${count} "
-behind = "⇣ ${count} "
-diverged = "⇕ "
-up_to_date = "  "
-untracked = "? "
-stashed = "$ "
-modified = "! "
-staged = '[++\($count\)](green)'
-renamed = "凜 "
-deleted = " "
-format = '([\[$all_status$ahead_behind\]]($style) )'
-ignore_submodules = false
+
+[os.symbols]
+Alpaquita = " "
+Alpine = " "
+Amazon = " "
+Android = " "
+Arch = " "
+Artix = " "
+CentOS = " "
+Debian = " "
+DragonFly = " "
+Emscripten = " "
+EndeavourOS = ""
+# EndeavourOS = ""
+Fedora = " "
+FreeBSD = " "
+Garuda = "󰛓 "
+Gentoo = " "
+HardenedBSD = "󰞌 "
+Illumos = "󰈸 "
+Linux = " "
+Mabox = " "
+Macos = " "
+Manjaro = " "
+Mariner = " "
+MidnightBSD = " "
+Mint = " "
+NetBSD = " "
+NixOS = " "
+OpenBSD = "󰈺 "
+openSUSE = " "
+OracleLinux = "󰌷 "
+Pop = " "
+Raspbian = " "
+Redhat = " "
+RedHatEnterprise = " "
+Redox = "󰀘 "
+Solus = "󰠳 "
+SUSE = " "
+Ubuntu = " "
+Unknown = " "
+Windows = "󰍲 "
 
 [aws]
 disabled = false
@@ -408,7 +442,6 @@ format = '[$symbol$context( \($namespace\))]($style) in '
 detect_extensions = []
 detect_files = []
 detect_folders = []
-
 [lua]
 disabled = false
 symbol = " "
@@ -417,7 +450,8 @@ format = "via [$symbol($version )]($style)"
 version_format = "v${raw}"  # Available >> raw, major, minor & patch
 detect_extensions = ["lua"]
 detect_files = [".lua-version"]
-detect_folders = ["lua"]
+# detect_folders = ["lua"]
+detect_folders = []
 lua_binary = "lua"
 
 [nim]

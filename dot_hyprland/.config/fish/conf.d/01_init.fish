@@ -1,32 +1,4 @@
-#_______________________________________________________________________________________#
-#                                                                                       #
-#              ██████╗ ██╗      ██████╗  ██████╗ ██████╗ ██╗ █████╗                     #
-#             ██╔════╝ ██║     ██╔═████╗██╔═████╗██╔══██╗██║██╔══██╗                    #
-#             ██║  ███╗██║     ██║██╔██║██║██╔██║██████╔╝██║███████║                    #
-#             ██║   ██║██║     ████╔╝██║████╔╝██║██╔══██╗██║██╔══██║                    #
-#             ╚██████╔╝███████╗╚██████╔╝╚██████╔╝██║  ██║██║██║  ██║                    #
-#              ╚═════╝ ╚══════╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═╝╚═╝╚═╝  ╚═╝                    #
-#_______________________________________________________________________________________#
-#                                                                                       #
-#                                                                                       #
-#             :   Configured by  :  Gl00ria @gl00ria                                    #
-#             :     GitHub       :  https://github.com/gl00ria                          #
-#                                                                                       #
-#             :     @file        :  01_init.fish                                        #
-#             :     @folder      :  ~/.config/fish/conf.d/                              #
-#             :     @brief       :  setting PATHS, exports                              #
-#             :     @requires    :  fishShell, (1) starship                             #
-#             :     @optional    :  none                                                #
-#             :     @Note        :  none                                                #
-#_______________________________________________________________________________________#
-#                                                                                       #
-#             :    Created on   :   26, Sep, 2022                                       #
-#             :   Last Updated  :   26, Sep, 2022                                       #
-# Update History :                                                                      #
-#_______________________________________________________________________________________#
-#
-
-set fish_greeting         ## No fishy greeting anymore
+set fish_greeting ## No fishy greeting anymore
 
 # Starship, Cross-shell prompt
 # (1) Starship prompt
@@ -35,11 +7,11 @@ starship init fish | source
 
 ## PATH
 if [ -d $HOME/.bin ]
-  set PATH $HOME/.bin $PATH
+    set PATH $HOME/.bin $PATH
 end
 
 if [ -d $HOME/.local/bin ]
-  set PATH $HOME/.local/bin $PATH
+    set PATH $HOME/.local/bin $PATH
 end
 
 ## Rofi
@@ -47,9 +19,9 @@ set -x PATH $HOME/.config/rofi/bin $PATH
 
 ## Preferred editor for local and remote sessions
 if [ -n $SSH_CONNECTION ]
-  set -x EDITOR $( echo $(which nvim) || echo $(which vim) || echo $(which vi) )
+    set -x EDITOR $( echo $(which nvim) || echo $(which vim) || echo $(which vi) )
 else
-  set -x EDITOR $( echo $(which nvim) || echo $(which vim) || echo $(which vi) )
+    set -x EDITOR $( echo $(which nvim) || echo $(which vim) || echo $(which vi) )
 end
 
 ## The man database
