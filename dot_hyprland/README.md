@@ -1,6 +1,12 @@
 ### Dotfiles for [HyprlandWM](https://wiki.hyprland.org/Getting-Started/Installation/).
+![wall](https://github.com/Gl00ria/dotfiles/assets/74514103/917e4899-c11b-4648-85e0-e8864eb37b3d)
+![rofi_notifications](https://github.com/Gl00ria/dotfiles/assets/74514103/121803ba-09b5-4688-af9b-1cdbff820e93)
+![nvim](https://github.com/Gl00ria/dotfiles/assets/74514103/572d62ab-c2bf-4ee4-b747-035e45fa9c86)
+![nf_cava_btop](https://github.com/Gl00ria/dotfiles/assets/74514103/f6ea595d-a0ce-4b97-af5c-128435470918)
+![eww_settings](https://github.com/Gl00ria/dotfiles/assets/74514103/981b4f76-e527-4cdc-8835-6fca1644b49a)
+![dashboard](https://github.com/Gl00ria/dotfiles/assets/74514103/5a1c9696-f8c0-4ce8-ade6-7e79c2389be7)
 
-![hyprland](https://github.com/Gl00ria/dotfiles/assets/74514103/8f3ae6d1-ac6a-4317-8bef-b95d2326f6ca)
+
 
 # Requirements:
 
@@ -192,7 +198,7 @@ sudo vim /etc/sddm.conf
 - [Top-5-Bootloader-Themes](https://github.com/ChrisTitusTech/Top-5-Bootloader-Themes)
 - [Boo](https://github.com/PROxZIMA/boo-grub)
 
-# Requirements:
+# Keymaps:
 
 ### windows/workspaces:
 
