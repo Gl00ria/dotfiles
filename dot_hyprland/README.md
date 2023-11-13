@@ -362,6 +362,53 @@ sudo vim /etc/sddm.conf
 | super + n | newtork manager                      |
 | super + b | toggle bluetooth manager (blueman)   |
 
+### How to?
+Please note this is my personal dotfiles, meaning read the Nvidia & Apps requirements since you might not need some of them or might be already installed on your system. Also note that this repo has two different configurations, one for KDE & the other for hyprland, Most probably you are here for the hyprland config, so let's get started:
+1. clone the repo & cd to into it *this will take time*:
+```
+cd ~/Downloads
+git clone https://github.com/Gl00ria/dotfiles
+cd dotfiles
+```
+2. Remove the KDE dotfiles:
+```
+rm -r dot_kde
+```
+
+3. Copy the icons & themes folders to your HOME:
+```
+cp -r .icons /home/user_name/
+cp -r .themes /home/user_name/
+```
+4. Copy the fonts to your fonts directory:
+```
+cp -r .local/share/fonts/* ~/.local/share/fonts/
+```
+
+5. Copy the wallpapers to your Picture directory:
+```
+cp -r Pictures/SlideShow ~/Pictures
+```
+
+6. Backup your .config then copy the new config:
+```
+mv ~/.config ~/.config_backup
+mv dot_hyprland ~/.config
+```
+So far should work now, enjoy.
+
+### Bounus if you want the shell config:
+1. Back up your .bashrc & .zshrc
+```
+mv ~/.bashrc ~/.bashrc_backup
+mv ~/.zshrc ~/.zshrc_backup
+```
+2. have the new bashrc & zshrc
+```
+cp .bashrc /home/user_name
+cp .zshrc /home/user_name
+```
+
 ### Credits:
 
 - [Hyprland](https://hyprland.org/): for this great WM, but Ahhh NVIDIA...... :(
