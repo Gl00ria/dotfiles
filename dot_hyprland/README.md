@@ -174,11 +174,16 @@
 | [ fish ](https://archlinux.org/packages/extra/x86_64/fish/) with [Fisher](https://github.com/jorgebucaran/fisher) | Fisher: Plugin manager | Pacman          |
 | [ starship ](https://archlinux.org/packages/extra/x86_64/starship/)                                               | default shell prompt   | Pacman          |
 
-NOTE:
+NOTE_1:
 
 - [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh) &
   [powerlevel10k-theme](https://github.com/romkatv/powerlevel10k)
   are available and configured for ZSH as well.
+NOTE_2: zsh plugins (AUR):
+- [zsh-autosuggestions-git](https://aur.archlinux.org/packages/zsh-autosuggestions-git)
+- [zsh-fast-syntax-highlighting](https://aur.archlinux.org/packages/zsh-fast-syntax-highlighting)
+- [forgit](https://aur.archlinux.org/packages/forgit)
+
 
 ### Optional:
 
