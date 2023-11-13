@@ -21,8 +21,8 @@
     "network"
   ],
   "modules-center": [
-    "hyprland/workspaces"
-    // "hyprland/window"
+    "hyprland/workspaces",
+    "hyprland/window"
     // "hyprland/language"
   ],
   "modules-right": [
@@ -131,24 +131,25 @@
       "active": "󰝥",
       "default": "󰝦"
     },
-    //"hyprland/window": {
-    //  "format": "  {}",
-    //  "separate-outputs": true,
-    //  "max-length": 32,
-    //  "rewrite": {
-    //    // "(.*) — Mozilla Firefox": "$1 󰈹",
-    //    "(.*)Mozilla Firefox": "Firefox 󰈹",
-    //    // "(.*) - Visual Studio Code": "$1 󰨞",
-    //    "(.*)Visual Studio Code": "Code 󰨞",
-    //    "(.*) — Dolphin": "$1 󰉋",
-    //    "(.*)Spotify": "Spotify 󰓇",
-    //    "(.*)Steam": "Steam 󰓓"
-    //  }
-    //},
-    //"persistent-workspaces": {
-    //  "*": 5 // 5 workspaces by default on every monitor
-    //},
     "sort-by-number": true
+  },
+  "hyprland/window": {
+    "format": "  {}",
+    "separate-outputs": true,
+    "max-length": 32,
+    "rewrite": {
+      "(.*)fish": "> [$1]",
+      "(.*)neovide": "neovide 󰕷 ", // doesn't seem to work
+      "(.*)Mozilla Firefox": "Firefox 󰈹",
+      "(.*)BlueMail": "BlueMail 󰊫 ",
+      "(.*)Visual Studio Code": "Code 󰨞",
+      "(.*)Dolphin": "$1 󰉋",
+      "(.*)Spotify": "Spotify 󰓇",
+      "(.*)Steam": "Steam 󰓓"
+    }
+  },
+  "persistent-workspaces": {
+    "*": 5 // 5 workspaces by default on every monitor
   },
   "pulseaudio": {
     "format": "{icon} {volume}",
