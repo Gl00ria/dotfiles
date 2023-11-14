@@ -1,6 +1,7 @@
 ### Dotfiles for [HyprlandWM](https://wiki.hyprland.org/Getting-Started/Installation/).
 
 ![wall](https://github.com/Gl00ria/dotfiles/assets/74514103/917e4899-c11b-4648-85e0-e8864eb37b3d)
+![gbar_and_waybar](https://github.com/Gl00ria/dotfiles/assets/74514103/9a32f143-e85b-4274-bd90-42d4db0effea)
 ![rofi_notifications](https://github.com/Gl00ria/dotfiles/assets/74514103/121803ba-09b5-4688-af9b-1cdbff820e93)
 ![nvim](https://github.com/Gl00ria/dotfiles/assets/74514103/572d62ab-c2bf-4ee4-b747-035e45fa9c86)
 ![nf_cava_btop](https://github.com/Gl00ria/dotfiles/assets/74514103/f6ea595d-a0ce-4b97-af5c-128435470918)
