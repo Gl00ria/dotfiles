@@ -195,6 +195,8 @@ NOTE_2: zsh plugins (AUR):
 - [zsh-fast-syntax-highlighting](https://aur.archlinux.org/packages/zsh-fast-syntax-highlighting)
 - [forgit](https://aur.archlinux.org/packages/forgit)
 
+---
+
 ### Optional:
 
 ### SDDM theme: [boo-sddm](https://github.com/PROxZIMA/boo-sddm)
@@ -213,7 +215,9 @@ sudo vim /etc/sddm.conf
 - [Top-5-Bootloader-Themes](https://github.com/ChrisTitusTech/Top-5-Bootloader-Themes)
 - [Boo](https://github.com/PROxZIMA/boo-grub)
 
-# Keymaps:
+---
+
+# Keymaps/Keybinds or WHATEVER:
 
 ### windows/workspaces:
 
@@ -378,6 +382,8 @@ sudo vim /etc/sddm.conf
 | super + n | newtork manager                      |
 | super + b | toggle bluetooth manager (blueman)   |
 
+---
+
 ### How to?
 
 Please note this is my personal dotfiles, meaning read the Nvidia & Apps requirements since you might not need some of them or might be already installed on your system. Also note that this repo has two different configurations, one for KDE & the other for hyprland, Most probably you are here for the hyprland config, so let's get started:
@@ -424,6 +430,8 @@ mv dot_hyprland ~/.config
 
 So far should work now, enjoy.
 
+---
+
 ### Bounus if you want the shell config:
 
 1. Back up your .bashrc & .zshrc
@@ -439,6 +447,8 @@ mv ~/.zshrc ~/.zshrc_backup
 cp .bashrc /home/user_name
 cp .zshrc /home/user_name
 ```
+
+---
 
 ### Credits:
 
