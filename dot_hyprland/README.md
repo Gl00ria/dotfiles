@@ -1,12 +1,11 @@
 ### Dotfiles for [HyprlandWM](https://wiki.hyprland.org/Getting-Started/Installation/).
+
 ![wall](https://github.com/Gl00ria/dotfiles/assets/74514103/917e4899-c11b-4648-85e0-e8864eb37b3d)
 ![rofi_notifications](https://github.com/Gl00ria/dotfiles/assets/74514103/121803ba-09b5-4688-af9b-1cdbff820e93)
 ![nvim](https://github.com/Gl00ria/dotfiles/assets/74514103/572d62ab-c2bf-4ee4-b747-035e45fa9c86)
 ![nf_cava_btop](https://github.com/Gl00ria/dotfiles/assets/74514103/f6ea595d-a0ce-4b97-af5c-128435470918)
 ![eww_settings](https://github.com/Gl00ria/dotfiles/assets/74514103/981b4f76-e527-4cdc-8835-6fca1644b49a)
 ![dashboard](https://github.com/Gl00ria/dotfiles/assets/74514103/5a1c9696-f8c0-4ce8-ade6-7e79c2389be7)
-
-
 
 # Requirements:
 
@@ -16,11 +15,19 @@
 
 ### F\*\*\* Nvidia:
 
-| Package Name                                                                | Description    | Package Manager |
-| --------------------------------------------------------------------------- | -------------- | --------------- |
-| [ nvidia-dkms ](https://archlinux.org/packages/extra/x86_64/nvidia-dkms/)   | drivers        | Pacman          |
-| [ nvidia-utils ](https://archlinux.org/packages/extra/x86_64/nvidia-utils/) | drivers Utils  | Pacman          |
-| [ nvidia-prime ](https://archlinux.org/packages/extra/any/nvidia-prime/)    | nvidia offload | Pacman          |
+| Package Name                                                                            | Description                                        | Package Manager |
+| --------------------------------------------------------------------------------------- | -------------------------------------------------- | --------------- |
+| [ nvidia-dkms ](https://archlinux.org/packages/extra/x86_64/nvidia-dkms/)               | drivers                                            | Pacman          |
+| [ nvidia-utils ](https://archlinux.org/packages/extra/x86_64/nvidia-utils/)             | drivers Utils                                      | Pacman          |
+| [ nvidia-prime ](https://archlinux.org/packages/extra/any/nvidia-prime/)                | nvidia offload                                     | Pacman          |
+| [libva-nvidia-driver](https://archlinux.org/packages/extra/x86_64/libva-nvidia-driver/) | VA-API implementation that uses NVDEC as a backend | Pacman          |
+
+Add the following:
+
+- `nvidia nvidia_modeset nvidia_uvm nvidia_drm` to `/etc/mkinitcpio.conf` then
+  Generate new image: `sudo mkinitcpio --config /etc/mkinitcpio.conf
+--generate /boot/initramfs-custom.img`
+- Add/create the following: `options nvidia-drm modeset=1` in `/etc/modprobe.d/nvidia.conf`
 
 ### Audio & Video:
 
@@ -102,7 +109,7 @@
 | ~~[ polkit-gnome ](https://archlinux.org/packages/extra/x86_64/polkit-gnome/)~~     | Gnome's authentication agent                                      | Pacman                                                              |
 | [ parallel ](https://archlinux.org/packages/extra/any/parallel/)                    | for parallel processing                                           | Pacman                                                              |
 | [ jq ](https://archlinux.org/packages/extra/x86_64/jq/)                             | to read json files                                                | Pacman                                                              |
-| [ gojq ](https://aur.archlinux.org/packages/gojq)                               | same as above written in GO                                       | AUR                                                                 |
+| [ gojq ](https://aur.archlinux.org/packages/gojq)                                   | same as above written in GO                                       | AUR                                                                 |
 | [ swayosd-git ](https://aur.archlinux.org/packages/swayosd-git)                     | common actions like volume & capslock                             | AUR                                                                 |
 | [ btop ](https://archlinux.org/packages/extra/x86_64/btop/)                         | resources monitor                                                 | Pacman                                                              |
 | [ncdu](https://archlinux.org/packages/extra/x86_64/ncdu/)                           | disk usage analyzer                                               | Pacman                                                              |
@@ -155,13 +162,14 @@
 | ~~[ wofi ](https://archlinux.org/packages/extra/x86_64/wofi/)~~                                                       | app launcher                   | Pacman          |
 | [ rofi-lbonn-wayland-git ](https://aur.archlinux.org/packages/rofi-lbonn-wayland-git)                                 | app launcher                   | AUR             |
 | [ waybar-hyprland ](https://aur.archlinux.org/packages/waybar-hyprland)                                               | status bar                     | AUR             |
+| [gbar-git](https://aur.archlinux.org/packages/gbar-git)                                                               | anoter status bar              | AUR             |
 | [ wpaperd ](https://aur.archlinux.org/packages/wpaperd)                                                               | wallpaper app                  | AUR             |
 | [ swaylock-effects-git ](https://aur.archlinux.org/packages/swaylock-effects-git)                                     | lockscreen                     | AUR             |
 | ~~[swaylockd](https://github.com/jirutka/swaylockd)~~                                                                 | Launcher for swaylock          | see the link    |
 | [ wlogout ](https://aur.archlinux.org/packages/wlogout)                                                               | logout screen                  | AUR             |
 | [ hyprpicker-git ](https://aur.archlinux.org/packages/hyprpicker-git)                                                 | Color Picker                   | AUR             |
 | [ cava ](https://aur.archlinux.org/packages/cava)                                                                     | Audio Visualizer               | AUR             |
-| [ tty-clock ](https://aur.archlinux.org/packages/tty-clock)                                                           | Terminal Clock                 | AUR             |
+| [ ~~tty-clock~~ ](https://aur.archlinux.org/packages/tty-clock)                                                       | Terminal Clock                 | AUR             |
 | [ eww-wayland ](https://aur.archlinux.org/packages/eww-wayland)                                                       | Elkowars Wacky Widgets         | AUR             |
 | [rhythmbox](https://archlinux.org/packages/extra/x86_64/rhythmbox/)                                                   | music player                   | Pacman          |
 
@@ -181,10 +189,10 @@ NOTE_1:
   are available and configured for ZSH as well.
 
 NOTE_2: zsh plugins (AUR):
+
 - [zsh-autosuggestions-git](https://aur.archlinux.org/packages/zsh-autosuggestions-git)
 - [zsh-fast-syntax-highlighting](https://aur.archlinux.org/packages/zsh-fast-syntax-highlighting)
 - [forgit](https://aur.archlinux.org/packages/forgit)
-
 
 ### Optional:
 
@@ -260,6 +268,7 @@ sudo vim /etc/sddm.conf
 | super + return      | terminal (kitty)           |
 | super + l           | wlogout                    |
 | super + w           | toggle waybar              |
+| super + g           | toggle gbar                |
 | ctrl + alt + delete | open btop                  |
 | alt + space         | launch app                 |
 | super + tab         | switch between opened apps |
@@ -277,7 +286,7 @@ sudo vim /etc/sddm.conf
 | print              | screenshot current monitor |
 | shift + print      | select region              |
 
-### Eww speific:
+### Eww specific:
 
 | Key              | Description        |
 | ---------------- | ------------------ |
@@ -305,7 +314,7 @@ sudo vim /etc/sddm.conf
 | ------ | XF86MonBrightnessUp   | brightness up   |
 | ------ | XF86MonBrightnessDown | brightness down |
 
-### waybar speific:
+### waybar specific:
 
 | Icon (from left to right)  | Action                | Description                          |
 | -------------------------- | --------------------- | ------------------------------------ |
@@ -356,7 +365,7 @@ sudo vim /etc/sddm.conf
 | ------                     | --------------------- | ---------------                      |
 | power                      | left click            | wlogout                              |
 
-### pyprland speific:
+### pyprland specific:
 
 | Key       | Description                          |
 | --------- | ------------------------------------ |
@@ -369,47 +378,62 @@ sudo vim /etc/sddm.conf
 | super + b | toggle bluetooth manager (blueman)   |
 
 ### How to?
+
 Please note this is my personal dotfiles, meaning read the Nvidia & Apps requirements since you might not need some of them or might be already installed on your system. Also note that this repo has two different configurations, one for KDE & the other for hyprland, Most probably you are here for the hyprland config, so let's get started:
-1. clone the repo & cd to into it *this will take time*:
+
+1. clone the repo & cd to into it _this will take time_:
+
 ```
 cd ~/Downloads
 git clone https://github.com/Gl00ria/dotfiles
 cd dotfiles
 ```
+
 2. Remove the KDE dotfiles:
+
 ```
 rm -r dot_kde
 ```
 
 3. Copy the icons & themes folders to your HOME:
+
 ```
 cp -r .icons /home/user_name/
 cp -r .themes /home/user_name/
 ```
+
 4. Copy the fonts to your fonts directory:
+
 ```
 cp -r .local/share/fonts/* ~/.local/share/fonts/
 ```
 
 5. Copy the wallpapers to your Picture directory:
+
 ```
 cp -r Pictures/SlideShow ~/Pictures
 ```
 
 6. Backup your .config then copy the new config:
+
 ```
 mv ~/.config ~/.config_backup
 mv dot_hyprland ~/.config
 ```
+
 So far should work now, enjoy.
 
 ### Bounus if you want the shell config:
+
 1. Back up your .bashrc & .zshrc
+
 ```
 mv ~/.bashrc ~/.bashrc_backup
 mv ~/.zshrc ~/.zshrc_backup
 ```
+
 2. have the new bashrc & zshrc
+
 ```
 cp .bashrc /home/user_name
 cp .zshrc /home/user_name

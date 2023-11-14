@@ -55,6 +55,8 @@ udiskie &
 
 # waybar
 ~/.config/hypr/scripts/launch_waybar.sh &
+# gBar bar 0 & # main monitor
+gBar bar 1 & # secondary monitor
 
 # battery notification
 ~/.config/hypr/scripts/batterynotify.sh &
@@ -63,7 +65,7 @@ udiskie &
 eww daemon
 
 # applets
-~/.config/hypr/scripts/appindicator.py &
+# ~/.config/hypr/scripts/appindicator.py &
 blueman-applet &
 nm-applet --indicator &
 
