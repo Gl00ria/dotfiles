@@ -210,17 +210,16 @@ highlight {
 }
 
 .network-data-text {
-  /* color: #50fa7b; */
-  color: #f38ba8;
+  color: #50fa7b;
   font-size: 16px;
 }
 
 .network-up-under {
-  color: #ff5555;
+  color: #44475a;
 }
 
 .network-up-low {
-  color: #ff5555;
+  color: #50fa7b;
 }
 
 .network-up-mid-low {
@@ -228,24 +227,23 @@ highlight {
 }
 
 .network-up-mid-high {
-  color: #f1fa8c;
+  color: #ffb86c;
 }
 
 .network-up-high {
-  /* color: #bd93f9; */
-  color: #50fa7b;
+  color: #bd93f9;
 }
 
 .network-up-over {
-  color: #50fa7b;
+  color: #ff5555;
 }
 
 .network-down-under {
-  color: #ff5555;
+  color: #44475a;
 }
 
 .network-down-low {
-  color: #ff5555;
+  color: #50fa7b;
 }
 
 .network-down-mid-low {
@@ -253,20 +251,19 @@ highlight {
 }
 
 .network-down-mid-high {
-  color: #f1fa8c;
+  color: #ffb86c;
 }
 
 .network-down-high {
-  color: #50fa7b;
+  color: #bd93f9;
 }
 
 .network-down-over {
-  color: #50fa7b;
+  color: #ff5555;
 }
 
 .ws-dead {
-  /* color: #44475a; */
-  color: #f38ba8;
+  color: #44475a;
   font-size: 16px;
 }
 
