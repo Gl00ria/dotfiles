@@ -1,5 +1,5 @@
 # My [Arch-Linux](https://archlinux.org/) dotfiles for [Hyprland](https://wiki.hyprland.org/Getting-Started/Installation/) & [KDE-Plasma](https://kde.org/plasma-desktop/)
-## Please keep in mind, this is my personal dotfiles and its a huge repo. It contains the following:
+## Please keep in mind, this is my personal dotfiles and its a huge repo since it hosts the following:
 
 ### Hyprland dotfiles: [here](https://github.com/Gl00ria/dotfiles/tree/main/dot_hyprland)
 
