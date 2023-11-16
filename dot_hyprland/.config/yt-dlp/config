@@ -1,0 +1,19 @@
+# Lines starting with # are comments
+
+# Always extract audio
+-x
+
+# Do not copy the mtime
+--no-mtime
+
+# Use this proxy
+# --proxy 127.0.0.1:3128
+
+# Save all downloads under Downloads directory in music_directory
+-o ~/Music/Downloads/%(title)s.%(ext)s
+
+# Download highest quality audio with fallback M4A format
+-f bestaudio[ext=m4a]/bestaudio
+
+# Embed metadata in download file
+--embed-metadata"

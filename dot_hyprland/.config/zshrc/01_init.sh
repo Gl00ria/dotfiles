@@ -1,33 +1,3 @@
-#_______________________________________________________________________________________#
-#                                                                                       #
-#              ██████╗ ██╗      ██████╗  ██████╗ ██████╗ ██╗ █████╗                     #
-#             ██╔════╝ ██║     ██╔═████╗██╔═████╗██╔══██╗██║██╔══██╗                    #
-#             ██║  ███╗██║     ██║██╔██║██║██╔██║██████╔╝██║███████║                    #
-#             ██║   ██║██║     ████╔╝██║████╔╝██║██╔══██╗██║██╔══██║                    #
-#             ╚██████╔╝███████╗╚██████╔╝╚██████╔╝██║  ██║██║██║  ██║                    #
-#              ╚═════╝ ╚══════╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═╝╚═╝╚═╝  ╚═╝                    #
-#_______________________________________________________________________________________#
-#                                                                                       #
-#                                                                                       #
-#             :   Configured by  :  Gl00ria @gl00ria                                    #
-#             :     GitHub       :  https://github.com/gl00ria                          #
-#                                                                                       #
-#             :     @file        :  01_init.sh                                          #
-#             :     @folder      :  ~/.config/zshrc/                                    #
-#             :     @brief       :  setting PATHS, exports & source plugins             #
-#             :     @requires    :  zshShell, (1) oh-my-zsh, (2) powerlevel10k, (3)     #
-#                                                     (3) starship                      #
-#             :     @optional    : none                                                 #
-#             :     @Note        : - Uncomment the lines that correspond to prompt of   #
-#                                                     you choise.                       #
-#_______________________________________________________________________________________#
-#                                                                                       #
-#             :    Created on   :   26, Sep, 2022                                       #
-#             :   Last Updated  :   26, Sep, 2022                                       #
-# Update History :                                                                      #
-#_______________________________________________________________________________________#
-#                                                                                       #
-
 # (1)
 ## Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 ## Initialization code that may require console input (password prompts, [y/n]
@@ -57,23 +27,36 @@ export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
 eval "$(starship init zsh)"
 
 ## PATH
-if [ -d "$HOME/.bin" ]; then
-	PATH="$HOME/.bin:$PATH"
-fi
+# if [ -d "$HOME/.bin" ]; then
+# 	PATH="$HOME/.bin:$PATH"
+# fi
 
-if [ -d "$HOME/.local/bin" ]; then
-	PATH="$HOME/.local/bin:$PATH"
+# if [ -d "$HOME/.local/bin" ]; then
+# 	PATH="$HOME/.local/bin:$PATH"
+# fi
+
+if [ "$(echo "$PATH" | grep -c /usr/local/sbin)" -ne "1" ]; then
+	PATH="$PATH:/usr/local/bin:/usr/local/sbin"
 fi
+if [ "$(echo "$PATH" | grep -c "$HOME"/bin)" -ne "1" ]; then
+	PATH="$PATH:$HOME/bin"
+fi
+if [ "$(echo "$PATH" | grep -c "$HOME"/.local/bin)" -ne "1" ]; then
+	PATH="$PATH:$HOME/.local/bin"
+fi
+export PATH
 
 ## Rofi
 export PATH=$HOME/.config/rofi/bin:$PATH
 
-## Preferred editor for local and remote sessions
+# Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
-	export EDITOR="$(echo "$(which nvim)" || echo "$(which vim)" || echo "$(which vi)")"
+	export EDITOR='nvim'
 else
-	export EDITOR="$(echo "$(which nvim)" || echo "$(which vim)" || echo "$(which vi)")"
+	export EDITOR='vim'
 fi
+export VISUAL=vim
+export EDITOR=${VISUAL}
 
 ## The man database
 export MANPATH="/usr/local/man:$MANPATH"
@@ -89,3 +72,6 @@ export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 ## source the plugins since i use starship
 # plugins=(git safe-paste urltools zsh-navigation-tools zsh-interactive-cd zsh-syntax-highlighting zsh-completions)
+
+# firefox as default BROWSER
+export BROWSER=firefox

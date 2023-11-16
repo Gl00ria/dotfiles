@@ -1,48 +1,40 @@
-# Source: https://github.com/Chick2D/neofetch-themes/
-# Do consider checking out the repository, it has a ton of great configs like this.
-
-# Made by htttps://github.com/legendlife (Hybridfetch)
-
-# Customization Wiki https://github.com/dylanaraps/neofetch/wiki/Customizing-Info
-
 # See this wiki page for more info:
 # https://github.com/dylanaraps/neofetch/wiki/Customizing-Info
 print_info() {
-    prin "┌─────────\n Hardware Information \n─────────┐"
-    info " ​ ​  " model
-    info " ​ ​  " cpu
-    info " ​ ​ ﬙ " gpu
-#    info " ​ ​  " disk
-    info " ​ ​  " memory
-    info " ​ ​  " resolution
-#    info " ​ ​ 󱈑 " battery
-    prin "├─────────\n Software Information \n─────────┤"
-#    info " ​ ​  " users
-    info " ​ ​  " distro
-# Just get your distro's logo off nerdfonts.com
-#    info " ​ ​  " kernel
-    info " ​ ​  " de
-    info " ​ ​  " wm
-    info " ​ ​  " shell
-    info " ​ ​  " term
-#    info " ​ ​  " term_font
-#    info " ​ ​ │  " font
-#    info " ​ ​   " theme
-#    info " ​ ​   " icons
-#    info " ​ ​  " packages
-    info " ​ ​   " uptime
-#    info " ​ ​   " gpu_driver  # Linux/macOS only
-#    info " ​ ​  " cpu_usage
-#    info " ​ ​ ﱘ " song
-    # [[ "$player" ]] && prin "Music Player" "$player"
-#    info " ​ ​   " local_ip
-#    info " ​ ​   " public_ip
-#    info " ​ ​   " locale  # This only works on glibc systems.
-    prin "└───────────────────────────────────────┘"
-    # info "Locale" locale  # This only works on glibc systems.
-    # info cols
+    # info title
+    # info underline
 
-     prin " \n \n $(color 1) \n \n $(color 2) \n \n $(color 3) \n \n $(color 4)  \n \n $(color 5)  \n \n $(color 6)  \n \n $(color 7)  \n \n $(color 0)"
+    info "OS" distro
+    # info "Host" model
+    info "Kernel" kernel
+    info "Uptime" uptime
+    info "Packages" packages
+    info "Shell" shell
+    info "Resolution" resolution
+    info "DE" de
+    info "WM" wm
+    info "WM Theme" wm_theme
+    info "Theme" theme
+    info "Icons" icons
+    info "Terminal" term
+    info "Terminal Font" term_font
+    info "CPU" cpu
+    info "GPU" gpu
+    info "Memory" memory
+
+    # info "GPU Driver" gpu_driver  # Linux/macOS only
+    # info "CPU Usage" cpu_usage
+    # info "Disk" disk
+    # info "Battery" battery
+    # info "Font" font
+    # info "Song" song
+    # [[ "$player" ]] && prin "Music Player" "$player"
+    info "Local IP" local_ip
+    info "Public IP" public_ip
+    # info "Users" users
+    # info "Locale" locale  # This only works on glibc systems.
+
+    # info cols
 }
 
 # Title
@@ -93,7 +85,7 @@ distro_shorthand="off"
 # Example:
 # on:  'Arch Linux x86_64'
 # off: 'Arch Linux'
-os_arch="off"
+os_arch="on"
 
 
 # Uptime
@@ -126,18 +118,6 @@ uptime_shorthand="on"
 # off:  '1801MiB / 7881MiB'
 memory_percent="off"
 
-# Change memory output unit.
-#
-# Default: 'mib'
-# Values:  'kib', 'mib', 'gib'
-# Flag:    --memory_unit
-#
-# Example:
-# kib  '1020928KiB / 7117824KiB'
-# mib  '1042MiB / 6951MiB'
-# gib: ' 0.98GiB / 6.79GiB'
-memory_unit="mib"
-
 
 # Packages
 
@@ -152,7 +132,7 @@ memory_unit="mib"
 # on:   '998 (pacman), 8 (flatpak), 4 (snap)'
 # tiny: '908 (pacman, flatpak, snap)'
 # off:  '908'
-package_managers="off"
+package_managers="on"
 
 
 # Shell
@@ -203,7 +183,7 @@ speed_type="bios_limit"
 # Example:
 # on:    'i7-6500U (4) @ 3.1GHz'
 # off:   'i7-6500U (4) @ 3.100GHz'
-speed_shorthand="on"
+speed_shorthand="off"
 
 # Enable/Disable CPU brand in output.
 #
@@ -214,7 +194,7 @@ speed_shorthand="on"
 # Example:
 # on:   'Intel i7-6500U'
 # off:  'i7-6500U (4)'
-cpu_brand="off"
+cpu_brand="on"
 
 # CPU Speed
 # Hide/Show CPU speed.
@@ -240,7 +220,7 @@ cpu_speed="on"
 # logical:  'Intel i7-6500U (4) @ 3.1GHz' (All virtual cores)
 # physical: 'Intel i7-6500U (2) @ 3.1GHz' (All physical cores)
 # off:      'Intel i7-6500U @ 3.1GHz'
-cpu_cores="off"
+cpu_cores="logical"
 
 # CPU Temperature
 # Hide/Show CPU temperature.
@@ -311,6 +291,7 @@ refresh_rate="off"
 
 # Gtk Theme / Icons / Font
 
+
 # Shorten output of GTK Theme / Icons / Font
 #
 # Default: 'off'
@@ -320,7 +301,7 @@ refresh_rate="off"
 # Example:
 # on:  'Numix, Adwaita'
 # off: 'Numix [GTK2], Adwaita [GTK3]'
-gtk_shorthand="on"
+gtk_shorthand="off"
 
 
 # Enable/Disable gtk2 Theme / Icons / Font
@@ -354,7 +335,8 @@ gtk3="on"
 # Default: 'http://ident.me'
 # Values:  'url'
 # Flag:    --ip_host
-public_ip_host="http://ident.me"
+# public_ip_host="http://ident.me"
+public_ip_host="http://v4.ident.me"
 
 # Public IP timeout.
 #
@@ -369,10 +351,10 @@ public_ip_timeout=2
 
 # Show Desktop Environment version
 #
-# Default: 'on'
+# Default: 'off'
 # Values:  'on', 'off'
 # Flag:    --de_version
-de_version="on"
+de_version="off"
 
 
 # Disk
@@ -468,8 +450,6 @@ disk_percent="on"
 # mpd
 # muine
 # netease-cloud-music
-# olivia
-# playerctl
 # pogo
 # pragha
 # qmmp
@@ -479,13 +459,12 @@ disk_percent="on"
 # smplayer
 # spotify
 # strawberry
-# tauonmb
 # tomahawk
 # vlc
 # xmms2d
 # xnoise
 # yarock
-music_player="cmus"
+music_player="auto"
 
 # Format to display song information.
 #
@@ -496,7 +475,6 @@ music_player="cmus"
 # Example:
 # default: 'Song: Jet - Get Born - Sgt Major'
 song_format="%artist% - %album% - %title%"
-# song_format="%artist% - %album% - %title%"
 
 # Print the Artist, Album and Title on separate lines
 #
@@ -510,7 +488,7 @@ song_format="%artist% - %album% - %title%"
 #      'Song: Chelsea Dagger'
 #
 # off: 'Song: The Fratellis - Costello Music - Chelsea Dagger'
-song_shorthand="on"
+song_shorthand="off"
 
 # 'mpc' arguments (specify a host, password etc).
 #
@@ -534,7 +512,6 @@ mpc_args=()
 # Example:
 # colors=(distro)      - Text is colored based on Distro colors.
 # colors=(4 6 1 8 8 6) - Text is colored in the order above.
-# colors=(4 7 7 4 7 7)
 colors=(distro)
 
 
@@ -560,7 +537,7 @@ underline_enabled="on"
 # Default:  '-'
 # Values:   'string'
 # Flag:     --underline_char
-underline_char="─"
+underline_char="-"
 
 
 # Info Separator
@@ -572,7 +549,7 @@ underline_char="─"
 # Example:
 # separator="->":   'Shell-> bash'
 # separator=" =":   'WM = dwm'
-separator=" "
+separator=":"
 
 
 # Color Blocks
@@ -592,7 +569,7 @@ separator=" "
 #
 # Display colors 0-15 in the blocks. (16 colors)
 # neofetch --block_range 0 15
-block_range=(0 7)
+block_range=(0 15)
 
 # Toggle color blocks
 #
@@ -701,7 +678,7 @@ disk_display="off"
 #
 # Default:  'ascii'
 # Values:   'ascii', 'caca', 'chafa', 'jp2a', 'iterm2', 'off',
-#           'pot', 'termpix', 'pixterm', 'tycat', 'w3m', 'kitty'
+#           'termpix', 'pixterm', 'tycat', 'w3m', 'kitty'
 # Flag:     --backend
 image_backend="ascii"
 
@@ -717,7 +694,7 @@ image_backend="ascii"
 # NOTE: 'auto' will pick the best image source for whatever image backend is used.
 #       In ascii mode, distro ascii art will be used and in an image mode, your
 #       wallpaper will be used.
-#image_source="/home/angelo_f/.config/neofetch/voidlogo2.txt"
+image_source="auto"
 
 
 # Ascii Options
@@ -729,34 +706,34 @@ image_backend="ascii"
 # Default: 'auto'
 # Values:  'auto', 'distro_name'
 # Flag:    --ascii_distro
-# NOTE: AIX, Alpine, Anarchy, Android, Antergos, antiX, "AOSC OS",
-#       "AOSC OS/Retro", Apricity, ArcoLinux, ArchBox, ARCHlabs,
-#       ArchStrike, XFerience, ArchMerge, Arch, Artix, Arya, Bedrock,
-#       Bitrig, BlackArch, BLAG, BlankOn, BlueLight, bonsai, BSD,
+# NOTE: AIX, Alpine, Anarchy, Android, Antergos, antiX, AOSC,
+#       Apricity, ArcoLinux, ArchBox, ARCHlabs, ArchStrike,
+#       XFerience, ArchMerge, Arch, Artix, Arya, Bedrock, Bitrig,
+#       BlackArch, BLAG, BlankOn, BlueLight, bonsai, BSD,
 #       BunsenLabs, Calculate, Carbs, CentOS, Chakra, ChaletOS,
 #       Chapeau, Chrom*, Cleanjaro, ClearOS, Clear_Linux, Clover,
 #       Condres, Container_Linux, CRUX, Cucumber, Debian, Deepin,
-#       DesaOS, Devuan, DracOS, DarkOs, DragonFly, Drauger, Elementary,
+#       DesaOS, Devuan, DracOS, DragonFly, Drauger, Elementary,
 #       EndeavourOS, Endless, EuroLinux, Exherbo, Fedora, Feren, FreeBSD,
-#       FreeMiNT, Frugalware, Funtoo, GalliumOS, Garuda, Gentoo, Pentoo,
-#       gNewSense, GNOME, GNU, GoboLinux, Grombyang, Guix, Haiku, Huayra,
+#       FreeMiNT, Frugalware, Funtoo, GalliumOS, Gentoo, Pentoo,
+#       gNewSense, GNU, GoboLinux, Grombyang, Guix, Haiku, Huayra,
 #       Hyperbola, janus, Kali, KaOS, KDE_neon, Kibojoe, Kogaion,
 #       Korora, KSLinux, Kubuntu, LEDE, LFS, Linux_Lite,
 #       LMDE, Lubuntu, Lunar, macos, Mageia, MagpieOS, Mandriva,
 #       Manjaro, Maui, Mer, Minix, LinuxMint, MX_Linux, Namib,
 #       Neptune, NetBSD, Netrunner, Nitrux, NixOS, Nurunner,
-#       NuTyX, OBRevenge, OpenBSD, openEuler, OpenIndiana, openmamba,
-#       OpenMandriva, OpenStage, OpenWrt, osmc, Oracle, OS Elbrus, PacBSD,
-#       Parabola, Pardus, Parrot, Parsix, TrueOS, PCLinuxOS, Peppermint,
-#       popos, Porteus, PostMarketOS, Proxmox, Puppy, PureOS, Qubes, Radix,
-#       Raspbian, Reborn_OS, Redstar, Redcore, Redhat, Refracted_Devuan,
-#       Regata, Rosa, sabotage, Sabayon, Sailfish, SalentOS, Scientific,
-#       Septor, SereneLinux, SharkLinux, Siduction, Slackware, SliTaz,
-#       SmartOS, Solus, Source_Mage, Sparky, Star, SteamOS, SunOS,
-#       openSUSE_Leap, openSUSE_Tumbleweed, openSUSE, SwagArch, Tails,
-#       Trisquel, Ubuntu-Budgie, Ubuntu-GNOME, Ubuntu-MATE, Ubuntu-Studio,
-#       Ubuntu, Venom, Void, Obarun, windows10, Windows7, Xubuntu, Zorin,
-#       and IRIX have ascii logos
+#       NuTyX, OBRevenge, OpenBSD, OpenIndiana, OpenMandriva,
+#       OpenWrt, osmc, Oracle, PacBSD, Parabola, Pardus, Parrot,
+#       Parsix, TrueOS, PCLinuxOS, Peppermint, popos, Porteus,
+#       PostMarketOS, Proxmox, Puppy, PureOS, Qubes, Radix, Raspbian,
+#       Reborn_OS, Redstar, Redcore, Redhat, Refracted_Devuan, Regata,
+#       Rosa, sabotage, Sabayon, Sailfish, SalentOS, Scientific, Septor,
+#       SharkLinux, Siduction, Slackware, SliTaz, SmartOS, Solus,
+#       Source_Mage, Sparky, Star, SteamOS, SunOS, openSUSE_Leap,
+#       openSUSE_Tumbleweed, openSUSE, SwagArch, Tails, Trisquel,
+#       Ubuntu-Budgie, Ubuntu-GNOME, Ubuntu-MATE, Ubuntu-Studio, Ubuntu,
+#       Void, Obarun, windows10, Windows7, Xubuntu, Zorin, and IRIX
+#       have ascii logos
 # NOTE: Arch, Ubuntu, Redhat, and Dragonfly have 'old' logo variants.
 #       Use '{distro name}_old' to use the old logos.
 # NOTE: Ubuntu has flavor variants.
@@ -769,7 +746,8 @@ image_backend="ascii"
 #       Slackware, SunOS, LinuxLite, OpenSUSE, Raspbian,
 #       postmarketOS, and Void have a smaller logo variant.
 #       Use '{distro name}_small' to use the small variants.
-ascii_distro="Ubuntu-GNOME"
+#ascii_distro="auto"
+ascii_distro="Lubuntu"
 
 # Ascii Colors
 #
@@ -780,7 +758,7 @@ ascii_distro="Ubuntu-GNOME"
 # Example:
 # ascii_colors=(distro)      - Ascii is colored based on Distro colors.
 # ascii_colors=(4 6 1 8 8 6) - Ascii is colored using these colors.
-ascii_colors=(247 2)
+ascii_colors=(distro)
 
 # Bold ascii logo
 # Whether or not to bold the ascii logo.
@@ -871,3 +849,4 @@ background_color=
 # Default: 'off'
 # Values: 'on', 'off'
 stdout="off"
+

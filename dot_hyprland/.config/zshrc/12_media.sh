@@ -1,9 +1,9 @@
 ## Play audio files in current dir by type
-alias play_wav="rhythmbox *.wav"
-alias play_ogg="rhythmbox *.ogg"
-alias play_mp3="rhythmbox *.mp3"
+alias play-wav="rhythmbox *.wav"
+alias play-ogg="rhythmbox *.ogg"
+alias play-mp3="rhythmbox *.mp3"
 
 ## Play video files in current dir by type
-alias play_avi="vlc *.avi"
-alias play_mov="vlc *.mov"
-alias play_mp4="vlc *.mp4"
+alias play-avi="vlc *.avi"
+alias play-mov="vlc *.mov"
+alias play-mp4="vlc *.mp4"
