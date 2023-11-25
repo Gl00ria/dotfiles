@@ -10,27 +10,51 @@
 
 # Requirements:
 
-| Package Name                                                                    | Description    | Package Manager |
-| ------------------------------------------------------------------------------- | -------------- | --------------- |
-| [ hyprland-nvidia-git ](https://aur.archlinux.org/packages/hyprland-nvidia-git) | window manager | AUR             |
+| Package Name                                                                        | Description        | Package Manager |
+| ----------------------------------------------------------------------------------- | ------------------ | --------------- |
+| [hyprland](https://archlinux.org/packages/?name=hyprland)                           | window manager     | Pacman          |
+| ~~[ hyprland-nvidia-git ](https://aur.archlinux.org/packages/hyprland-nvidia-git)~~ | ~~window manager~~ | ~~AUR~~         |
 
-### F\*\*\* Nvidia:
+# F\*\*\* Nvidia:
+
+<details>
+<summary>Packages</summary>
 
 | Package Name                                                                            | Description                                        | Package Manager |
 | --------------------------------------------------------------------------------------- | -------------------------------------------------- | --------------- |
-| [ nvidia-dkms ](https://archlinux.org/packages/extra/x86_64/nvidia-dkms/)               | drivers                                            | Pacman          |
+| [nvidia](https://archlinux.org/packages/extra/x86_64/nvidia/)                           | driver                                             | ~~Pacman~~      |
+| ~~[ nvidia-dkms ](https://archlinux.org/packages/extra/x86_64/nvidia-dkms/)~~           | ~~drivers~~                                        | Pacman          |
 | [ nvidia-utils ](https://archlinux.org/packages/extra/x86_64/nvidia-utils/)             | drivers Utils                                      | Pacman          |
 | [ nvidia-prime ](https://archlinux.org/packages/extra/any/nvidia-prime/)                | nvidia offload                                     | Pacman          |
 | [libva-nvidia-driver](https://archlinux.org/packages/extra/x86_64/libva-nvidia-driver/) | VA-API implementation that uses NVDEC as a backend | Pacman          |
 
+  <br>
+
+</details>
+
+<details>
+<summary>Steps</summary>
 Add the following:
 
 - `nvidia nvidia_modeset nvidia_uvm nvidia_drm` to `/etc/mkinitcpio.conf` then
-  Generate new image: `sudo mkinitcpio --config /etc/mkinitcpio.conf
---generate /boot/initramfs-custom.img`
+  Generate new image: `sudo mkinitcpio --config /etc/mkinitcpio.conf --generate /boot/initramfs-custom.img`
 - Add/create the following: `options nvidia-drm modeset=1` in `/etc/modprobe.d/nvidia.conf`
+  <br>
+
+</details>
+
+<details>
+<summary>glxinfo & nvidia-smi output</summary>
+    Add screenshots here
+  <br>
+
+</details>
+
+---
 
 ### Audio & Video:
+
+<details>
 
 | Package Name                                                                        | Description                | Package Manager |
 | ----------------------------------------------------------------------------------- | -------------------------- | --------------- |
@@ -44,14 +68,26 @@ Add the following:
 | [ pamixer ](https://archlinux.org/packages/extra/x86_64/pamixer/)                   | for waybar audio           | Pacman          |
 | [ gst-plugin-pipewire ](https://aur.archlinux.org/packages/gst-plugin-pipewire-git) | Multimedia Graph Framework | AUR             |
 
+  <br>
+
+</details>
+
 ### Network:
+
+<details>
 
 | Package Name                                                                                    | Description          | Package Manager |
 | ----------------------------------------------------------------------------------------------- | -------------------- | --------------- |
 | [ networkmanager ](https://archlinux.org/packages/extra/x86_64/networkmanager/)                 | network manager      | Pacman          |
 | [ network-manager-applet ](https://archlinux.org/packages/extra/x86_64/network-manager-applet/) | network manager tray | Pacman          |
 
+  <br>
+
+</details>
+
 ### Bluetooth:
+
+<details>
 
 | Package Name                                                              | Description                    | Package Manager |
 | ------------------------------------------------------------------------- | ------------------------------ | --------------- |
@@ -59,7 +95,13 @@ Add the following:
 | [ bluez-utils ](https://archlinux.org/packages/extra/x86_64/bluez-utils/) | utils for bluetooth            | Pacman          |
 | [ blueman ](https://archlinux.org/packages/extra/x86_64/blueman/)         | bluetooth tray                 | Pacman          |
 
+  <br>
+
+</details>
+
 ### Login:
+
+<details>
 
 | Package Name                                                                                | Description               | Package Manager |
 | ------------------------------------------------------------------------------------------- | ------------------------- | --------------- |
@@ -70,14 +112,26 @@ Add the following:
 | [ qt5-quickcontrols2 ](https://archlinux.org/packages/extra/x86_64/qt5-quickcontrols2/)     | for sddm theme            | Pacman          |
 | [ qt5-graphicaleffects ](https://archlinux.org/packages/extra/x86_64/qt5-graphicaleffects/) | for sddm theme            | Pacman          |
 
+  <br>
+
+</details>
+
 ### Notification:(Pick one & edit ~/.config/hypr/autostart)
+
+<details>
 
 | Package Name                                                  | Description         | Package Manager |
 | ------------------------------------------------------------- | ------------------- | --------------- |
 | [ dunst ](https://archlinux.org/packages/extra/x86_64/dunst/) | notification daemon | Pacman          |
 | [ swaync ](https://aur.archlinux.org/packages/swaync)         | notification center | AUR             |
 
+  <br>
+
+</details>
+
 ### Screenshot:
+
+<details>
 
 | Package Name                                                        | Description                   | Package Manager |
 | ------------------------------------------------------------------- | ----------------------------- | --------------- |
@@ -85,21 +139,38 @@ Add the following:
 | [ swappy ](https://archlinux.org/packages/extra/x86_64/swappy/)     | screenshot editor             | Pacman          |
 | [ grimblast-git ](https://aur.archlinux.org/packages/grimblast-git) | screenshot tool               | AUR             |
 
+  <br>
+
+</details>
+
 ### Screensharing:
+
+<details>
 
 | Package Name                                                                                              | Description                    | Package Manager |
 | --------------------------------------------------------------------------------------------------------- | ------------------------------ | --------------- |
 | [ slurp ](https://archlinux.org/packages/extra/x86_64/slurp/)                                             | selects region for screenshare | Pacman          |
 | [ xdg-desktop-portal-hyprland ](https://archlinux.org/packages/extra/x86_64/xdg-desktop-portal-hyprland/) | XDG Desktop Portal             | Pacman          |
 
+  <br>
+
+</details>
+
 ### Clipboard:
 
+<details>
 | Package Name                                                                    | Description       | Package Manager |
 | ------------------------------------------------------------------------------- | ----------------- | --------------- |
 | [ cliphist ](https://archlinux.org/packages/extra/x86_64/cliphist/)             | clipboard manager | Pacman          |
 | ~~[ wl-clipboard ](https://archlinux.org/packages/extra/x86_64/wl-clipboard/)~~ | clipboard manager | Pacman          |
 
+  <br>
+
+</details>
+
 ### Utils:
+
+<details>
 
 | Package Name                                                                        | Description                                                       | Package Manager                                                     |
 | ----------------------------------------------------------------------------------- | ----------------------------------------------------------------- | ------------------------------------------------------------------- |
@@ -132,14 +203,26 @@ Add the following:
 | [ neofetch ](https://archlinux.org/packages/extra/any/neofetch/)                    | system info                                                       | Pacman                                                              |
 | [pyprland](https://github.com/hyprland-community/pyprland)                          | Scratchpads,smart monitor placement and other tweaks for hyprland | AUR                                                                 |
 
+    <br>
+
+</details>
+
 ### Brightness:
+
+<details>
 
 | Package Name                                                                  | Description        | Package Manager |
 | ----------------------------------------------------------------------------- | ------------------ | --------------- |
 | [ brightnessctl ](https://archlinux.org/packages/extra/x86_64/brightnessctl/) | brightness control | Pacman          |
 | [ light ](https://archlinux.org/packages/extra/x86_64/light/)                 | brightness control | Pacman          |
 
+  <br>
+
+</details>
+
 ### Theming:
+
+<details>
 
 | Package Name                                                      | Description      | Package Manager |
 | ----------------------------------------------------------------- | ---------------- | --------------- |
@@ -147,7 +230,13 @@ Add the following:
 | [ qt5ct ](https://archlinux.org/packages/extra/x86_64/qt5ct/)     | theming QT5 apps | Pacman          |
 | [ nwg-look ](https://aur.archlinux.org/packages/nwg-look)         | theming GTK apps | AUR             |
 
+  <br>
+
+</details>
+
 ### Apps:
+
+<details>
 
 | Package Name                                                                                                          | Description                    | Package Manager |
 | --------------------------------------------------------------------------------------------------------------------- | ------------------------------ | --------------- |
@@ -174,7 +263,13 @@ Add the following:
 | [ eww-wayland ](https://aur.archlinux.org/packages/eww-wayland)                                                       | Elkowars Wacky Widgets         | AUR             |
 | [rhythmbox](https://archlinux.org/packages/extra/x86_64/rhythmbox/)                                                   | music player                   | Pacman          |
 
+  <br>
+
+</details>
+
 ### Shells:
+
+<details>
 
 | Package Name                                                                                                      | Description            | Package Manager |
 | ----------------------------------------------------------------------------------------------------------------- | ---------------------- | --------------- |
@@ -186,8 +281,9 @@ Add the following:
 NOTE_1:
 
 - [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh) &
-  [powerlevel10k-theme](https://github.com/romkatv/powerlevel10k)
-  are available and configured for ZSH as well.
+
+[powerlevel10k-theme](https://github.com/romkatv/powerlevel10k)
+are available and configured for ZSH as well.
 
 NOTE_2: zsh plugins (AUR):
 
@@ -195,9 +291,15 @@ NOTE_2: zsh plugins (AUR):
 - [zsh-fast-syntax-highlighting](https://aur.archlinux.org/packages/zsh-fast-syntax-highlighting)
 - [forgit](https://aur.archlinux.org/packages/forgit)
 
+  <br>
+
+</details>
+
 ---
 
 ### Optional:
+
+<details>
 
 ### SDDM theme: [boo-sddm](https://github.com/PROxZIMA/boo-sddm)
 
@@ -215,9 +317,15 @@ sudo vim /etc/sddm.conf
 - [Top-5-Bootloader-Themes](https://github.com/ChrisTitusTech/Top-5-Bootloader-Themes)
 - [Boo](https://github.com/PROxZIMA/boo-grub)
 
+  <br>
+
+</details>
+
 ---
 
 # Keymaps/Keybinds or WHATEVER:
+
+<details>
 
 ### windows/workspaces:
 
@@ -382,9 +490,14 @@ sudo vim /etc/sddm.conf
 | super + n | newtork manager                      |
 | super + b | toggle bluetooth manager (blueman)   |
 
+  <br>
+</details>
+
 ---
 
-### How to?
+# How to?
+
+<details>
 
 Please note this is my personal dotfiles, meaning read the Nvidia & Apps requirements since you might not need some of them or might be already installed on your system. Also note that this repo has two different configurations, one for KDE & the other for hyprland, Most probably you are here for the hyprland config, so let's get started:
 
@@ -447,6 +560,10 @@ mv ~/.zshrc ~/.zshrc_backup
 cp .bashrc /home/user_name
 cp .zshrc /home/user_name
 ```
+
+  <br>
+
+</details>
 
 ---
 
