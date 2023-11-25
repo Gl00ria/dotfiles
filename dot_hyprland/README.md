@@ -45,7 +45,11 @@ Add the following:
 
 <details>
 <summary>glxinfo & nvidia-smi output</summary>
-    Add screenshots here
+  
+![231125_19h03m11s_screenshot](https://github.com/Gl00ria/dotfiles/assets/74514103/c1f29940-6572-414e-bff8-a7b70d817061)
+![nvidia_smi](https://github.com/Gl00ria/dotfiles/assets/74514103/8239e107-f5fb-4ee3-8f07-2d09c0fee113)
+
+  
   <br>
 
 </details>
