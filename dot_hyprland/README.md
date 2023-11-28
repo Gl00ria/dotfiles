@@ -36,20 +36,21 @@
 <summary>Steps</summary>
 Add the following:
 
-- `nvidia nvidia_modeset nvidia_uvm nvidia_drm` to `/etc/mkinitcpio.conf` then
-  Generate new image: `sudo mkinitcpio --config /etc/mkinitcpio.conf --generate /boot/initramfs-custom.img`
-- Add/create the following: `options nvidia-drm modeset=1` in `/etc/modprobe.d/nvidia.conf`
-  <br>
+1. Add `nvidia_drm.modeset=1` to `GRUB_CMDLINE_LINUX_DEFAULT=` in `/etc/default/grub`
+2. Run `sudo grub-mkconfig -o /boot/grub/grub.cfg`
+3. Add `nvidia nvidia_modeset nvidia_uvm nvidia_drm` to `/etc/mkinitcpio.conf` then
+   Generate new image: `sudo mkinitcpio --config /etc/mkinitcpio.conf --generate /boot/initramfs-custom.img`
+4. Add/create the following: `options nvidia-drm modeset=1` in `/etc/modprobe.d/nvidia.conf`
+   <br>
 
 </details>
 
 <details>
 <summary>glxinfo & nvidia-smi output</summary>
-  
+
 ![231125_19h03m11s_screenshot](https://github.com/Gl00ria/dotfiles/assets/74514103/c1f29940-6572-414e-bff8-a7b70d817061)
 ![nvidia_smi](https://github.com/Gl00ria/dotfiles/assets/74514103/8239e107-f5fb-4ee3-8f07-2d09c0fee113)
 
-  
   <br>
 
 </details>
