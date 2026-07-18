@@ -1,0 +1,24 @@
+[metadata]
+name = "docker-containers"
+description = "Browse and manage Docker containers"
+requirements = ["docker"]
+
+[source]
+command = "docker ps -a --format '{{.Names}}\\t{{.Status}}\\t{{.Image}}'"
+
+[preview]
+command = "docker inspect '{split:\\t:0}'"
+
+[keybindings]
+ctrl-l = "actions:logs"
+ctrl-x = "actions:stop"
+
+[actions.logs]
+description = "View container logs"
+command = "docker logs -f '{split:\\t:0}'"
+mode = "fork"
+
+[actions.stop]
+description = "Stop container"
+command = "docker stop '{split:\\t:0}'"
+mode = "fork"

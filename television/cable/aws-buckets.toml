@@ -1,0 +1,20 @@
+[metadata]
+name = "aws-buckets"
+description = "List and preview AWS S3 Buckets"
+requirements = ["aws"]
+
+[source]
+command = "aws s3 ls --output text"
+output = "{split: :3|trim}"
+
+[preview]
+command = "aws s3 ls s3://{split: :3|trim} --human-readable --summarize"
+
+[ui]
+layout = "portrait"
+preview_panel = { size = 60 }
+
+[actions.list]
+description = "List all objects in the selected bucket"
+command = "aws s3 ls s3://{split: :3|trim} --recursive --human-readable | less"
+mode = "execute"
