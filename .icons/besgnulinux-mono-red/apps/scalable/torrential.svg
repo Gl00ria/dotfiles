@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64" version="1.1">
+<defs>
+<filter id="alpha" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%">
+  <feColorMatrix type="matrix" in="SourceGraphic" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+</filter>
+<mask id="mask0">
+  <g filter="url(#alpha)">
+<rect x="0" y="0" width="64" height="64" style="fill:rgb(0%,0%,0%);fill-opacity:0.2;stroke:none;"/>
+  </g>
+</mask>
+<linearGradient id="linear0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(19.203125,0,0,47.996094,22.398437,0)">
+<stop offset="0" style="stop-color:#ff6666;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#d90000;stop-opacity:1;"/>
+</linearGradient>
+<clipPath id="clip1">
+  <rect x="0" y="0" width="64" height="64"/>
+</clipPath>
+<g id="surface5" clip-path="url(#clip1)">
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear0);" d="M 32 0 C 32 0 28.800781 0 28.800781 3.199219 C 28.800781 6.398438 25.601562 6.398438 25.601562 6.398438 C 25.601562 6.398438 22.398438 6.402344 22.398438 3.199219 L 22.398438 47.996094 L 41.601562 47.996094 L 41.601562 3.199219 C 41.601562 6.398438 38.398438 6.398438 38.398438 6.398438 C 38.398438 6.398438 35.199219 6.398438 35.199219 3.199219 C 35.199219 0 32 0 32 0 Z M 32 0 "/>
+</g>
+<mask id="mask1">
+  <g filter="url(#alpha)">
+<rect x="0" y="0" width="64" height="64" style="fill:rgb(0%,0%,0%);fill-opacity:0.5;stroke:none;"/>
+  </g>
+</mask>
+<linearGradient id="linear1" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(19.203125,0,0,22.398437,22.398438,12.800781)">
+<stop offset="0" style="stop-color:#ff6666;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#d90000;stop-opacity:1;"/>
+</linearGradient>
+<clipPath id="clip2">
+  <rect x="0" y="0" width="64" height="64"/>
+</clipPath>
+<g id="surface8" clip-path="url(#clip2)">
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear1);" d="M 25.601562 12.800781 C 25.601562 12.800781 22.398438 12.796875 22.398438 15.996094 L 22.398438 35.199219 L 41.601562 35.199219 L 41.601562 15.996094 C 41.601562 12.800781 38.398438 12.800781 38.398438 12.800781 C 38.398438 12.800781 35.199219 12.800781 35.199219 15.996094 C 35.199219 19.199219 32 19.199219 32 19.199219 C 32 19.199219 28.800781 19.199219 28.800781 15.996094 C 28.800781 12.800781 25.601562 12.800781 25.601562 12.800781 Z M 25.601562 12.800781 "/>
+</g>
+<linearGradient id="linear2" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(44.796875,0,0,38.398438,9.601562,25.601562)">
+<stop offset="0" style="stop-color:#ff6666;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#d90000;stop-opacity:1;"/>
+</linearGradient>
+</defs>
+<g id="surface1">
+<use xlink:href="#surface5" mask="url(#mask0)"/>
+<use xlink:href="#surface8" mask="url(#mask1)"/>
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear2);" d="M 9.601562 38.398438 L 32 64 L 54.398438 38.398438 L 41.601562 38.402344 L 41.601562 28.796875 C 41.601562 32 38.398438 32 38.398438 32 C 38.398438 32 35.199219 32 35.199219 28.796875 C 35.199219 25.601562 32 25.601562 32 25.601562 C 32 25.601562 28.800781 25.601562 28.800781 28.796875 C 28.800781 32 25.601562 32 25.601562 32 C 25.601562 32 22.398438 32 22.398438 28.796875 L 22.398438 38.398438 Z M 9.601562 38.398438 "/>
+</g>
+</svg>

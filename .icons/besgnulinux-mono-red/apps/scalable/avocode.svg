@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64" version="1.1">
+<defs>
+<linearGradient id="linear0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(26.5,0,0,35.875,19,18.761719)">
+<stop offset="0" style="stop-color:#ff6666;stop-opacity:0.501961;"/>
+<stop offset="1" style="stop-color:#d90000;stop-opacity:0.501961;"/>
+</linearGradient>
+<linearGradient id="linear1" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(42,0,0,56,11,4)">
+<stop offset="0" style="stop-color:#ff6666;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#d90000;stop-opacity:1;"/>
+</linearGradient>
+</defs>
+<g id="surface1">
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear0);" d="M 19 18.761719 L 45.5 18.761719 L 45.5 54.636719 L 19 54.636719 Z M 19 18.761719 "/>
+<path style=" stroke:none;fill-rule:evenodd;fill:url(#linear1);" d="M 32 4 C 14.1875 4 -4.648438 60 32 60 C 68.648438 60 49.8125 4 32 4 Z M 32 22.667969 C 22.105469 22.667969 11.640625 53 32 53 C 52.359375 53 41.894531 22.667969 32 22.667969 Z M 32 22.667969 "/>
+</g>
+</svg>

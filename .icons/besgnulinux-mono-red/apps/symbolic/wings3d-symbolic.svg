@@ -1,0 +1,24 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px" viewBox="0 0 16 16" version="1.1">
+<defs>
+<filter id="alpha" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%">
+  <feColorMatrix type="matrix" in="SourceGraphic" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+</filter>
+<image id="image13" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAALUlEQVQ4jWNgoBAwMjAwuFOg/wsLAwNDEAUGPGeiQDMDAwMDw6gBowaMGgABANP0ApSwDz3FAAAAAElFTkSuQmCC"/>
+<mask id="mask0">
+  <g filter="url(#alpha)">
+<use xlink:href="#image13"/>
+  </g>
+</mask>
+<clipPath id="clip1">
+  <rect x="0" y="0" width="16" height="16"/>
+</clipPath>
+<g id="surface12" clip-path="url(#clip1)">
+<path style=" stroke:none;fill-rule:nonzero;fill:#ff6666;fill-opacity:1;" d="M 0 3.199219 L 0 11.429688 L 5.429688 11.429688 L 5.429688 16 L 13.15625 16 C 13.15625 16 13.9375 15.945312 14.355469 15.527344 L 14.398438 15.484375 L 14.398438 13.199219 L 9.144531 12.855469 L 9.144531 10.855469 L 8.800781 11.199219 L 8.800781 8.398438 L 4 8.058594 L 4 2.855469 Z M 0 3.199219 "/>
+</g>
+</defs>
+<g id="surface1">
+<use xlink:href="#surface12" mask="url(#mask0)"/>
+<path style=" stroke:none;fill-rule:evenodd;fill:#ff6666;fill-opacity:1;" d="M 13.90625 10.855469 L 11.617188 13.144531 L 14.109375 15.710938 C 14.199219 15.660156 14.28125 15.601562 14.355469 15.527344 L 15.476562 14.410156 C 16.003906 14.007812 16 13.199219 16 13.15625 L 16 12.800781 Z M 8.570312 13.144531 L 8.570312 10.855469 L 10.855469 8.570312 L 10.855469 10.855469 L 13.90625 10.855469 L 11.617188 13.144531 Z M 6.476562 8.570312 L 8.570312 10.855469 L 10.855469 8.570312 L 8.761719 6.285156 L 5.714844 6.285156 L 5.714844 4 L 1.890625 0.289062 C 1.800781 0.339844 1.71875 0.398438 1.644531 0.472656 L 0.523438 1.589844 C -0.00390625 1.992188 0 2.800781 0 2.84375 L 0 3.199219 L 3.429688 6.285156 L 3.429688 8.570312 Z M 6.476562 8.570312 "/>
+</g>
+</svg>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="32"
+   height="32"
+   viewBox="0 0 32 32"
+   version="1.1"
+   id="svg1659"
+   inkscape:version="1.2.2 (1:1.2.2+202305151914+b0a8486541)"
+   sodipodi:docname="gnome-sudoku.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1661"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="25.1875"
+     inkscape:cx="15.980149"
+     inkscape:cy="16"
+     inkscape:window-width="1920"
+     inkscape:window-height="1008"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1659" />
+  <defs
+     id="defs1656" />
+  <rect
+     style="fill:#e1d3bb;fill-opacity:1;stroke-linecap:round;stroke-linejoin:round"
+     id="rect1885"
+     width="27"
+     height="27"
+     x="2"
+     y="2"
+     ry="3" />
+  <path
+     id="rect1956"
+     style="fill:#efe8db;fill-opacity:1;stroke-linecap:round;stroke-linejoin:round"
+     d="m 20,2 v 9 h 9 V 5 C 29,3.3380017 27.661998,2 26,2 Z" />
+  <path
+     id="rect1961"
+     style="fill:#d8c4a4;fill-opacity:1;stroke-linecap:round;stroke-linejoin:round"
+     d="M 5,2 C 3.3380037,2 2,3.3380034 2,5 v 6 h 9 V 2 Z m 6,9 v 9 h 9 v -9 z m 9,9 v 9 h 6 c 1.661996,0 3,-1.338004 3,-3 v -6 z" />
+  <path
+     id="rect2004"
+     style="fill:#c7af87;fill-opacity:1;stroke-linecap:round;stroke-linejoin:round"
+     d="m 2,11 v 9 h 9 v -9 z m 9,9 v 9 h 9 v -9 z" />
+  <path
+     id="rect2088"
+     style="fill:#bda070;fill-opacity:1;stroke-linecap:round;stroke-linejoin:round"
+     d="m 2,20 v 6 c 0,1.661998 1.3380017,3 3,3 h 6 v -9 z" />
+</svg>

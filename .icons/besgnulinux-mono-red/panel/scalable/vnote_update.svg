@@ -1,0 +1,27 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px" viewBox="0 0 16 16" version="1.1">
+<defs>
+<linearGradient id="linear0" gradientUnits="userSpaceOnUse" x1="10.583" y1="15" x2="10.351" y2="9.165" >
+<stop offset="0" style="stop-color:rgb(74.901962%,75.686276%,75.686276%);stop-opacity:1;"/>
+<stop offset="1" style="stop-color:rgb(94.509804%,94.901961%,95.294118%);stop-opacity:1;"/>
+</linearGradient>
+<linearGradient id="linear1" gradientUnits="userSpaceOnUse" x1="12" y1="16" x2="12" y2="8" >
+<stop offset="0" style="stop-color:rgb(100%,0%,33.725491%);stop-opacity:1;"/>
+<stop offset="0.1" style="stop-color:rgb(100%,4.705882%,30.588236%);stop-opacity:1;"/>
+<stop offset="0.2" style="stop-color:rgb(100%,9.411765%,27.058825%);stop-opacity:1;"/>
+<stop offset="0.3" style="stop-color:rgb(100%,14.117648%,23.921569%);stop-opacity:1;"/>
+<stop offset="0.4" style="stop-color:rgb(100%,18.82353%,20.392157%);stop-opacity:1;"/>
+<stop offset="0.5" style="stop-color:rgb(100%,23.529412%,16.862746%);stop-opacity:1;"/>
+<stop offset="0.6" style="stop-color:rgb(100%,28.235295%,13.725491%);stop-opacity:1;"/>
+<stop offset="0.7" style="stop-color:rgb(100%,32.941177%,10.196079%);stop-opacity:1;"/>
+<stop offset="0.8" style="stop-color:rgb(100%,37.64706%,7.058824%);stop-opacity:1;"/>
+<stop offset="0.9" style="stop-color:rgb(100%,42.352942%,3.529412%);stop-opacity:1;"/>
+<stop offset="1" style="stop-color:rgb(100%,47.450981%,0.392157%);stop-opacity:1;"/>
+</linearGradient>
+</defs>
+<g id="surface1">
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(57.647061%,58.431375%,59.215689%);fill-opacity:1;" d="M 0 2.34375 L 3.410156 2.34375 C 3.921875 2.34375 4.378906 2.667969 4.550781 3.152344 L 8.90625 15.609375 L 7.699219 11.480469 L 13.496094 3.875 L 16 6.242188 L 11.316406 1 L 15.257812 1 C 15.667969 1 16 1.332031 16 1.742188 L 16 6.242188 L 8.90625 15.609375 L 5.472656 15.609375 C 5 15.609375 4.578125 15.3125 4.421875 14.867188 Z M 0 2.34375 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear0);" d="M 10 9 L 14 9 L 14 15 L 10 15 Z M 10 9 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear1);" d="M 12 8 C 9.789062 8 8 9.789062 8 12 C 8 14.210938 9.789062 16 12 16 C 14.210938 16 16 14.210938 16 12 C 16 9.789062 14.210938 8 12 8 Z M 11.429688 9.714844 L 12.570312 9.714844 L 12.570312 12 L 14 12 L 12 14.855469 L 10 12 L 11.429688 12 Z M 11.429688 9.714844 "/>
+</g>
+</svg>

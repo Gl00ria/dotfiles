@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64" version="1.1">
+<defs>
+<linearGradient id="linear0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(16,0,0,16,24,20)">
+<stop offset="0" style="stop-color:#ff6666;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#d90000;stop-opacity:1;"/>
+</linearGradient>
+<linearGradient id="linear1" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(16,0,0,16,0,44)">
+<stop offset="0" style="stop-color:#ff6666;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#d90000;stop-opacity:1;"/>
+</linearGradient>
+<linearGradient id="linear2" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(16,0,0,16,48,44)">
+<stop offset="0" style="stop-color:#ff6666;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#d90000;stop-opacity:1;"/>
+</linearGradient>
+</defs>
+<g id="surface1">
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear0);" d="M 40 28 C 40 32.417969 36.417969 36 32 36 C 27.582031 36 24 32.417969 24 28 C 24 23.582031 27.582031 20 32 20 C 36.417969 20 40 23.582031 40 28 Z M 40 28 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear1);" d="M 16 52 C 16 56.417969 12.417969 60 8 60 C 3.582031 60 0 56.417969 0 52 C 0 47.582031 3.582031 44 8 44 C 12.417969 44 16 47.582031 16 52 Z M 16 52 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear2);" d="M 64 52 C 64 56.417969 60.417969 60 56 60 C 51.582031 60 48 56.417969 48 52 C 48 47.582031 51.582031 44 56 44 C 60.417969 44 64 47.582031 64 52 Z M 64 52 "/>
+</g>
+</svg>

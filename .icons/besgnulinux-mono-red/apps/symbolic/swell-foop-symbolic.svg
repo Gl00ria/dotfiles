@@ -1,0 +1,38 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px" viewBox="0 0 16 16" version="1.1">
+<defs>
+<filter id="alpha" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%">
+  <feColorMatrix type="matrix" in="SourceGraphic" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+</filter>
+<image id="image13" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAANElEQVQ4jWNkYGCYyYAfLGJgYDiKS5KJgGaCYNSAwWAAIwMDgw0BNbcZGBheUmrRKBjUAADpXQQR/sGQngAAAABJRU5ErkJggg=="/>
+<mask id="mask0">
+  <g filter="url(#alpha)">
+<use xlink:href="#image13"/>
+  </g>
+</mask>
+<clipPath id="clip1">
+  <rect x="0" y="0" width="16" height="16"/>
+</clipPath>
+<g id="surface12" clip-path="url(#clip1)">
+<path style=" stroke:none;fill-rule:nonzero;fill:#ff6666;fill-opacity:1;" d="M 7.621094 3.820312 C 7.621094 5.921875 5.914062 7.628906 3.8125 7.628906 C 1.707031 7.628906 0.00390625 5.921875 0 3.820312 C 0 1.714844 1.707031 0.0117188 3.8125 0.0117188 C 5.914062 0.0117188 7.621094 1.714844 7.621094 3.820312 Z M 7.621094 3.820312 "/>
+</g>
+<image id="image25" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAALUlEQVQ4jWNgGAXDADASkBdjYGBQxaeAhYABqgwMDHH4FDARMIAgGDVgMBgAAJPfANIyI1l+AAAAAElFTkSuQmCC"/>
+<mask id="mask1">
+  <g filter="url(#alpha)">
+<use xlink:href="#image25"/>
+  </g>
+</mask>
+<clipPath id="clip2">
+  <rect x="0" y="0" width="16" height="16"/>
+</clipPath>
+<g id="surface24" clip-path="url(#clip2)">
+<path style=" stroke:none;fill-rule:nonzero;fill:#ff6666;fill-opacity:1;" d="M 16 12.191406 C 16 14.292969 14.292969 16 12.191406 16 C 10.085938 16 8.382812 14.292969 8.378906 12.191406 C 8.378906 10.085938 10.085938 8.378906 12.191406 8.378906 C 14.296875 8.378906 16 10.085938 16 12.191406 Z M 16 12.191406 "/>
+</g>
+</defs>
+<g id="surface1">
+<use xlink:href="#surface12" mask="url(#mask0)"/>
+<use xlink:href="#surface24" mask="url(#mask1)"/>
+<path style=" stroke:none;fill-rule:nonzero;fill:#ff6666;fill-opacity:1;" d="M 7.621094 12.191406 C 7.617188 14.296875 5.914062 16 3.808594 16 C 1.707031 16 0 14.296875 0 12.191406 C 0 10.085938 1.703125 8.378906 3.808594 8.378906 C 5.914062 8.378906 7.621094 10.085938 7.621094 12.191406 Z M 7.621094 12.191406 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:#ff6666;fill-opacity:1;" d="M 16 7.621094 L 8.382812 7.621094 L 8.382812 0 L 16 0 Z M 16 7.621094 "/>
+</g>
+</svg>

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64" version="1.1">
+<defs>
+<filter id="alpha" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%">
+  <feColorMatrix type="matrix" in="SourceGraphic" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+</filter>
+<mask id="mask0">
+  <g filter="url(#alpha)">
+<rect x="0" y="0" width="64" height="64" style="fill:rgb(0%,0%,0%);fill-opacity:0.6;stroke:none;"/>
+  </g>
+</mask>
+<linearGradient id="linear0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(26.539062,0,0,37.464844,27.609375,26.535156)">
+<stop offset="0" style="stop-color:#ff6666;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#d90000;stop-opacity:1;"/>
+</linearGradient>
+<clipPath id="clip1">
+  <rect x="0" y="0" width="64" height="64"/>
+</clipPath>
+<g id="surface5" clip-path="url(#clip1)">
+<path style=" stroke:none;fill-rule:evenodd;fill:url(#linear0);" d="M 53.039062 26.535156 C 53.933594 26.535156 54.460938 27.585938 53.941406 28.335938 L 29.617188 63.519531 C 28.980469 64.421875 27.609375 63.972656 27.609375 62.859375 L 27.609375 27.671875 C 27.609375 27.050781 28.109375 26.535156 28.714844 26.535156 Z M 53.039062 26.535156 "/>
+</g>
+<linearGradient id="linear1" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(26.539062,0,0,37.464844,12,0)">
+<stop offset="0" style="stop-color:#ff6666;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#d90000;stop-opacity:1;"/>
+</linearGradient>
+<mask id="mask1">
+  <g filter="url(#alpha)">
+<rect x="0" y="0" width="64" height="64" style="fill:rgb(0%,0%,0%);fill-opacity:0.8;stroke:none;"/>
+  </g>
+</mask>
+<linearGradient id="linear2" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(10.929688,0,0,10.929688,27.609375,26.535156)">
+<stop offset="0" style="stop-color:#ff6666;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#d90000;stop-opacity:1;"/>
+</linearGradient>
+<clipPath id="clip2">
+  <rect x="0" y="0" width="64" height="64"/>
+</clipPath>
+<g id="surface8" clip-path="url(#clip2)">
+<path style=" stroke:none;fill-rule:evenodd;fill:url(#linear2);" d="M 33.855469 26.535156 L 33.855469 32.78125 L 27.609375 32.78125 L 27.609375 37.464844 L 37.429688 37.464844 C 38.035156 37.464844 38.539062 36.945312 38.539062 36.328125 L 38.539062 26.535156 Z M 33.855469 26.535156 "/>
+</g>
+</defs>
+<g id="surface1">
+<use xlink:href="#surface5" mask="url(#mask0)"/>
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear1);" d="M 36.921875 0.128906 C 37.074219 0.046875 37.246094 0 37.421875 0 C 37.984375 0 38.539062 0.441406 38.539062 1.144531 L 38.539062 26.691406 L 33.855469 26.691406 L 33.855469 12.605469 L 19.902344 32.78125 L 27.6875 32.78125 L 27.6875 37.464844 L 13.101562 37.464844 C 12.210938 37.464844 11.679688 36.414062 12.210938 35.664062 L 36.542969 0.480469 C 36.636719 0.335938 36.769531 0.214844 36.921875 0.128906 Z M 36.921875 0.128906 "/>
+<use xlink:href="#surface8" mask="url(#mask1)"/>
+</g>
+</svg>

@@ -1,0 +1,24 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px" viewBox="0 0 16 16" version="1.1">
+<defs>
+<filter id="alpha" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%">
+  <feColorMatrix type="matrix" in="SourceGraphic" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+</filter>
+<image id="image13" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAAO0lEQVQ4jWNgGAUUA0YGBgZXItR9ZWBgOIZNgoWBgYGdCAP+4JJgIkIzXjBqwLAwgIWBgeEnEepwqgEAMzsFD3YuZXoAAAAASUVORK5CYII="/>
+<mask id="mask0">
+  <g filter="url(#alpha)">
+<use xlink:href="#image13"/>
+  </g>
+</mask>
+<clipPath id="clip1">
+  <rect x="0" y="0" width="16" height="16"/>
+</clipPath>
+<g id="surface12" clip-path="url(#clip1)">
+<path style=" stroke:none;fill-rule:nonzero;fill:#ff6666;fill-opacity:1;" d="M 6 6 L 0.5 10.5 L 6 15 C 5.996094 14.996094 6 13.667969 6 13 L 9 13 L 9 8 L 6 8 Z M 6 6 "/>
+</g>
+</defs>
+<g id="surface1">
+<use xlink:href="#surface12" mask="url(#mask0)"/>
+<path style=" stroke:none;fill-rule:nonzero;fill:#ff6666;fill-opacity:1;" d="M 10 -0.00390625 C 10.003906 0 10 1.328125 10 1.996094 L 7 1.996094 L 7 6.996094 L 10 6.996094 L 10 8.996094 L 15.5 4.496094 Z M 10 -0.00390625 "/>
+</g>
+</svg>

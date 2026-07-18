@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="64"
+   height="64"
+   viewBox="0 0 64 64"
+   version="1.1"
+   id="svg2112"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14, custom)"
+   sodipodi:docname="org.gnome.Software.Socialize.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview2114"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="12.53125"
+     inkscape:cx="32"
+     inkscape:cy="32"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2112" />
+  <defs
+     id="defs2109">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient1021">
+      <stop
+         style="stop-color:#ffdd2e;stop-opacity:1;"
+         offset="0"
+         id="stop1017" />
+      <stop
+         style="stop-color:#ffab03;stop-opacity:1;"
+         offset="1"
+         id="stop1019" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1021"
+       id="linearGradient4020"
+       x1="32"
+       y1="4"
+       x2="60"
+       y2="60"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1275"
+       id="linearGradient1277"
+       x1="16.600012"
+       y1="9.2000113"
+       x2="16.600012"
+       y2="6"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(4.3749846,0,0,4.3749846,-25.024798,-10.249908)" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient1275">
+      <stop
+         style="stop-color:#bc3f00;stop-opacity:1;"
+         offset="0"
+         id="stop1271" />
+      <stop
+         style="stop-color:#c75944;stop-opacity:1;"
+         offset="1"
+         id="stop1273" />
+    </linearGradient>
+  </defs>
+  <circle
+     style="fill:url(#linearGradient4020);fill-opacity:1;stroke-width:1;stroke-linecap:round;stroke-linejoin:round"
+     id="path368"
+     cx="32"
+     cy="32"
+     r="28" />
+  <path
+     id="path375"
+     style="opacity:0.8;fill:#313131;fill-opacity:1;stroke-width:1;stroke-linecap:round;stroke-linejoin:round"
+     d="m 24.222656,36.890624 c -0.397802,6e-5 -0.781242,0.15618 -1.0625,0.4375 -0.585634,0.58576 -0.585634,1.535336 0,2.121094 2.34379,2.343788 5.525226,3.660158 8.839844,3.660158 3.314616,0 6.49215,-1.31637 8.835938,-3.660158 0.585634,-0.585758 0.585634,-1.535334 0,-2.121094 -0.58576,-0.585632 -1.535334,-0.585632 -2.121094,0 C 36.93285,39.110122 34.520122,40.109376 32,40.109376 c -2.520122,0 -4.936754,-0.999254 -6.71875,-2.781252 -0.281258,-0.281316 -0.660792,-0.43744 -1.058594,-0.4375 z"
+     sodipodi:nodetypes="cscscccscc" />
+  <path
+     id="path964"
+     style="fill:url(#linearGradient1277);fill-opacity:1;stroke-width:4.375;stroke-linecap:round;stroke-linejoin:round"
+     d="M 17.9375,16 C 15.217453,15.999983 14,17.95878 14,20.375 14.000018,23.268356 21,30 21,30 21,30 27.999984,23.268356 28,20.375 28,17.95878 26.782548,15.999983 24.0625,16 22.356138,16.000012 21,17.572192 21,18.625 21,17.572192 19.643862,16.000012 17.9375,16 Z m 22,0 C 37.217456,15.999983 36,17.95878 36,20.375 36.000016,23.268354 43,30 43,30 43,30 49.999984,23.268354 50,20.375 50,17.95878 48.782544,15.999983 46.0625,16 44.35614,16.000012 43,17.572192 43,18.625 43,17.572192 41.64386,16.000012 39.9375,16 Z"
+     sodipodi:nodetypes="scccscsscccscs" />
+</svg>

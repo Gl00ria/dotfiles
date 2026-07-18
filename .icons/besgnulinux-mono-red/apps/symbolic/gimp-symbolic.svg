@@ -1,0 +1,75 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px" viewBox="0 0 16 16" version="1.1">
+<defs>
+<filter id="alpha" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%">
+  <feColorMatrix type="matrix" in="SourceGraphic" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+</filter>
+<image id="image13" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAAJElEQVQ4jWNkYGA4w0ABYKJE86gBowaMGkBFA1gYGBjeUmIAALfIAdvcRhUXAAAAAElFTkSuQmCC"/>
+<mask id="mask0">
+  <g filter="url(#alpha)">
+<use xlink:href="#image13"/>
+  </g>
+</mask>
+<clipPath id="clip1">
+  <rect x="0" y="0" width="16" height="16"/>
+</clipPath>
+<g id="surface12" clip-path="url(#clip1)">
+<path style=" stroke:none;fill-rule:nonzero;fill:#ff6666;fill-opacity:1;" d="M 1.59375 0.5 C 0.636719 0.5 0.5 2.039062 0.5 3.160156 L 0.5 6 C 0.464844 12 3 12.929688 5.726562 13.660156 C 6.070312 13.960938 6.410156 14.5 6.546875 14.5 L 9.453125 14.5 C 9.589844 14.5 9.929688 13.960938 10.273438 13.660156 C 13 12.929688 15.484375 12 15.5 6 L 15.5 3.160156 C 15.5 2.039062 15.363281 0.5 14.40625 0.5 C 14.40625 2.039062 12.5 3.246094 11 3.300781 L 5 3.300781 C 3.5 3.300781 1.59375 2.039062 1.59375 0.5 Z M 5 4.5 C 6.378906 4.5 7.5 5.621094 7.5 7 C 7.5 8.378906 6.378906 9.5 5 9.5 C 3.621094 9.5 2.5 8.378906 2.5 7 C 2.5 5.621094 3.621094 4.5 5 4.5 Z M 11 4.5 C 12.378906 4.5 13.5 5.621094 13.5 7 C 13.5 8.378906 12.378906 9.5 11 9.5 C 9.621094 9.5 8.5 8.378906 8.5 7 C 8.5 5.621094 9.621094 4.5 11 4.5 Z M 11 4.5 "/>
+</g>
+<image id="image25" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAAQ0lEQVQ4jWNgGAWjYFgARixiwQwMDOY41J9gYGBYhyzAgkURJwMDAz8OA7jQBZjwuI4oQLEB2LzwnYGB4RMO9d/RBQDDtQUQ9EWbMwAAAABJRU5ErkJggg=="/>
+<mask id="mask1">
+  <g filter="url(#alpha)">
+<use xlink:href="#image25"/>
+  </g>
+</mask>
+<clipPath id="clip2">
+  <rect x="0" y="0" width="16" height="16"/>
+</clipPath>
+<g id="surface24" clip-path="url(#clip2)">
+<path style=" stroke:none;fill-rule:nonzero;fill:#ff6666;fill-opacity:1;" d="M 11 13.5 C 11 14.605469 9.65625 15.5 8 15.5 C 6.34375 15.5 5 14.605469 5 13.5 C 5 12.394531 6.34375 11.5 8 11.5 C 9.65625 11.5 11 12.394531 11 13.5 Z M 11 13.5 "/>
+</g>
+<image id="image37" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAANklEQVQ4jWNgGAUDDxjR+EkMDAySUPZzBgaGeYQMYEHjSzIwMMiR4gImUhQT44LnONijYFADAIF/BBFALJnAAAAAAElFTkSuQmCC"/>
+<mask id="mask2">
+  <g filter="url(#alpha)">
+<use xlink:href="#image37"/>
+  </g>
+</mask>
+<clipPath id="clip3">
+  <rect x="0" y="0" width="16" height="16"/>
+</clipPath>
+<g id="surface36" clip-path="url(#clip3)">
+<path style=" stroke:none;fill-rule:nonzero;fill:#ff6666;fill-opacity:1;" d="M 6.5 8 C 6.5 8.828125 5.828125 9.5 5 9.5 C 4.171875 9.5 3.5 8.828125 3.5 8 C 3.5 7.171875 4.171875 6.5 5 6.5 C 5.828125 6.5 6.5 7.171875 6.5 8 Z M 6.5 8 "/>
+</g>
+<image id="image49" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAAOElEQVQ4jWNgGAUDDxiJVJfEwMAgCWU/Z2BgmAeTYCHSAEkGBgY5bBJMRBqAExDrguc42KNgUAAAIQcEEUVrqXoAAAAASUVORK5CYII="/>
+<mask id="mask3">
+  <g filter="url(#alpha)">
+<use xlink:href="#image49"/>
+  </g>
+</mask>
+<clipPath id="clip4">
+  <rect x="0" y="0" width="16" height="16"/>
+</clipPath>
+<g id="surface48" clip-path="url(#clip4)">
+<path style=" stroke:none;fill-rule:nonzero;fill:#ff6666;fill-opacity:1;" d="M 12.5 8 C 12.5 8.828125 11.828125 9.5 11 9.5 C 10.171875 9.5 9.5 8.828125 9.5 8 C 9.5 7.171875 10.171875 6.5 11 6.5 C 11.828125 6.5 12.5 7.171875 12.5 8 Z M 12.5 8 "/>
+</g>
+<image id="image61" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAAQ0lEQVQ4jWNgGAWjYFgARixiwQwMDOY41J9gYGBYhyzAgkURJwMDAz8OA7jQBZjwuI4oQLEB2LzwnYGB4RMO9d/RBQDDtQUQ9EWbMwAAAABJRU5ErkJggg=="/>
+<mask id="mask4">
+  <g filter="url(#alpha)">
+<use xlink:href="#image61"/>
+  </g>
+</mask>
+<clipPath id="clip5">
+  <rect x="0" y="0" width="16" height="16"/>
+</clipPath>
+<g id="surface60" clip-path="url(#clip5)">
+<path style=" stroke:none;fill-rule:nonzero;fill:#ff6666;fill-opacity:1;" d="M 11 13.5 C 11 14.605469 9.65625 15.5 8 15.5 C 6.34375 15.5 5 14.605469 5 13.5 C 5 12.394531 6.34375 11.5 8 11.5 C 9.65625 11.5 11 12.394531 11 13.5 Z M 11 13.5 "/>
+</g>
+</defs>
+<g id="surface1">
+<use xlink:href="#surface12" mask="url(#mask0)"/>
+<use xlink:href="#surface24" mask="url(#mask1)"/>
+<use xlink:href="#surface36" mask="url(#mask2)"/>
+<use xlink:href="#surface48" mask="url(#mask3)"/>
+<use xlink:href="#surface60" mask="url(#mask4)"/>
+</g>
+</svg>

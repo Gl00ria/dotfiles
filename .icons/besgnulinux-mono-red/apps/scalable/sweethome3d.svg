@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64" version="1.1">
+<defs>
+<linearGradient id="linear0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(61.023443,32.115978,-58.447043,33.531743,30.71766,14.760124)">
+<stop offset="0" style="stop-color:#ff6666;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#d90000;stop-opacity:1;"/>
+</linearGradient>
+<filter id="alpha" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%">
+  <feColorMatrix type="matrix" in="SourceGraphic" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+</filter>
+<mask id="mask0">
+  <g filter="url(#alpha)">
+<rect x="0" y="0" width="64" height="64" style="fill:rgb(0%,0%,0%);fill-opacity:0.8;stroke:none;"/>
+  </g>
+</mask>
+<linearGradient id="linear1" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(-31.512004,-17.367268,0.0666915,66.089924,62,0.0273437)">
+<stop offset="0" style="stop-color:#ff6666;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#d90000;stop-opacity:1;"/>
+</linearGradient>
+<clipPath id="clip1">
+  <rect x="0" y="0" width="64" height="64"/>
+</clipPath>
+<g id="surface5" clip-path="url(#clip1)">
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear1);" d="M 58.859375 14.324219 L 33.660156 0.4375 C 31.9375 -0.511719 30.554688 0.246094 30.554688 2.132812 L 30.582031 33.253906 C 30.585938 35.144531 31.859375 37.644531 33.695312 38.378906 L 58.894531 48.4375 C 60.730469 49.167969 62 48.628906 62 46.738281 L 61.972656 19.449219 C 61.96875 17.558594 60.582031 15.273438 58.859375 14.324219 Z M 58.859375 14.324219 "/>
+</g>
+<mask id="mask1">
+  <g filter="url(#alpha)">
+<rect x="0" y="0" width="64" height="64" style="fill:rgb(0%,0%,0%);fill-opacity:0.6;stroke:none;"/>
+  </g>
+</mask>
+<linearGradient id="linear2" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(32.251895,-17.524652,-0.0683012,66.731683,2,-0.000000000000000466)">
+<stop offset="0" style="stop-color:#ff6666;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#d90000;stop-opacity:1;"/>
+</linearGradient>
+<clipPath id="clip2">
+  <rect x="0" y="0" width="64" height="64"/>
+</clipPath>
+<g id="surface8" clip-path="url(#clip2)">
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear2);" d="M 5.179688 14.457031 L 31.039062 0.40625 C 32.78125 -0.542969 34.183594 0.230469 34.183594 2.136719 L 34.152344 32.652344 C 34.152344 34.558594 32.835938 37.019531 31.003906 37.804688 L 5.144531 48.875 C 3.3125 49.660156 2 49.050781 2 47.144531 L 2.027344 19.609375 C 2.03125 17.703125 3.433594 15.402344 5.179688 14.457031 Z M 5.179688 14.457031 "/>
+</g>
+</defs>
+<g id="surface1">
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear0);" d="M 34.488281 31.824219 L 60.554688 45.539062 C 62.304688 46.460938 62.335938 48.007812 60.621094 48.988281 L 35.792969 63.234375 C 34.078125 64.214844 31.269531 64.265625 29.519531 63.34375 L 3.457031 49.628906 C 1.707031 48.707031 1.675781 47.164062 3.386719 46.179688 L 28.21875 31.933594 C 29.929688 30.953125 32.738281 30.902344 34.488281 31.824219 Z M 34.488281 31.824219 "/>
+<use xlink:href="#surface5" mask="url(#mask0)"/>
+<use xlink:href="#surface8" mask="url(#mask1)"/>
+</g>
+</svg>

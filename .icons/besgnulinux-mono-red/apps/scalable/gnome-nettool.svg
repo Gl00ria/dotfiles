@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64" version="1.1">
+<defs>
+<filter id="alpha" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%">
+  <feColorMatrix type="matrix" in="SourceGraphic" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+</filter>
+<mask id="mask0">
+  <g filter="url(#alpha)">
+<rect x="0" y="0" width="64" height="64" style="fill:rgb(0%,0%,0%);fill-opacity:0.9;stroke:none;"/>
+  </g>
+</mask>
+<linearGradient id="linear0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(64,0,0,24.28125,0,19.859375)">
+<stop offset="0" style="stop-color:#ff6666;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#d90000;stop-opacity:1;"/>
+</linearGradient>
+<clipPath id="clip1">
+  <rect x="0" y="0" width="64" height="64"/>
+</clipPath>
+<g id="surface5" clip-path="url(#clip1)">
+<path style=" stroke:none;fill-rule:evenodd;fill:url(#linear0);" d="M 6.617188 19.859375 L 6.617188 26.484375 L 0 26.484375 L 0 28.6875 L 8.828125 28.6875 L 8.828125 22.070312 L 11.03125 22.070312 L 11.03125 35.3125 L 17.65625 35.3125 L 17.65625 28.6875 L 30.898438 28.6875 L 30.898438 22.070312 L 33.101562 22.070312 L 33.101562 35.3125 L 39.726562 35.3125 L 39.726562 28.6875 L 50.757812 28.6875 L 50.757812 22.070312 L 52.96875 22.070312 L 52.96875 35.3125 L 59.585938 35.3125 L 59.585938 28.6875 L 64 28.6875 L 64 26.484375 L 57.382812 26.484375 L 57.382812 33.101562 L 55.171875 33.101562 L 55.171875 19.859375 L 48.554688 19.859375 L 48.554688 26.484375 L 37.515625 26.484375 L 37.515625 33.101562 L 35.3125 33.101562 L 35.3125 19.859375 L 28.6875 19.859375 L 28.6875 26.484375 L 15.445312 26.484375 L 15.445312 33.101562 L 13.242188 33.101562 L 13.242188 19.859375 Z M 48.554688 37.515625 L 48.554688 44.140625 L 50.757812 44.140625 L 50.757812 37.515625 Z M 44.140625 39.726562 L 44.140625 44.140625 L 46.34375 44.140625 L 46.34375 39.726562 Z M 52.96875 39.726562 L 52.96875 44.140625 L 55.171875 44.140625 L 55.171875 39.726562 Z M 39.726562 41.929688 L 39.726562 44.140625 L 41.929688 44.140625 L 41.929688 41.929688 Z M 57.382812 41.929688 L 57.382812 44.140625 L 59.585938 44.140625 L 59.585938 41.929688 Z M 57.382812 41.929688 "/>
+</g>
+</defs>
+<g id="surface1">
+<use xlink:href="#surface5" mask="url(#mask0)"/>
+</g>
+</svg>

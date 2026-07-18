@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64" version="1.1">
+<defs>
+<linearGradient id="linear0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(85.341503,0,0,113.553558,-11.241276,-26.389343)">
+<stop offset="0" style="stop-color:#ff6666;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#d90000;stop-opacity:1;"/>
+</linearGradient>
+<linearGradient id="linear1" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(85.341503,0,0,113.553558,-11.241276,-26.389343)">
+<stop offset="0" style="stop-color:#ff6666;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#d90000;stop-opacity:1;"/>
+</linearGradient>
+<linearGradient id="linear2" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(85.341503,0,0,113.553558,-11.241276,-26.389343)">
+<stop offset="0" style="stop-color:#ff6666;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#d90000;stop-opacity:1;"/>
+</linearGradient>
+</defs>
+<g id="surface1">
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear0);" d="M 56.324219 56.96875 C 57.132812 56.96875 57.789062 56.175781 57.789062 55.191406 L 57.789062 25.03125 C 57.789062 24.046875 57.132812 23.253906 56.324219 23.253906 L 47.539062 23.253906 L 47.539062 48.09375 C 47.539062 49.078125 46.882812 49.871094 46.078125 49.871094 L 31.433594 49.871094 C 30.625 49.871094 29.972656 49.078125 29.972656 48.09375 L 29.972656 23.253906 L 21.1875 23.253906 C 20.375 23.253906 19.722656 24.046875 19.722656 25.03125 L 19.722656 55.191406 C 19.722656 56.175781 20.375 56.96875 21.1875 56.96875 Z M 56.324219 56.96875 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear1);" d="M 16.789062 23.289062 L 16.789062 39.257812 L 29.964844 23.289062 Z M 16.789062 23.289062 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear2);" d="M 8.003906 5.535156 C 7.191406 5.535156 6.539062 6.324219 6.539062 7.308594 L 6.539062 37.46875 C 6.539062 38.453125 7.191406 39.246094 8.003906 39.246094 L 16.789062 39.246094 L 16.789062 14.40625 C 16.789062 13.421875 17.441406 12.628906 18.253906 12.628906 L 32.894531 12.628906 C 33.707031 12.628906 34.359375 13.421875 34.359375 14.40625 L 34.359375 39.246094 L 43.140625 39.246094 C 43.953125 39.246094 44.605469 38.453125 44.605469 37.46875 L 44.605469 7.308594 C 44.605469 6.324219 43.953125 5.535156 43.140625 5.535156 Z M 8.003906 5.535156 "/>
+</g>
+</svg>

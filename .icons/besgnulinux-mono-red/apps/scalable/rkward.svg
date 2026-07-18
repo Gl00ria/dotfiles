@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64" version="1.1">
+<defs>
+<filter id="alpha" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%">
+  <feColorMatrix type="matrix" in="SourceGraphic" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+</filter>
+<mask id="mask0">
+  <g filter="url(#alpha)">
+<rect x="0" y="0" width="64" height="64" style="fill:rgb(0%,0%,0%);fill-opacity:0.6;stroke:none;"/>
+  </g>
+</mask>
+<linearGradient id="linear0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(57.617188,0,0,40.8125,0,7.222656)">
+<stop offset="0" style="stop-color:#ff6666;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#d90000;stop-opacity:1;"/>
+</linearGradient>
+<clipPath id="clip1">
+  <rect x="0" y="0" width="64" height="64"/>
+</clipPath>
+<g id="surface5" clip-path="url(#clip1)">
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear0);" d="M 28.808594 7.222656 C 12.898438 7.222656 0 16.359375 0 27.628906 C 0 38.898438 12.898438 48.035156 28.808594 48.035156 C 44.71875 48.035156 57.617188 38.898438 57.617188 27.628906 C 57.617188 16.359375 44.71875 7.222656 28.808594 7.222656 Z M 33.609375 14.425781 C 45.542969 14.425781 55.21875 20.335938 55.21875 27.628906 C 55.21875 34.921875 45.542969 40.832031 33.609375 40.832031 C 21.675781 40.832031 12.003906 34.921875 12.003906 27.628906 C 12.003906 20.335938 21.675781 14.425781 33.609375 14.425781 Z M 33.609375 14.425781 "/>
+</g>
+<linearGradient id="linear1" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(35.953125,0,0,33.917969,28.046875,22.859375)">
+<stop offset="0" style="stop-color:#ff6666;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#d90000;stop-opacity:1;"/>
+</linearGradient>
+</defs>
+<g id="surface1">
+<use xlink:href="#surface5" mask="url(#mask0)"/>
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear1);" d="M 28.046875 22.859375 L 38.527344 22.859375 L 38.527344 35.675781 L 49.515625 22.859375 L 63.445312 22.859375 L 51.089844 35.65625 L 64 56.777344 L 51.089844 56.777344 L 43.941406 42.828125 L 38.527344 48.496094 L 38.527344 56.777344 L 28.046875 56.777344 Z M 28.046875 22.859375 "/>
+</g>
+</svg>

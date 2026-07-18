@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64" version="1.1">
+<defs>
+<linearGradient id="linear0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(64,0,0,64,0,0)">
+<stop offset="0" style="stop-color:#ff6666;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#d90000;stop-opacity:1;"/>
+</linearGradient>
+<filter id="alpha" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%">
+  <feColorMatrix type="matrix" in="SourceGraphic" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+</filter>
+<mask id="mask0">
+  <g filter="url(#alpha)">
+<rect x="0" y="0" width="64" height="64" style="fill:rgb(0%,0%,0%);fill-opacity:0.65;stroke:none;"/>
+  </g>
+</mask>
+<linearGradient id="linear1" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(45.710938,0,0,45.710938,9.144531,9.144531)">
+<stop offset="0" style="stop-color:#ff6666;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#d90000;stop-opacity:1;"/>
+</linearGradient>
+<clipPath id="clip1">
+  <rect x="0" y="0" width="64" height="64"/>
+</clipPath>
+<g id="surface5" clip-path="url(#clip1)">
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear1);" d="M 54.855469 32 C 54.855469 44.621094 44.621094 54.855469 32 54.855469 C 19.378906 54.855469 9.144531 44.621094 9.144531 32 C 9.144531 19.378906 19.378906 9.144531 32 9.144531 C 44.621094 9.144531 54.855469 19.378906 54.855469 32 Z M 54.855469 32 "/>
+</g>
+</defs>
+<g id="surface1">
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear0);" d="M 32 9.144531 C 29.476562 9.144531 27.429688 7.097656 27.429688 4.570312 C 27.429688 2.046875 29.476562 0 32 0 C 49.671875 0 64 14.328125 64 32 C 64 49.671875 49.671875 64 32 64 C 14.488281 63.992188 0.234375 49.902344 0.0195312 32.394531 C 0.0078125 32.265625 0 32.132812 0 32 C 0 29.476562 2.046875 27.429688 4.570312 27.429688 C 7.097656 27.429688 9.144531 29.476562 9.144531 32 C 9.144531 44.617188 19.382812 54.855469 32 54.855469 C 44.617188 54.855469 54.855469 44.617188 54.855469 32 C 54.855469 19.382812 44.617188 9.144531 32 9.144531 Z M 32 9.144531 "/>
+<use xlink:href="#surface5" mask="url(#mask0)"/>
+</g>
+</svg>

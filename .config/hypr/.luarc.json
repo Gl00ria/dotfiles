@@ -1,0 +1,7 @@
+{
+  "diagnostics.globals": ["hl"],
+  "workspace": {
+    "library": ["/usr/share/hypr/stubs", "${HOME}/.config/hypr"],
+    "checkThirdParty": false
+  }
+}

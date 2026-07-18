@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="16"
+   height="16"
+   viewBox="0 0 16 16"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14, custom)"
+   sodipodi:docname="folder-music.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="false"
+     units="px"
+     height="64px"
+     inkscape:zoom="50.5"
+     inkscape:cx="8"
+     inkscape:cy="8"
+     inkscape:window-width="1920"
+     inkscape:window-height="1010"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg5"
+     inkscape:showpageshadow="2"
+     inkscape:deskcolor="#d1d1d1" />
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient979">
+      <stop
+         style="stop-color:#f09154;stop-opacity:1;"
+         offset="0"
+         id="stop975" />
+      <stop
+         style="stop-color:#9d66af;stop-opacity:1"
+         offset="1"
+         id="stop977" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient979"
+       id="linearGradient1477"
+       x1="0"
+       y1="1.0632324e-07"
+       x2="4.2333336"
+       y2="4.2333336"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="scale(3.7795273)" />
+  </defs>
+  <circle
+     style="opacity:1;fill:url(#linearGradient1477);fill-opacity:1;stroke-width:3;stroke-linecap:round;stroke-linejoin:round"
+     id="path864"
+     cx="8"
+     cy="8"
+     r="8" />
+  <path
+     id="path1056"
+     style="opacity:1;fill:#ffffff;stroke-width:3.74998;stroke-linecap:round;stroke-linejoin:round"
+     d="M 8.6152341,1.9999999 C 8.255085,2.0087219 7.9999997,2.2820311 7.9999997,2.7148437 v 1 5.785156 a 2.4999998,2.4999998 0 0 0 -1.4999999,-0.5 A 2.4999998,2.4999998 0 0 0 3.9999999,11.5 2.4999998,2.4999998 0 0 0 6.4999998,14 a 2.4999998,2.4999998 0 0 0 2.4999999,-2.5 2.4999998,2.4999998 0 0 0 0,-0.06445 V 5.0781248 L 12.060547,6.1933592 C 12.581136,6.3828382 13,6.0891558 13,5.535156 v -1 c 0,-0.554 -0.418864,-1.1523177 -0.939453,-1.3417967 L 8.9394528,2.0566405 C 8.8255738,2.0151919 8.7160758,1.9975577 8.6152341,1.9999999 Z" />
+</svg>

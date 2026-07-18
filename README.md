@@ -1,12 +1,7 @@
-# NOTE: moved to [HyDE gl00ria_remix](https://github.com/Gl00ria/hyprdots/tree/gl00ria_remix)
-## My ~~[Arch-Linux](https://archlinux.org/)~~ [EndeavourOS](https://endeavouros.com/) dotfiles for [Hyprland](https://wiki.hyprland.org/Getting-Started/Installation/) & [KDE-Plasma](https://kde.org/plasma-desktop/)
+### Arch Linux dotfiles
 
-### Please keep in mind, this is my personal dotfiles and its a huge repo since it hosts the following:
+Updated after 3 years of not being updated :)
 
-### Hyprland dotfiles: [here](https://github.com/Gl00ria/dotfiles/tree/main/dot_hyprland)
+[Nvim Config](https://github.com/Gl00ria/nvim)
 
-### KDE dotfiles: [here](https://github.com/Gl00ria/dotfiles/tree/main/dot_kde)
-
-### Wallpapers: [here](https://github.com/Gl00ria/dotfiles/tree/main/Pictures/SlideShow)
-
-# Get inspired, enjoy & leave a STAR.
+# Get inspired, enjoy & leave a STAR

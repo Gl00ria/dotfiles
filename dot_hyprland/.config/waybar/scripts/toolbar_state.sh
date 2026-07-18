@@ -1,9 +1,0 @@
-#!/bin/env bash
-
-LOCK=/tmp/expand_toolbar.lock
-
-if [ -f "$LOCK" ]; then
-    exit 0
-else
-    exit 1
-fi

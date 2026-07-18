@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="16"
+   height="16"
+   viewBox="0 0 16 16"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="battery-010.svg"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="50.5625"
+     inkscape:cx="7.9901112"
+     inkscape:cy="8"
+     inkscape:window-width="1920"
+     inkscape:window-height="1012"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg5"
+     showguides="false" />
+  <defs
+     id="defs2">
+    <style
+       id="current-color-scheme"
+       type="text/css">
+   .ColorScheme-Text { color:#dedede; } .ColorScheme-Highlight { color:#4285f4; } .ColorScheme-NeutralText { color:#ff9800; } .ColorScheme-PositiveText { color:#4caf50; } .ColorScheme-NegativeText { color:#f44336; }
+   </style>
+  </defs>
+  <path
+     id="path1017"
+     style="fill:currentColor;fill-opacity:1"
+     class="ColorScheme-Text"
+     d="M 2 3 C 0.89200311 3 0 3.8920033 0 5 L 0 11 C 0 12.107997 0.89200311 13 2 13 L 12 13 C 13.107997 13 14 12.107997 14 11 L 14 10 A 2 2 0 0 0 16 8 A 2 2 0 0 0 14 6 L 14 5 C 14 3.8920033 13.107997 3 12 3 L 2 3 z M 2 4 L 12 4 C 12.553998 4 13 4.4460018 13 5 L 13 11 C 13 11.553997 12.553998 12 12 12 L 2 12 C 1.4460026 12 1 11.553997 1 11 L 1 5 C 1 4.4460018 1.4460026 4 2 4 z " />
+  <path
+     id="rect2645"
+     style="fill:currentColor;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+     d="M 3,5 H 2 v 6 h 1 z"
+     class="ColorScheme-NegativeText"
+     sodipodi:nodetypes="ccccc" />
+</svg>

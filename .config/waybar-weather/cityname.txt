@@ -1,0 +1,13 @@
+## SPDX-FileCopyrightText: Winni Neessen <wn@neessen.dev>
+##
+## SPDX-License-Identifier: MIT
+##
+## Example file for the cityname_file geobus provider
+## This provider is based on a simple file containing a <city/town>,<country> pair
+## pointing towards the desired location.
+##
+## The geolocation file must be placed in the waybar-weather config directory:
+## ~/.config/waybar-weather/cityname
+##
+## The following coordinates point towards coordinates: 37.332806,-122.005371
+Apple Park Cupertino, California

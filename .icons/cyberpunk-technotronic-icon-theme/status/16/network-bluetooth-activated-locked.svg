@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   height="16"
+   width="16"
+   version="1.1"
+   id="svg1"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+   <defs>
+      <style id="current-color-scheme" type="text/css">
+         .ColorScheme-Text { color: #0abdc6; } .ColorScheme-Highlight { color:#5294e2; }
+      </style>
+      <linearGradient id="arrongin" x1="0%" x2="0%" y1="0%" y2="100%">
+         <stop offset="0%" style="stop-color:#dd9b44; stop-opacity:1"/>
+         <stop offset="100%" style="stop-color:#ad6c16; stop-opacity:1"/>
+      </linearGradient>
+      <linearGradient id="aurora" x1="0%" x2="0%" y1="0%" y2="100%">
+         <stop offset="0%" style="stop-color:#09D4DF; stop-opacity:1"/>
+         <stop offset="100%" style="stop-color:#9269F4; stop-opacity:1"/>
+      </linearGradient>
+      <linearGradient id="cyberneon" x1="0%" x2="0%" y1="0%" y2="100%">
+         <stop offset="0" style="stop-color:#0abdc6; stop-opacity:1"/>
+         <stop offset="1" style="stop-color:#ea00d9; stop-opacity:1"/>
+      </linearGradient>
+      <linearGradient id="fitdance" x1="0%" x2="0%" y1="0%" y2="100%">
+         <stop offset="0%" style="stop-color:#1AD6AB; stop-opacity:1"/>
+         <stop offset="100%" style="stop-color:#329DB6; stop-opacity:1"/>
+      </linearGradient>
+      <linearGradient id="oomox" x1="0%" x2="0%" y1="0%" y2="100%">
+         <stop offset="0%" style="stop-color:#0abdc6; stop-opacity:1"/>
+         <stop offset="100%" style="stop-color:#b800ff; stop-opacity:1"/>
+      </linearGradient>
+      <linearGradient id="rainblue" x1="0%" x2="0%" y1="0%" y2="100%">
+         <stop offset="0%" style="stop-color:#00F260; stop-opacity:1"/>
+         <stop offset="100%" style="stop-color:#0575E6; stop-opacity:1"/>
+      </linearGradient>
+      <linearGradient id="sunrise" x1="0%" x2="0%" y1="0%" y2="100%">
+         <stop offset="0%" style="stop-color: #FF8501; stop-opacity:1"/>
+         <stop offset="100%" style="stop-color: #FFCB01; stop-opacity:1"/>
+      </linearGradient>
+      <linearGradient id="telinkrin" x1="0%" x2="0%" y1="0%" y2="100%">
+         <stop offset="0%" style="stop-color: #b2ced6; stop-opacity:1"/>
+         <stop offset="100%" style="stop-color: #6da5b7; stop-opacity:1"/>
+      </linearGradient>
+      <linearGradient id="60spsycho" x1="0%" x2="0%" y1="0%" y2="100%">
+         <stop offset="0%" style="stop-color: #df5940; stop-opacity:1"/>
+         <stop offset="25%" style="stop-color: #d8d15f; stop-opacity:1"/>
+         <stop offset="50%" style="stop-color: #e9882a; stop-opacity:1"/>
+         <stop offset="100%" style="stop-color: #279362; stop-opacity:1"/>
+      </linearGradient>
+      <linearGradient id="90ssummer" x1="0%" x2="0%" y1="0%" y2="100%">
+         <stop offset="0%" style="stop-color: #f618c7; stop-opacity:1"/>
+         <stop offset="20%" style="stop-color: #94ffab; stop-opacity:1"/>
+         <stop offset="50%" style="stop-color: #fbfd54; stop-opacity:1"/>
+         <stop offset="100%" style="stop-color: #0f83ae; stop-opacity:1"/>
+      </linearGradient>
+   </defs>
+  <path
+     style="fill:url(#oomox);fill-opacity:1;stroke:none;stroke-width:0.72725"
+     d="m 13.818,10.90925 c -0.805793,0 -1.454501,0.648707 -1.454501,1.4545 v 1.4545 H 11.63625 V 16 h 4.3635 v -2.18175 h -0.727251 v -1.4545 c 0,-0.805793 -0.648706,-1.4545 -1.454499,-1.4545 z m 0,0.72725 c 0.402896,0 0.72725,0.324353 0.72725,0.72725 v 1.4545 h -1.4545 v -1.4545 c 0,-0.402897 0.324353,-0.72725 0.72725,-0.72725 z"
+     id="path3"
+     class="ColorScheme-Text" />
+  <path
+     style="fill:url(#oomox);fill-opacity:1;stroke:none;stroke-width:0.72725"
+     d="m 3.6364999,7.2727499 c -0.4016456,0 -0.72725,0.3256007 -0.72725,0.7272499 0,0.4016492 0.3256044,0.72725 0.72725,0.72725 0.4016456,0 0.72725,-0.3256008 0.72725,-0.72725 0,-0.4016492 -0.3256044,-0.7272499 -0.72725,-0.7272499 z"
+     id="path2"
+     class="ColorScheme-Text" />
+  <path
+     style="fill:url(#oomox);fill-opacity:1;stroke:none;stroke-width:0.72725"
+     d="M 0.72749998,7.2727499 C 0.32585436,7.2727499 2.5e-4,7.5983506 2.5e-4,7.9999998 c 0,0.4016492 0.32560436,0.72725 0.72724998,0.72725 0.40164562,0 0.72725002,-0.3256008 0.72725002,-0.72725 0,-0.4016492 -0.3256044,-0.7272499 -0.72725002,-0.7272499 z"
+     id="path1"
+     class="ColorScheme-Text" />
+  <metadata
+     id="metadata1">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>dreifacherspass</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <path
+     id="path24"
+     class="ColorScheme-Text"
+     style="fill:url(#oomox);fill-opacity:1;-inkscape-stroke:none;opacity:1"
+     d="M 7.4980469,0 V 0.5 0.501953 5.8203124 L 5.15625,3.28125 C 4.9413008,3.0480305 4.6582031,2.7421875 4.6582031,2.7421875 L 4.2910156,2.34375 3,3.7441406 6.9257813,8.0019531 3,12.259766 l 1.2910156,1.40039 0.3671875,-0.398437 c 0,0 0.4079712,-0.442497 0.7128906,-0.773438 0.063717,-0.06915 0.095272,-0.104379 0.1484376,-0.162109 L 7.5,10.179688 V 16 H 9.0820313 L 13.000001,11.75 9.5429687,8 13.000001,4.25 9.0820313,0 Z M 9.3632813,3.1074219 10.417969,4.2519531 9.3632813,5.3964844 Z m 0,7.5000001 1.0546877,1.144531 -1.0546877,1.144531 z" />
+</svg>

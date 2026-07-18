@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64" version="1.1">
+<defs>
+<linearGradient id="linear0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(18.285156,0,0,18.285156,0.000000000000259848,45.714844)">
+<stop offset="0" style="stop-color:#ff6666;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#d90000;stop-opacity:1;"/>
+</linearGradient>
+<linearGradient id="linear1" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(18.285156,0,0,18.285156,45.714844,45.714844)">
+<stop offset="0" style="stop-color:#ff6666;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#d90000;stop-opacity:1;"/>
+</linearGradient>
+<linearGradient id="linear2" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(18.289063,0,0,18.285156,22.855469,45.714844)">
+<stop offset="0" style="stop-color:#ff6666;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#d90000;stop-opacity:1;"/>
+</linearGradient>
+<linearGradient id="linear3" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(18.289063,0,0,18.289062,22.855469,22.855469)">
+<stop offset="0" style="stop-color:#ff6666;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#d90000;stop-opacity:1;"/>
+</linearGradient>
+<linearGradient id="linear4" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(18.285156,0,0,18.285156,45.714844,0)">
+<stop offset="0" style="stop-color:#ff6666;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#d90000;stop-opacity:1;"/>
+</linearGradient>
+</defs>
+<g id="surface1">
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear0);" d="M 18.285156 54.855469 C 18.285156 59.90625 14.191406 64 9.144531 64 C 4.09375 64 0 59.90625 0 54.855469 C 0 49.808594 4.09375 45.714844 9.144531 45.714844 C 14.191406 45.714844 18.285156 49.808594 18.285156 54.855469 Z M 18.285156 54.855469 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear1);" d="M 64 54.855469 C 64 59.90625 59.90625 64 54.855469 64 C 49.808594 64 45.714844 59.90625 45.714844 54.855469 C 45.714844 49.808594 49.808594 45.714844 54.855469 45.714844 C 59.90625 45.714844 64 49.808594 64 54.855469 Z M 64 54.855469 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear2);" d="M 41.144531 54.855469 C 41.144531 59.90625 37.050781 64 32 64 C 26.949219 64 22.855469 59.90625 22.855469 54.855469 C 22.855469 49.808594 26.949219 45.714844 32 45.714844 C 37.050781 45.714844 41.144531 49.808594 41.144531 54.855469 Z M 41.144531 54.855469 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear3);" d="M 41.144531 32 C 41.144531 37.050781 37.050781 41.144531 32 41.144531 C 26.949219 41.144531 22.855469 37.050781 22.855469 32 C 22.855469 26.949219 26.949219 22.855469 32 22.855469 C 37.050781 22.855469 41.144531 26.949219 41.144531 32 Z M 41.144531 32 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear4);" d="M 64 9.144531 C 64 14.191406 59.90625 18.285156 54.855469 18.285156 C 49.808594 18.285156 45.714844 14.191406 45.714844 9.144531 C 45.714844 4.09375 49.808594 0 54.855469 0 C 59.90625 0 64 4.09375 64 9.144531 Z M 64 9.144531 "/>
+</g>
+</svg>

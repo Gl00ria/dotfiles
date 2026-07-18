@@ -1,0 +1,314 @@
+//* ---- 💫 https://github.com/LinuxBeginnings 💫 ---- *//
+/* Waybar Workspaces modules */
+
+/* Generally, this is a potential expanding of choices for hyprland/workspace */
+// HYPRLAND WORKSPACES. CHOOSE as desired and place on waybar configs
+
+{
+// CIRCLES Style
+"hyprland/workspaces": {
+	"active-only": false,
+	"all-outputs": true,
+	"format": "{icon}",
+	"show-special": false,
+	"on-click": "activate",
+	"on-scroll-up": "hyprctl dispatch workspace e+1",
+	"on-scroll-down": "hyprctl dispatch workspace e-1",
+    "persistent-workspaces": {
+      "*": 5
+	},
+	"format-icons": {
+		"active": "",
+		"default": "",
+	},
+},
+// ROMAN Numerals style
+"hyprland/workspaces#roman": {
+	"active-only": false,
+	"all-outputs": true,
+	"format": "{icon}",
+	"show-special": false,
+	"on-click": "activate",
+	"on-scroll-up": "hyprctl dispatch workspace e+1",
+	"on-scroll-down": "hyprctl dispatch workspace e-1",
+    "persistent-workspaces": {
+      "*": 5
+	},
+	"format-icons": {
+		"1": "I",
+		"2": "II",
+		"3": "III",
+		"4": "IV",
+		"5": "V",
+		"6": "VI",
+		"7": "VII",
+		"8": "VIII",
+		"9": "IX",
+		"10": "X",
+	},
+},
+// PACMAN Style
+"hyprland/workspaces#pacman": {
+	"active-only": false,
+	"all-outputs": true,
+	"format": "{icon}",
+	"on-click": "activate",
+	"on-scroll-up": "hyprctl dispatch workspace e+1",
+	"on-scroll-down": "hyprctl dispatch workspace e-1",
+	"show-special": false,
+    "persistent-workspaces": {
+      "*": 5
+	},
+	"format": "{icon}",
+	"format-icons": {
+            "active": "<span font='12'>󰮯</span>",
+            "empty": "<span font='8'></span>",
+            "default": "󰊠",
+	},
+},
+// Kanji / Japanese style
+"hyprland/workspaces#kanji": {
+	"disable-scroll": true,
+	"show-special": false,
+	"all-outputs": true,
+	"format": "{icon}",
+    "persistent-workspaces": {
+      "*": 5
+	},
+	"format-icons": {
+		"1": "一",
+		"2": "二",
+		"3": "三",
+		"4": "四",
+		"5": "五",
+		"6": "六",
+		"7": "七",
+		"8": "八",
+		"9": "九",
+		"10": "十",
+	}
+},
+// for Camilla or Spanish
+"hyprland/workspaces#cam": {
+	"active-only":false,
+	"all-outputs": true,
+	"format": "{icon}",
+	"show-special": false,
+	"on-click": "activate",
+	"on-scroll-up": "hyprctl dispatch workspace e+1",
+	"on-scroll-down": "hyprctl dispatch workspace e-1",
+    "persistent-workspaces": {
+      "*": 5
+	},
+		"format-icons": {
+		"1": "Uno",
+		"2": "Due",
+		"3": "Tre",
+		"4": "Quattro",
+		"5": "Cinque",
+		"6":"Sei",
+		"7":"Sette",
+		"8":"Otto",
+		"9":"Nove",
+		"10":"Dieci"
+	}	
+  },
+  
+//  NUMBERS and ICONS style
+"hyprland/workspaces#4": {
+	"format": "{name}",
+	"format": " {name} {icon} ",
+	//"format": " {icon} ",
+	"show-special": false,
+	"on-click": "activate",
+	"on-scroll-up": "hyprctl dispatch workspace e+1",
+	"on-scroll-down": "hyprctl dispatch workspace e-1",
+	"all-outputs": true,
+	"sort-by-number": true,
+	"format-icons": {
+		"1": " ",
+		"2": " ",
+		"3": " ",
+		"4": " ",
+		"5": " ",
+		"6": " ",
+		"7": "",
+		"8": " ",
+		"9": "",
+		"10": "10",
+		"focused": "",
+		"default": "",
+	},
+},
+// numbers styles
+"hyprland/workspaces#numbers": {
+	"active-only": false,
+	"all-outputs": true,
+	"format": "{icon}",
+	"show-special": false,
+	"on-click": "activate",
+	"on-scroll-up": "hyprctl dispatch workspace e+1",
+	"on-scroll-down": "hyprctl dispatch workspace e-1",
+    "persistent-workspaces": {
+      "*": 5
+	},
+	"format-icons": {
+		"1": "1",
+		"2": "2",
+		"3": "3",
+		"4": "4",
+		"5": "5",
+		"6": "6",
+		"7": "7",
+		"8": "8",
+		"9": "9",
+		"10": "10",
+	},
+},
+// NUMBERS and ICONS style with window rewrite 
+"hyprland/workspaces#rw": {
+	"disable-scroll": true,
+	"all-outputs": true,
+	"warp-on-scroll": false,
+	"sort-by-number": true,
+	"show-special": false,
+	"on-click": "activate",
+	"on-scroll-up": "hyprctl dispatch workspace e+1",
+	"on-scroll-down": "hyprctl dispatch workspace e-1",
+	"persistent-workspaces": {
+		"*": 5
+	  },
+	"format": "{icon} {windows}",
+	"format-window-separator": " ",
+	"window-rewrite-default": " <span foreground='#ff0000'>✘</span> ",
+	"window-rewrite": {		
+		"title<.*amazon.*>": " ",
+		"title<.*reddit.*>": " ",
+
+		"class<firefox|org.mozilla.firefox|librewolf|floorp|mercury-browser|[Cc]achy-browser>": " ",
+		"class<zen>": "󰰷 ",
+		"class<waterfox|waterfox-bin>": " ",
+		"class<microsoft-edge>": " ",
+		"class<Chromium|Thorium|[Cc]hrome>": " ",
+		"class<brave-browser>": "🦁 ",
+		"class<tor browser>": " ",
+		"class<firefox-developer-edition>": "🦊 ",
+
+		"class<kitty|konsole|[Aa]lacritty>": " ",
+		"class<kitty-dropterm>": " ",
+		"class<com.mitchellh.ghostty>": " ",
+		"class<org.wezfurlong.wezterm>": " ",
+		"class<play.mii.Boxxy>": " ",
+		"class<Warp|warp|dev.warp.Warp|warp-terminal>": "󰰭 ",
+
+    "class<[Tt]hunderbird|[Tt]hunderbird-esr>": "󰊫 ",
+		"class<org.mozilla.Thunderbird|eu.betterbird.Betterbird>": "󰊫 ",
+		"title<.*gmail.*>": "󰊫 ",
+
+		"class<[Tt]elegram-desktop|org.telegram.desktop|io.github.tdesktop_x64.TDesktop>": " ",
+		"class<discord|discord-canary|[Ww]ebcord|[Vv]esktop|com.discordapp.Discord|dev.vencord.Vesktop>": " ",
+		"class<app.fluxer.Fluxer>": "󰭹 ",
+		"class<[Ss]ignal|signal-desktop|org.signal.Signal>": "󰍩 ",
+		"title<.*Signal.*>": "󰍩 ",
+		"title<.*whatsapp.*>": " ",
+		"title<.*zapzap.*>": " ",
+		"title<.*messenger.*>": " ",
+		"title<.*facebook.*>": " ",
+		"title<.*Discord.*>": " ",
+
+		"title<.*ChatGPT.*>": "󰚩 ",
+		"title<.*deepseek.*>": "󰚩 ",
+		"title<.*qwen.*>": "󰚩 ",
+		"title<.*Gemini.*>": "󰚩 ",
+		"class<subl>": "󰅳 ",
+		"class<slack>": " ",
+
+		"class<mpv>": " ",
+		"class<celluloid|Zoom>": " ",
+		"class<Cider>": "󰎆 ",
+		"title<.*Picture-in-Picture.*>": " ",
+		"title<.*youtube.*>": " ",
+		"class<vlc>": "󰕼 ",
+		"class<[Kk]denlive|org.kde.kdenlive>": "🎬 ",
+		"title<.*Kdenlive.*>": "🎬 ",
+		"class<com.github.wwmm.easyeffects>": " ",
+		"title<.*cmus.*>": " ",
+		"class<[Ss]potify>": " ",
+		"class<Plex>": "󰚺 ",
+
+		"class<virt-manager>": " ",
+		"class<.virt-manager-wrapped>": " ",
+		"class<remote-viewer|virt-viewer>": " ",
+		"class<virtualbox manager>": "💽 ",
+		"title<virtualbox>": "💽 ",
+		"class<remmina|org.remmina.Remmina>": "🖥️ ",
+		"class<mainline-gtk>": " ",
+
+		"class<VSCode|code|code-url-handler|code-oss|codium|codium-url-handler|VSCodium>": "󰨞 ",
+		"class<[Aa]ntigravity>": "󰨞 ",
+		"title<.*[Aa]ntigravity.*>": "󰨞 ",
+		"class<dev.zed.Zed>": "󰵁",
+		"class<codeblocks>": "󰅩 ",
+		"title<.*github.*>": " ",
+		"class<com-jetpackduba-gitnuro-MainKt>": " ",
+		"title<.*Gitnuro.*>": " ",
+		"class<mousepad>": " ",
+		"class<libreoffice-writer>": " ",
+		"class<libreoffice-startcenter>": "󰏆 ",
+		"class<libreoffice-calc>": " ",
+		"title<.*nvim ~.*>": " ",
+		"title<.*vim.*>": " ",
+		"title<.*nvim.*>": " ",
+		"title<.*figma.*>": " ",
+		"title<.*jira.*>": " ",
+		"class<jetbrains-idea>": " ",
+		"class<emacs|Emacs>": " ",
+
+		"class<obs|com.obsproject.Studio>": " ",
+
+		"class<polkit-gnome-authentication-agent-1>": "󰒃 ",
+		"class<hyprpolkitagent>": "󰒃 ",
+		"class<com.github.hyprmod>": " ",
+		"class<nwg-look>": " ",
+		"class<vswaybar-studio>": "󰛼 ",
+		"class<nwg-displays>": " ",
+		"class<[Pp]avucontrol|org.pulseaudio.pavucontrol>": "󱡫 ",
+		"class<steam>": " ",
+		"class<thunar|nemo|org.gnome.Nautilus>": "󰝰 ",	
+		"class<Gparted>":"",
+		"class<timeshift-gtk>":"󰁯",
+		"class<btrfs-assistant>":"󰁯",
+		"class<gimp>": " ",
+		"class<emulator>": "📱 ",
+		"class<android-studio>": " ",
+		"class<org.pipewire.Helvum>": "󰓃",
+		"class<localsend>":"",
+		"class<PrusaSlicer|UltiMaker-Cura|OrcaSlicer>": "󰹛",
+		"class<nvidia-settings>": "󰢮 ",
+		"class<com.shellyorg.shelly>": "󰏗 ",
+
+		"class<io.github.kolunmi.Bazaar>": " ",
+		"title<^Bazaar$>": " ",
+
+		"class<com.gabm.satty>": " ",
+		"title<^satty$>": " ",
+
+		"class<[Bb]ox[Bb]uddy|io.github.dvlv.boxbuddy|io.github.dvlv.BoxBuddy>": " ",
+		"title<.*BoxBuddy.*>": " ",
+
+		"title<Hyprland Keybinds>": " ",
+		"title<Niri Keybinds>": " ",
+		"title<BSPWM Keybinds>": " ",
+		"title<DWM Keybinds>": " ",
+		"title<Emacs Leader Keybinds>": " ",
+		"title<Kitty Configuration>": " ",
+		"title<WezTerm Configuration>": " ",
+		"title<Yazi Configuration>": " ",
+		"title<Cheatsheets Viewer>": " ",
+		"title<Documentation Viewer>": " ",
+		"title<^Wallpapers$>": " ",
+		"title<^Video Wallpapers$>": " ",
+		"title<^qs-wlogout$>": " ",
+		}
+	},
+}

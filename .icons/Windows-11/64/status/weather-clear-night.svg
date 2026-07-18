@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="64"
+   height="64"
+   viewBox="0 0 64 64"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14, custom)"
+   sodipodi:docname="weather-clear-night.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="false"
+     units="px"
+     height="48px"
+     inkscape:zoom="12.921875"
+     inkscape:cx="29.91052"
+     inkscape:cy="32.077388"
+     inkscape:window-width="1920"
+     inkscape:window-height="1029"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg5"
+     inkscape:lockguides="true"
+     inkscape:showpageshadow="2"
+     inkscape:deskcolor="#d1d1d1" />
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient1014">
+      <stop
+         style="stop-color:#ffde4a;stop-opacity:1"
+         offset="0"
+         id="stop1010" />
+      <stop
+         style="stop-color:#feb315;stop-opacity:1"
+         offset="1"
+         id="stop1012" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1014"
+       id="linearGradient1016"
+       x1="9.3874187"
+       y1="6.625165"
+       x2="4.6441574"
+       y2="15.119643"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-3.2582223,0,0,3.2582223,59.586201,4.4136383)" />
+  </defs>
+  <path
+     id="path850"
+     style="fill:url(#linearGradient1016);fill-opacity:1;stroke-width:9.74735;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:116.968, 9.74735"
+     d="M 41.951844,9.085 A 25.000067,25.000067 0 0 1 56.999992,31.999921 25.000067,25.000067 0 0 1 31.999924,56.999988 25.000067,25.000067 0 0 1 9.085,41.951843 25.000067,25.000067 0 0 0 19.036922,44.036991 25.000067,25.000067 0 0 0 44.036992,19.036923 25.000067,25.000067 0 0 0 41.951844,9.085 Z" />
+</svg>

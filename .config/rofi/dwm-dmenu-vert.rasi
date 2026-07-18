@@ -1,0 +1,54 @@
+* {
+  background-color:           #282828;
+  border-color:               #458588;
+  text-color:                 #ebdbb2;
+  font:                       "JetBrainsMono Nerd Font 10";
+  prompt-font:                "JetBrainsMono Nerd Font 10";
+  prompt-background:          #458588;
+  prompt-foreground:          #282828;
+  prompt-padding:             2px 6px;
+  selected-normal-background: #458588;
+  selected-normal-foreground: #ebdbb2;
+}
+#window {
+  anchor: north;
+  location: north;
+  width: 35%;
+  padding: 0px;
+  children: [ mainbox ];
+}
+#mainbox {
+  orientation: vertical;
+  children: [ inputbar, listview ];
+}
+#inputbar {
+  children: [ prompt, entry ];
+}
+#prompt {
+  padding:          @prompt-padding;
+  background-color: @prompt-background;
+  text-color:       @prompt-foreground;
+  font:             @prompt-font;
+}
+#listview {
+  layout: vertical;
+  columns: 1;
+  lines: 12;
+  fixed-height: false;
+}
+#entry {
+  padding: 2px;
+  expand: false;
+  width: 10em;
+}
+#element {
+  padding: 2px 8px;
+}
+#element selected {
+  background-color: @selected-normal-background;
+  text-color:       @selected-normal-foreground;
+}
+element-text {
+  background-color: inherit;
+  text-color:       inherit;
+}

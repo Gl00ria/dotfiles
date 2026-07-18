@@ -1,0 +1,176 @@
+# SPDX-FileCopyrightText: Winni Neessen <wn@neessen.dev>
+#
+# SPDX-License-Identifier: MIT
+
+## =============================================================================
+## General Configuration
+## =============================================================================
+
+## Measurement system used for weather data.
+## Allowed values: "metric", "imperial"
+## Default: "metric"
+#
+# units = "metric"
+
+## Locale used for geolocation and formatting.
+## If unset, the locale may be determined automatically from the environment.
+#
+# locale = "en-US"
+
+## Log verbosity level.
+## Supported values:
+##   DEBUG = -4
+##   INFO  = 0
+##   WARN  = 4
+##   ERROR = 8
+## Default: 0 (INFO)
+#
+# loglevel = 0
+
+
+## =============================================================================
+## Weather Configuration
+## =============================================================================
+[weather]
+
+## Weather data provider.
+## Supported providers:
+##   - Open-Meteo => config name: "open-meteo"
+## Default: "open-meteo"
+#
+# provider = "open-meteo"
+
+## Number of hours ahead to use as forecast values
+## Allowed values: 1–24
+## Default: 3
+#
+# forecast_hours = 3
+
+## Temperature threshold below which conditions are classified as cold.
+## Defaults are expressed in degrees Celsius and are based on
+## potentially hazardous driving conditions.
+##
+## If the temperature goes below the configured cold_threshold, waybar-weather
+## will output an additional CSS class "cold", that can be used in the waybar style
+## config to style waybar-weather differently in these kind of conditions.
+##
+## Default: 2
+#
+# cold_threshold = 2.0
+
+## Temperature threshold above which conditions are classified as hot.
+## Defaults are expressed in degrees Celsius and are based on
+## uncomfortable or potentially dangerous heat levels.
+##
+## If the temperature goes above the configured hot_threshold, waybar-weather
+## will output an additional CSS class "hot", that can be used in the waybar style
+## config to style waybar-weather differently in these kind of conditions.
+##
+## Default: 30
+#
+# hot_threshold = 30.0
+
+
+## =============================================================================
+## Update and Output Intervals
+## =============================================================================
+[intervals]
+
+## Interval at which weather data is refreshed from the provider.
+## Default: 15m
+#
+# weather_update = "15m"
+
+## Interval at which output data is emitted to waybar.
+## Default: 30s
+#
+# output = "30s"
+
+
+## =============================================================================
+## Output Templates
+## =============================================================================
+[templates]
+
+## waybar-weather providers different templating options, that allow you to customize waybar-weather
+## in the way you like. waybar-weather uses the Go templating syntax (reference: https://pkg.go.dev/text/template)
+## We provide several variables and functions that represent address or weather data (current or forcasted)
+## that can be used to show as output for waybar-weather.
+##
+## In general there are two different types of output: "text" and "tooltip". "text" is the value that is
+## always shown in the waybar and "tooltip" is the text that is shown when hovering over the waybar menu item.
+## Additionally, we provide "alt_text" and "alt_tooltip" which can be used as alternative text to be displayed.
+## You can toggle between text/tooltip and alt_text/alt_tooltip by clicking the menu item. Be default we use
+## this to toggle between current and forecasted weather data.
+##
+## Please refer to the README for available variables and functions.
+
+## Primary text template used for output rendering.
+#
+# text = ""
+
+## Alternative text template.
+#
+# alt_text = ""
+
+## Primary tooltip template.
+#
+# tooltip = ""
+
+## Alternative tooltip template.
+#
+# alt_tooltip = ""
+
+## Use CSS-based icons instead of rendering icons directly in the template.
+## When enabled, waybar-weather will emit appropriate CSS classes
+## that can be styled in the waybar stylesheet.
+##
+## Default: false
+#
+# use_css_icon = false
+
+
+## =============================================================================
+## Geolocation Configuration
+## =============================================================================
+[geolocation]
+
+## Path to a static geolocation file for the geolocation_file provider.
+## If set, this file is used with the highest accuracy.
+#
+# geolocation_file = ""
+
+## Path to a static city name file.
+## If set, this file is used to resolve human-readable location names.
+#
+# cityname_file = ""
+
+## Disable individual geolocation providers.
+## All providers are enabled by default - they might not provide data, though (e. g. if no gpsd is running,
+## the gpsd provider will not be able to provide location data).
+##
+## For details on the different geolocation providers, please refer the README.
+#
+# disable_geoip = false
+# disable_geoapi = false
+# disable_geolocation_file = false
+# disable_cityname_file = false
+# disable_ichnaea = false
+# disable_gpsd = false
+
+
+## =============================================================================
+## Geocoder Configuration
+## =============================================================================
+[geocoder]
+
+## For details on the different geocoder providers, please refer the README.
+
+## Reverse geocoding provider used to resolve human-readable locations.
+## Default: "nominatim"
+#
+# provider = "nominatim"
+
+## API key for the selected geocoding provider, if required.
+#
+# apikey = ""

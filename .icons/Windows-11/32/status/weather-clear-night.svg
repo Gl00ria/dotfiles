@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="32"
+   height="32"
+   viewBox="0 0 32 32"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14, custom)"
+   sodipodi:docname="weather-clear-night.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="false"
+     units="px"
+     height="48px"
+     inkscape:zoom="25.84375"
+     inkscape:cx="15.980653"
+     inkscape:cy="16"
+     inkscape:window-width="1920"
+     inkscape:window-height="1029"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg5"
+     inkscape:lockguides="true"
+     inkscape:showpageshadow="2"
+     inkscape:deskcolor="#d1d1d1" />
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient1014">
+      <stop
+         style="stop-color:#ffde4a;stop-opacity:1"
+         offset="0"
+         id="stop1010" />
+      <stop
+         style="stop-color:#feb315;stop-opacity:1"
+         offset="1"
+         id="stop1012" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1014"
+       id="linearGradient1016"
+       x1="11.618044"
+       y1="6.2744117"
+       x2="3.378408"
+       y2="14.209773"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-1.8245996,0,0,1.8245996,31.448277,0.55172462)" />
+  </defs>
+  <path
+     id="path850"
+     style="fill:url(#linearGradient1016);fill-opacity:1;stroke-width:5.45851;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:65.5019, 5.45851"
+     d="M 21.573062,3.1676798 A 13.999999,13.999999 0 0 1 30.000001,16 a 13.999999,13.999999 0 0 1 -14,14 A 13.999999,13.999999 0 0 1 3.1676801,21.573062 13.999999,13.999999 0 0 0 8.7407411,22.740741 13.999999,13.999999 0 0 0 22.740741,8.7407411 13.999999,13.999999 0 0 0 21.573062,3.1676798 Z" />
+</svg>

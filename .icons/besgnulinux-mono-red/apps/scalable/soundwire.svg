@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64" version="1.1">
+<defs>
+<linearGradient id="linear0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(56,0,0,16,4,0)">
+<stop offset="0" style="stop-color:#ff6666;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#d90000;stop-opacity:1;"/>
+</linearGradient>
+<linearGradient id="linear1" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(56,0,0,16,4,20)">
+<stop offset="0" style="stop-color:#ff6666;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#d90000;stop-opacity:1;"/>
+</linearGradient>
+<linearGradient id="linear2" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(56,0,0,24,4,40)">
+<stop offset="0" style="stop-color:#ff6666;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#d90000;stop-opacity:1;"/>
+</linearGradient>
+</defs>
+<g id="surface1">
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear0);" d="M 4 0 L 4 16 L 8 16 L 8 4 L 56 4 L 56 16 L 60 16 L 60 0 Z M 40 12 L 40 16 L 52 16 L 52 12 Z M 40 12 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear1);" d="M 4 20 L 4 36 L 8 36 L 8 24 L 56 24 L 56 36 L 60 36 L 60 20 Z M 40 32 L 40 36 L 52 36 L 52 32 Z M 40 32 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear2);" d="M 4 40 L 4 64 L 60 64 L 60 40 Z M 8 44 L 56 44 L 56 60 L 8 60 Z M 40 52 L 40 56 L 52 56 L 52 52 Z M 40 52 "/>
+</g>
+</svg>

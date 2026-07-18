@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64" version="1.1">
+<defs>
+<linearGradient id="linear0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(27.742187,0,0,30.78125,18.128906,16.609375)">
+<stop offset="0" style="stop-color:#ff6666;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#d90000;stop-opacity:1;"/>
+</linearGradient>
+<filter id="alpha" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%">
+  <feColorMatrix type="matrix" in="SourceGraphic" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+</filter>
+<mask id="mask0">
+  <g filter="url(#alpha)">
+<rect x="0" y="0" width="64" height="64" style="fill:rgb(0%,0%,0%);fill-opacity:0.6;stroke:none;"/>
+  </g>
+</mask>
+<linearGradient id="linear1" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(60,0,0,64,2,0)">
+<stop offset="0" style="stop-color:#ff6666;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#d90000;stop-opacity:1;"/>
+</linearGradient>
+<clipPath id="clip1">
+  <rect x="0" y="0" width="64" height="64"/>
+</clipPath>
+<g id="surface5" clip-path="url(#clip1)">
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear1);" d="M 34.3125 0 L 34.3125 13.328125 L 47.460938 20.820312 L 59.742188 14.226562 Z M 29.851562 0.03125 L 4.3125 14.078125 L 16.328125 20.742188 L 29.65625 13.546875 Z M 2.109375 17.804688 L 2 46.078125 L 14.015625 39.414062 L 14.195312 24.726562 Z M 62 17.921875 L 49.984375 24.585938 L 49.804688 39.273438 L 61.890625 46.195312 Z M 16.539062 43.179688 L 4.257812 49.773438 L 29.6875 64 L 29.6875 50.671875 Z M 47.671875 43.257812 L 34.34375 50.453125 L 34.148438 63.96875 L 59.6875 49.921875 Z M 47.671875 43.257812 "/>
+</g>
+</defs>
+<g id="surface1">
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear0);" d="M 18.128906 39.695312 L 18.128906 24.304688 L 32 16.609375 L 45.871094 24.304688 L 45.871094 39.695312 L 32 47.390625 Z M 18.128906 39.695312 "/>
+<use xlink:href="#surface5" mask="url(#mask0)"/>
+</g>
+</svg>

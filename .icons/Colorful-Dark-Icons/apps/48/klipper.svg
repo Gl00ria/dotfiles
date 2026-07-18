@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="32"
+   height="32"
+   version="1"
+   id="svg12"
+   sodipodi:docname="klipper.svg"
+   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <g
+     id="klipper"
+     style="fill:url(#linearGradient2);fill-opacity:1">
+    <rect
+       style="opacity:0.00100002;fill:url(#linearGradient2);fill-opacity:1"
+       width="32"
+       height="32"
+       x="0"
+       y="0"
+       id="rect7" />
+    <path
+       d="m 9.944062,7.0003619 h 2.274872 v 1 H 9.2 c -1,0 -1.2,1 -1.2,1 V 27.000362 c 0,0 0.2,1 1.2,1 h 13.6 c 1,0 1.2,-1 1.2,-1 V 9.0003619 c 0,0 -0.2,-1 -1.2,-1 h -4.997369 v -1 H 23 c 1,0 2,1 2,2 V 27.000362 c 0,1 -1,2 -2,2 H 9 c -1,0 -2,-1 -2,-2 V 9.0003619 c 0,-1 1,-2 2,-2 z M 21,22.000362 H 11 v -1 h 10 z m 0,2 H 11 v 1 h 10 z m 0,0 H 11 v 0 z m 0,-5 H 11 v -1 H 21 Z M 14.818588,3.6342194 c 1.190087,0 2.48363,0.7366124 2.48363,1.9472693 v 7.1799003 c 0,3.027017 -4.597969,3.125898 -4.597969,-0.04341 V 4 c 0,-4.11713006 6.697878,-3.97386762 6.697878,0 V 6.0718425 H 17.73869 V 4 c 0,-2.0457163 -3.371002,-2.038951 -3.371002,0 v 8.717982 c 0,1.154422 1.27117,1.057652 1.27117,0.04342 V 5.5814886 c 0,-0.2936331 -0.619674,-0.414623 -0.82027,-0.414623 z"
+       fill-rule="evenodd"
+       id="path2216"
+       sodipodi:nodetypes="cccccccccccccsssssssccsccsscsccccccccccccsscccccccccssss"
+       style="fill:url(#linearGradient2);fill-opacity:1;stroke-width:0.0646762" />
+  </g>
+  <style
+     id="current-color-scheme"
+     type="text/css">
+.ColorScheme-Text { 
+    color:#e5e9ef;
+}
+</style>
+  <metadata
+     id="metadata18">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs16">
+    <linearGradient
+       id="linearGradient1"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#ffe680;stop-opacity:1"
+         offset="0"
+         id="stop1" />
+      <stop
+         style="stop-color:#ffcc00;stop-opacity:1"
+         offset="1"
+         id="stop2" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1"
+       id="linearGradient2"
+       x1="7"
+       y1="28"
+       x2="26"
+       y2="3"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <sodipodi:namedview
+     pagecolor="#02334b"
+     bordercolor="#000000"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="994"
+     id="namedview14"
+     showgrid="true"
+     inkscape:zoom="11.313709"
+     inkscape:cx="17.58928"
+     inkscape:cy="12.904698"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg12"
+     inkscape:document-rotation="0"
+     inkscape:pagecheckerboard="true"
+     inkscape:lockguides="false"
+     showguides="false"
+     inkscape:showpageshadow="true"
+     inkscape:deskcolor="#02334b">
+    <sodipodi:guide
+       position="2.209709,19.55934"
+       orientation="1,0"
+       id="guide8806"
+       inkscape:locked="false" />
+    <inkscape:grid
+       type="xygrid"
+       id="grid10087"
+       originx="0"
+       originy="0"
+       spacingy="1"
+       spacingx="1"
+       units="px"
+       visible="true" />
+  </sodipodi:namedview>
+</svg>

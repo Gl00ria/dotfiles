@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64" version="1.1">
+<defs>
+<linearGradient id="linear0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(64.003906,0,0,64,0,0)">
+<stop offset="0" style="stop-color:#ff6666;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#d90000;stop-opacity:1;"/>
+</linearGradient>
+<linearGradient id="linear1" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(64.003906,0,0,64,0,0)">
+<stop offset="0" style="stop-color:#ff6666;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#d90000;stop-opacity:1;"/>
+</linearGradient>
+<linearGradient id="linear2" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(64.003906,0,0,64,0,0)">
+<stop offset="0" style="stop-color:#ff6666;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#d90000;stop-opacity:1;"/>
+</linearGradient>
+<linearGradient id="linear3" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(64.003906,0,0,64,0,0)">
+<stop offset="0" style="stop-color:#ff6666;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#d90000;stop-opacity:1;"/>
+</linearGradient>
+<linearGradient id="linear4" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(64.003906,0,0,64,0,0)">
+<stop offset="0" style="stop-color:#ff6666;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#d90000;stop-opacity:1;"/>
+</linearGradient>
+<linearGradient id="linear5" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(64.003906,0,0,64,0,0)">
+<stop offset="0" style="stop-color:#ff6666;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#d90000;stop-opacity:1;"/>
+</linearGradient>
+</defs>
+<g id="surface1">
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear0);" d="M 32 50.519531 L 49 40.90625 L 48.886719 22.832031 L 32 32.085938 Z M 32 50.519531 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear1);" d="M 32 50.554688 L 15 40.949219 L 15.113281 22.871094 L 32 32.121094 Z M 32 50.554688 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear2);" d="M 15.066406 22.917969 L 32.082031 13.445312 L 48.945312 22.921875 L 31.992188 32.214844 Z M 15.066406 22.917969 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear3);" d="M 60 47.988281 C 60 54.617188 54.628906 59.992188 48 59.992188 C 41.371094 59.992188 36 54.617188 36 47.988281 C 36 41.363281 41.371094 35.988281 48 35.988281 C 54.628906 35.988281 60 41.363281 60 47.988281 Z M 60 47.988281 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear4);" d="M 48 43.101562 C 45.300781 43.101562 43.113281 45.289062 43.113281 47.988281 C 43.113281 50.691406 45.300781 52.878906 48 52.878906 C 50.703125 52.878906 52.890625 50.691406 52.890625 47.988281 C 52.890625 45.289062 50.703125 43.101562 48 43.101562 Z M 48 45.324219 C 49.472656 45.324219 50.667969 46.519531 50.667969 47.988281 C 50.667969 49.464844 49.472656 50.65625 48 50.65625 C 47.292969 50.660156 46.613281 50.378906 46.113281 49.878906 C 45.613281 49.375 45.332031 48.699219 45.332031 47.988281 C 45.332031 46.515625 46.527344 45.324219 48 45.324219 Z M 48 45.324219 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear5);" d="M 47.113281 41.101562 L 48.890625 41.101562 L 48.890625 44.214844 L 47.113281 44.214844 Z M 47.113281 51.769531 L 48.890625 51.769531 L 48.890625 54.882812 L 47.113281 54.882812 Z M 54.890625 47.101562 L 54.890625 48.878906 L 51.78125 48.878906 L 51.78125 47.101562 Z M 44.222656 47.101562 L 44.222656 48.878906 L 41.113281 48.878906 L 41.113281 47.101562 Z M 53.5 52.238281 L 52.246094 53.492188 L 50.042969 51.292969 L 51.300781 50.035156 Z M 45.957031 44.695312 L 44.703125 45.949219 L 42.5 43.75 L 43.757812 42.492188 Z M 43.757812 53.492188 L 42.5 52.234375 L 44.703125 50.035156 L 45.957031 51.292969 Z M 51.300781 45.949219 L 50.042969 44.691406 L 52.246094 42.492188 L 53.5 43.75 Z M 51.300781 45.949219 "/>
+</g>
+</svg>

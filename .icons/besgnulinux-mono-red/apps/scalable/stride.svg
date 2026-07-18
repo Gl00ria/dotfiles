@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64" version="1.1">
+<defs>
+<filter id="alpha" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%">
+  <feColorMatrix type="matrix" in="SourceGraphic" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+</filter>
+<mask id="mask0">
+  <g filter="url(#alpha)">
+<rect x="0" y="0" width="64" height="64" style="fill:rgb(0%,0%,0%);fill-opacity:0.6;stroke:none;"/>
+  </g>
+</mask>
+<linearGradient id="linear0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(41.226562,0,0,51.308594,0,6.28125)">
+<stop offset="0" style="stop-color:#ff6666;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#d90000;stop-opacity:1;"/>
+</linearGradient>
+<clipPath id="clip1">
+  <rect x="0" y="0" width="64" height="64"/>
+</clipPath>
+<g id="surface5" clip-path="url(#clip1)">
+<path style=" stroke:none;fill-rule:evenodd;fill:url(#linear0);" d="M 19.53125 6.28125 C 18.226562 6.28125 17.171875 7.3125 17.171875 8.589844 C 17.171875 19.054688 15.195312 26.675781 13.167969 29.734375 C 12.015625 31.46875 11.140625 32.382812 9.757812 33.03125 C 8.375 33.683594 5.933594 34.085938 2.359375 34.085938 C 1.054688 34.085938 0 35.121094 0 36.390625 L 0 55.28125 C 0 56.550781 1.054688 57.589844 2.359375 57.589844 C 15.222656 57.589844 26.894531 52.015625 33.296875 42.367188 C 39.578125 32.890625 41.226562 21.398438 41.226562 8.589844 C 41.226562 7.3125 40.171875 6.28125 38.867188 6.28125 Z M 19.53125 6.28125 "/>
+</g>
+<linearGradient id="linear1" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(47.03125,0,0,51.308594,16.96875,6.410156)">
+<stop offset="0" style="stop-color:#ff6666;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#d90000;stop-opacity:1;"/>
+</linearGradient>
+</defs>
+<g id="surface1">
+<use xlink:href="#surface5" mask="url(#mask0)"/>
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear1);" d="M 19.335938 6.410156 C 18.519531 6.410156 17.765625 6.835938 17.328125 7.527344 C 16.894531 8.21875 16.851562 9.085938 17.207031 9.820312 L 39.765625 56.382812 C 40.160156 57.199219 40.988281 57.71875 41.894531 57.71875 L 61.632812 57.71875 C 62.449219 57.71875 63.203125 57.300781 63.640625 56.609375 C 64.070312 55.914062 64.121094 55.050781 63.765625 54.316406 L 41.207031 7.746094 C 40.8125 6.933594 39.984375 6.410156 39.074219 6.410156 Z M 19.335938 6.410156 "/>
+</g>
+</svg>

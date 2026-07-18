@@ -1,0 +1,37 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px" viewBox="0 0 16 16" version="1.1">
+<defs>
+<filter id="alpha" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%">
+  <feColorMatrix type="matrix" in="SourceGraphic" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+</filter>
+<image id="image13" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAARUlEQVQ4jWNgGAXDADBCaUcGBgYfEvXuYGBg2M0C5bAxMDDwkGgAOwMDAwMTiZowwKgBVDAAFo1vGBgYrpGo9zUDAwMDAOXMBNwv0TfRAAAAAElFTkSuQmCC"/>
+<mask id="mask0">
+  <g filter="url(#alpha)">
+<use xlink:href="#image13"/>
+  </g>
+</mask>
+<clipPath id="clip1">
+  <rect x="0" y="0" width="16" height="16"/>
+</clipPath>
+<g id="surface12" clip-path="url(#clip1)">
+<path style=" stroke:none;fill-rule:nonzero;fill:#ff6666;fill-opacity:1;" d="M 13.410156 8.023438 C 13.410156 7.859375 13.289062 7.765625 13.140625 7.8125 L 2.882812 11.066406 C 2.734375 11.113281 2.613281 11.285156 2.613281 11.449219 L 2.613281 14.777344 C 2.613281 14.941406 2.734375 15.035156 2.882812 14.988281 L 13.140625 11.734375 C 13.289062 11.6875 13.410156 11.515625 13.410156 11.351562 Z M 13.410156 8.023438 "/>
+</g>
+<image id="image25" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAAQ0lEQVQ4jWNkgABTBgYGSwbSwDEGBoYzLFCOGAMDgzaJBtxiYGBgYCJREwYYNYAKBsCi8RcDA8NXEvX+otTyUTBoAACZNgYaejyvzgAAAABJRU5ErkJggg=="/>
+<mask id="mask1">
+  <g filter="url(#alpha)">
+<use xlink:href="#image25"/>
+  </g>
+</mask>
+<clipPath id="clip2">
+  <rect x="0" y="0" width="16" height="16"/>
+</clipPath>
+<g id="surface24" clip-path="url(#clip2)">
+<path style=" stroke:none;fill-rule:nonzero;fill:#ff6666;fill-opacity:1;" d="M 2.589844 7.976562 C 2.589844 8.140625 2.710938 8.234375 2.859375 8.1875 L 13.117188 4.933594 C 13.265625 4.886719 13.386719 4.714844 13.386719 4.550781 L 13.386719 1.222656 C 13.386719 1.058594 13.265625 0.964844 13.117188 1.011719 L 2.859375 4.265625 C 2.710938 4.3125 2.589844 4.484375 2.589844 4.648438 Z M 2.589844 7.976562 "/>
+</g>
+</defs>
+<g id="surface1">
+<use xlink:href="#surface12" mask="url(#mask0)"/>
+<use xlink:href="#surface24" mask="url(#mask1)"/>
+<path style=" stroke:none;fill-rule:nonzero;fill:#ff6666;fill-opacity:1;" d="M 2.613281 7.9375 C 2.613281 8.101562 2.734375 8.273438 2.882812 8.320312 L 13.140625 11.574219 C 13.289062 11.621094 13.410156 11.527344 13.410156 11.363281 L 13.410156 8.035156 C 13.410156 7.871094 13.289062 7.699219 13.140625 7.652344 L 2.882812 4.398438 C 2.734375 4.351562 2.613281 4.445312 2.613281 4.609375 Z M 2.613281 7.9375 "/>
+</g>
+</svg>

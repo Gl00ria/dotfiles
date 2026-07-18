@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64" version="1.1">
+<defs>
+<linearGradient id="linear0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(64,0,0,59.976562,0,2.011719)">
+<stop offset="0" style="stop-color:#ff6666;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#d90000;stop-opacity:1;"/>
+</linearGradient>
+</defs>
+<g id="surface1">
+<path style=" stroke:none;fill-rule:evenodd;fill:url(#linear0);" d="M 0 2.011719 L 34.6875 36.703125 L 34.6875 14.519531 Z M 36.820312 15.46875 L 36.820312 35.625 L 51.285156 22.042969 Z M 26.480469 31.734375 L 10.453125 61.988281 L 33.703125 38.734375 Z M 39.9375 14.675781 L 64 25.492188 L 58.703125 14.675781 Z M 39.9375 14.675781 "/>
+</g>
+</svg>

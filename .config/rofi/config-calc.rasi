@@ -1,0 +1,25 @@
+/* ---- 💫 https://github.com/LinuxBeginnings 💫 ---- */
+/* Main Config Calculator */
+/* Submitted by: https://github.com/JosephArmas */
+
+@import "~/.config/rofi/config.rasi" 
+
+/* ---- Mainbox ---- */
+mainbox {
+  children: [ "entry", "message" ];
+  height: inherit;
+}
+
+/* ---- Window ---- */
+window {
+  width: 30%;
+  height: inherit;
+}
+
+/* ---- Entry ---- */
+entry {
+  expand: true;
+  placeholder: " 🧮 Calculate";
+}
+
+listview {enable: false;}

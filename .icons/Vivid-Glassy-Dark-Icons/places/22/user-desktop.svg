@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="22"
+   height="22"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="user-desktop.svg"
+   inkscape:version="1.3.1 (91b66b0783, 2023-11-16)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="true"
+     inkscape:zoom="34.863636"
+     inkscape:cx="11.731421"
+     inkscape:cy="12.835724"
+     inkscape:window-width="1920"
+     inkscape:window-height="994"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1">
+    <inkscape:grid
+       id="grid1"
+       units="px"
+       originx="0"
+       originy="0"
+       spacingx="1"
+       spacingy="1"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14902"
+       empspacing="5"
+       dotted="false"
+       gridanglex="30"
+       gridanglez="30"
+       visible="true" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1">
+    <linearGradient
+       id="linearGradient1"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#cd87de;stop-opacity:1"
+         offset="0"
+         id="stop1" />
+      <stop
+         style="stop-color:#3fffd9;stop-opacity:1;"
+         offset="1"
+         id="stop2" />
+    </linearGradient>
+    <style
+       type="text/css"
+       id="style1">.ColorScheme-Text { color:#d8dee9; }</style>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1"
+       id="linearGradient2"
+       x1="3"
+       y1="19"
+       x2="19"
+       y2="3"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <path
+     d="M 5,3 C 4,3 2.9999965,3.9999921 2.9999965,5 V 17 C 2.9999965,18 4,19 5,19 h 12 c 1,0 1.999996,-1 1.999996,-2 V 5 C 18.999996,3.9999921 18,3 17,3 Z M 5.6666626,4 H 16.333335 C 18,4 18,5 18,6 H 4 C 4,5 4,4 5.6666626,4 Z M 4,7 h 14 v 9 c 0,1 0,2 -1.666665,2 H 5.6666626 C 4,18 4,17 4,16 Z m 3.4444405,7 c -0.5539999,0 -0.888888,0.318154 -0.888888,1 0,0.681846 0.3348881,1 0.888888,1 h 7.1111155 c 0.553991,0 0.88888,-0.318154 0.88888,-1 0,-0.681846 -0.334889,-1 -0.88888,-1 z"
+     id="path1"
+     style="stroke-width:1.1094;fill:url(#linearGradient2)"
+     sodipodi:nodetypes="sssssssssssccsccsssscsssssss" />
+</svg>

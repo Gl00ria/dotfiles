@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="32"
+   height="32"
+   viewBox="0 0 32 32"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14, custom)"
+   sodipodi:docname="phone.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="false"
+     units="px"
+     inkscape:zoom="25.84375"
+     inkscape:cx="14.974607"
+     inkscape:cy="16.038694"
+     inkscape:window-width="1920"
+     inkscape:window-height="1029"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg5"
+     inkscape:showpageshadow="2"
+     inkscape:deskcolor="#d1d1d1" />
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient2301">
+      <stop
+         style="stop-color:#3fe3e7;stop-opacity:1;"
+         offset="0"
+         id="stop2297" />
+      <stop
+         style="stop-color:#066bbc;stop-opacity:1"
+         offset="1"
+         id="stop2299" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient2301"
+       id="linearGradient1715"
+       x1="1.3229166"
+       y1="2.6458333"
+       x2="8.7312498"
+       y2="16.404167"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.8897637,0,0,1.8897637,6.5000008,-1.9999995)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1116"
+       id="linearGradient1031"
+       x1="4.2333336"
+       y1="4.3656249"
+       x2="8.9958334"
+       y2="4.3656249"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(3.3595801,0,0,3.5275591,-6.2222213,0.13333315)" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient1116">
+      <stop
+         style="stop-color:#555a5f;stop-opacity:1;"
+         offset="0"
+         id="stop1112" />
+      <stop
+         style="stop-color:#4b4f53;stop-opacity:1"
+         offset="1"
+         id="stop1114" />
+    </linearGradient>
+  </defs>
+  <path
+     id="rect2523"
+     style="fill:#b8c2cc;fill-opacity:1;stroke-width:2;stroke-linecap:round;stroke-linejoin:round"
+     d="M 8.0000003,7.0000003 C 7.4460005,7.0000003 7,7.4460008 7,8.0000001 V 11 c 0,0.553999 0.4460005,1 1.0000003,1 0.5539993,0 0.9999998,-0.446001 0.9999998,-1 V 8.0000001 c 0,-0.5539993 -0.4460005,-0.9999998 -0.9999998,-0.9999998 z M 24.000003,11 C 23.445999,11 23,11.446001 23,12 v 3 c 0,0.554 0.445999,1 1.000003,1 0.553999,0 0.999998,-0.446 0.999998,-1 v -3 c 0,-0.553999 -0.445999,-1 -0.999998,-1 z M 8.0000003,14 C 7.4460005,14 7,14.446001 7,15 v 3 c 0,0.554 0.4460005,1.000001 1.0000003,1.000001 0.5539993,0 0.9999998,-0.446001 0.9999998,-1.000001 v -3 c 0,-0.553999 -0.4460005,-1 -0.9999998,-1 z"
+     sodipodi:nodetypes="sssssssssssssssssssss" />
+  <rect
+     style="fill:url(#linearGradient1031);fill-opacity:1;stroke-width:1.82168;stroke-linecap:round;stroke-linejoin:round"
+     id="rect468"
+     width="16"
+     height="28"
+     x="7.999999"
+     y="2"
+     ry="2" />
+  <path
+     id="rect1539"
+     style="opacity:1;fill:url(#linearGradient1715);stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round"
+     d="M 10,3.0000003 H 22.000001 C 22.554001,3.0000003 23,3.446 23,4.0000001 V 28 c 0,0.554001 -0.445999,1.000001 -0.999999,1.000001 H 10 c -0.5539997,0 -0.9999999,-0.446 -0.9999999,-1.000001 V 4.0000001 C 9.0000001,3.446 9.4460003,3.0000003 10,3.0000003 Z"
+     sodipodi:nodetypes="sssssssss" />
+</svg>

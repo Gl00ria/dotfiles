@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="16"
+   height="16"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="apper.svg"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <linearGradient
+       id="linearGradient1"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#dd55ff;stop-opacity:1"
+         offset="0"
+         id="stop1" />
+      <stop
+         style="stop-color:#00ccff;stop-opacity:1"
+         offset="1"
+         id="stop2" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1"
+       id="linearGradient2"
+       x1="1.7092569"
+       y1="14"
+       x2="14.665542"
+       y2="2.5609293"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="23.96875"
+     inkscape:cx="5.9869622"
+     inkscape:cy="7.7809648"
+     inkscape:window-width="1920"
+     inkscape:window-height="994"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <path
+     d="M 2.5,2 C 1.678,2 1,2.678 1,3.5 v 9 C 1,13.323 1.678,14 2.5,14 h 11 c 0.822,0 1.5,-0.677 1.5,-1.5 v -9 C 15,2.678 14.322,2 13.5,2 Z m 0,1 H 6 v 4.965 l 1,-1 1,1 1,-0.75 1,0.75 V 3 h 3.5 C 13.786,3 14,3.215 14,3.5 v 9 C 14,12.786 13.786,13 13.5,13 H 2.5 A 0.488,0.488 0 0 1 2,12.5 v -9 C 2,3.215 2.214,3 2.5,3 Z M 7,3 H 9 V 5.965 L 8.094,6.645 7,5.551 Z"
+     color="#000000"
+     font-family="sans-serif"
+     font-weight="400"
+     overflow="visible"
+     id="path1"
+     style="fill:url(#linearGradient2)" />
+</svg>

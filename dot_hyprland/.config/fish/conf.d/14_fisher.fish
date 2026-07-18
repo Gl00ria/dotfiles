@@ -1,5 +1,0 @@
-alias fish_install="fisher install"
-alias fish_update="fisher update"
-alias fish_remove="fisher remove"
-alias fish_remove-all="fisher list | fisher remove"
-alias fish_list="fisher list"

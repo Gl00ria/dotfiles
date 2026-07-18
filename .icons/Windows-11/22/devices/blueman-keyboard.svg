@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="22"
+   height="22"
+   viewBox="0 0 22 22"
+   version="1.1"
+   id="svg2112"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14, custom)"
+   sodipodi:docname="input-keyboard.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview2114"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="36.818182"
+     inkscape:cx="10.266667"
+     inkscape:cy="11"
+     inkscape:window-width="1920"
+     inkscape:window-height="1029"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2112" />
+  <defs
+     id="defs2109">
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient23571"
+       id="linearGradient23573"
+       x1="0.5291667"
+       y1="5.0270834"
+       x2="16.404167"
+       y2="12.170834"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.2598424,0,0,1.3998249,0.33333327,-1.0370368)" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient23571">
+      <stop
+         style="stop-color:#b6bec5;stop-opacity:1;"
+         offset="0"
+         id="stop23567" />
+      <stop
+         style="stop-color:#9ba3aa;stop-opacity:1"
+         offset="1"
+         id="stop23569" />
+    </linearGradient>
+  </defs>
+  <rect
+     style="fill:url(#linearGradient23573);fill-opacity:1;stroke-width:0.351363;stroke-linejoin:round"
+     id="rect858"
+     width="20"
+     height="10"
+     x="1"
+     y="6"
+     ry="1" />
+  <path
+     id="rect1132"
+     style="fill:#edeff0;fill-opacity:1;stroke-width:1.41421"
+     d="M 1.9999999,6.9999998 V 8.9999999 H 5 V 6.9999998 Z m 3.9999999,0 V 8.9999999 H 7.9999999 V 6.9999998 Z m 3,0 V 8.9999999 H 11 V 6.9999998 Z m 3.0000002,0 v 2.0000001 h 2 V 6.9999998 Z m 3,0 v 2.0000001 h 2 V 6.9999998 Z m 3,0 v 2.0000001 h 2 V 6.9999998 Z M 1.9999999,9.9999997 V 12 H 5.9999998 V 9.9999997 Z m 4.9999998,0 V 12 H 8.9999998 V 9.9999997 Z m 3.0000003,0 V 12 h 2 V 9.9999997 Z m 3,0 V 12 h 2 V 9.9999997 Z m 3,0 V 12 h 4 V 9.9999997 Z M 2.9999999,12.999999 v 2 H 5 v -2 z m 2.9999999,0 v 2 H 16 v -2 z m 11.0000002,0 v 2 h 2 v -2 z" />
+</svg>

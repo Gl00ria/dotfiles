@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64" version="1.1">
+<defs>
+<linearGradient id="linear0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(26.617187,0,0,25.125,7.253906,34.875)">
+<stop offset="0" style="stop-color:#ff6666;stop-opacity:0.698039;"/>
+<stop offset="1" style="stop-color:#d90000;stop-opacity:0.698039;"/>
+</linearGradient>
+<linearGradient id="linear1" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(26.617187,0,0,23.871094,31.253906,3.753906)">
+<stop offset="0" style="stop-color:#ff6666;stop-opacity:0.698039;"/>
+<stop offset="1" style="stop-color:#d90000;stop-opacity:0.698039;"/>
+</linearGradient>
+<linearGradient id="linear2" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(39.195312,0,0,27.996094,4.007812,4.007812)">
+<stop offset="0" style="stop-color:#ff6666;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#d90000;stop-opacity:1;"/>
+</linearGradient>
+<linearGradient id="linear3" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(39.195312,0,0,27.996094,20.804687,32.003906)">
+<stop offset="0" style="stop-color:#ff6666;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#d90000;stop-opacity:1;"/>
+</linearGradient>
+</defs>
+<g id="surface1">
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear0);" d="M 20.804688 60 L 33.871094 48.804688 L 19.753906 34.875 L 7.253906 45.875 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear1);" d="M 46 27.625 L 57.871094 16.804688 L 43.253906 3.753906 L 31.253906 13.875 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear2);" d="M 4.007812 32.003906 L 24.539062 32.003906 L 18.941406 26.402344 L 43.203125 4.007812 L 20.804688 4.007812 L 9.609375 17.070312 L 4.007812 11.476562 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear3);" d="M 20.804688 60 L 45.066406 37.605469 L 39.46875 32.003906 L 60 32.003906 L 60 52.535156 L 54.398438 46.9375 L 41.335938 60 "/>
+</g>
+</svg>

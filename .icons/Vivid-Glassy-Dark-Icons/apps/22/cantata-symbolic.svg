@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   id="svg2"
+   viewBox="0 0 22 22"
+   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25)"
+   sodipodi:docname="cantata-symbolic.svg"
+   width="22"
+   height="22"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     pagecolor="#02334b"
+     bordercolor="#000000"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="994"
+     id="namedview14"
+     showgrid="true"
+     inkscape:zoom="7.375"
+     inkscape:cx="14.237288"
+     inkscape:cy="13.898305"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2"
+     inkscape:lockguides="true"
+     inkscape:document-rotation="0"
+     inkscape:showpageshadow="true"
+     inkscape:pagecheckerboard="true"
+     inkscape:deskcolor="#02334b">
+    <inkscape:grid
+       type="xygrid"
+       id="grid838"
+       originx="-22"
+       originy="0"
+       spacingy="1"
+       spacingx="1"
+       units="px"
+       visible="true" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata20">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs3051">
+    <linearGradient
+       id="linearGradient2"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#00aa7f;stop-opacity:1;"
+         offset="0"
+         id="stop2" />
+      <stop
+         style="stop-color:#00f3b6;stop-opacity:1;"
+         offset="1"
+         id="stop3" />
+    </linearGradient>
+    <style
+       id="current-color-scheme"
+       type="text/css">
+      .ColorScheme-Text {
+        color:#31363b;
+      }
+      </style>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient2"
+       id="linearGradient3"
+       x1="26"
+       y1="26.033897"
+       x2="48.372883"
+       y2="4"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.66666663,0,0,0.66666663,-14.333333,0.3333335)" />
+  </defs>
+  <g
+     id="22-22-cantata">
+    <path
+       id="path13"
+       class="ColorScheme-Text"
+       d="m 10.999999,3 c -4.4182771,0 -7.9999991,3.5817218 -7.9999991,7.999999 0,4.418279 3.581722,8 7.9999991,8 4.418279,0 8,-3.581721 8,-8 0,-4.4182772 -3.581721,-7.999999 -8,-7.999999 z m 0.0904,1.1186439 c 4.050092,0 6.790967,2.831268 6.790967,6.8813551 0,4.050093 -2.83127,6.971756 -6.881359,6.971756 -4.0500891,0 -6.7909611,-2.83127 -6.7909611,-6.881362 0,-4.0500858 2.831267,-6.9717491 6.8813531,-6.9717491 z"
+       style="color:#31363b;fill:url(#linearGradient3);fill-opacity:1;stroke:none;stroke-width:0.666666"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ssssssssss" />
+    <path
+       id="path15"
+       class="ColorScheme-Text"
+       d="M 11.001477,3 V 14.329246 C 10.164299,13.968177 8.8588299,13.77735 7.8224579,14.206798 c -1.734752,0.718137 -2.50971,2.314296 -2.002923,3.538243 0.506777,1.224347 2.105654,1.614202 3.840803,0.895672 1.3687511,-0.568198 2.0304581,-2.075862 2.0283471,-2.965538 l -0.02056,-8.6766176 c 0,0 3.400369,0.3994125 3.400369,3.5982346 0,2.399119 -0.733766,3.066041 -2.733703,5.065307 1.999937,-1.19956 3.532532,-2.666188 3.532532,-5.065307 0,-3.1988221 -2.469172,-4.637376 -3.10155,-5.2695414 C 12.365797,4.9273943 11.867352,3.400224 11.867352,3.400224 Z"
+       style="fill:#00b688;fill-opacity:1;stroke:none;stroke-width:0.666666" />
+    <path
+       id="path18"
+       d="M 0,0 V 22 H 22 V 0 Z"
+       style="fill:none;stroke-width:0.6875" />
+  </g>
+</svg>

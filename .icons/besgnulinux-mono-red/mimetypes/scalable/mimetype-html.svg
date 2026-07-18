@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64" version="1.1">
+<defs>
+<linearGradient id="linear0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(19.199219,0,0,38.398438,0,13.601562)">
+<stop offset="0" style="stop-color:#ff6666;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#d90000;stop-opacity:1;"/>
+</linearGradient>
+<linearGradient id="linear1" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(19.203125,0,0,25.601562,22.398438,20)">
+<stop offset="0" style="stop-color:#ff6666;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#d90000;stop-opacity:1;"/>
+</linearGradient>
+<linearGradient id="linear2" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(19.199219,0,0,38.398438,44.800781,13.601562)">
+<stop offset="0" style="stop-color:#ff6666;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#d90000;stop-opacity:1;"/>
+</linearGradient>
+</defs>
+<g id="surface1">
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear0);" d="M 7.164062 32.800781 L 18.421875 18.308594 L 14.660156 13.601562 L 0 32.800781 L 15.046875 52 L 19.199219 47.699219 Z M 7.164062 32.800781 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear1);" d="M 35.199219 20 C 35.199219 20 41.601562 20 41.601562 20 C 41.601562 20 28.800781 45.601562 28.800781 45.601562 C 28.800781 45.601562 23.671875 45.601562 22.398438 45.601562 C 22.398438 45.601562 35.199219 20 35.199219 20 Z M 35.199219 20 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear2);" d="M 56.863281 32.441406 L 45.578125 18.308594 L 49.339844 13.601562 L 64 32.441406 L 48.953125 52 L 44.800781 47.699219 Z M 56.863281 32.441406 "/>
+</g>
+</svg>

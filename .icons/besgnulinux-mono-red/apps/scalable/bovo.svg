@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64" version="1.1">
+<defs>
+<linearGradient id="linear0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(26.207031,0,0,26.207031,0,0)">
+<stop offset="0" style="stop-color:#ff6666;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#d90000;stop-opacity:1;"/>
+</linearGradient>
+<linearGradient id="linear1" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(23.167969,0,0,23.167969,40.832031,40.832031)">
+<stop offset="0" style="stop-color:#ff6666;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#d90000;stop-opacity:1;"/>
+</linearGradient>
+<linearGradient id="linear2" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(64,0,0,64,0,0)">
+<stop offset="0" style="stop-color:#ff6666;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#d90000;stop-opacity:1;"/>
+</linearGradient>
+</defs>
+<g id="surface1">
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear0);" d="M 13.105469 0 C 5.867188 0 0 5.867188 0 13.105469 C 0 20.339844 5.867188 26.207031 13.105469 26.207031 C 20.339844 26.207031 26.207031 20.339844 26.207031 13.105469 C 26.207031 5.867188 20.339844 0 13.105469 0 Z M 13.105469 6.550781 C 16.722656 6.550781 19.65625 9.484375 19.65625 13.105469 C 19.65625 16.722656 16.722656 19.65625 13.105469 19.65625 C 9.484375 19.65625 6.550781 16.722656 6.550781 13.105469 C 6.550781 9.484375 9.484375 6.550781 13.105469 6.550781 Z M 13.105469 6.550781 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear1);" d="M 59.367188 40.832031 L 52.414062 47.785156 L 45.464844 40.832031 L 40.832031 45.464844 L 47.785156 52.414062 L 40.832031 59.367188 L 45.464844 64 L 52.414062 57.046875 L 59.367188 64 L 64 59.367188 L 57.046875 52.414062 L 64 45.464844 Z M 59.367188 40.832031 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear2);" d="M 29 0 L 29 29 L 0 29 L 0 35 L 29 35 L 29 64 L 35 64 L 35 35 L 64 35 L 64 29 L 35 29 L 35 0 Z M 29 0 "/>
+</g>
+</svg>

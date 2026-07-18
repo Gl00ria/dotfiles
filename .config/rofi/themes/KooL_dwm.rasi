@@ -1,0 +1,85 @@
+configuration {
+	modi: "drun";
+	font: "JetBrainsMono Nerd Font 10";
+    show-icons: true;
+	icon-theme: "Papirus-Dark";
+	drun-display-format: "{name}";
+	display-drun: "";
+  timeout {
+      action: "kb-cancel";
+      delay:  0;
+  }
+  filebrowser {
+      directories-first: true;
+      sorting-method:    "name";
+  }
+}
+
+@theme "/dev/null"
+
+* {
+    bg: #232933;
+    fg: #d8dee9;
+    selected: #2d3543;
+    accent: #4d6a8e;
+    background-color: @bg;
+
+    color: @fg;
+    border: 0;
+    border-color: @bg;
+    margin: 0;
+    padding: 0;
+    spacing: 0;    
+    highlight: none;
+}
+
+window {
+    width: 700px;
+}
+
+element {
+    padding: 6 5 7 5;
+    text-color: @fg;
+}
+
+element-text {
+    vertical-align: 0.5;
+    padding: 5px;
+}
+
+element selected {
+    background-color: @selected;
+}
+
+element-text selected {
+    background-color: @selected;
+}
+
+element-icon selected {
+    background-color: @selected;
+}
+
+element-icon {
+    size: 30;
+}
+
+inputbar {
+    children: [prompt, entry];
+}
+
+prompt {
+    text-color: @bg;
+    background-color: @accent;
+    padding: 12 12 12 12;
+}
+
+entry {
+    text-color: @bg;
+    padding: 12 5 12 0;
+}
+
+listview {
+    background-color: @bg;
+    columns: 3;
+    lines: 6;
+}

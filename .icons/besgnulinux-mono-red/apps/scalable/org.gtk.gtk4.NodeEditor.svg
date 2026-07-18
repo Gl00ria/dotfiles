@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64" version="1.1">
+<defs>
+<filter id="alpha" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%">
+  <feColorMatrix type="matrix" in="SourceGraphic" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+</filter>
+<image id="image14" width="64" height="64" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAAAaUlEQVR4nO3QQQ3CAAAEwSvhRbCAiya4qX8ZVUH2wYyCzW4AAAAAAPyPY9t327sOqTy3Xds+dUjlUQfUDKgDagbUATUD6oCaAXVAzYA6oGZAHVAzoA6oGVAH1I5t57ZXHQIAAAAAAL93A89TASUtMfgJAAAAAElFTkSuQmCC"/>
+<mask id="mask0">
+  <g filter="url(#alpha)">
+<use xlink:href="#image14"/>
+  </g>
+</mask>
+<linearGradient id="linear0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(0.000000000000000955,15.601562,-53.226562,0.000000000000003259,58.714844,24.183594)">
+<stop offset="0" style="stop-color:#ff6666;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#d90000;stop-opacity:1;"/>
+</linearGradient>
+<clipPath id="clip2">
+  <rect x="0" y="0" width="64" height="64"/>
+</clipPath>
+<g id="surface13" clip-path="url(#clip2)">
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear0);" d="M 58.714844 39.769531 L 58.679688 29.742188 L 33.867188 29.777344 L 33.945312 24.226562 L 33.730469 24.226562 L 33.730469 24.183594 L 32.105469 24.199219 L 30.472656 24.183594 L 30.472656 24.226562 L 30.257812 24.226562 L 30.335938 29.777344 L 5.53125 29.742188 L 5.488281 39.769531 L 8.960938 39.785156 L 8.988281 33.222656 L 30.386719 33.25 L 30.386719 33.257812 L 33.824219 33.257812 L 33.824219 33.25 L 55.214844 33.222656 L 55.242188 39.785156 Z M 58.714844 39.769531 "/>
+</g>
+<clipPath id="clip1">
+  <rect x="0" y="0" width="64" height="64"/>
+</clipPath>
+<g id="surface16" clip-path="url(#clip1)">
+<use xlink:href="#surface13" mask="url(#mask0)"/>
+</g>
+<linearGradient id="linear1" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(0.000000000000001313,21.441406,-13.648438,0.000000000000000836,39,3.621094)">
+<stop offset="0" style="stop-color:#ff6666;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#d90000;stop-opacity:1;"/>
+</linearGradient>
+<linearGradient id="linear2" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(0.000000000000001313,21.441406,-13.648438,0.000000000000000836,64,38.9375)">
+<stop offset="0" style="stop-color:#ff6666;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#d90000;stop-opacity:1;"/>
+</linearGradient>
+<linearGradient id="linear3" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(0.000000000000001313,21.441406,-13.648438,0.000000000000000836,13.648438,38.554688)">
+<stop offset="0" style="stop-color:#ff6666;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#d90000;stop-opacity:1;"/>
+</linearGradient>
+</defs>
+<g id="surface1">
+<use xlink:href="#surface16"/>
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear1);" d="M 39 3.621094 L 39 25.0625 L 25.351562 25.0625 L 25.351562 3.621094 Z M 39 3.621094 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear2);" d="M 64 38.9375 L 64 60.378906 L 50.351562 60.378906 L 50.351562 38.9375 Z M 64 38.9375 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear3);" d="M 13.648438 38.554688 L 13.648438 59.996094 L 0 59.996094 L 0 38.554688 Z M 13.648438 38.554688 "/>
+</g>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64" version="1.1">
+<defs>
+<linearGradient id="linear0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(56,0,0,56,4,4)">
+<stop offset="0" style="stop-color:#ff6666;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#d90000;stop-opacity:1;"/>
+</linearGradient>
+</defs>
+<g id="surface1">
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear0);" d="M 50 4 C 45.25 4 41.152344 7.34375 40.203125 12 L 8 12 L 8 16 C 15.421875 19.835938 20.660156 25.917969 21.429688 29.210938 C 22.265625 32.78125 21.335938 36.859375 18.835938 41.246094 C 17.355469 40.429688 15.691406 40 14 40 C 8.476562 40 4 44.476562 4 50 C 4 55.523438 8.476562 60 14 60 C 18.75 60 22.847656 56.65625 23.796875 52 L 36 52 L 36 60 L 56 60 L 56 40 L 36 40 L 36 48 L 23.78125 48 C 23.488281 46.558594 22.882812 45.203125 22.007812 44.023438 C 25.417969 38.640625 26.84375 33.523438 25.703125 28.5625 C 24.527344 23.449219 20.964844 19.457031 15.875 16 L 40.21875 16 C 41.167969 20.648438 45.253906 23.992188 50 24 C 55.523438 24 60 19.523438 60 14 C 60 8.476562 55.523438 4 50 4 Z M 50 4 "/>
+</g>
+</svg>

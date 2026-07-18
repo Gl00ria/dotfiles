@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   viewBox="0 0 16 16"
+   id="svg1"
+   sodipodi:docname="bookmarks.svg"
+   inkscape:version="1.3.1 (91b66b0783, 2023-11-16)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="23.96875"
+     inkscape:cx="9.303781"
+     inkscape:cy="11.035202"
+     inkscape:window-width="1920"
+     inkscape:window-height="994"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <defs
+     id="defs1">
+    <linearGradient
+       id="linearGradient1"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#80b3ff;stop-opacity:1"
+         offset="0"
+         id="stop1" />
+      <stop
+         style="stop-color:#2ad4ff;stop-opacity:1"
+         offset="1"
+         id="stop2" />
+    </linearGradient>
+    <style
+       type="text/css"
+       id="style1">.ColorScheme-Text {
+        color:#d8dee9;
+      }</style>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1"
+       id="linearGradient2"
+       x1="3.5410714"
+       y1="13.590612"
+       x2="11.999997"
+       y2="2"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <path
+     d="M 5.600003,2 C 4.713602,2 4.0000025,2.7136 4.0000025,3.6000005 V 14 L 8.000003,12.724955 11.999997,14 V 3.6000005 C 11.999997,2.7136 11.286403,2 10.400004,2 Z m 0,0.8 h 4.800001 c 0.443195,0 0.799999,0.3568 0.799999,0.8000005 v 9.2751945 l -3.2,-0.949995 -3.200001,0.949995 V 3.6000005 C 4.800002,3.1568 5.1568025,2.8 5.600003,2.8 Z"
+     id="path1"
+     style="stroke-width:0.799995;fill:url(#linearGradient2)" />
+</svg>

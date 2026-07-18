@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64" version="1.1">
+<defs>
+<filter id="alpha" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%">
+  <feColorMatrix type="matrix" in="SourceGraphic" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+</filter>
+<mask id="mask0">
+  <g filter="url(#alpha)">
+<rect x="0" y="0" width="64" height="64" style="fill:rgb(0%,0%,0%);fill-opacity:0.6;stroke:none;"/>
+  </g>
+</mask>
+<linearGradient id="linear0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(41.144531,0,0,51.203125,22.855469,6.398438)">
+<stop offset="0" style="stop-color:#ff6666;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#d90000;stop-opacity:1;"/>
+</linearGradient>
+<clipPath id="clip1">
+  <rect x="0" y="0" width="64" height="64"/>
+</clipPath>
+<g id="surface5" clip-path="url(#clip1)">
+<path style=" stroke:none;fill-rule:evenodd;fill:url(#linear0);" d="M 44.511719 57.601562 C 45.8125 57.601562 46.863281 56.566406 46.863281 55.296875 C 46.863281 44.851562 48.835938 37.242188 50.859375 34.191406 C 52.007812 32.464844 52.882812 31.550781 54.265625 30.898438 C 55.644531 30.253906 58.078125 29.851562 61.644531 29.851562 C 62.945312 29.851562 64 28.820312 64 27.546875 L 64 8.703125 C 64 7.433594 62.945312 6.398438 61.644531 6.398438 C 48.808594 6.398438 37.160156 11.960938 30.773438 21.589844 C 24.5 31.042969 22.855469 42.511719 22.855469 55.296875 C 22.855469 56.566406 23.910156 57.601562 25.210938 57.601562 Z M 44.511719 57.601562 "/>
+</g>
+<linearGradient id="linear1" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(46.933594,0,0,51.203125,0,6.398438)">
+<stop offset="0" style="stop-color:#ff6666;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#d90000;stop-opacity:1;"/>
+</linearGradient>
+</defs>
+<g id="surface1">
+<use xlink:href="#surface5" mask="url(#mask0)"/>
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear1);" d="M 44.570312 57.601562 C 45.382812 57.601562 46.140625 57.179688 46.570312 56.488281 C 47.003906 55.800781 47.050781 54.9375 46.695312 54.199219 L 24.1875 7.730469 C 23.792969 6.914062 22.964844 6.398438 22.054688 6.398438 L 2.359375 6.398438 C 1.546875 6.398438 0.792969 6.820312 0.359375 7.507812 C -0.0703125 8.199219 -0.121094 9.0625 0.234375 9.796875 L 22.746094 56.269531 C 23.140625 57.085938 23.96875 57.601562 24.871094 57.601562 Z M 44.570312 57.601562 "/>
+</g>
+</svg>

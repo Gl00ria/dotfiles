@@ -1,0 +1,26 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px" viewBox="0 0 16 16" version="1.1">
+<defs>
+<filter id="alpha" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%">
+  <feColorMatrix type="matrix" in="SourceGraphic" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+</filter>
+<image id="image13" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAAO0lEQVQ4jWNgGAXDADAyMDCkEVCzioGB4QMuSRYGBgZjAgZswifJREAzQTBqABUMYGFgYDhDQM0PfJIAdJUEv6UiliYAAAAASUVORK5CYII="/>
+<mask id="mask0">
+  <g filter="url(#alpha)">
+<use xlink:href="#image13"/>
+  </g>
+</mask>
+<clipPath id="clip1">
+  <rect x="0" y="0" width="16" height="16"/>
+</clipPath>
+<g id="surface12" clip-path="url(#clip1)">
+<path style=" stroke:none;fill-rule:nonzero;fill:#ff6666;fill-opacity:1;" d="M 7.464844 11.5 C 7.464844 13.414062 5.910156 14.96875 3.996094 14.96875 C 2.078125 14.96875 0.527344 13.414062 0.527344 11.5 C 0.527344 9.582031 2.078125 8.03125 3.996094 8.03125 C 5.910156 8.03125 7.464844 9.582031 7.464844 11.5 Z M 7.464844 11.5 "/>
+</g>
+</defs>
+<g id="surface1">
+<path style=" stroke:none;fill-rule:nonzero;fill:#ff6666;fill-opacity:1;" d="M 7.996094 0.5 C 5.792969 0.5 4.003906 2.289062 4.003906 4.496094 C 4.003906 6.699219 5.792969 8.488281 7.996094 8.488281 C 10.203125 8.488281 11.992188 6.699219 11.992188 4.496094 C 11.992188 2.289062 10.203125 0.5 7.996094 0.5 Z M 7.996094 1.554688 C 9.625 1.554688 10.9375 2.867188 10.9375 4.496094 C 10.9375 6.121094 9.625 7.4375 7.996094 7.4375 C 6.371094 7.4375 5.054688 6.121094 5.054688 4.496094 C 5.054688 2.867188 6.371094 1.554688 7.996094 1.554688 Z M 7.996094 1.554688 "/>
+<use xlink:href="#surface12" mask="url(#mask0)"/>
+<path style=" stroke:none;fill-rule:nonzero;fill:#ff6666;fill-opacity:1;" d="M 3.996094 7.503906 C 1.792969 7.503906 0 9.292969 0 11.5 C 0 13.703125 1.792969 15.492188 3.996094 15.492188 C 6.199219 15.492188 7.988281 13.703125 7.988281 11.5 C 7.988281 9.292969 6.199219 7.503906 3.996094 7.503906 Z M 3.996094 8.558594 C 5.621094 8.558594 6.9375 9.871094 6.9375 11.5 C 6.9375 13.125 5.621094 14.441406 3.996094 14.441406 C 2.367188 14.441406 1.054688 13.125 1.054688 11.5 C 1.054688 9.871094 2.367188 8.558594 3.996094 8.558594 Z M 3.996094 8.558594 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:#ff6666;fill-opacity:1;" d="M 16 11.5 C 16 13.707031 14.207031 15.5 12 15.5 C 9.789062 15.5 7.996094 13.707031 7.996094 11.5 C 7.996094 9.289062 9.789062 7.496094 12 7.496094 C 14.207031 7.496094 16 9.289062 16 11.5 Z M 16 11.5 "/>
+</g>
+</svg>
