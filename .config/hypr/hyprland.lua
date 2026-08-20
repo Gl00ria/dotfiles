@@ -12,21 +12,21 @@ if is_file_exists(HOME .. "/.config/hypr/custom/env.lua") then
 end
 
 -- Default configurations --
+require("hyprland.rules")
 require("hyprland.execs")
 require("hyprland.general")
-require("hyprland.rules")
 require("hyprland.colors")
 -- require("hyprland.keybinds")
 
 -- Custom configurations --
+if is_file_exists(HOME .. "/.config/hypr/custom/rules.lua") then
+  require("custom.rules")
+end
 if is_file_exists(HOME .. "/.config/hypr/custom/execs.lua") then
   require("custom.execs")
 end
 if is_file_exists(HOME .. "/.config/hypr/custom/general.lua") then
   require("custom.general")
-end
-if is_file_exists(HOME .. "/.config/hypr/custom/rules.lua") then
-  require("custom.rules")
 end
 if is_file_exists(HOME .. "/.config/hypr/custom/keybinds.lua") then
   require("custom.keybinds")

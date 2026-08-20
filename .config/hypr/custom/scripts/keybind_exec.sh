@@ -79,59 +79,79 @@ keybinds_hint="━━━━━━━━━━━━━━━━━━━━━�
 󰌓 ▏XF86AudioNext                     Media Play-Next
 󰌓 ▏XF86AudioPrev                     Media Play-Prev
 ━━━━━━━━━━━━━━━━━━━━━━━━━━ Tmux ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-󰌓 ▏CTRL + 󰯬                          Tmux: Main Prefix
-󰌓 ▏Prefix + Alt + 󰰨                  Tmux: List Keymaps
+󰌓 ▏CTRL + Space                      Tmux: Main Prefix
+󰌓 ▏Prefix + ALT + U                  Tmux: List Keymaps
 󰌓 ▏Prefix + ?                        Tmux: List Keymaps
-󰌓 ▏Prefix + 󰘶 + 󰰟                    Tmux: Reload
+󰌓 ▏Prefix + SHIFT + R                Tmux: Reload
 󰌓 ▏Prefix + [ OR 󰌑                   Tmux: Enter Vim-Mode
 󰌓 ▏Prefix + ]                        Tmux: Paste Last Yanked
 󰌓 ▏Prefix + =                        Tmux: Show older yanked text
 󰌓 ▏Prefix + 󱁐                        Tmux: Change Layout
-󰌓 ▏Prefix + 󰘶 + 󰯲                    Tmux: Customize options
-󰌓 ▏Prefix + 󰘶 + 󰰄                    Tmux: Install plugin
-󰌓 ▏Prefix + 󰯾                        Tmux: Open LazyGit
-━━━━━━━━━━━━━━━━━━━━━ Tmux Sessions ━━━━━━━━━━━━━━━━━━━━━━━━━
-󰌓 ▏Prefix + 󰰢                        Tmux: Choose session
-󰌓 ▏Prefix + Hold 󰰢                   Tmux: Save session
-󰌓 ▏Prefix + 󰰓                        Tmux: New Session
-󰌓 ▏Prefix + 󰯵                        Tmux: Detach session
-󰌓 ▏Prefix + 󰘶 + 󰯵                    Tmux: Choose session
+󰌓 ▏Prefix + 󰘶 + C                    Tmux: Customize options
+󰌓 ▏Prefix + 󰘶 + I                    Tmux: Install plugin
+󰌓 ▏Prefix + G                        Tmux: Open LazyGit
+󰌓 ▏Prefix + S                        Tmux: Choose session
+󰌓 ▏Prefix + Hold S                   Tmux: Save session
+󰌓 ▏Prefix + N                        Tmux: New Session
+󰌓 ▏Prefix + D                        Tmux: Detach session
+󰌓 ▏Prefix + SHIFT + 󰯵                Tmux: Choose session
 󰌓 ▏Prefix + $                        Tmux: Rename Session
-󰌓 ▏Prefix + 󰰟                        Tmux: Restore session
-󰌓 ▏Prefix + 󰰍                        Tmux: GoTo Last session
+󰌓 ▏Prefix + R                        Tmux: Restore session
+󰌓 ▏Prefix + L                        Tmux: GoTo Last session
 󰌓 ▏Prefix +                          Tmux: Move to next session
 󰌓 ▏Prefix + (                        Tmux: Move to prev session
-󰌓 ▏Prefix + 󰰥                        Tmux: Show a clock
+󰌓 ▏Prefix + T                        Tmux: Show a clock
 󰌓 ▏Prefix + ~                        Tmux: Show messages
-━━━━━━━━━━━━━━━━━━━━━━ Tmux Windows ━━━━━━━━━━━━━━━━━━━━━━━━━
-󰌓 ▏Prefix + 󰰄                        Tmux: Window Info
-󰌓 ▏Prefix + 󰯻                        Tmux: Find window/pane
+󰌓 ▏Prefix + I                        Tmux: Window Info
+󰌓 ▏Prefix + F                        Tmux: Find window/pane
 󰌓 ▏Prefix + &                        Tmux: Kill window
-󰌓 ▏Prefix + 󰰮                        Tmux: List windows
-󰌓 ▏Prefix + 󰯲                        Tmux: Create window
+󰌓 ▏Prefix + W                        Tmux: List windows
+󰌓 ▏Prefix + C                        Tmux: Create window
 󰌓 ▏Prefix + ;                        Tmux: Split Window Vertically
 󰌓 ▏Prefix + ,                        Tmux: Split Window Horizontally
 󰌓 ▏Prefix + !                        Tmux: Create new window of pane
-━━━━━━━━━━━━━━━━━ Tmux Windows Navigating ━━━━━━━━━━━━━━━━━━━
-󰌓 ▏Prefix + 󰘶 + .                    Tmux: Navigate to Next Window
-󰌓 ▏Prefix + 󰘶 + ,                    Tmux: Navigate to Prev Window
-━━━━━━━━━━━━━━━━━━━━━━━ Tmux Panes ━━━━━━━━━━━━━━━━━━━━━━━━━━
-󰌓 ▏Prefix + 󰰜                        Tmux: Display pane numbers
-󰌓 ▏Prefix + 󰘶 + 󰰐                    Tmux: Clear Marked pane
-󰌓 ▏Prefix + 󰰱                        Tmux: Kill pane
-━━━━━━━━━━━━━━━━━━━━ Tmux Panes Resize ━━━━━━━━━━━━━━━━━━━━━━
-󰌓 ▏Prefix + 󰘶 + 󰰇                    Tmux: Resize DOWN
-󰌓 ▏Prefix + 󰘶 + 󰰊                    Tmux: Resize UP
-󰌓 ▏Prefix + 󰘶 + 󰰍                    Tmux: Resize RIGHT
-󰌓 ▏Prefix + 󰘶 + 󰰁                    Tmux: Resize LEFT
-󰌓 ▏Prefix + 󰰐                        Tmux: Maximize/Minimize Pane
-━━━━━━━━━━━━━━━━━━ Tmux Panes Navigating ━━━━━━━━━━━━━━━━━━━━
-󰌓 ▏CTRL + 󰰇                          Tmux: Navigate DOWN
-󰌓 ▏CTRL + 󰰊                          Tmux: Navigate UP
-󰌓 ▏CTRL + 󰰍                          Tmux: Navigate RIGHT
-󰌓 ▏CTRL + 󰰁                          Tmux: Navigate LEFT
+󰌓 ▏Prefix + SHIFT + .                Tmux: Navigate to Next Window
+󰌓 ▏Prefix + SHIFT + ,                Tmux: Navigate to Prev Window
+󰌓 ▏Prefix + Q                        Tmux: Display pane numbers
+󰌓 ▏Prefix + SHIFT + M                Tmux: Clear Marked pane
+󰌓 ▏Prefix + X                        Tmux: Kill pane
+󰌓 ▏Prefix + SHIFT + J                Tmux: Resize DOWN
+󰌓 ▏Prefix + SHIFT + K                Tmux: Resize UP
+󰌓 ▏Prefix + SHIFT + L                Tmux: Resize RIGHT
+󰌓 ▏Prefix + SHIFT + H                Tmux: Resize LEFT
+󰌓 ▏Prefix + M                        Tmux: Maximize/Minimize Pane
+󰌓 ▏CTRL + J                          Tmux: Navigate DOWN
+󰌓 ▏CTRL + K                          Tmux: Navigate UP
+󰌓 ▏CTRL + L                          Tmux: Navigate RIGHT
+󰌓 ▏CTRL + H                          Tmux: Navigate LEFT
 󰌓 ▏Prefix + >                        Tmux: Swap pane RIGHT
 󰌓 ▏Prefix + <                        Tmux: Swap pane LEFT
+━━━━━━━━━━━━━━━━━━━━━━━━━━ Herdr ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+󰌓 ▏CTRL + Space                    Herdr: Main Prefix
+󰌓 ▏Prefix + S                      Herdr: Settings
+󰌓 ▏Prefix + Q                      Herdr: Detach
+󰌓 ▏Prefix + R                      Herdr: Reload Config
+󰌓 ▏Prefix + SHIFT + N              Herdr: New Workspace
+󰌓 ▏Prefix + SHIFT + W              Herdr: Rename Workspace
+󰌓 ▏Prefix + SHIFT + D              Herdr: Close Workspace
+󰌓 ▏Prefix + [                      Herdr: Workspace Picker
+󰌓 ▏Prefix + c                      Herdr: New Tab
+󰌓 ▏Prefix + ,                      Herdr: Rename Tab
+󰌓 ▏Prefix + <                      Herdr: Previous Tab
+󰌓 ▏Prefix + >                      Herdr: Next Tab
+󰌓 ▏Prefix + e                      Herdr: Editor
+󰌓 ▏Prefix + H                      Herdr: Focus Pane Left
+󰌓 ▏Prefix + J                      Herdr: Focus Pane Down
+󰌓 ▏Prefix + K                      Herdr: Focus Pane UP
+󰌓 ▏Prefix + L                      Herdr: Focus Pane Right
+󰌓 ▏Prefix + ;                      Herdr: Split Vertical
+󰌓 ▏Prefix + -                      Herdr: Split Horizontal
+󰌓 ▏Prefix + E                      Herdr: Toggle Sidebar
+󰌓 ▏Prefix + G                      Herdr: LazyGit
+󰌓 ▏Prefix + O                      Herdr: Opencode
+󰌓 ▏Prefix + F                      Herdr Plugin: Projects
+󰌓 ▏Prefix + Space                  Herdr Plugin: Find Tabs
+󰌓 ▏Prefix + C                      Herdr Plugin: Command Palette
 "
 
 # read hypr font size
