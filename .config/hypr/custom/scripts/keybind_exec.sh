@@ -49,6 +49,7 @@ keybinds_hint="━━━━━━━━━━━━━━━━━━━━━�
 󰌓 ▏N/A                               Music Player
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Eye-Candy ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 󰌓 ▏N/A                               Select Wallpaper
+󰌓 ▏N/A                               Toggle Blur
 󰌓 ▏SHIFT + SUPER + W                 Random Wallpaper
 󰌓 ▏SHIFT + SUPER + T                 Toggle Theme Mode
 󰌓 ▏N/A                               Restart Widgets
@@ -292,10 +293,10 @@ case "$selected" in
         "$(xdg-user-dir PICTURES)/Screenshots/Screenshot_$(date '+%d-%m-%Y_%H.%M.%S').png"
         $HOME/.config/hypr/custom/scripts/Sounds.sh --screenshot
   }
-  screenshot
   ;;
 "Screenshot (Select Region)")
-  qs -c ii ipc call region screenshot
+  sleep 0.50
+  qs -c ii ipc call region screenshot &&
   $HOME/.config/hypr/custom/scripts/Sounds.sh --screenshot
   ;;
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Apps ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -346,6 +347,9 @@ case "$selected" in
   hyprctl dispatch 'hl.dsp.focus({direction = "d"})'
   ;;
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Eye-Candy ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+"Toggle Blur")
+  $customScripts/ChangeBlur.sh
+  ;;
 "Select Wallpaper")
   qs -c ii ipc call wallpaperSelector toggle
   ;;

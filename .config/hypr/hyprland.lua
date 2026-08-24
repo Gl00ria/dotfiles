@@ -42,5 +42,11 @@ if is_file_exists(HOME .. "/.config/hypr/monitors.lua") then
   require("custom.monitors")
 end
 
+--
+-- plugins
+--
+-- (https://github.com/hyprnux/hyprglass)
+require("custom.plugins.hyprglass")
+
 -- Shell overrides --
 require("hyprland.shellOverrides.main")
