@@ -16,20 +16,14 @@
 # italic_font      auto
 # bold_italic_font auto
 
-# connected letters "Hard to see"
-# font_family      family="Victor Mono"
-# bold_font        auto
-# italic_font      auto
-# bold_italic_font auto
-
 # connected letters
-font_family      family="CaskaydiaCove Nerd Font"
+font_family      family="Victor Mono"
 bold_font        auto
 italic_font      auto
 bold_italic_font auto
 
-font_size 16.0
-# font_size 28.0
+# font_size 16.0
+font_size 28.0
 #  ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 #  ┃                          Window                          ┃
 #  ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
@@ -197,9 +191,10 @@ linux_display_server auto
 #  ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 # search for themes --> kitten themes
 
-background_opacity 0.8
-dynamic_background_opacity no
-# dim_opacity 0.60
+background_opacity 0.9
+# dynamic_background_opacity yes
+dynamic_background_opacity 1
+dim_opacity 0.60
 #
 # tokyonight
 #
@@ -228,7 +223,7 @@ dynamic_background_opacity no
 # include ~/.config/kitty/themes/everforest.conf
 
 # include ~/.config/kitty/themes/Nordfox.conf
-include ~/.config/kitty/themes/palenight.conf
+# include ~/.config/kitty/themes/palenight.conf
 
 #
 # Sonokai
@@ -237,7 +232,7 @@ include ~/.config/kitty/themes/palenight.conf
 # include ~/.config/kitty/themes/sonokai_atlantis.conf
 # include ~/.config/kitty/themes/sonokai_andromeda.conf
 
-# include ~/.config/kitty/themes/Gruvbox-Retro.conf
+include ~/.config/kitty/themes/Gruvbox-Retro.conf
 # include ~/.config/kitty/themes/Material-Sakura.conf
 # include ~/.config/kitty/themes/Decay-Green.conf
 # include ~/.config/kitty/themes/Frosted-Glass.conf
