@@ -80,7 +80,7 @@ hl.config({
       special = false,
       new_optimizations = true,
       size = 8,
-      passes = 2,
+      passes = 1,
       brightness = 1,
       noise = 0.05,
       contrast = 0.89,
