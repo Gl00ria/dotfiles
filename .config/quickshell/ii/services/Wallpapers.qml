@@ -34,7 +34,7 @@ Singleton {
     signal thumbnailGeneratedFile(filePath: string)
 
     function load () {} // For forcing initialization
-
+    
     function openFallbackPicker(darkMode = Appearance.m3colors.darkmode) {
         Quickshell.execDetached([Directories.wallpaperSwitchScriptPath, "--mode", darkMode ? "dark" : "light"]);
     }

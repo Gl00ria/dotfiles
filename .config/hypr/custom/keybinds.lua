@@ -37,7 +37,9 @@ hl.bind("SUPER + SUPER_R", hl.dsp.global("quickshell:searchToggleRelease"))
 -- qs -c ii ipc show
 -- qs -c ii ipc call overlay toggle
 --
-hl.bind("CTRL + ALT + I", hl.dsp.exec_cmd(settingsApp), { description = "Utils: Settings app" })
+-- hl.bind("CTRL + ALT + I", hl.dsp.exec_cmd(settingsApp), { description = "Utils: Settings app" })
+-- https://github.com/pctrade/end4-pC
+hl.bind("CTRL + ALT + I", hl.dsp.global("quickshell:settingsToggle"), { description = "Toggle settings" })
 -- hl.bind("CTRL + ALT + M", hl.dsp.global("quickshell:sessionToggle"), { description = "Utils: Toggle session menu" })
 hl.bind(
   "CTRL + ALT + Semicolon",
