@@ -1,5 +1,5 @@
 alias t="tmux"
-# alias tns="tmux new -s" # new session
+# # alias tns="tmux new -s" # new session
 alias tns="tmux new -A -s" # create or attach to a named tmux session
 alias tes="tmux detach"
 alias tls="tmux ls"

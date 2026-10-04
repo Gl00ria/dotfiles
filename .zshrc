@@ -7,7 +7,7 @@ fi
 
 # ------------ Source the configuration files --------------------
 
-for cfgs in "$HOME"/.config/zshrc/*; do
+for cfgs in "$HOME"/.config/zshrc.d/*; do
   source "$cfgs"
 done
 
