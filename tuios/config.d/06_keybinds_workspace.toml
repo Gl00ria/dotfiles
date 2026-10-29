@@ -1,0 +1,8 @@
+[keybindings.workspace_prefix]
+workspace_prefix_rename = [',']
+prefix_workspace_switcher = ['w']
+
+[keybindings.workspaces]
+next_workspace = ["alt+>"]
+prev_workspace = ["alt+<"]
+
