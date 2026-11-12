@@ -1,9 +1,0 @@
-# tuios keybinds doctor
-[keybindings]
-keyboard_layout = "us"
-option_glyphs = "auto"
-leader_key = "ctrl+space"
-preset = "tmux"
-
-[keybindings.global]
-command_palette = [""] # conflicts with copy/paste with 'tmux preset'
