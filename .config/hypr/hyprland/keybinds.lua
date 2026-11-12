@@ -178,7 +178,7 @@
 --   hl.dsp.exec_cmd(hyprScripts .. "/ai/primary-buffer-query.sh"),
 --   { description = "Utilities: Generate AI summary for selected text" }
 -- )
--- -- (requires a running ollama model)
+-- (requires a running ollama model)
 --
 -- --##! Screen
 -- --# Zoom

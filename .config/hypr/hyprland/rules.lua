@@ -32,6 +32,7 @@ hl.window_rule({ match = { title = "^(.*)(wants to open)$" }, float = true })
 hl.window_rule({ match = { class = "^(blueberry\\.py)$" }, float = true })
 hl.window_rule({ match = { class = "^(guifetch)$" }, float = true }) -- FlafyDev/guifetch
 hl.window_rule({ match = { class = "^(pavucontrol)$" }, float = true })
+
 hl.window_rule({
   match = { class = "^(pavucontrol)$" },
   size = { "(monitor_w*0.45)", "(monitor_h*0.45)" },

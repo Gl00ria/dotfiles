@@ -43,6 +43,7 @@ keybinds_hint="━━━━━━━━━━━━━━━━━━━━━�
 󰌓 ▏SUPER + O                         Notes App
 󰌓 ▏SUPER + G                         Gparted
 󰌓 ▏SUPER + N                         Notification Center
+󰌓 ▏SUPER + A                         Toggle Left Sidebar
 󰌓 ▏SUPER + V                         Clipboard Manager
 󰌓 ▏SUPER + T                         Text Editor
 󰌓 ▏SUPER + C                         VS Code
@@ -109,7 +110,7 @@ keybinds_hint="━━━━━━━━━━━━━━━━━━━━━�
 󰌓 ▏Prefix + W                        Tmux: List windows
 󰌓 ▏Prefix + C                        Tmux: Create window
 󰌓 ▏Prefix + ;                        Tmux: Split Window Vertically
-󰌓 ▏Prefix + ,                        Tmux: Split Window Horizontally
+󰌓 ▏Prefix + -                        Tmux: Split Window Horizontally
 󰌓 ▏Prefix + !                        Tmux: Create new window of pane
 󰌓 ▏Prefix + SHIFT + .                Tmux: Navigate to Next Window
 󰌓 ▏Prefix + SHIFT + ,                Tmux: Navigate to Prev Window
@@ -137,7 +138,7 @@ keybinds_hint="━━━━━━━━━━━━━━━━━━━━━�
 󰌓 ▏Prefix + SHIFT + D              Herdr: Close Workspace
 󰌓 ▏Prefix + [                      Herdr: Workspace Picker
 󰌓 ▏Prefix + c                      Herdr: New Tab
-󰌓 ▏Prefix + ,                      Herdr: Rename Tab
+󰌓 ▏Prefix + ,                      Herdr: Rename Pane
 󰌓 ▏Prefix + <                      Herdr: Previous Tab
 󰌓 ▏Prefix + >                      Herdr: Next Tab
 󰌓 ▏Prefix + e                      Herdr: Editor
@@ -153,6 +154,91 @@ keybinds_hint="━━━━━━━━━━━━━━━━━━━━━�
 󰌓 ▏Prefix + F                      Herdr Plugin: Projects
 󰌓 ▏Prefix + Space                  Herdr Plugin: Find Tabs
 󰌓 ▏Prefix + C                      Herdr Plugin: Command Palette
+━━━━━━━━━━━━━━━━━━━━━━━━━━ TuiOS ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+󰌓 ▏CTRL + Space                    TuiOS: Main Prefix
+󰌓 ▏Prefix + A                      TuiOS: App Launcher
+󰌓 ▏Prefix + S                      TuiOS: Settings
+󰌓 ▏Prefix + F                      TuiOS: Navigator
+󰌓 ▏Prefix + G                      TuiOS: Toggle Scratch
+󰌓 ▏Prefix + D                      TuiOS: Debug
+󰌓 ▏Prefix + K                      TuiOS: Keybinds
+󰌓 ▏Prefix + ENTER                  TuiOS: Copy Mode
+󰌓 ▏Prefix + D                      TuiOS: Detach
+󰌓 ▏Prefix + E                      TuiOS: Navigate Sidebar
+󰌓 ▏Prefix + B                      TuiOS: Toggle Sidebar
+󰌓 ▏Prefix + P                      TuiOS: Command Palatte
+󰌓 ▏Prefix + W                      TuiOS: Workspace Switcher
+󰌓 ▏Prefix + W                      TuiOS: Workspace Switcher
+󰌓 ▏Prefix + H                      TuiOS: Focus Pane Left
+󰌓 ▏Prefix + J                      TuiOS: Focus Pane Down
+󰌓 ▏Prefix + K                      TuiOS: Focus Pane UP
+󰌓 ▏Prefix + L                      TuiOS: Focus Pane Right
+󰌓 ▏CTRL + H                        TuiOS: Focus Pane Left
+󰌓 ▏CTRL + J                        TuiOS: Focus Pane Down
+󰌓 ▏CTRL + K                        TuiOS: Focus Pane UP
+󰌓 ▏CTRL + L                        TuiOS: Focus Pane Right
+󰌓 ▏Prefix + L                      TuiOS: List Sessions
+󰌓 ▏Prefix + ;                      TuiOS: Split Vertical
+󰌓 ▏Prefix + -                      TuiOS: Split Horizontal
+󰌓 ▏Prefix + Z                      TuiOS: Toggle Zoom
+󰌓 ▏Prefix + ,                      TuiOS: Rename Pane
+󰌓 ▏Prefix + R                      TuiOS: Rotate Splits
+󰌓 ▏W or X                          TuiOS 'WM': Close Window
+󰌓 ▏S                               TuiOS 'WM': Focus Sidebar
+󰌓 ▏;                               TuiOS 'WM': Last Pane
+󰌓 ▏M                               TuiOS 'WM': Minimize Window
+󰌓 ▏N                               TuiOS 'WM': New Session
+󰌓 ▏N                               TuiOS 'WM': New Window
+󰌓 ▏ALT + SHIFT + N                 TuiOS 'WM': Next Session
+󰌓 ▏ALT + SHIFT + P                 TuiOS 'WM': Next Session
+󰌓 ▏TAB                             TuiOS 'WM': Next Window
+󰌓 ▏SHIFT + TAB                     TuiOS 'WM': Prev Window
+󰌓 ▏R                               TuiOS 'WM': Rename Window
+󰌓 ▏M                               TuiOS 'WM': Restore All
+󰌓 ▏P                               TuiOS 'WM': Toggle Picture in Picture 'PiP'
+󰌓 ▏Z                               TuiOS 'WM': Toggle Zoom
+󰌓 ▏S                               TuiOS 'WM': Screensaver
+󰌓 ▏=                               TuiOS 'WM': Equalize Splits
+󰌓 ▏R                               TuiOS 'WM': Rotate Splits
+󰌓 ▏-                               TuiOS 'WM': Split Horizontal
+󰌓 ▏;                               TuiOS 'WM': Split Vertical
+󰌓 ▏J                               TuiOS 'WM': Swap Down
+󰌓 ▏H                               TuiOS 'WM': Swap Left
+󰌓 ▏K                               TuiOS 'WM': Swap UP
+󰌓 ▏L                               TuiOS 'WM': Swap Right
+󰌓 ▏?                               TuiOS 'WM': Toggle Help
+󰌓 ▏B                               TuiOS 'WM': Toggle Spotlight
+󰌓 ▏Prefix + A                      TuiOS 'Agents': 'Inbox'
+󰌓 ▏Prefix + M                      TuiOS 'Agents': 'Mail'
+󰌓 ▏ESC OR Q                        TuiOS 'Agents': Inbox Close
+󰌓 ▏N                               TuiOS 'Agents': Inbox Deny
+󰌓 ▏J OR CTRL + D                   TuiOS 'Agents': Inbox Detail Down
+󰌓 ▏K OR CTRL + U                   TuiOS 'Agents': Inbox Detail Up
+󰌓 ▏D OR Delete                     TuiOS 'Agents': Inbox dismiss
+󰌓 ▏F                               TuiOS 'Agents': Inbox Filter
+󰌓 ▏G OR Home                       TuiOS 'Agents': Inbox First
+󰌓 ▏G OR End                        TuiOS 'Agents': Inbox Last
+󰌓 ▏R                               TuiOS 'Agents': Inbox Reply
+󰌓 ▏Y                               TuiOS 'Agents': Inbox Resume
+󰌓 ▏V                               TuiOS 'Agents': Inbox Review
+󰌓 ▏/                               TuiOS 'Agents': Inbox Select
+󰌓 ▏Z                               TuiOS 'Agents': Inbox Snooze
+󰌓 ▏S                               TuiOS 'Agents': Inbox Show Snoozed
+󰌓 ▏U                               TuiOS 'Agents': Inbox Undow
+󰌓 ▏SPACE                           TuiOS 'Agents': Inbox Peak
+󰌓 ▏a                               TuiOS 'Agents': Inbox Peak Approve
+󰌓 ▏A                               TuiOS 'Agents': Inbox Peak Always Approve
+󰌓 ▏d                               TuiOS 'Agents': Inbox Peak Deny
+󰌓 ▏ENTER                           TuiOS 'Agents': Inbox Peak Go
+󰌓 ▏r                               TuiOS 'Agents': Inbox Peak Read Again
+󰌓 ▏TAB                             TuiOS 'Agents': Inbox Peak Type
+󰌓 ▏o                               TuiOS 'Agents': Mail Focos Pane
+󰌓 ▏n                               TuiOS 'Agents': Mail New
+󰌓 ▏r                               TuiOS 'Agents': Mail Reply
+󰌓 ▏Prefix + g                      TuiOS: LazyGit
+󰌓 ▏Prefix + a                      TuiOS: Opencode
+━━━━━━━━━━━━━━━━━━━━━━━━━━ OpenCode ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+󰌓 ▏CTRL + X                        OpenCode: Leader
 "
 
 # read hypr font size
@@ -232,7 +318,7 @@ case "$selected" in
   $scriptsDir/keybind_exec.sh
   ;;
 "App Lanucher")
-  qs -c ii ipc call search toggle
+  qs -c end4-pC ipc call search toggle
   ;;
 "Close Active Window")
   hyprctl dispatch 'hl.dsp.window.close()'
@@ -246,31 +332,31 @@ case "$selected" in
     'better-control'
   ;;
 "Session Menu")
-  qs -c ii ipc call session toggle
+  qs -c end4-pC ipc call session toggle
   ;;
 "On Screen Keyboard")
-  qs -c ii ipc call osk toggle
+  qs -c end4-pC ipc call osk toggle
   ;;
 "Toggle Bar")
-  qs -c ii ipc call bar toggle
+  qs -c end4-pC ipc call bar toggle
   ;;
 "Lockscreen")
   loginctl lock-session
   ;;
 "Toggle Overlay")
-  qs -c ii ipc call overlay toggle
+  qs -c end4-pC ipc call overlay toggle
   ;;
   "Task Manager")
   ~/.config/hypr/hyprland/scripts/launch_first_available.sh 'command -v btop && kitty -1 fish -c btop' 'gnome-system-monitor' 'plasma-systemmonitor --page-name Processes'
   ;;
 "OCR")
-  qs -c ii ipc call region ocr
+  qs -c end4-pC ipc call region ocr
   ;;
   "Google Image Search")
-  qs -c ii ipc call region search
+  qs -c end4-pC ipc call region search
   ;;
   "Translate Screen Content")
-  qs -c ii ipc call screenTranslator translate
+  qs -c end4-pC ipc call screenTranslator translate
   ;;
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Recording ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
   "Record Fullscreen (With Sound)")
@@ -280,7 +366,7 @@ case "$selected" in
   $HOME/.config/quickshell/$qsConfig/scripts/videos/record.sh --fullscreen
   ;;
 "Record Region")
-  qs -c ii ipc call region record
+  qs -c end4-pC ipc call region record
   ;;
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Screenshot ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -296,7 +382,7 @@ case "$selected" in
   ;;
 "Screenshot (Select Region)")
   sleep 0.50
-  qs -c ii ipc call region screenshot &&
+  qs -c end4-pC ipc call region screenshot &&
   $HOME/.config/hypr/custom/scripts/Sounds.sh --screenshot
   ;;
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Apps ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -316,10 +402,13 @@ case "$selected" in
   xhost +SI:localuser:root && gparted
   ;;
   "Notification Center")
-  qs -c ii ipc call sidebarRight toggle
+  qs -c end4-pC ipc call sidebarRight toggle
+  ;;
+  "Toggle Left Sidebar")
+  qs -c end4-pC ipc call sidebarLeft toggle
   ;;
 "Clipboard Manager")
-  qs -c ii ipc call search clipboardToggle
+  qs -c end4-pC ipc call search clipboardToggle
   ;;
 "Text Editor")
  ~/.config/hypr/hyprland/scripts/launch_first_available.sh 'kate' 'gnome-text-editor' 'emacs'
@@ -351,20 +440,20 @@ case "$selected" in
   $customScripts/ChangeBlur.sh
   ;;
 "Select Wallpaper")
-  qs -c ii ipc call wallpaperSelector toggle
+  qs -c end4-pC ipc call wallpaperSelector toggle
   ;;
 "Random Wallpaper")
-  qs -c ii ipc call wallpaperSelector random
+  qs -c end4-pC ipc call wallpaperSelector random
   ;;
 "Toggle Theme Mode")
-  qs -c ii ipc call theme toggleLightDark
+  qs -c end4-pC ipc call theme toggleLightDark
   ;;
 "Restart Widgets")
   killall ydotool qs quickshell
   qs -c $qsConfig &
   ;;
 "Change Bar Style")
-  qs -c ii ipc call panelFamily cycle
+  qs -c end4-pC ipc call panelFamily cycle
   ;;
 "Color Picker")
   hyprpicker -a

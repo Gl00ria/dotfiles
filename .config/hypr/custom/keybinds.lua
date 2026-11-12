@@ -25,6 +25,7 @@ local qsScripts = "$HOME/.config/quickshell/$qsConfig/scripts"
 local qsIpcCall = "qs -c $qsConfig ipc call"
 local qsIsAlive = qsIpcCall .. " TEST_ALIVE"
 local customScripts = "$HOME/.config/hypr/custom/scripts"
+local hyprScripts = "$HOME/.config/hypr/hyprland/scripts"
 
 -- life saver
 hl.bind("SUPER + H", hl.dsp.exec_cmd(customScripts .. "/keybind_exec.sh"), { description = "Search/Execute Keybinds" })
@@ -88,7 +89,8 @@ hl.bind("SUPER + B", hl.dsp.exec_cmd(browser), { description = "Apps: Browser" }
 hl.bind("SUPER + E", hl.dsp.exec_cmd(fileManager), { description = "Apps: File manager" })
 hl.bind("SUPER + O", hl.dsp.exec_cmd(notesApp), { description = "Apps: Obsidian" })
 hl.bind("SUPER + G", hl.dsp.exec_cmd("xhost +SI:localuser:root && gparted"), { description = "Apps: Gparted" })
-hl.bind("SUPER + N", hl.dsp.global("quickshell:sidebarRightToggle"), { description = "Utils: Right Side Bar Menu" })
+hl.bind("SUPER + N", hl.dsp.global("quickshell:sidebarRightToggle"), { description = "Utils: Right Sidebar" })
+hl.bind("SUPER + A", hl.dsp.global("quickshell:sidebarLeftToggle"), { description = "Toggle left Sidebar" })
 hl.bind("SUPER + V", hl.dsp.global("quickshell:overviewClipboardToggle"), { description = "Utils: Clipboard" })
 hl.bind("SUPER + T", hl.dsp.exec_cmd(textEditor), { description = "Apps: Text editor" })
 hl.bind("SUPER + C", hl.dsp.exec_cmd("code"), { description = "Apps: Code editor" })
@@ -197,11 +199,12 @@ hl.bind(
 --
 -- AI
 -- TODO:
--- hl.bind("SUPER + A", hl.dsp.global("quickshell:sidebarLeftToggle"), { description = "AI: Toggle left sidebar" })
--- hl.bind("SUPER + ALT + A", hl.dsp.global("quickshell:sidebarLeftToggleDetach"))
--- hl.bind("SUPER + SHIFT + ALT + mouse:273", hl.dsp.exec_cmd(hyprScripts .. "/ai/primary-buffer-query.sh"),
---     { description = "Utilities: Generate AI summary for selected text" })
--- -- (requires a running ollama model)
+--# AI
+-- hl.bind(
+--   "SUPER + SHIFT + ALT + A",
+--   hl.dsp.exec_cmd(hyprScripts .. "/ai/primary-buffer-query.sh"),
+--   { description = "Utilities: Generate AI summary for selected text" }
+-- )
 
 --
 -- Windows
