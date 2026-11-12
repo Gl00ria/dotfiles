@@ -16,6 +16,9 @@ alias gif="mpv --loop"
 # │                                                          │
 # ╘══════════════════════════════════════════════════════════╛
 # download video & convert to mp3 | ytd -a filename.txt
+# audio
 alias ytd-list-from-file='echo "[ Download Playlist From A File ]"; yt-dlp -i --extract-audio --audio-format mp3 -o "%(title)s.%(ext)s" -a'
+alias ytd-download-single='echo "[ Download Single-Vid From A File ]"; yt-dlp -i --extract-audio --audio-format mp3 --no-playlist -o "%(title)s.%(ext)s" -a'
+# vid
 alias ytd-vid-list-from-file='echo "[ Download Playlist From A File ]"; yt-dlp -i -o "%(title)s.%(ext)s" -a'
-alias ytd-download-single='echo "[ Download Single-Vids From A File ]"; yt-dlp -i --extract-audio --audio-format mp3 --no-playlist -o "%(title)s.%(ext)s" -a'
+alias ytd-vid-single-from-file='echo "[ Download Single-Vids From A File ]"; yt-dlp -i --no-playlist -f "bv*[ext=mp4]+ba[ext=m4a]/b[ext=mp4]" -o "%(title)s.%(ext)s" -a'

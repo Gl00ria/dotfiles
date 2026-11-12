@@ -7,7 +7,29 @@ alias sync="sudo pacman -Syy"     # sync with the DB
 alias pupgrade="sudo pacman -Syu" # Upgrade
 
 # Arch's nuclear
-alias upgrade-all="sudo pacman -Syy && sudo pacman -Syu && yay -Sua --noconfirm"
+upgrade-all() {
+  sudo pacman -Syy
+  sudo pacman -Syu --noconfirm
+  yay -Sua --noconfirm
+
+  # AI agents skills
+  npx skills update -g
+
+  # my repos update
+  mr update
+
+  # NOTE: not needed (using end4-pC)
+  # illogical-impulse (https://ii.clsty.link/en/ii-qs/01setup/)
+  # cd ~/.cache/dots-hyprland/
+  # git pull && git submodule update --init --recursive
+
+  # quickshell config (https://github.com/pctrade/end4-pC)
+  cd ~/.config/quickshell/
+  git clone https://github.com/pctrade/end4-pC.git
+  killall qs 2>/dev/null
+  qs -c end4-pC >/dev/null 2>&1 &
+  disown
+}
 
 # ╒══════════════════════════════════════════════════════════╕
 # │                                                          │
@@ -50,9 +72,30 @@ alias pkgtree="pactree" # Find out the dependencies for a pkg
 # │                         Clean Up                         │
 # │                                                          │
 # ╘══════════════════════════════════════════════════════════╛
-alias clr-cache="sudo pacman -Sc --noconfirm && yay -Sc --noconfirm" # Clear old & unused chaches & pkgs
+clean_up_all() {
+  echo "Python Clean up (UV & pip from ~/.cache):"
+  uv cache clean
+  pip cache purge
 
-alias clr-allchace="sudo pacman -Scc --noconfirm && yay -Scc --noconfirm" # Clear all files from the cache
+  echo "Package Manager (Pacman & Yay):"
+  echo "Remove all cached package"
+  sudo paccache -r
+  sudo pacman -Scc --noconfirm
+  echo "List of Orpahn Packages:"
+  pacman -Qdt
+  echo "Removing Orpahns (Pacman & Yay):"
+  sudo pacman -Rns $(pacman -Qdtq)
+
+  echo "Clean up Pacman & Yay's Cache"
+  sudo pacman -Sc --noconfirm
+  yay -Sc --noconfirm # same as the above, but hey?
+  echo "Clean up Pacman & Yay's All Cache"
+  sudo pacman -Scc --noconfirm
+  yay -Scc --noconfirm # same as the above, but hey?
+
+  echo "Deleting Logs: >100"
+  sudo journalctl --vacuum-size=100M
+}
 
 # Remove a pkg, keeps its settings & dependencies
 alias pr="pacman -Qq | fzf --multi --preview 'pacman -Qi {1}' --preview-window right:70% | xargs -ro sudo pacman -R"
