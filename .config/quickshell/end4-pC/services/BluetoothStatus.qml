@@ -1,0 +1,61 @@
+pragma Singleton
+pragma ComponentBehavior: Bound
+
+import Quickshell
+import Quickshell.Bluetooth
+import Quickshell.Io
+import QtQuick
+
+Singleton {
+    id: root
+
+    readonly property bool available: Bluetooth.adapters.values.length > 0
+    readonly property bool enabled: Bluetooth.defaultAdapter?.enabled ?? false
+
+    // BlueZ can leave Device1.Connected false when a device reconnects on its
+    // own, while audio, AVRCP and battery reporting are all live
+    // (https://github.com/bluez/bluez/issues/2485). Battery1 is only exported
+    // while a device is connected, so count it as a connection too.
+    function isConnected(device): bool {
+        return !!device && (device.connected || device.batteryAvailable);
+    }
+
+    readonly property BluetoothDevice firstActiveDevice: Bluetooth.devices.values.find(device => root.isConnected(device)) ?? null
+    readonly property int activeDeviceCount: Bluetooth.devices.values.filter(device => root.isConnected(device)).length
+    readonly property bool connected: Bluetooth.devices.values.some(d => root.isConnected(d))
+
+    function sortFunction(a, b) {
+        // Ones with meaningful names before MAC addresses
+        const macRegex = /^([0-9A-Fa-f]{2}-){5}[0-9A-Fa-f]{2}$/;
+        const aIsMac = macRegex.test(a.name);
+        const bIsMac = macRegex.test(b.name);
+        if (aIsMac !== bIsMac)
+            return aIsMac ? 1 : -1;
+
+        // Alphabetical by name
+        return a.name.localeCompare(b.name);
+    }
+    property list<var> connectedDevices: Bluetooth.devices.values.filter(d => root.isConnected(d)).sort(sortFunction)
+    property list<var> pairedButNotConnectedDevices: Bluetooth.devices.values.filter(d => d.paired && !root.isConnected(d)).sort(sortFunction)
+    property list<var> unpairedDevices: Bluetooth.devices.values.filter(d => !d.paired && !root.isConnected(d)).sort(sortFunction)
+    readonly property list<var> connectedBatteryDevices: connectedDevices.filter(device => device.batteryAvailable && Number.isFinite(Number(device.battery)))
+    readonly property var primaryConnectedDevice: firstActiveDevice ?? connectedDevices[0] ?? null
+    readonly property var primaryBatteryDevice: hasBattery(primaryConnectedDevice)
+        ? primaryConnectedDevice
+        : connectedBatteryDevices[0] ?? null
+    property list<var> friendlyDeviceList: [
+        ...connectedDevices,
+        ...pairedButNotConnectedDevices,
+        ...unpairedDevices
+    ]
+
+    function hasBattery(device): bool {
+        return !!device && device.batteryAvailable && Number.isFinite(Number(device.battery));
+    }
+
+    function togglePower() {
+        const adapter = Bluetooth.defaultAdapter;
+        if (!adapter) return;
+        adapter.enabled = !adapter.enabled;
+    }
+}
