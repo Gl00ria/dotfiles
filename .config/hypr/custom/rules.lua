@@ -13,6 +13,7 @@ hl.window_rule({
     class = "^(md.obsidian.Obsidian)$",
   },
   workspace = "5",
+  opacity = 0.95,
 })
 
 -- email clients
@@ -22,4 +23,5 @@ hl.window_rule({
     class = "^([Tt]hunderbird|org.mozilla.Thunderbird)$",
   },
   workspace = "4 silent",
+  opacity = 0.85,
 })

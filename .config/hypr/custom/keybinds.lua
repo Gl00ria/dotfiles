@@ -104,14 +104,14 @@ hl.bind(
   hl.dsp.exec_cmd(qsScripts .. "/videos/record.sh --fullscreen --sound"),
   { locked = true, description = "Utils: Record screen (with sound)" }
 )
-hl.bind("", hl.dsp.exec_cmd(qsScripts .. "/videos/record.sh --fullscreen"), { locked = true }) -- without sound
-hl.bind(
-  "",
-  hl.dsp.global("quickshell:regionRecord"),
-  { locked = true, description = "Recording: Record region (no sound)" }
-)
-hl.bind("", hl.dsp.exec_cmd(qsIsAlive .. " || " .. qsScripts .. "/videos/record.sh"), { locked = true })
-hl.bind("", hl.dsp.global("quickshell:regionRecord"), { locked = true })
+-- hl.bind("", hl.dsp.exec_cmd(qsScripts .. "/videos/record.sh --fullscreen"), { locked = true }) -- without sound
+-- hl.bind(
+--   "",
+--   hl.dsp.global("quickshell:regionRecord"),
+--   { locked = true, description = "Recording: Record region (no sound)" }
+-- )
+-- hl.bind("", hl.dsp.exec_cmd(qsIsAlive .. " || " .. qsScripts .. "/videos/record.sh"), { locked = true })
+-- hl.bind("", hl.dsp.global("quickshell:regionRecord"), { locked = true })
 
 --
 -- Screenshot
@@ -133,7 +133,7 @@ hl.bind("CTRL + Print", hl.dsp.global("quickshell:regionScreenshot"), { descript
 --
 -- Eye Candy
 --
-hl.bind("", hl.dsp.global("quickshell:wallpaperSelectorToggle"), { description = "Eye-Candy: Change wallpaper" })
+-- hl.bind("", hl.dsp.global("quickshell:wallpaperSelectorToggle"), { description = "Eye-Candy: Change wallpaper" })
 hl.bind(
   "SHIFT + SUPER + C",
   hl.dsp.exec_cmd("hyprpicker -a"),
@@ -149,26 +149,26 @@ hl.bind(
   hl.dsp.global("quickshell:toggleLightDark"),
   { description = "Eye-Candy: Toggle Light/Dark Theme" }
 )
-hl.bind(
-  "",
-  hl.dsp.exec_cmd("killall ydotool qs quickshell; qs -c $qsConfig &"),
-  { description = "Eye-Candy: Restart widgets" }
-)
+-- hl.bind(
+--   "",
+--   hl.dsp.exec_cmd("killall ydotool qs quickshell; qs -c $qsConfig &"),
+--   { description = "Eye-Candy: Restart widgets" }
+-- )
 hl.bind(
   "SHIFT + SUPER + P",
   hl.dsp.global("quickshell:panelFamilyCycle"),
   { description = "Eye-Candy: Cycle panel family" }
 )
-hl.bind("", hl.dsp.global("quickshell:overviewEmojiToggle"), { description = "Eye-Candy: Emojies" })
+-- hl.bind("", hl.dsp.global("quickshell:overviewEmojiToggle"), { description = "Eye-Candy: Emojies" })
 
 --
 -- Media, Volume & Hardware
 --
 hl.bind("SUPER + M", hl.dsp.global("quickshell:mediaControlsToggle"), { description = "Media: Toggle media controls" })
-hl.bind("", hl.dsp.exec_cmd(volumeMixer), { description = "Media: Volume mixer" })
-hl.bind("", hl.dsp.exec_cmd("swayosd-client --caps-lock"))
-hl.bind("", hl.dsp.exec_cmd("swayosd-client --scroll-lock"))
-hl.bind("", hl.dsp.exec_cmd("swayosd-client --num-lock"))
+-- hl.bind("", hl.dsp.exec_cmd(volumeMixer), { description = "Media: Volume mixer" })
+-- hl.bind("", hl.dsp.exec_cmd("swayosd-client --caps-lock"))
+-- hl.bind("", hl.dsp.exec_cmd("swayosd-client --scroll-lock"))
+-- hl.bind("", hl.dsp.exec_cmd("swayosd-client --num-lock"))
 hl.bind("xf86AudioNext", hl.dsp.exec_cmd(customScripts .. "/MediaCtrl.sh --nxt"), { description = "Media: Run Next" })
 hl.bind("XF86AudioPrev", hl.dsp.exec_cmd(customScripts .. "/MediaCtrl.sh --prv"), { description = "Media: Run Prev" })
 hl.bind("xf86AudioPause", hl.dsp.exec_cmd(customScripts .. "/MediaCtrl.sh --pause"), { description = "Media: Pause" })
@@ -252,7 +252,7 @@ end, { non_consuming = true })
 -- hl.bind("SUPER + Semicolon", hl.dsp.layout("splitratio -0.1"), { repeating = true })
 -- hl.bind("SUPER + Apostrophe", hl.dsp.layout("splitratio +0.1"), { repeating = true })
 --# Positioning mode
-hl.bind("", hl.dsp.window.float({ action = "toggle" }), { description = "Window: Float/Tile" })
+-- hl.bind("", hl.dsp.window.float({ action = "toggle" }), { description = "Window: Float/Tile" })
 hl.bind(
   "SUPER + F",
   hl.dsp.window.fullscreen({ mode = "maximized", action = "toggle" }),
