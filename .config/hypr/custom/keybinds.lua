@@ -30,8 +30,12 @@ local hyprScripts = "$HOME/.config/hypr/hyprland/scripts"
 -- life saver
 hl.bind("SUPER + H", hl.dsp.exec_cmd(customScripts .. "/keybind_exec.sh"), { description = "Search/Execute Keybinds" })
 -- hl.bind("SUPER + H", hl.dsp.global("quickshell:cheatsheetToggle"), { description = "Utils: Toggle cheatsheet" })
-hl.bind("SUPER + SUPER_L", hl.dsp.global("quickshell:searchToggleRelease"), { description = "Utils: Toggle search" })
-hl.bind("SUPER + SUPER_R", hl.dsp.global("quickshell:searchToggleRelease"))
+--
+-- (https://github.com/end-4/dots-hyprland/blob/cb1c428bf841dabccff1b126904047c28e89ba8c/dots/.config/hypr/hyprland/keybinds.lua#L13-L15)
+--
+local searchToggle = hl.dsp.exec_cmd(qsIpcCall .. " search toggle || pkill fuzzel || fuzzel")
+hl.bind("SUPER + SUPER_L", searchToggle, { release = true, description = "Utils: Toggle search" })
+hl.bind("SUPER + SUPER_R", searchToggle, { release = true })
 
 --
 -- Utils
