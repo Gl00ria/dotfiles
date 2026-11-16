@@ -1,6 +1,6 @@
 -- YOU... Yes YOU!!!
 -- I'm on a split keeb... below keybinds are going to twist your fingers :)
--- however, you can still (SUPER + H) to search & execute a command till you sort it out
+-- however, you can still (SUPER + H) to search & execute a command (cheatsheet)
 --
 -- TIP:
 -- Reserved Combos:
@@ -28,8 +28,8 @@ local customScripts = "$HOME/.config/hypr/custom/scripts"
 local hyprScripts = "$HOME/.config/hypr/hyprland/scripts"
 
 -- life saver
-hl.bind("SUPER + H", hl.dsp.exec_cmd(customScripts .. "/keybind_exec.sh"), { description = "Search/Execute Keybinds" })
--- hl.bind("SUPER + H", hl.dsp.global("quickshell:cheatsheetToggle"), { description = "Utils: Toggle cheatsheet" })
+-- hl.bind("SUPER + H", hl.dsp.exec_cmd(customScripts .. "/keybind_exec.sh"), { description = "Search/Execute Keybinds" })
+hl.bind("SUPER + H", hl.dsp.global("quickshell:cheatsheetToggle"), { description = "Utils: Toggle cheatsheet" })
 --
 -- (https://github.com/end-4/dots-hyprland/blob/cb1c428bf841dabccff1b126904047c28e89ba8c/dots/.config/hypr/hyprland/keybinds.lua#L13-L15)
 --
@@ -365,3 +365,21 @@ end
 --   local prefix = { "r+", "r-", "r+", "r-" }
 --   hl.bind(keycombos[i], hl.dsp.window.move({ workspace = prefix[i] .. "1" })) -- # [hidden]
 -- end
+
+--# Zoom
+local function zoomfunction(value)
+  local zoomvalue = hl.get_config("cursor:zoom_factor")
+  if (zoomvalue + value) > 3.0 then
+    hl.config({ cursor = { zoom_factor = 3.0 } })
+  elseif (zoomvalue + value) < 1.0 then
+    hl.config({ cursor = { zoom_factor = 1.0 } })
+  else
+    hl.config({ cursor = { zoom_factor = zoomvalue + value } })
+  end
+end
+hl.bind("SUPER + Minus", function()
+  zoomfunction(-0.3)
+end, { repeating = true, description = "Screen: Zoom out" })
+hl.bind("SUPER + Equal", function()
+  zoomfunction(0.3)
+end, { repeating = true, description = "Screen: Zoom in" })

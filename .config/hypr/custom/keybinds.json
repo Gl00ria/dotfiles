@@ -1,0 +1,976 @@
+{
+  "sections": [
+    {
+      "name": "Main",
+      "binds": [
+        {
+          "keys": "SUPER + H",
+          "description": "This Menu",
+          "action": "qs -c end4-pC ipc call cheatsheet toggle"
+        },
+        {
+          "keys": "SUPER",
+          "description": "App Launcher",
+          "action": "qs -c end4-pC ipc call search toggle"
+        },
+        {
+          "keys": "SUPER + Q",
+          "description": "Close Active Window",
+          "action": "hyprctl dispatch 'hl.dsp.window.close()'"
+        }
+      ]
+    },
+    {
+      "name": "Utils",
+      "binds": [
+        {
+          "keys": "SUPER + I",
+          "description": "Settings",
+          "action": "XDG_CURRENT_DESKTOP=gnome ~/.config/hypr/hyprland/scripts/launch_first_available.sh \"qs -p ~/.config/quickshell/end4-pC/settings.qml\" systemsettings gnome-control-center better-control"
+        },
+        {
+          "keys": "N/A",
+          "description": "Session Menu",
+          "action": "qs -c end4-pC ipc call session toggle"
+        },
+        {
+          "keys": "CTRL + ALT + Semicolon",
+          "description": "On Screen Keyboard",
+          "action": "qs -c end4-pC ipc call osk toggle"
+        },
+        {
+          "keys": "CTRL + ALT + W",
+          "description": "Toggle Bar",
+          "action": "qs -c end4-pC ipc call bar toggle"
+        },
+        {
+          "keys": "SUPER + L",
+          "description": "Lockscreen",
+          "action": "loginctl lock-session"
+        },
+        {
+          "keys": "SUPER + SHIFT + G",
+          "description": "Toggle Overlay",
+          "action": "qs -c end4-pC ipc call overlay toggle"
+        },
+        {
+          "keys": "CTRL + ALT + BACKSPACE",
+          "description": "Task Manager",
+          "action": "~/.config/hypr/hyprland/scripts/launch_first_available.sh 'kitty -1 fish -c btop' 'gnome-system-monitor' 'plasma-systemmonitor --page-name Processes'"
+        },
+        {
+          "keys": "SUPER + SHIFT + O",
+          "description": "OCR",
+          "action": "qs -c end4-pC ipc call region ocr"
+        },
+        {
+          "keys": "CTRL + ALT + S",
+          "description": "Google Image Search",
+          "action": "qs -c end4-pC ipc call region search"
+        },
+        {
+          "keys": "CTRL + ALT + T",
+          "description": "Translate Screen Content",
+          "action": "qs -c end4-pC ipc call screenTranslator translate"
+        },
+        {
+          "keys": "SUPER + MINUS",
+          "description": "Zoom out"
+        },
+        {
+          "keys": "SUPER + EQUAL",
+          "description": "Zoom In"
+        }
+      ]
+    },
+    {
+      "name": "Recording",
+      "binds": [
+        {
+          "keys": "N/A",
+          "description": "Record Fullscreen (Without Sound)",
+          "action": "~/.config/quickshell/end4-pC/scripts/videos/record.sh --fullscreen"
+        },
+        {
+          "keys": "SHIFT + SUPER + R",
+          "description": "Record Fullscreen (With Sound)",
+          "action": "~/.config/quickshell/end4-pC/scripts/videos/record.sh --fullscreen --sound"
+        },
+        {
+          "keys": "N/A",
+          "description": "Record Region",
+          "action": "qs -c end4-pC ipc call region record"
+        }
+      ]
+    },
+    {
+      "name": "Screenshot",
+      "binds": [
+        {
+          "keys": "Print",
+          "description": "Screenshot (Active Monitor)",
+          "action": "mkdir -p \"$(xdg-user-dir PICTURES)/Screenshots\" && grim -o \"$(hyprctl activeworkspace -j | jq -r '.monitor')\" \"$(xdg-user-dir PICTURES)/Screenshots/Screenshot_$(date '+%d-%m-%Y_%H.%M.%S').png\" && $HOME/.config/hypr/custom/scripts/Sounds.sh --screenshot"
+        },
+        {
+          "keys": "CTRL + Print",
+          "description": "Screenshot (Select Region)",
+          "action": "sleep 0.50 && qs -c end4-pC ipc call region screenshot && $HOME/.config/hypr/custom/scripts/Sounds.sh --screenshot"
+        }
+      ]
+    },
+    {
+      "name": "Apps",
+      "binds": [
+        {
+          "keys": "SUPER + K",
+          "description": "Terminal",
+          "action": "~/.config/hypr/hyprland/scripts/launch_first_available.sh 'kitty -1' 'foot' 'alacritty' 'wezterm' 'konsole' 'kgx' 'uxterm' 'xterm'"
+        },
+        {
+          "keys": "SUPER + B",
+          "description": "Browser",
+          "action": "~/.config/hypr/hyprland/scripts/launch_first_available.sh 'firefox' 'brave' 'google-chrome-stable' 'zen-browser' 'chromium' 'microsoft-edge-stable' 'opera' 'librewolf'"
+        },
+        {
+          "keys": "SUPER + E",
+          "description": "File Manager",
+          "action": "~/.config/hypr/hyprland/scripts/launch_first_available.sh 'dolphin' 'nautilus' 'nemo' 'thunar' 'kitty -1 fish -c yazi'"
+        },
+        {
+          "keys": "SUPER + O",
+          "description": "Notes App",
+          "action": "~/.config/hypr/hyprland/scripts/launch_first_available.sh 'obsidian'"
+        },
+        {
+          "keys": "SUPER + G",
+          "description": "Gparted",
+          "action": "xhost +SI:localuser:root && gparted"
+        },
+        {
+          "keys": "SUPER + N",
+          "description": "Notification Center",
+          "action": "qs -c end4-pC ipc call sidebarRight toggle"
+        },
+        {
+          "keys": "SUPER + A",
+          "description": "Toggle Left Sidebar",
+          "action": "qs -c end4-pC ipc call sidebarLeft toggle"
+        },
+        {
+          "keys": "SUPER + V",
+          "description": "Clipboard Manager",
+          "action": "qs -c end4-pC ipc call search clipboardToggle"
+        },
+        {
+          "keys": "SUPER + T",
+          "description": "Text Editor",
+          "action": "~/.config/hypr/hyprland/scripts/launch_first_available.sh 'kate' 'gnome-text-editor' 'emacs'"
+        },
+        {
+          "keys": "SUPER + C",
+          "description": "VS Code",
+          "action": "code"
+        },
+        {
+          "keys": "N/A",
+          "description": "Music Player",
+          "action": "~/.config/hypr/hyprland/scripts/launch_first_available.sh 'rhythmbox'"
+        }
+      ]
+    },
+    {
+      "name": "Eye-Candy",
+      "binds": [
+        {
+          "keys": "N/A",
+          "description": "Select Wallpaper",
+          "action": "qs -c end4-pC ipc call wallpaperSelector toggle"
+        },
+        {
+          "keys": "N/A",
+          "description": "Toggle Blur",
+          "action": "~/.config/hypr/custom/scripts/ChangeBlur.sh"
+        },
+        {
+          "keys": "SHIFT + SUPER + W",
+          "description": "Random Wallpaper",
+          "action": "qs -c end4-pC ipc call wallpaperSelector random"
+        },
+        {
+          "keys": "SHIFT + SUPER + T",
+          "description": "Toggle Theme Mode",
+          "action": "bash $HOME/.config/quickshell/end4-pC/scripts/colors/switchwall.sh --mode \"$([ \"$(gsettings get org.gnome.desktop.interface color-scheme 2>/dev/null | tr -d \"'\")\" = prefer-dark ] && echo light || echo dark)\" --noswitch"
+        },
+        {
+          "keys": "N/A",
+          "description": "Restart Widgets",
+          "action": "killall ydotool qs quickshell; sleep 0.5; setsid qs -c end4-pC -d"
+        },
+        {
+          "keys": "SHIFT + SUPER + C",
+          "description": "Color Picker",
+          "action": "hyprpicker -a"
+        }
+      ]
+    },
+    {
+      "name": "Window",
+      "binds": [
+        {
+          "keys": "ALT + TAB",
+          "description": "Cycle Window Focus",
+          "action": "~/.config/hypr/custom/scripts/LuaCycleWindow.sh next"
+        },
+        {
+          "keys": "CTRL + ALT + H",
+          "description": "Focus to Window",
+          "action": "hyprctl dispatch 'hl.dsp.focus({direction = \"l\"})'"
+        },
+        {
+          "keys": "CTRL + ALT + L",
+          "description": "Focus to Window",
+          "action": "hyprctl dispatch 'hl.dsp.focus({direction = \"r\"})'"
+        },
+        {
+          "keys": "CTRL + ALT + K",
+          "description": "Focus to Window",
+          "action": "hyprctl dispatch 'hl.dsp.focus({direction = \"u\"})'"
+        },
+        {
+          "keys": "CTRL + ALT + J",
+          "description": "Focus to Window",
+          "action": "hyprctl dispatch 'hl.dsp.focus({direction = \"d\"})'"
+        },
+        {
+          "keys": "SUPER + CTRL + ALT + Y",
+          "description": "Move Window to",
+          "action": "hyprctl dispatch 'hl.dsp.window.move({direction = \"l\"})'"
+        },
+        {
+          "keys": "SUPER + CTRL + ALT + O",
+          "description": "Move Window to",
+          "action": "hyprctl dispatch 'hl.dsp.window.move({direction = \"r\"})'"
+        },
+        {
+          "keys": "SUPER + CTRL + ALT + I",
+          "description": "Move Window to",
+          "action": "hyprctl dispatch 'hl.dsp.window.move({direction = \"u\"})'"
+        },
+        {
+          "keys": "SUPER + CTRL + ALT + U",
+          "description": "Move Window to",
+          "action": "hyprctl dispatch 'hl.dsp.window.move({direction = \"d\"})'"
+        },
+        {
+          "keys": "SUPER + Drag Mouse",
+          "description": "Move Window with Mouse",
+          "action": "hyprctl dispatch movewindow"
+        }
+      ]
+    },
+    {
+      "name": "Workspace",
+      "binds": [
+        {
+          "keys": "SUPER + SHIFT + Mouse Scroll",
+          "description": "Move Window To workspace"
+        }
+      ]
+    },
+    {
+      "name": "Media",
+      "binds": [
+        {
+          "keys": "N/A",
+          "description": "Sound App",
+          "action": "~/.config/hypr/hyprland/scripts/launch_first_available.sh 'pavucontrol-qt' 'pavucontrol'"
+        },
+        {
+          "keys": "XF86AudioLowerVolume",
+          "description": "Decrease Volume",
+          "action": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 2%-"
+        },
+        {
+          "keys": "XF86AudioRaiseVolume",
+          "description": "Increase Volume",
+          "action": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 2%+ -l 1.5"
+        },
+        {
+          "keys": "XF86MonBrightnessDown",
+          "description": "Decrease Brightness",
+          "action": "swayosd-client --brightness lower"
+        },
+        {
+          "keys": "XF86MonBrightnessUp",
+          "description": "Increase Brightness",
+          "action": "swayosd-client --brightness raise"
+        },
+        {
+          "keys": "XF86AudioMute",
+          "description": "Toggle Mute (Speaker)",
+          "action": "wpctl set-mute @DEFAULT_SINK@ toggle"
+        },
+        {
+          "keys": "XF86AudioMicMute",
+          "description": "Toggle Mute (Mic)",
+          "action": "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
+        },
+        {
+          "keys": "XF86AudioPause",
+          "description": "Media Pause/Play",
+          "action": "~/.config/hypr/custom/scripts/MediaCtrl.sh --pause"
+        },
+        {
+          "keys": "XF86AudioNext",
+          "description": "Media Play-Next",
+          "action": "~/.config/hypr/custom/scripts/MediaCtrl.sh --nxt"
+        },
+        {
+          "keys": "XF86AudioPrev",
+          "description": "Media Play-Prev",
+          "action": "~/.config/hypr/custom/scripts/MediaCtrl.sh --prv"
+        }
+      ]
+    },
+    {
+      "name": "Tmux",
+      "binds": [
+        {
+          "keys": "CTRL + Space",
+          "description": "Tmux: Main Prefix"
+        },
+        {
+          "keys": "Prefix + ALT + U",
+          "description": "Tmux: List Keymaps"
+        },
+        {
+          "keys": "Prefix + ?",
+          "description": "Tmux: List Keymaps"
+        },
+        {
+          "keys": "Prefix + SHIFT + R",
+          "description": "Tmux: Reload"
+        },
+        {
+          "keys": "Prefix + [ OR ENTER",
+          "description": "Tmux: Enter Vim-Mode"
+        },
+        {
+          "keys": "Prefix + ]",
+          "description": "Tmux: Paste Last Yanked"
+        },
+        {
+          "keys": "Prefix + =",
+          "description": "Tmux: Show older yanked text"
+        },
+        {
+          "keys": "Prefix + SPACE",
+          "description": "Tmux: Change Layout"
+        },
+        {
+          "keys": "Prefix + SHIFT + C",
+          "description": "Tmux: Customize options"
+        },
+        {
+          "keys": "Prefix + SHIFT + I",
+          "description": "Tmux: Install plugin"
+        },
+        {
+          "keys": "Prefix + G",
+          "description": "Tmux: Open LazyGit"
+        },
+        {
+          "keys": "Prefix + S",
+          "description": "Tmux: Choose session"
+        },
+        {
+          "keys": "Prefix + Hold S",
+          "description": "Tmux: Save session"
+        },
+        {
+          "keys": "Prefix + N",
+          "description": "Tmux: New Session"
+        },
+        {
+          "keys": "Prefix + D",
+          "description": "Tmux: Detach session"
+        },
+        {
+          "keys": "Prefix + SHIFT + ?",
+          "description": "Tmux: Choose session"
+        },
+        {
+          "keys": "Prefix + $",
+          "description": "Tmux: Rename Session"
+        },
+        {
+          "keys": "Prefix + R",
+          "description": "Tmux: Restore session"
+        },
+        {
+          "keys": "Prefix + L",
+          "description": "Tmux: GoTo Last session"
+        },
+        {
+          "keys": "Prefix +",
+          "description": "Tmux: Move to next session"
+        },
+        {
+          "keys": "Prefix + (",
+          "description": "Tmux: Move to prev session"
+        },
+        {
+          "keys": "Prefix + T",
+          "description": "Tmux: Show a clock"
+        },
+        {
+          "keys": "Prefix + ~",
+          "description": "Tmux: Show messages"
+        },
+        {
+          "keys": "Prefix + I",
+          "description": "Tmux: Window Info"
+        },
+        {
+          "keys": "Prefix + F",
+          "description": "Tmux: Find window/pane"
+        },
+        {
+          "keys": "Prefix + &",
+          "description": "Tmux: Kill window"
+        },
+        {
+          "keys": "Prefix + W",
+          "description": "Tmux: List windows"
+        },
+        {
+          "keys": "Prefix + C",
+          "description": "Tmux: Create window"
+        },
+        {
+          "keys": "Prefix + ;",
+          "description": "Tmux: Split Window Vertically"
+        },
+        {
+          "keys": "Prefix + -",
+          "description": "Tmux: Split Window Horizontally"
+        },
+        {
+          "keys": "Prefix + !",
+          "description": "Tmux: Create new window of pane"
+        },
+        {
+          "keys": "Prefix + SHIFT + .",
+          "description": "Tmux: Navigate to Next Window"
+        },
+        {
+          "keys": "Prefix + SHIFT + ,",
+          "description": "Tmux: Navigate to Prev Window"
+        },
+        {
+          "keys": "Prefix + Q",
+          "description": "Tmux: Display pane numbers"
+        },
+        {
+          "keys": "Prefix + SHIFT + M",
+          "description": "Tmux: Clear Marked pane"
+        },
+        {
+          "keys": "Prefix + X",
+          "description": "Tmux: Kill pane"
+        },
+        {
+          "keys": "Prefix + SHIFT + J",
+          "description": "Tmux: Resize DOWN"
+        },
+        {
+          "keys": "Prefix + SHIFT + K",
+          "description": "Tmux: Resize UP"
+        },
+        {
+          "keys": "Prefix + SHIFT + L",
+          "description": "Tmux: Resize RIGHT"
+        },
+        {
+          "keys": "Prefix + SHIFT + H",
+          "description": "Tmux: Resize LEFT"
+        },
+        {
+          "keys": "Prefix + M",
+          "description": "Tmux: Maximize/Minimize Pane"
+        },
+        {
+          "keys": "CTRL + J",
+          "description": "Tmux: Navigate DOWN"
+        },
+        {
+          "keys": "CTRL + K",
+          "description": "Tmux: Navigate UP"
+        },
+        {
+          "keys": "CTRL + L",
+          "description": "Tmux: Navigate RIGHT"
+        },
+        {
+          "keys": "CTRL + H",
+          "description": "Tmux: Navigate LEFT"
+        },
+        {
+          "keys": "Prefix + >",
+          "description": "Tmux: Swap pane RIGHT"
+        },
+        {
+          "keys": "Prefix + <",
+          "description": "Tmux: Swap pane LEFT"
+        }
+      ]
+    },
+    {
+      "name": "Herdr",
+      "binds": [
+        {
+          "keys": "CTRL + Space",
+          "description": "Herdr: Main Prefix"
+        },
+        {
+          "keys": "Prefix + S",
+          "description": "Herdr: Settings"
+        },
+        {
+          "keys": "Prefix + Q",
+          "description": "Herdr: Detach"
+        },
+        {
+          "keys": "Prefix + R",
+          "description": "Herdr: Reload Config"
+        },
+        {
+          "keys": "Prefix + SHIFT + N",
+          "description": "Herdr: New Workspace"
+        },
+        {
+          "keys": "Prefix + SHIFT + W",
+          "description": "Herdr: Rename Workspace"
+        },
+        {
+          "keys": "Prefix + SHIFT + D",
+          "description": "Herdr: Close Workspace"
+        },
+        {
+          "keys": "Prefix + [",
+          "description": "Herdr: Workspace Picker"
+        },
+        {
+          "keys": "Prefix + c",
+          "description": "Herdr: New Tab"
+        },
+        {
+          "keys": "Prefix + ,",
+          "description": "Herdr: Rename Pane"
+        },
+        {
+          "keys": "Prefix + <",
+          "description": "Herdr: Previous Tab"
+        },
+        {
+          "keys": "Prefix + >",
+          "description": "Herdr: Next Tab"
+        },
+        {
+          "keys": "Prefix + e",
+          "description": "Herdr: Editor"
+        },
+        {
+          "keys": "Prefix + H",
+          "description": "Herdr: Focus Pane Left"
+        },
+        {
+          "keys": "Prefix + J",
+          "description": "Herdr: Focus Pane Down"
+        },
+        {
+          "keys": "Prefix + K",
+          "description": "Herdr: Focus Pane UP"
+        },
+        {
+          "keys": "Prefix + L",
+          "description": "Herdr: Focus Pane Right"
+        },
+        {
+          "keys": "Prefix + ;",
+          "description": "Herdr: Split Vertical"
+        },
+        {
+          "keys": "Prefix + -",
+          "description": "Herdr: Split Horizontal"
+        },
+        {
+          "keys": "Prefix + E",
+          "description": "Herdr: Toggle Sidebar"
+        },
+        {
+          "keys": "Prefix + G",
+          "description": "Herdr: LazyGit"
+        },
+        {
+          "keys": "Prefix + O",
+          "description": "Herdr: Opencode"
+        },
+        {
+          "keys": "Prefix + F",
+          "description": "Herdr Plugin: Projects"
+        },
+        {
+          "keys": "Prefix + Space",
+          "description": "Herdr Plugin: Find Tabs"
+        },
+        {
+          "keys": "Prefix + C",
+          "description": "Herdr Plugin: Command Palette"
+        }
+      ]
+    },
+    {
+      "name": "TuiOS",
+      "binds": [
+        {
+          "keys": "CTRL + Space",
+          "description": "TuiOS: Main Prefix"
+        },
+        {
+          "keys": "Prefix + A",
+          "description": "TuiOS: App Launcher"
+        },
+        {
+          "keys": "Prefix + S",
+          "description": "TuiOS: Settings"
+        },
+        {
+          "keys": "Prefix + F",
+          "description": "TuiOS: Navigator"
+        },
+        {
+          "keys": "Prefix + G",
+          "description": "TuiOS: Toggle Scratch"
+        },
+        {
+          "keys": "Prefix + D",
+          "description": "TuiOS: Debug"
+        },
+        {
+          "keys": "Prefix + K",
+          "description": "TuiOS: Keybinds"
+        },
+        {
+          "keys": "Prefix + ENTER",
+          "description": "TuiOS: Copy Mode"
+        },
+        {
+          "keys": "Prefix + D",
+          "description": "TuiOS: Detach"
+        },
+        {
+          "keys": "Prefix + E",
+          "description": "TuiOS: Navigate Sidebar"
+        },
+        {
+          "keys": "Prefix + B",
+          "description": "TuiOS: Toggle Sidebar"
+        },
+        {
+          "keys": "Prefix + P",
+          "description": "TuiOS: Command Palatte"
+        },
+        {
+          "keys": "Prefix + W",
+          "description": "TuiOS: Workspace Switcher"
+        },
+        {
+          "keys": "Prefix + W",
+          "description": "TuiOS: Workspace Switcher"
+        },
+        {
+          "keys": "Prefix + H",
+          "description": "TuiOS: Focus Pane Left"
+        },
+        {
+          "keys": "Prefix + J",
+          "description": "TuiOS: Focus Pane Down"
+        },
+        {
+          "keys": "Prefix + K",
+          "description": "TuiOS: Focus Pane UP"
+        },
+        {
+          "keys": "Prefix + L",
+          "description": "TuiOS: Focus Pane Right"
+        },
+        {
+          "keys": "CTRL + H",
+          "description": "TuiOS: Focus Pane Left"
+        },
+        {
+          "keys": "CTRL + J",
+          "description": "TuiOS: Focus Pane Down"
+        },
+        {
+          "keys": "CTRL + K",
+          "description": "TuiOS: Focus Pane UP"
+        },
+        {
+          "keys": "CTRL + L",
+          "description": "TuiOS: Focus Pane Right"
+        },
+        {
+          "keys": "Prefix + L",
+          "description": "TuiOS: List Sessions"
+        },
+        {
+          "keys": "Prefix + ;",
+          "description": "TuiOS: Split Vertical"
+        },
+        {
+          "keys": "Prefix + -",
+          "description": "TuiOS: Split Horizontal"
+        },
+        {
+          "keys": "Prefix + Z",
+          "description": "TuiOS: Toggle Zoom"
+        },
+        {
+          "keys": "Prefix + ,",
+          "description": "TuiOS: Rename Pane"
+        },
+        {
+          "keys": "Prefix + R",
+          "description": "TuiOS: Rotate Splits"
+        },
+        {
+          "keys": "W or X",
+          "description": "TuiOS 'WM': Close Window"
+        },
+        {
+          "keys": "S",
+          "description": "TuiOS 'WM': Focus Sidebar"
+        },
+        {
+          "keys": ";",
+          "description": "TuiOS 'WM': Last Pane"
+        },
+        {
+          "keys": "M",
+          "description": "TuiOS 'WM': Minimize Window"
+        },
+        {
+          "keys": "N",
+          "description": "TuiOS 'WM': New Session"
+        },
+        {
+          "keys": "N",
+          "description": "TuiOS 'WM': New Window"
+        },
+        {
+          "keys": "ALT + SHIFT + N",
+          "description": "TuiOS 'WM': Next Session"
+        },
+        {
+          "keys": "ALT + SHIFT + P",
+          "description": "TuiOS 'WM': Next Session"
+        },
+        {
+          "keys": "TAB",
+          "description": "TuiOS 'WM': Next Window"
+        },
+        {
+          "keys": "SHIFT + TAB",
+          "description": "TuiOS 'WM': Prev Window"
+        },
+        {
+          "keys": "R",
+          "description": "TuiOS 'WM': Rename Window"
+        },
+        {
+          "keys": "M",
+          "description": "TuiOS 'WM': Restore All"
+        },
+        {
+          "keys": "P",
+          "description": "TuiOS 'WM': Toggle Picture in Picture 'PiP'"
+        },
+        {
+          "keys": "Z",
+          "description": "TuiOS 'WM': Toggle Zoom"
+        },
+        {
+          "keys": "S",
+          "description": "TuiOS 'WM': Screensaver"
+        },
+        {
+          "keys": "=",
+          "description": "TuiOS 'WM': Equalize Splits"
+        },
+        {
+          "keys": "R",
+          "description": "TuiOS 'WM': Rotate Splits"
+        },
+        {
+          "keys": "-",
+          "description": "TuiOS 'WM': Split Horizontal"
+        },
+        {
+          "keys": ";",
+          "description": "TuiOS 'WM': Split Vertical"
+        },
+        {
+          "keys": "J",
+          "description": "TuiOS 'WM': Swap Down"
+        },
+        {
+          "keys": "H",
+          "description": "TuiOS 'WM': Swap Left"
+        },
+        {
+          "keys": "K",
+          "description": "TuiOS 'WM': Swap UP"
+        },
+        {
+          "keys": "L",
+          "description": "TuiOS 'WM': Swap Right"
+        },
+        {
+          "keys": "?",
+          "description": "TuiOS 'WM': Toggle Help"
+        },
+        {
+          "keys": "B",
+          "description": "TuiOS 'WM': Toggle Spotlight"
+        },
+        {
+          "keys": "Prefix + A",
+          "description": "TuiOS 'Agents': 'Inbox'"
+        },
+        {
+          "keys": "Prefix + M",
+          "description": "TuiOS 'Agents': 'Mail'"
+        },
+        {
+          "keys": "ESC OR Q",
+          "description": "TuiOS 'Agents': Inbox Close"
+        },
+        {
+          "keys": "N",
+          "description": "TuiOS 'Agents': Inbox Deny"
+        },
+        {
+          "keys": "J OR CTRL + D",
+          "description": "TuiOS 'Agents': Inbox Detail Down"
+        },
+        {
+          "keys": "K OR CTRL + U",
+          "description": "TuiOS 'Agents': Inbox Detail Up"
+        },
+        {
+          "keys": "D OR Delete",
+          "description": "TuiOS 'Agents': Inbox dismiss"
+        },
+        {
+          "keys": "F",
+          "description": "TuiOS 'Agents': Inbox Filter"
+        },
+        {
+          "keys": "G OR Home",
+          "description": "TuiOS 'Agents': Inbox First"
+        },
+        {
+          "keys": "G OR End",
+          "description": "TuiOS 'Agents': Inbox Last"
+        },
+        {
+          "keys": "R",
+          "description": "TuiOS 'Agents': Inbox Reply"
+        },
+        {
+          "keys": "Y",
+          "description": "TuiOS 'Agents': Inbox Resume"
+        },
+        {
+          "keys": "V",
+          "description": "TuiOS 'Agents': Inbox Review"
+        },
+        {
+          "keys": "/",
+          "description": "TuiOS 'Agents': Inbox Select"
+        },
+        {
+          "keys": "Z",
+          "description": "TuiOS 'Agents': Inbox Snooze"
+        },
+        {
+          "keys": "S",
+          "description": "TuiOS 'Agents': Inbox Show Snoozed"
+        },
+        {
+          "keys": "U",
+          "description": "TuiOS 'Agents': Inbox Undow"
+        },
+        {
+          "keys": "SPACE",
+          "description": "TuiOS 'Agents': Inbox Peak"
+        },
+        {
+          "keys": "a",
+          "description": "TuiOS 'Agents': Inbox Peak Approve"
+        },
+        {
+          "keys": "A",
+          "description": "TuiOS 'Agents': Inbox Peak Always Approve"
+        },
+        {
+          "keys": "d",
+          "description": "TuiOS 'Agents': Inbox Peak Deny"
+        },
+        {
+          "keys": "ENTER",
+          "description": "TuiOS 'Agents': Inbox Peak Go"
+        },
+        {
+          "keys": "r",
+          "description": "TuiOS 'Agents': Inbox Peak Read Again"
+        },
+        {
+          "keys": "TAB",
+          "description": "TuiOS 'Agents': Inbox Peak Type"
+        },
+        {
+          "keys": "o",
+          "description": "TuiOS 'Agents': Mail Focos Pane"
+        },
+        {
+          "keys": "n",
+          "description": "TuiOS 'Agents': Mail New"
+        },
+        {
+          "keys": "r",
+          "description": "TuiOS 'Agents': Mail Reply"
+        },
+        {
+          "keys": "Prefix + g",
+          "description": "TuiOS: LazyGit"
+        },
+        {
+          "keys": "Prefix + a",
+          "description": "TuiOS: Opencode"
+        }
+      ]
+    },
+    {
+      "name": "OpenCode",
+      "binds": [
+        {
+          "keys": "CTRL + X",
+          "description": "OpenCode: Leader"
+        }
+      ]
+    }
+  ]
+}
